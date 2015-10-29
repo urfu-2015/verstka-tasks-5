@@ -1,0 +1,32 @@
+{
+    "rules": {
+        "color-hex-case": [2, "lower"],
+        "color-hex-length": [2, "short"],
+        "color-no-invalid-hex": [2],
+        "string-quotes": [2, "single"],
+
+        "number-leading-zero": [2, "never"],
+        "number-max-precision": [2, 2],
+        "number-no-trailing-zeros": [2],
+        "number-zero-length-no-unit": [2],
+
+        "declaration-block-semicolon-newline-after": [2, "always"],
+
+        "block-closing-brace-newline-after": [2, "always"],
+        "block-closing-brace-newline-before": [2, "always"],
+        "block-opening-brace-newline-after": [2, "always"],
+        "block-opening-brace-newline-before": [2, "always"],
+        "block-no-empty": [2],
+
+        "selector-combinator-space-after": [2, "always"],
+        "selector-combinator-space-before": [2, "always"],
+        "selector-list-comma-newline-after": [2, "always"],
+
+        "rule-no-duplicate-properties": [2],
+        "rule-trailing-semicolon": [2, "always"],
+
+        "indentation": [2, 4],
+        "no-missing-eof-newline": [2],
+        "no-multiple-empty-lines": [2]
+    }
+}
