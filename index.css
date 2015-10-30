@@ -115,8 +115,19 @@ main {
 
 .item>ul>li {
     float: left;
-    padding: 2px;
+    padding: 4px;
     font-size: .66em;
+}
+
+.item>ul>li:not(:first-child):before {
+    color: #a99;
+    content: "—";
+    padding: 0px 8px 0px 0px;
+}
+
+.item>ul>li>a {
+    color: #a99;
+    text-decoration: underline;
 }
 
 .item>ul>li:nth-child(odd) {
@@ -157,6 +168,8 @@ main {
 }
 
 .item>.star_rating>span {
+    font-size: .7em;
+    padding-top: 4px;
     font-family: sans-serif;
 }
 
@@ -202,7 +215,7 @@ main {
     color: #0a0;
 }
 
-.item>.star_rating[class=star_rating]:hover>div>label {
+.item>.star_rating[class=star_rating]>div:hover>label {
     color: #bbb;
 }
 
