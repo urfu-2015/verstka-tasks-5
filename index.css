@@ -1,1 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500|Arimo:400,700&subset=latin,cyrillic);
 
+.item {
+    width: 250px;
+    height: 500px;
+    float: left;
+    margin: 30px;
+    padding-top: auto;
+    
+}
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+.image > *
+{
+    display: block;
+    margin: auto auto;
+}
+.image
+{
+    position: relative;
+    height: 200px;
+}
+.name
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    color: #6A5ACD;
+}
+.name a:visited
+{
+    color: #6A5ACD;
+}
+.name a:link
+{
+    color: #6A5ACD;
+}
+
+
+.categories, .categories > *
+{
+    font-size: 13px;
+    color: #696969;
+    font-weight: bold;
+}
+.cost
+{
+    color: #8B0000;
+    font-size: 24px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+}
+.old
+{
+    margin-left: 10px;
+    color: #696969;
+    font-size: 18px;
+    text-decoration: line-through;
+}
+p
+{
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #393939;
+}
+.descriptrion
+{
+    font-weight: bold;
+}
+.rating
+{
+    width: 100px;
+    height: 20px;
+    display: block;
+}
+
+input[type="radio"]
+{
+    display:none;
+    margin: 0;
+    padding: 0;
+    height: 16px;
+    width: 8px;
+}
+label
+{
+    display: block;
+    background-image: url(image/5stars.png);
+    padding: 0 0 0 0px;
+    height: 16px;
+    width: 8px;
+    float: left;
+}
+
+input[type="radio"] + label:nth-of-type(2n)
+{
+    background-position: -8px 0px;
+}
+input[type="radio"] + label
+{
+    background-position: 0px 0px;
+}
+
+input[type="radio"]:checked + label
+{
+    background-position: 0px 0px;
+}
+input[type="radio"]:checked + label ~ label
+{
+    background-position: -16px 0px;
+}
+
+
+input[type="radio"]:checked + label:nth-of-type(2n)
+{
+    background-position: -8px 0;
+}
+input[type="radio"]:checked + label ~ label:nth-of-type(2n)
+{
+    background-position: -24px 0;
+}
+
+input[type="radio"]:hover + label ~ label
+{
+    background-position: -16px 0px;
+}
+input[type="radio"]:hover + label ~ label:nth-of-type(2n)
+{
+    background-position: -24px 0px;
+}
+#table
+{
+    display: block;
+    float: none;
+}
+
+#table:checked ~ .item {
+    float: none;
+    width: calc(100% - 200px);
+    height: 200px;
+    margin: 50px 50px;
+}
+#table:checked ~ .item .image
+{
+    width: 20vw;
+}
+
+
+#table:checked ~ .item > * {
+    margin: 10px;
+    float: left;
+}
+#table:checked ~ .item .colomnCenter {
+    width: 15vw;
+}   
+#table:checked ~ .item .colomnRight {
+    width: 40vw;
+}
