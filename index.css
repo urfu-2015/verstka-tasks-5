@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500|Arimo:400,700&subset=latin,cyrillic);
 
-.item {
+.item
+{
     width: 250px;
     height: 500px;
     float: left;
@@ -31,19 +32,18 @@ img
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 24px;
-    color: #6A5ACD;
+    color: #6a5acd;
 }
 .name a:visited
 {
-    color: #6A5ACD;
+    color: #6a5acd;
 }
 .name a:link
 {
-    color: #6A5ACD;
+    color: #6a5acd;
 }
-
-
-.categories, .categories > *
+.categories,
+.categories > *
 {
     font-size: 13px;
     color: #696969;
@@ -51,7 +51,7 @@ img
 }
 .cost
 {
-    color: #8B0000;
+    color: #8b0000;
     font-size: 24px;
     font-family: 'Arimo', sans-serif;
     font-weight: bold;
@@ -81,7 +81,7 @@ p
     display: block;
 }
 
-input[type="radio"]
+input[type='radio']
 {
     display:none;
     margin: 0;
@@ -93,47 +93,46 @@ label
 {
     display: block;
     background-image: url(image/5stars.png);
-    padding: 0 0 0 0px;
+    padding: 0;
     height: 16px;
     width: 8px;
     float: left;
 }
 
-input[type="radio"] + label:nth-of-type(2n)
-{
-    background-position: -8px 0px;
-}
-input[type="radio"] + label
-{
-    background-position: 0px 0px;
-}
-
-input[type="radio"]:checked + label
-{
-    background-position: 0px 0px;
-}
-input[type="radio"]:checked + label ~ label
-{
-    background-position: -16px 0px;
-}
-
-
-input[type="radio"]:checked + label:nth-of-type(2n)
+input[type='radio'] + label:nth-of-type(2n)
 {
     background-position: -8px 0;
 }
-input[type="radio"]:checked + label ~ label:nth-of-type(2n)
+input[type='radio'] + label
+{
+    background-position: 0 0;
+}
+
+input[type='radio']:checked + label
+{
+    background-position: 0 0;
+}
+input[type='radio']:checked + label ~ label
+{
+    background-position: -16px 0;
+}
+
+input[type='radio']:checked + label:nth-of-type(2n)
+{
+    background-position: -8px 0;
+}
+input[type='radio']:checked + label ~ label:nth-of-type(2n)
 {
     background-position: -24px 0;
 }
 
-input[type="radio"]:hover + label ~ label
+input[type='radio']:hover + label ~ label
 {
-    background-position: -16px 0px;
+    background-position: -16px 0;
 }
-input[type="radio"]:hover + label ~ label:nth-of-type(2n)
+input[type='radio']:hover + label ~ label:nth-of-type(2n)
 {
-    background-position: -24px 0px;
+    background-position: -24px 0;
 }
 #table
 {
@@ -141,7 +140,8 @@ input[type="radio"]:hover + label ~ label:nth-of-type(2n)
     float: none;
 }
 
-#table:checked ~ .item {
+#table:checked ~ .item
+{
     float: none;
     width: calc(100% - 200px);
     height: 200px;
@@ -152,14 +152,16 @@ input[type="radio"]:hover + label ~ label:nth-of-type(2n)
     width: 20vw;
 }
 
-
-#table:checked ~ .item > * {
+#table:checked ~ .item > *
+{
     margin: 10px;
     float: left;
 }
-#table:checked ~ .item .colomnCenter {
+#table:checked ~ .item .colomnCenter
+{
     width: 15vw;
 }   
-#table:checked ~ .item .colomnRight {
+#table:checked ~ .item .colomnRight
+{
     width: 40vw;
 }
