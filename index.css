@@ -1,1 +1,236 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1024px;
+    background-color: #ffd0db;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text {
+    width: 50%;
+    font-size: 18px;
+    text-align: right;
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    width: 60px;
+    margin: 4px;
+    height: 24px;
+    padding: 2px;
+    cursor: pointer;
+    color: transparent;
+    border-radius: 14px;
+    display: inline-block;
+    background-color: #ccc;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+input[type="checkbox"]:not(:checked)+label:before,
+input[type="checkbox"]:checked+label:after {
+    content: "";
+    float: left;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"]:checked+label:after {
+    float: right;
+}
+
+input[type="checkbox"]:checked+label {
+    background-color: #0e0;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+}
+
+main {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.item {
+    width: 350px;
+    padding: 16px;
+    display: block;
+    cursor: default;
+    border: 1px solid transparent;
+}
+
+.item>img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 4px black;
+    box-sizing: border-box;
+}
+
+.item>a {
+    color: blue;
+    width: 100%;
+    font-size: 1.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+
+.item>a:hover {
+    color: #00a;
+    text-decoration: none;
+}
+
+.item>ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style: none;
+    overflow: hidden;
+}
+
+.item>ul>li {
+    float: left;
+    padding: 2px;
+    font-size: .66em;
+}
+
+.item>ul>li:nth-child(odd) {
+    text-decoration: underline;
+}
+
+.item>.price {
+    color: #700;
+    font-size: 1.5em;
+    overflow: hidden;
+    font-weight: bold;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.item>.price>small {
+    color: black;
+    font-size: .75em;
+    margin-left: 16px;
+    text-decoration: line-through;
+}
+
+.item>.star_rating {
+    padding: 8px 0;
+    display: block;
+    font-size: 24px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.item>.star_rating>span,
+.item>.star_rating>div {
+    float: left;
+}
+
+.item>.star_rating>span {
+    font-family: sans-serif;
+}
+
+.item>.star_rating>div>input {
+    display: none;
+}
+
+.item>.star_rating>div>label {
+    float: right;
+    cursor: pointer;
+    font-family: 'FontAwesome';
+}
+
+.item>.star_rating>div>label:before {
+    padding: 0;
+    content: "";
+    margin: 0 4px;
+    display: inline-block;
+}
+
+.item>.star_rating>div>label.full:before {
+    content: "\f005";
+    text-shadow: 0 1px 1px black,
+               1px 1px 1px black,
+               1px 0 1px black,
+               1px -1px 1px black,
+               0  -1px 1px black,
+               -1px -1px 1px black,
+               -1px 0 1px black,
+               -1px 1px 1px black;
+}
+
+.item>.star_rating>div>label.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.item>.star_rating>div>label {
+    color: #bbb;
+}
+
+.item>.star_rating>div>input:checked~label {
+    color: #0a0;
+}
+
+.item>.star_rating[class=star_rating]:hover>div>label {
+    color: #bbb;
+}
+
+.item>.star_rating[class=star_rating]>div>label:hover,
+.item>.star_rating[class=star_rating]>div>label:hover~label {
+    color: #0e0;
+}
+
+.item>.star_rating[class=star_rating]>div>label:active,
+.item>.star_rating[class=star_rating]>div>label:active~label {
+    color: #0a0;
+}
+
+.item>p {
+    margin: 0;
+}
+
+
+#style:checked~main>.item {
+    width: 100%;
+}
+
+#style:checked~main>.item>img {
+    float: left;
+    width: 350px;
+    margin-right: 32px;
+}
+
+#style:checked~main>.item>a {
+    display: inline;
+}
