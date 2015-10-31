@@ -1,1 +1,134 @@
+h1,
+h2,
+h3 
+{
+    text-align: center;
+    color: #ff2b2b;
+    font-family: 'Bad Script', cursive;
+    font-weight: bold;
+}
+h1
+{
+    background: url(http://content.foto.mail.ru/mail/olgaolevka/_blogs/i-39191.jpg);
+    font-size: 50px;
+}
+h2
+{
+    font-size: 40px;
+}
+h3
+{
+    font-size: 30px;
+}
+label
+{
+    margin-left: 50px;
+}
+.block
+{
+    padding: 20px;
+    margin: 10px;
+    float: left;
+    width: 300px;
+    border: 3px solid #fff;
+}
+.block:hover
+{
+    background-color: rgba(255, 235, 204, 0.5);
+    border: 3px dashed #ffebcd;
+}
+#blockToList:checked ~ article > .block
+{
+    float: none;
+    width: 100%;
+    display: inline-block;
+}
+#blockToList:checked ~ article > .block > .image
+{
+    min-width: 20%;
+    display: inline-block;
+}
+#blockToList:checked ~ article > .block > .info
+{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+#blockToList:checked ~ article > .block > .description
+{
+    max-width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+.photo > img:hover
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+.photo
+{
+    position: relative;
+    display: block;
+    padding: 0 0 calc(100% - 20px);
+    margin-bottom: 10px;
+}
+.photo > img
+{
+    position: absolute;
+    right: 0;
+    left: 0;
+    max-width: 90%;
+    max-height: 90%;
+    margin: 0 auto;
+}
+.name
+{
+    font: 25px 'Bad Script', cursive;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    color: #ff2b2b;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.name:hover
+{
+    box-shadow: 0 0 6px 3px #ccc;
+}
+.category > a
+{
+    font: 19px 'Bad Script', cursive;
+    color: #ff2b2b;
+    text-decoration: none;
+}
+.category
+{
+    margin-top: 0;
+}
+.category > a:hover
+{
+    color: #822f82;
+}
+.stars
+{
+    font-size: 30px;
+    margin-top: 0;
+}
+.price
+{
+    font-weight: bold;
+    color: #f00;
+    font-size: 20px;
+}
+.description
+{
+    text-align: justify;
+    text-indent: 2%;
+    font: 20px 'Bad Script', cursive;
+    font-weight: bold;
+}
 
