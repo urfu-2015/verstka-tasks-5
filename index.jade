@@ -1,0 +1,59 @@
+extends ./layout.jade
+
+mixin price(price)
+    .price.price-new #{price.new}
+    .price.price-old #{price.old}
+
+mixin description(description)
+    .description-title описание товара
+    p.description-text #{description}
+
+mixin category(args)
+    .category
+    - each val,i in args
+        a.category-item(href=val.url)= val.name
+        if (i != args.length - 1)
+            |  -
+
+mixin rating(count, name)
+    - var width = 105, part = width / count;
+    .rating
+        - for (var x = count; x > 0; x--)
+            - var id = "star" + name + x
+            input(type="radio", name="star" + name, id=id)
+            label(for=id, style={width: part * x + 'px'})
+
+mixin shop-item(item)
+    .column
+        .image-box
+            img(src=item.img, alt='')
+        .column-info
+            h2.item-name
+                a(href='#') #{item.name}
+            +category(item.category)
+            +rating(30, item.id)
+            +price({new: '100p.', old: '100000р.'})
+            p #{item.info}
+        .column-description
+            if (item.description)
+                +description(item.description)
+
+
+block content
+    .container
+        - var category = [{url: '#', name: 'category1'}, {url: '#', name: 'category2'}];
+        - var category2 = [{url: '#', name: 'category3'}];
+        - var category3 = [{url: '#', name: 'category1'}, {url: '#', name: 'category2'}, {url: '#', name: 'category3'}];
+        - var d = 'asdasdasdasdasdasd sad asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd as dasd asd asd';
+        - var items = [];
+        - items.push({id: 1, name: 'собака на волне катака',  img: 'http://cs7051.vk.me/c540108/v540108182/9dbc/JCyGObB7bMA.jpg', category: category, info: 'БЕСПЛАТНАЯ доставка'});
+        - items.push({id: 2, name: 'собака-танцивака', img: 'http://cs7051.vk.me/c540108/v540108182/9db5/0-RGBD5zgsw.jpg', category: category2});
+        - items.push({id: 4, name: 'собака с очень длинным названием', img: 'http://cs7051.vk.me/c540108/v540108182/9dcd/3GbhPMIyhTY.jpg', category: category});
+        - items.push({id: 5, name: 'собака уклоняка', img: 'http://cs7051.vk.me/c540108/v540108182/9dd4/MPGcp3-AsbA.jpg', category: category, description: d});
+        - items.push({id: 7, name: 'собака землю окруака', img: 'http://cs7051.vk.me/c540108/v540108968/1651e/DWcO_4z2Huk.jpg', category: category});
+        - items.push({id: 3, name: 'собака на волне катака', img: 'http://cs7051.vk.me/c540108/v540108182/9dbc/JCyGObB7bMA.jpg', category: category, description: d});
+        - items.push({id: 8, name: 'собака шары катака', img: 'http://cs7051.vk.me/c540108/v540108968/164fb/2CzZsRPBouI.jpg', category: category3});
+        - items.push({id: 9, name: 'собака выступака', img: 'http://cs7051.vk.me/c540108/v540108968/16502/TrwOSOTpULk.jpg', category: category, description: d});
+        - items.push({id: 10, name: 'собака дознавака', img: 'http://cs7051.vk.me/c540108/v540108968/16510/V16QphB4PkQ.jpg', category: category});
+        each val in items
+            +shop-item(val)
