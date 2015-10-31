@@ -81,6 +81,16 @@
 
 @rating-sprite : 'http://i.stack.imgur.com/oZ9Id.png';
 @rating-sprite-offset : 20px;
+@rating-width: 105px;
+
+.generate-rating(30);
+
+.generate-rating(@n, @i: 1) when (@i =< @n) {
+    .star-@{i} {
+        width: (@rating-width / @n * @i);
+    }
+    .generate-rating(@n, (@i + 1));
+}
 
 .rating {
     margin: 3px 0;
@@ -112,3 +122,5 @@
     }
 
 }
+
+

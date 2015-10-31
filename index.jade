@@ -16,12 +16,12 @@ mixin category(args)
             |  -
 
 mixin rating(count, name)
-    - var width = 105, part = width / count;
+    doctype html
     .rating
         - for (var x = count; x > 0; x--)
             - var id = "star" + name + x
             input(type="radio", name="star" + name, id=id)
-            label(for=id, style={width: part * x + 'px'})
+            label(for=id, class="star-" + x)
 
 mixin shop-item(item)
     .column
