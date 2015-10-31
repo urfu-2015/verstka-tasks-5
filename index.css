@@ -72,7 +72,7 @@ label
     position: relative;
     display: block;
     padding: 0 0 calc(100% - 20px);
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 .photo > img 
 {
@@ -91,9 +91,9 @@ label
     font-weight: bold;
     display: block;
     color: #ff2b2b;
-    text-overflow: ellipsis; 
-    overflow: hidden; 
-    white-space: nowrap; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .name:hover 
 {
