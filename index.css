@@ -8,9 +8,10 @@
 
 .block:hover
 {
-    -webkit-box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.55);
-    -moz-box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.55);
-    box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.55);
+    border: solid;
+    border-color: #e0e0e0;
+    border-width: 2px;
+    margin: 8px;
 }
 
 .block
@@ -20,7 +21,8 @@
     float: left;
     width: 300px;
     height: 500px;
-    margin: 2% 2% 20px 2%;
+    padding: 10px;
+    margin: 10px;
 }
 
 .block h3
@@ -48,37 +50,35 @@
 
 .price
 {
-    font-size: 18px;
-    color: #FF0000;
+    font-size: 22px;
+    color: #f00;
+    cursor: default;
 }
 
 .price:hover
 {
-    border-bottom: double;
-    border-color: #797478;
+    font-weight: bold;
 }
 
 .category
 {
-    color: #000000;
+    color: #000;
 }
 
 /* STARS */
 
 .rating
 {
-    background: grey;
-    background: url("stars_2.png") -132px 0 no-repeat;
+    background: url('stars_2.png') -132px 0 no-repeat;
 }
 
 .star
 {
-   width: 11px;
-   height: 20px;
-   display: inline-block;
-
-   cursor: pointer;
-   position: relative;
+    width: 11px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
 }
 
 .star input
@@ -143,7 +143,7 @@
     visibility: visible;
     width: 22px;
     height: 20px;
-    background: url("stars_2.png") -111px 0 no-repeat;
+    background: url('stars_2.png') -111px 0 no-repeat;
     display: inline-block;
     position: relative;
     top: -3px;
@@ -159,7 +159,7 @@
     visibility: visible;
     width: 20px;
     height: 20px;
-    background: url("stars_2.png") -89px 0 no-repeat;
+    background: url('stars_2.png') -89px 0 no-repeat;
     display: inline-block;
     position: relative;
     top: -3px;
@@ -175,7 +175,7 @@
     visibility: visible;
     width: 42px;
     height: 20px;
-    background: url("stars_2.png") -89px 0 no-repeat;
+    background: url('stars_2.png') -89px 0 no-repeat;
     display: inline-block;
     position: relative;
     top: -3px;
@@ -191,7 +191,7 @@
     visibility: visible;
     width: 42px;
     height: 20px;
-    background: url("stars_2.png") -67px 0 no-repeat;
+    background: url('stars_2.png') -67px 0 no-repeat;
     display: inline-block;
     position: relative;
     top: -3px;
@@ -207,7 +207,7 @@
     visibility: visible;
     width: 64px;
     height: 20px;
-    background: url("stars_2.png") -67px 0 no-repeat;
+    background: url('stars_2.png') -67px 0 no-repeat;
     display: inline-block;
     position: relative;
     top: -3px;
@@ -223,7 +223,7 @@
     visibility: visible;
     width: 64px;
     height: 20px;
-    background: url("stars_2.png") -45px 0 no-repeat;
+    background: url('stars_2.png') -45px 0 no-repeat;
     display: inline-block;
     position: relative;
     top: -3px;
@@ -239,7 +239,7 @@
     visibility: visible;
     width: 86px;
     height: 20px;
-    background: url("stars_2.png") -45px 0 no-repeat;
+    background: url('stars_2.png') -45px 0 no-repeat;
     display: inline-block;
     position: relative;
     top: -3px;
@@ -255,7 +255,7 @@
     visibility: visible;
     width: 86px;
     height: 20px;
-    background: url("stars_2.png") -23px 0 no-repeat;
+    background: url('stars_2.png') -23px 0 no-repeat;
     display: inline-block;
     position: relative;
     top: -3px;
@@ -271,7 +271,7 @@
     visibility: visible;
     width: 108px;
     height: 20px;
-    background: url("stars_2.png") -23px 0 no-repeat;
+    background: url('stars_2.png') -23px 0 no-repeat;
     display: inline-block;
     position: relative;
     top: -3px;
@@ -287,7 +287,7 @@
     visibility: visible;
     width: 108px;
     height: 20px;
-    background: url("stars_2.png") -1px 0 no-repeat;
+    background: url('stars_2.png') -1px 0 no-repeat;
     display: inline-block;
     position: relative;
     top: -3px;
