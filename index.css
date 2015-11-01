@@ -139,7 +139,7 @@
 .star-1h:hover input:after,
 .star-1h input:checked:after
 {
-    content: "";
+    content: '';
     visibility: visible;
     width: 22px;
     height: 20px;
@@ -155,7 +155,7 @@
 .star-1:hover input:after,
 .star-1 input:checked:after
 {
-    content: "";
+    content: '';
     visibility: visible;
     width: 20px;
     height: 20px;
@@ -171,7 +171,7 @@
 .star-2h:hover input:after,
 .star-2h input:checked:after
 {
-    content: "";
+    content: '';
     visibility: visible;
     width: 42px;
     height: 20px;
@@ -187,7 +187,7 @@
 .star-2:hover input:after,
 .star-2 input:checked:after
 {
-    content: "";
+    content: '';
     visibility: visible;
     width: 42px;
     height: 20px;
@@ -203,7 +203,7 @@
 .star-3h:hover input:after,
 .star-3h input:checked:after
 {
-    content: "";
+    content: '';
     visibility: visible;
     width: 64px;
     height: 20px;
@@ -219,7 +219,7 @@
 .star-3:hover input:after,
 .star-3 input:checked:after
 {
-    content: "";
+    content: '';
     visibility: visible;
     width: 64px;
     height: 20px;
@@ -235,7 +235,7 @@
 .star-4h:hover input:after,
 .star-4h input:checked:after
 {
-    content: "";
+    content: '';
     visibility: visible;
     width: 86px;
     height: 20px;
@@ -251,7 +251,7 @@
 .star-4:hover input:after,
 .star-4 input:checked:after
 {
-    content: "";
+    content: '';
     visibility: visible;
     width: 86px;
     height: 20px;
@@ -267,7 +267,7 @@
 .star-5h:hover input:after,
 .star-5h input:checked:after
 {
-    content: "";
+    content: '';
     visibility: visible;
     width: 108px;
     height: 20px;
@@ -283,7 +283,7 @@
 .star-5:hover input:after,
 .star-5 input:checked:after
 {
-    content: "";
+    content: '';
     visibility: visible;
     width: 108px;
     height: 20px;
