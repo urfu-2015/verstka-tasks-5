@@ -34,10 +34,9 @@ img.header
     position: relative;
 }
 
-
 .half
 {
-    left: 0px;
+    left: 0;
 }
 
 .one
@@ -77,7 +76,7 @@ img.header
 
 .four-and-half
 {
-    left: 80px
+    left: 80px;
 }
 
 .five
@@ -95,7 +94,7 @@ img.header
 
 .radio:not(checked) + label
 {
-     position: relative;
+    position: relative;
 }
 
 .radio + .right:before
@@ -254,11 +253,11 @@ select
 
 /*настройки*/
 
-.display[data-selected="list"] ~ article
+.display[data-selected='list'] ~ article
 {
     width: 100%;
 }
-.display[data-selected="list"] ~ article p
+.display[data-selected='list'] ~ article p
 {
     width: 300px;
     float: left;
@@ -266,7 +265,7 @@ select
     margin-top: 0;
 }
 
-.display[data-selected="list"] ~ article .leftpart
+.display[data-selected='list'] ~ article .leftpart
 {
     float: left;
     margin-left: 30px;
@@ -274,28 +273,28 @@ select
     padding: 0;
 }
 
-.display[data-selected="list"] ~ article .img
+.display[data-selected='list'] ~ article .img
 {
     float: left;
     display: inline;
 }
 
-.display[data-selected="list"] ~ article .img img
+.display[data-selected='list'] ~ article .img img
 {
     top: 0;
 }
 
-.display[data-selected="list"] ~ article img
+.display[data-selected='list'] ~ article img
 {
     float: left;
 }
 
-.hair-type[data-selected="short-haired"] ~ article:not([class="short-haired"])
+.hair-type[data-selected='short-haired'] ~ article:not([class='short-haired'])
 {
     display: none;
 }
 
-.hair-type[data-selected="long-haired"] ~ article:not([class="long-haired"])
+.hair-type[data-selected='long-haired'] ~ article:not([class='long-haired'])
 {
     display: none;
 }
