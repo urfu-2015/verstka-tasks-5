@@ -1,131 +1,123 @@
-body{
-	margin: 0 auto;
+body {
+    margin: 0 auto;
 }
-input{
-	display: none;
+input {
+    display: none;
 }
 input[id="table"]:checked ~ .table {
-	display: block;
+    display: block;
 }
 input[id="list"]:checked ~ .list {
-	display: block;
+    display: block;
 }
-.style{
-	display: none;
+.style {
+    display: none;
 }
-.cell{
-	width: 200px;
-	height: 500px;
-	border:solid 3px rgba(80, 80, 80, 0.5);
-	padding: 15px;
-	margin: 5px 0;
-	display: inline-block;
-	vertical-align: text-top;
-	overflow: hidden;
+.cell {
+    width: 200px;
+    height: 500px;
+    border:solid 3px rgba(80, 80, 80, 0.5);
+    padding: 15px;
+    margin: 5px 0;
+    display: inline-block;
+    vertical-align: text-top;
+    overflow: hidden;
 }
-.cell:hover{
-	width: 200px;
-	overflow: auto;
-	box-shadow: 10px 10px 10px rgba(0, 0, 0, .2),
-	-10px -10px 10px rgba(0, 0, 0, .2),
-	-10px 10px 10px rgba(0, 0, 0, .2),
-	10px -10px 10px rgba(0, 0, 0, .2);
+.cell:hover {
+    width: 200px;
+    overflow: auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .2), -10px -10px 10px rgba(0, 0, 0, .2), -10px 10px 10px rgba(0, 0, 0, .2), 10px -10px 10px rgba(0, 0, 0, .2);
 }
-.cell .image img{
-	width: 100%;
+.cell .image img {
+    width: 100%;
 }
-.cell h2{
-	color: red;
+.cell h2 {
+    color: red;
 }
-.cell h3{
-
+.cell h3 {
 }
-.mark{
-	display: block;
+.mark {
+    display: block;
 }
-.stars{
-	direction: rtl;
-	float: left;
-	font-size: 0;
+.stars {
+    direction: rtl;
+    float: left;
+    font-size: 0;
 }
-.stars label{
-	border:solid 5px rgba(0, 0, 0, 0);
-	border-width: 5px 0 5px 5px;
-	display: inline-block;
-	font-size: 30px;
-	margin-right: -3px;
-	color: #bbb;
+.stars label {
+    border:solid 5px rgba(0, 0, 0, 0);
+    border-width: 5px 0 5px 5px;
+    display: inline-block;
+    font-size: 30px;
+    margin-right: -3px;
+    color: #bbb;
 }
-.R{
-	transform: scale(-1, 1);
-	margin:-1;
+.R {
+    transform: scale(-1, 1);
+    margin:-1;
 }
-.fa-star-half:hover{
-	color: red;
-	cursor: pointer;
-	text-shadow: -1px 1px 0 #bb0, -1px -1px 0 #bb0;
-	/*border-top-color: rgb(250, 0, 50);
+.fa-star-half:hover {
+    color: red;
+    cursor: pointer;
+    text-shadow: -1px 1px 0 #bb0, -1px -1px 0 #bb0;
+    /*border-top-color: rgb(250, 0, 50);
 	border-bottom-color: rgb(250, 0, 50);*/
 }
-.fa-star-half:hover ~ .fa-star-half{
-	color: red;
-	text-shadow: -1px 1px 0 #bb0, -1px -1px 0 #bb0;
-	/*border-top-color: rgb(250, 0, 50);
+.fa-star-half:hover ~ .fa-star-half {
+    color: red;
+    text-shadow: -1px 1px 0 #bb0, -1px -1px 0 #bb0;
+    /*border-top-color: rgb(250, 0, 50);
 	border-bottom-color: rgb(250, 0, 50);*/
 }
-input[name="star"]:checked ~ label{
-	color: red;
+input[name="star"]:checked ~ label {
+    color: red;
 }
-.price:after{
-	display:inline-block;
-	font:normal normal normal 14px/1 FontAwesome;
-	font-size:inherit;
-	text-rendering:auto;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-	content: "\f158";
+.price:after {
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    font-size:inherit;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    content:"\f158";
 }
-.about:before{
-	content: "Описание:";
-	font-weight: bold;
+.about:before {
+    content:"Описание:";
+    font-weight: bold;
 }
-.row{
-	padding: 10px;
-	margin: auto;
-	height: 300px;
-	width: 700px;
-	min-width: 700px;
-	overflow: hidden;
+.row {
+    padding: 10px;
+    margin: auto;
+    height: 300px;
+    width: 700px;
+    min-width: 700px;
+    overflow: hidden;
 }
-.row:hover{
-	box-shadow: 10px 10px 10px rgba(0, 0, 0, .2),
-	-10px -10px 10px rgba(0, 0, 0, .2),
-	-10px 10px 10px rgba(0, 0, 0, .2),
-	10px -10px 10px rgba(0, 0, 0, .2);
-	overflow: auto;
+.row:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .2), -10px -10px 10px rgba(0, 0, 0, .2), -10px 10px 10px rgba(0, 0, 0, .2), 10px -10px 10px rgba(0, 0, 0, .2);
+    overflow: auto;
 }
-.row h2,
-h3{
-	float: top;
+.row h2, h3 {
+    float: top;
 }
-.row .image{
-	padding: 5px;
-	height: 300px;
-	float: left;
+.row .image {
+    padding: 5px;
+    height: 300px;
+    float: left;
 }
-.row .image img{
-	height: 100%;
+.row .image img {
+    height: 100%;
 }
-.row .price{
-	float: top;
-	width: 100%;
+.row .price {
+    float: top;
+    width: 100%;
 }
-.row .mark{
-	height: 40px;
-	display: block;
-	width: 100%;
-	float: top;
+.row .mark {
+    height: 40px;
+    display: block;
+    width: 100%;
+    float: top;
 }
-.row .about{
-	float: top;
+.row .about {
+    float: top;
 }
