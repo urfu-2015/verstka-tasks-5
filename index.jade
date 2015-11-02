@@ -13,10 +13,9 @@ mixin category(args)
     - each val,i in args
         a.category-item(href=val.url)= val.name
         if (i != args.length - 1)
-            |  -
+            | -
 
 mixin rating(count, name)
-    doctype html
     .rating
         - for (var x = count; x > 0; x--)
             - var id = "star" + name + x
