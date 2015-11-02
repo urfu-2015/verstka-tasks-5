@@ -91,7 +91,7 @@ input
 .right-header img
 {
     display: block;
-    margin: 0px auto 20px;
+    margin: 20px auto;
 }
 
 article img
@@ -169,7 +169,7 @@ a:hover
 
 article img:hover
 {
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .7);
 }
 
 .long-name:hover
@@ -179,6 +179,6 @@ article img:hover
 
 article:hover
 {
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .7);
     border-radius: 15px;
 }
