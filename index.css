@@ -1,6 +1,7 @@
 .container
 {
     max-width: 1200px;
+    margin: 5px;
 }
 
 .container p
@@ -22,6 +23,13 @@
 #list:checked ~ .container .column .image-box
 {
     width: 200px;
+    height: 200px;
+    background-position: top;
+}
+
+#list:checked ~ .container .column .item-name
+{
+    margin: 0;
 }
 
 #list:checked ~ .container .column .column-info
@@ -39,10 +47,10 @@
 
 .column
 {
-    margin: 5px;
     vertical-align: top;
+    margin: 0 5px;
     display: inline-block;
-    width: 300px;
+    width: 250px;
 }
 
 .column .item-name
@@ -51,8 +59,8 @@
     white-space: nowrap;
     display: block;
     overflow: hidden;
-    margin: 0;
     font-size: 1em;
+    margin: 3px 0;
 }
 
 .column .category
@@ -89,9 +97,13 @@
     text-decoration: line-through;
 }
 
-.column .image-box img
+.column .image-box
 {
     width: 100%;
+    height: 230px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .star-1
