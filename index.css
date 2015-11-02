@@ -1,1 +1,182 @@
+@font-face
+{
+    font-family: 'sladkoeshka';
+    src: url('sladkoeshka.woff2') format('woff2'),
+    url('sladkoeshka.woff') format('woff');
+}
 
+@font-face
+{
+    font-family: 'allodswest';
+    src: url('allods-west.woff2') format('woff2'),
+    url('allods-west.woff') format('woff');
+}
+
+em,
+.middle-header
+{
+    font-family: 'sladkoeshka';
+}
+
+article
+{
+    font-family: allodswest;
+}
+
+.page-footer
+{
+    text-align: center;
+    font-family: 'sladkoeshka';
+    font-size: 25px;
+    margin-top: 20px;
+    border-top: 1px solid #000;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+header
+{
+    height: 30%;
+    margin-bottom: 30px;
+}
+
+body{
+    background: #fe8;
+}
+
+.left-header
+{
+    float: left;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+}
+
+.middle-header
+{
+    float: left;
+    height: 100%;
+    width: 59%;
+    text-align: center;
+    pading: 2px;
+    font-size: 40px;
+}
+
+.right-header
+{
+    float: left;
+    height: 100%;
+    width: 15%;
+}
+
+.right-header div
+{
+    margin-top: 40px;
+}
+
+.left-header img,
+input
+{
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px auto 0;
+}
+
+.find-cat,
+.right-header img
+{
+    display: block;
+    margin: 0px auto 20px;
+}
+
+article img
+{
+    margin: 10px;
+    border-radius: 50px;
+}
+
+em
+{
+    font-size: 25px;
+}
+
+article p
+{
+    margin-left: 10px;
+}
+
+.description
+{
+    text-indent: 30px;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+}
+
+.long-name
+{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+    margin: 0;
+}
+
+.style-filter[value="tile"]:checked ~ main article
+{
+    display: inline-block;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.style-filter[value="tile"]:checked ~ main img
+{
+    display: block;
+    margin: 10px auto;
+}
+
+.style-filter[value="list"]:checked ~ main article
+{
+    margin: 0 auto;
+}
+
+.style-filter[value="list"]:checked ~ main img,
+.style-filter[value="list"]:checked ~ main .details-about-cat
+{
+    display: inline-block;
+    width: 25%;
+    margin: 0 10px;
+}
+
+.style-filter[value="list"]:checked ~ main .description
+{
+    display: inline-block;
+    width: 40%;
+}
+
+a:hover
+{
+    color: #33c;
+}
+
+article img:hover
+{
+        box-shadow: 0 0 10px 5px rgba(0,0,0,0.7);
+}
+
+.long-name:hover
+{
+    text-shadow: 1px 1px 2px black;
+}
+
+article:hover
+{
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.7);
+    border-radius: 15px;
+}
