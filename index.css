@@ -34,9 +34,9 @@ input[id='list']:checked ~ .list
     width: 200px;
     overflow: auto;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .2),
-    -10px -10px 10px rgba(0, 0, 0, .2),
-    -10px 10px 10px rgba(0, 0, 0, .2),
-    10px -10px 10px rgba(0, 0, 0, .2);
+        -10px -10px 10px rgba(0, 0, 0, .2),
+        -10px 10px 10px rgba(0, 0, 0, .2),
+        10px -10px 10px rgba(0, 0, 0, .2);
 }
 .cell .image img
 {
@@ -95,7 +95,7 @@ input[name='star']:checked ~ label
     font:normal normal normal 14px/1 FontAwesome;
     font-size:inherit;
     text-rendering:auto;
-    content:"\f158";
+    content:'\f158';
 }
 .about:before
 {
@@ -114,12 +114,13 @@ input[name='star']:checked ~ label
 .row:hover
 {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .2),
-    -10px -10px 10px rgba(0, 0, 0, .2),
-    -10px 10px 10px rgba(0, 0, 0, .2),
-    10px -10px 10px rgba(0, 0, 0, .2);
+        -10px -10px 10px rgba(0, 0, 0, .2),
+        -10px 10px 10px rgba(0, 0, 0, .2),
+        10px -10px 10px rgba(0, 0, 0, .2);
     overflow: auto;
 }
-.row h2, h3
+.row h2,
+h3
 {
     float: top;
 }
