@@ -2,14 +2,14 @@
 {
     font-family: 'sladkoeshka';
     src: url('sladkoeshka.woff2') format('woff2'),
-    url('sladkoeshka.woff') format('woff');
+        url('sladkoeshka.woff') format('woff');
 }
 
 @font-face
 {
     font-family: 'allodswest';
     src: url('allods-west.woff2') format('woff2'),
-    url('allods-west.woff') format('woff');
+        url('allods-west.woff') format('woff');
 }
 
 em,
@@ -169,7 +169,7 @@ a:hover
 
 article img:hover
 {
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.7);
 }
 
 .long-name:hover
@@ -179,6 +179,6 @@ article img:hover
 
 article:hover
 {
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.7);
     border-radius: 15px;
 }
