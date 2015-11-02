@@ -6,11 +6,11 @@ input
 {
     display: none;
 }
-input[id="table"]:checked ~ .table
+input[id='table']:checked ~ .table
 {
     display: block;
 }
-input[id="list"]:checked ~ .list
+input[id='list']:checked ~ .list
 {
     display: block;
 }
@@ -22,7 +22,7 @@ input[id="list"]:checked ~ .list
 {
     width: 200px;
     height: 500px;
-    border:solid 3px rgba(80, 80, 80, 0.5);
+    border:solid 3px rgba(80, 80, 80, .5);
     padding: 15px;
     margin: 5px 0;
     display: inline-block;
@@ -33,7 +33,10 @@ input[id="list"]:checked ~ .list
 {
     width: 200px;
     overflow: auto;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, .2), -10px -10px 10px rgba(0, 0, 0, .2), -10px 10px 10px rgba(0, 0, 0, .2), 10px -10px 10px rgba(0, 0, 0, .2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .2),
+    -10px -10px 10px rgba(0, 0, 0, .2),
+    -10px 10px 10px rgba(0, 0, 0, .2),
+    10px -10px 10px rgba(0, 0, 0, .2);
 }
 .cell .image img
 {
@@ -82,7 +85,8 @@ input[id="list"]:checked ~ .list
     /*border-top-color: rgb(250, 0, 50);
 	border-bottom-color: rgb(250, 0, 50);*/
 }
-input[name="star"]:checked ~ label {
+input[name='star']:checked ~ label
+{
     color: red;
 }
 .price:after
@@ -91,13 +95,11 @@ input[name="star"]:checked ~ label {
     font:normal normal normal 14px/1 FontAwesome;
     font-size:inherit;
     text-rendering:auto;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
     content:"\f158";
 }
 .about:before
 {
-    content:"Описание:";
+    content:'Описание:';
     font-weight: bold;
 }
 .row
@@ -111,7 +113,10 @@ input[name="star"]:checked ~ label {
 }
 .row:hover
 {
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, .2), -10px -10px 10px rgba(0, 0, 0, .2), -10px 10px 10px rgba(0, 0, 0, .2), 10px -10px 10px rgba(0, 0, 0, .2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .2),
+    -10px -10px 10px rgba(0, 0, 0, .2),
+    -10px 10px 10px rgba(0, 0, 0, .2),
+    10px -10px 10px rgba(0, 0, 0, .2);
     overflow: auto;
 }
 .row h2, h3
