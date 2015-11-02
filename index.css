@@ -99,11 +99,16 @@
 
 .column .image-box
 {
+    vertical-align: bottom;
     width: 100%;
     height: 230px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    display: table-cell;
+}
+
+.column .image-box img
+{
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .star-1

@@ -24,7 +24,8 @@ mixin rating(count, name)
 
 mixin shop-item(item)
     .column
-        div.image-box(class ="preview-" + item.id)
+        div.image-box
+            img(src=item.img, alt=item.name+'_фото')
         .column-info
             h2.item-name
                 a(href='#') #{item.name}
@@ -43,10 +44,3 @@ block content
         each val in items
             +shop-item(val)
 
-block head
-    style
-        include data
-        each val in items
-            | .preview-#{val.id} {
-            |   background: url(#{val.img})
-            | }
