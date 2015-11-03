@@ -1,1 +1,82 @@
+[value="Плитка"]:checked ~ section
+{
+    display: inline-block;
+}
 
+[value="Список"]:checked ~ section
+{
+    display: list-item;
+    list-style-type: none;
+}
+
+section
+{
+    margin: 10px;
+    width: 300px;
+    vertical-align: top;
+}
+
+.image
+{
+    position: relative;
+    height: 300px;
+}
+
+.image img
+{
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+/*.kitty img*/
+/*{*/
+    /*width: 100%;*/
+    /*/!*vertical-align: bottom;*!/*/
+/*}*/
+
+p, label, .description
+{
+    font: 14px Arial, sans-serif;
+    white-space: nowrap;
+}
+
+.name
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+/*.name:hover*/
+/*{*/
+    /*overflow: visible;*/
+/*}*/
+
+.category a
+{
+    color: #888;
+    font-size: 13px;
+}
+
+.price
+{
+    color: #800;
+    font-weight: bold;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+    font-size: 80%;
+}
+
+.text-description
+{
+    white-space: normal;
+}
