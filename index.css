@@ -24,7 +24,13 @@
 {
     width: 200px;
     height: 200px;
-    background-position: top;
+    position: static;
+    display: inline-block;
+}
+
+#list:checked ~ .container .column .image-box img
+{
+    position: static;
 }
 
 #list:checked ~ .container .column .item-name
@@ -99,14 +105,15 @@
 
 .column .image-box
 {
-    vertical-align: bottom;
     width: 100%;
     height: 230px;
-    display: table-cell;
+    position: relative;
 }
 
 .column .image-box img
 {
+    position: absolute;
+    bottom: 0;
     max-height: 100%;
     max-width: 100%;
 }

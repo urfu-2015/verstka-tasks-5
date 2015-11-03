@@ -16,7 +16,11 @@
         .image-box {
             width: 200px;
             height: 200px;
-            background-position: top;
+            position: static;
+            display: inline-block;
+            img {
+                position: static;
+            }
         }
         .item-name {
             margin: 0;
@@ -75,11 +79,12 @@
         }
     }
     .image-box {
-        vertical-align: bottom;
         width: 100%;
         height: 230px;
-        display: table-cell;
+        position: relative;
         img {
+            position: absolute;
+            bottom: 0;
             max-height: 100%;
             max-width: 100%;
         }
