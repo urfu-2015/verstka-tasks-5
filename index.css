@@ -1,1 +1,123 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+}
 
+h1
+{
+    font-size: 38px;
+    text-align: center;
+}
+
+div
+{
+    display: inline-block;
+    width: 33%;
+    display: flex;
+    margin: auto;
+}
+
+img
+{
+    width: 60%;
+}
+
+img:hover,
+p:not(.types):hover
+{
+    box-shadow: 2px 2px 5px 5px #ccc;
+}
+
+p.category
+{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;
+    color: #123345;
+}
+
+span
+{
+    line-height: 1.7em;
+}
+
+span.description
+{
+    text-decoration: underline;
+    line-height: 3em;
+}
+
+span.allPrice
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    float: left;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+p
+{
+    width: 80%;
+}
+
+div.text
+{
+    display: block;
+    width: 100%;
+    vertical-align: top;
+}
+
+p input[value="inline"]:checked ~ main div
+{
+    display: flex;
+    margin: auto;
+}
+
+input[value="block"]:checked ~ main div
+{
+    display: inline-block;
+}
+
+.allPrice label,
+.allPrice label:hover,
+.allPrice label:hover ~ label,
+.allPrice input:checked ~ label
+{
+    background: url('http://bit.ly/1Np73MH') no-repeat;
+}
+
+.allPrice label[for="28"],
+.allPrice label[for="41"],
+.allPrice label[for="55"],
+.allPrice label[for="211"],
+.allPrice label[for="44"],
+.allPrice label[for="36"]
+{
+    background: url('http://bit.ly/1LOuwo6') no-repeat;
+}
+
+.allPrice input {
+    opacity: 0;
+    position: absolute;
+}
+
+.allPrice label
+{
+    height: 40px;
+    width: 43px;
+    float: right;
+    margin-right: 10px;
+}
+
+.allPrice label:hover,
+.allPrice label:hover ~ label,
+.allPrice input:checked ~ label
+{
+    background-position: 0 -40px;
+    height: 40px;
+    width: 43px;
+}
