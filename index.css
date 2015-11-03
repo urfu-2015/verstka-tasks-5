@@ -34,7 +34,7 @@ label
 }
 .block:hover
 {
-    background-color: rgba(255, 235, 204, 0.5);
+    background-color: rgba(255, 235, 204, .5);
     border: 3px dashed #ffebcd;
 }
 #blockToList:checked ~ article > .block
@@ -131,4 +131,30 @@ label
     font: 20px 'Bad Script', cursive;
     font-weight: bold;
 }
-
+.fa-flip-horizontal
+{
+    margin-left: -11px;
+}
+.stars > label:hover:before,
+.stars > label:hover ~ label:before
+{
+    color: #f00;
+}
+.stars
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left;
+}
+.stars > input
+{
+    display: none;
+}
+label
+{
+    margin: 0 0;
+}
+input[type="radio"]:checked ~ label
+{
+    color: #f00;
+}
