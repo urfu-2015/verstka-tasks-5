@@ -24,19 +24,24 @@
     vertical-align: top;
 }
 
-.price
+.overflow-name
 {
-	border: solid #08f84c;
-	background: #f89008;
+    text-overflow:ellipsis;
 }
 
-[value="list"]:checked ~ section > .box
+.price
+{
+    border: solid #08f84c;
+    background: #f89008;
+}
+
+[value='list']:checked ~ section > .box
 {
     display: table;
     width: 100%;
 }
 
-[value="list"]:checked ~ section .wrap-image
+[value='list']:checked ~ section .wrap-image
 {
     vertical-align: top;
 }
@@ -49,5 +54,5 @@
 .description:hover
 {
     background-color: rgba(72,209,204,.4);
-    border: 5px solid #00ffff ;
+    border: 5px solid #0ff ;
 }
