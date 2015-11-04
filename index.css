@@ -1,20 +1,24 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-body {
+body
+{
     margin: 0;
     padding: 0;
 }
-.cat {
+.cat
+{
     width: 200px;
     float: left;
-    margin: 0.5%;
+    margin: .5%;
     height: 520px;
 }
-.cat:hover {
+.cat:hover
+{
     -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, .7);
     -moz-box-shadow: 0 0 12px rgba(0, 0, 0, .7);
     box-shadow: 0 0 12px rgba(0, 0, 0, .7);
 }
-.cat .description {
+.cat .description
+{
     overflow: hidden;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
@@ -24,22 +28,26 @@ body {
 }
 .type,
 .price,
-.name-link {
+.name-link
+{
     font-size: 20px;
     text-align: center;
 }
-.cat .photo img {
+.cat .photo img
+{
     width: 100%;
 }
-.cat .photo img:hover {
-    -webkit-box-shadow: 5px 5px 8px rgba(219, 112, 147, 0.7),
-    -5px -5px 8px rgba(219, 112, 147, 0.7);
-    -moz-box-shadow: 5px 5px 8px rgba(219, 112, 147, 0.7),
-    -5px -5px 8px rgba(219, 112, 147, 0.7);
-    box-shadow: 5px 5px 8px rgba(219, 112, 147, 0.7),
-    -5px -5px 8px rgba(219, 112, 147, 0.7);
+.cat .photo img:hover
+{
+    -webkit-box-shadow: 5px 5px 8px rgba(219, 112, 147, .7),
+        -5px -5px 8px rgba(219, 112, 147, .7);
+    -moz-box-shadow: 5px 5px 8px rgba(219, 112, 147, .7),
+        -5px -5px 8px rgba(219, 112, 147, .7);
+    box-shadow: 5px 5px 8px rgba(219, 112, 147, .7),
+        -5px -5px 8px rgba(219, 112, 147, .7);
 }
-.name-link {
+.name-link
+{
     overflow: hidden;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
@@ -47,90 +55,111 @@ body {
     margin: auto auto;
     padding: 0 10px;
 }
-.name-link a:hover {
+.name-link a:hover
+{
     color: #008b8a;
 }
-.name-link a:visited:hover {
+.name-link a:visited:hover
+{
     color: #008b8a;
 }
-.name-link a:visited {
+.name-link a:visited
+{
     color: #db7093;
 }
-.cat .rating {
+.cat .rating
+{
     width: 100%;
     margin-left: -18%;
     border: none;
     padding-bottom: 0;
 }
-.rating input {
+.rating input
+{
     display: none;
 }
-.rating label:before {
+.rating label:before
+{
     margin: 5px;
     font-size: 1.5em;
     font-family: FontAwesome, serif;
     display: inline-block;
     content: '\f005';
 }
-.rating > .half:before {
+.rating > .half:before
+{
     content: '\f089';
     position: absolute;
 }
-.rating > label {
+.rating > label
+{
     color: #ddd;
     float: right;
 }
 .cat > .rating > input:checked ~ label,
 .cat > .rating:not(:checked) > label:hover,
-.cat > .rating:not(:checked) > label:hover ~ label {
+.cat > .rating:not(:checked) > label:hover ~ label
+{
     color: #FFD700;
 }
 .cat > .rating > input:checked + label:hover,
 .cat > .rating > input:checked ~ label:hover,
 .cat > .rating > label:hover ~ input:checked ~ label,
-.cat > .rating > input:checked ~ label:hover ~ label {
+.cat > .rating > input:checked ~ label:hover ~ label
+{
     color: #FFED85;
 }
 #view,
-#view-label {
+#view-label
+{
     display: block;
 }
-#view:checked ~ .cat {
+#view:checked ~ .cat
+{
     margin-right: 20px;
     margin-left: auto;
     width: 95%;
     height: 300px;
 }
-#view:checked ~ .cat > .photo {
+#view:checked ~ .cat > .photo
+{
     margin: 0;
     padding: 20px 20px;
     width: 20%;
     float: left;
 }
-#view:checked ~ .cat .name-link {
+#view:checked ~ .cat .name-link
+{
     width: 50%;
     margin: 20px 0;
     text-align: left;
     float: none;
 }
-#view:checked ~ .cat .rating {
+#view:checked ~ .cat .rating
+{
     width: 15%;
     text-align: left;
     display: inline-block;
     margin-left: -3%;
     float: none;
 }
-#view:checked ~ .cat .type {
+#view:checked ~ .cat .type
+{
     float: none;
     width: 50%;
     margin: 10px 20%;
     padding-left: 50px;
     text-align: left;
 }
-#view:checked ~ .cat .price {
+#view:checked ~ .cat .price
+{
     float: none;
     width: 50%;
     margin: 0 20%;
     padding-left: 50px;
     text-align: left;
+}
+#view:checked ~ .cat .description
+{
+
 }
