@@ -1,44 +1,63 @@
-header {
+header
+{
     font-family: fantasy;
     font-size: 50px;
 }
-input[id="tiles"]:checked ~ .item {
+
+input[id="tiles"]:checked ~ .item
+{
     display: inline-block;
     width: 400px;
 }
-input[id="list"]:checked ~ .item {
+
+input[id="list"]:checked ~ .item
+{
     display: block;
     border-bottom: 1px solid black;
 }
-.item  {
+
+.item
+{
     font-size: 18px;
     font-family: sans-serif;
     margin: 20px;
     vertical-align: top;
 }
-input[id="tiles"]:checked ~ .item .itemImg {
+
+input[id="tiles"]:checked ~ .item .itemImg
+{
     height: 200px;
     width: auto;
 }
-.oldPrice {
+
+.oldPrice
+{
     text-decoration: line-through;
     font-size: smaller;
 }
-.itemPrice {
+
+.itemPrice
+{
     color: #7e0600;
     font-weight: bold;
     font-size: larger;
 }
-.itemName {
+
+.itemName
+{
     display: block;
     font-size: 180%;
     font-weight: bold;
     font-family: Comic Sans, Comic Sans MS, cursive;
 }
-.item:hover {
-    border:2px dashed blueviolet;
+
+.item:hover
+{
+    border: 2px dashed blueviolet;
 }
-ul.starRating {
+
+ul.starRating
+{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -47,12 +66,16 @@ ul.starRating {
     position: relative;
     background: url(http://www.aether.ru/example/stars/stars.png);
 }
-ul.starRating li {
+
+ul.starRating li
+{
     float: left;
     margin: 0;
     padding: 0;
 }
-ul.starRating li a {
+
+ul.starRating li a
+{
     display: block;
     width: 20px;
     height: 20px;
@@ -61,42 +84,65 @@ ul.starRating li a {
     text-decoration: none;
     z-index: 10;
 }
-ul.starRating li a:hover {
+
+ul.starRating li a:hover
+{
     background: url(http://www.aether.ru/example/stars/stars.png) left center;
     left: 0;
     z-index: 2;
 }
-ul.starRating a.star1 {
+
+ul.starRating a.star1
+{
     left: 0;
 }
-ul.starRating a.star1:hover {
+
+ul.starRating a.star1:hover
+{
     width: 20px;
 }
-ul.starRating a.star2 {
+
+ul.starRating a.star2
+{
     left: 20px;
 }
-ul.starRating a.star2:hover {
+
+ul.starRating a.star2:hover
+{
     width: 40px;
 }
-ul.starRating a.star3 {
+
+ul.starRating a.star3
+{
     left: 40px;
 }
-ul.starRating a.star3:hover {
+
+ul.starRating a.star3:hover
+{
     width: 60px;
 }
-ul.starRating a.star4 {
+
+ul.starRating a.star4
+{
     left: 60px;
 }
-ul.starRating a.star4:hover {
+
+ul.starRating a.star4:hover
+{
     width: 80px;
 }
-ul.starRating a.star5 {
+
+ul.starRating a.star5
+{
     left: 80px;
 }
-ul.starRating a.star5:hover {
+
+ul.starRating a.star5:hover
+{
     width: 100px;
 }
-ul.starRating li a:hover {
+
+ul.starRating li a:hover
+{
     text-indent: 110px;
 }
-
