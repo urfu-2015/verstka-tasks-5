@@ -1,1 +1,173 @@
+@font-face
+{
+    font-family: Pussyfoot;
+    src: url(Pussyfoo.ttf);
+}
 
+h1
+{
+    color: #000;
+    font: 50px 'Oswald',sans-serif;
+    margin: 15px;
+}
+
+h1 span
+{
+    display: inline;
+    border: 3px solid #fc0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 5px;
+    font: 50px 'Pussyfoot', fantasy;
+}
+
+h1:first-letter
+{
+    color: #f00;
+}
+
+.designType
+{
+    display: block;
+}
+
+.item
+{
+    margin: 0;
+    display: inline-block;
+    width: 250px;
+    position: relative;
+    height: 640px;
+}
+
+.pic
+{
+    height: 50%;
+    position: relative;
+    display: block;
+}
+
+.pic img
+{
+    position: absolute;
+    width: 250px;
+    vertical-align: middle;
+    bottom: 0;
+}
+
+.info
+{
+    vertical-align: top;
+    height: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.item:hover
+{
+    box-shadow: 1px 1px 5px #000;
+}
+
+a
+{
+    height: 50%;
+    text-decoration: none;
+}
+
+span
+{
+    display: block;
+}
+
+.name
+{
+    font: 30px 'Lora',serif;
+    white-space: nowrap;
+    display: inline;
+}
+
+.category
+{
+    font-size: 15px;
+}
+
+.mark
+{
+    font: 25px 'Montserrat', sans-serif;
+    color: #ff0;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.mark:hover
+{
+    color: #0f0;
+}
+
+.price
+{
+    font: 25px 'Montserrat', sans-serif;
+    color: #f00;
+}
+
+.description::before
+{
+    content: 'Описание товара:';
+    font-weight: bolder;
+}
+
+.designType[value='tile'] ~ .item
+{
+    display: inline-block;
+}
+
+.designType[value='tile'] ~ .item .pic,
+.designType[value='tile'] ~ .item .info
+{
+    float: none;
+    display: block;
+}
+
+.designType[value='list'] ~ .item
+{
+    display: list-item;
+    width: 100%;
+    height: 320px;
+    list-style: none;
+}
+
+.designType[value='list'] ~ .item .pic,
+.designType[value='list'] ~ .item .info
+{
+    display: table-cell;
+    height: 100%;
+}
+
+.designType[value='list'] ~ .item .pic
+{
+    float: left;
+    width: 27%;
+}
+
+.designType[value='list'] ~ .item .info
+{
+    float: right;
+    padding: 2%;
+    width: 67%;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    height: 60%;
+}
+
+.designType[value='list'] ~ .item .pic a
+{
+    display: inline-block;
+    height: 60%;
+}
+
+.designType[value='list'] ~ .item .pic img
+{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+}
