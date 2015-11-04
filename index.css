@@ -181,7 +181,6 @@ p
     position: relative;
 }
 
-
 .showTypeList:checked ~ .catItem .infoContainer
 {
     display: inline-block;
