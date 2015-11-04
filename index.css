@@ -28,7 +28,8 @@ label
 {
     padding: 20px;
     margin: 10px;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     width: 300px;
     border: 3px solid #fff;
 }
@@ -39,7 +40,6 @@ label
 }
 #blockToList:checked ~ article > .block
 {
-    float: none;
     width: 100%;
     display: inline-block;
 }
@@ -79,6 +79,7 @@ label
     position: absolute;
     right: 0;
     left: 0;
+    bottom: 0;
     max-width: 90%;
     max-height: 90%;
     margin: 0 auto;
