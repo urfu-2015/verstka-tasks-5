@@ -1,1 +1,53 @@
 
+section
+{
+    height: 400px;
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    padding: 4px;
+    margin: 4px;
+}
+
+article
+{
+    padding-bottom: 5px;
+}
+
+figure
+{
+    height: 50%;
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+figure img
+{
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+section:hover
+{
+    box-shadow: 1px 1px 15px 5px #888;
+}
+
+section > img
+{
+    width: 40%;
+}
+
+div.rating
+{
+    background-image: url(http://thrivesearch.com/wp-content/uploads/2015/03/Review-Stars.png);
+    background-size: 100px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+}
