@@ -1,1 +1,57 @@
-
+@import url('https://fonts.googleapis.com/css?family=Marck+Script:&subset=latin,cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Lobster:&subset=latin,cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Kurale:&subset=latin,cyrillic');
+body
+{
+    background: url('фон.png');
+}
+label
+{
+    font-size: 30px;
+    font-family: Marck Script;
+}
+header
+{
+    font-family: Marck Script;
+    font-size: 50px;
+    text-align: center;
+}
+em
+{
+    font-family: Lobster;
+}
+li
+{
+    font-family: Kurale ;
+}
+img
+{
+    width: 50%;
+}
+div:hover
+{
+    color: blue;
+}
+div
+{
+    text-align: center;
+    width: 30%;
+    height: 600px;
+}
+.leftdiv
+{
+    float: left;
+    margin: 7px 7px 7px 0;
+}
+input[class='asList']:checked ~ div
+{
+    text-align: left;
+    width: 100%;
+    height: 350px;
+}
+input[class='asList']:checked ~ div img
+{
+    float: left;
+    width: 300px;
+    margin: 10px 20px 0 0;
+}
