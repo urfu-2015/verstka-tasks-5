@@ -1,1 +1,128 @@
+body
+{
+    background-color: #f8ffc7;
+}
 
+img
+{
+    left: 0;
+    max-width: 300px;
+}
+
+div
+{
+    margin: 10px 0;
+    padding: 3px;
+    display: inline-block;
+    width: 300px;
+}
+
+address
+{
+    font: 20px Kaushan Script, cursive;
+}
+
+span
+{
+    font: 20px Cosmic Sans, sans-serif;
+    white-space: nowrap;
+}
+
+.description
+{
+    font-size: 15px;
+}
+
+h1
+{
+    font: 40px Dancing Script, cursive;
+    text-align: center;
+    color: #6495ed;
+}
+
+h1:first-letter
+{
+    color: #00dc31;
+}
+
+span[class~='price']
+{
+    color: #f00;
+}
+
+span[class~='decor']
+{
+    text-decoration: line-through;
+}
+
+main p
+{
+    font: 20px Cosmic Sans;
+}
+
+#tile:checked ~ div
+{
+    display: inline-block;
+    width: 300px;
+}
+
+#tile:checked ~ div > div
+{
+    display: block;
+}
+
+#list:checked ~ div
+{
+    display: block;
+    width: 100%;
+}
+
+#list:checked ~ div > div
+{
+    display: inline-block;
+    margin: auto;
+    vertical-align: top;
+}
+
+a:hover
+{
+    color: #00c304;
+}
+
+div > div
+{
+    margin: 0;
+}
+
+main > div:hover
+{
+    box-shadow: 0 0 10px #000;
+}
+
+main div:hover a
+{
+    white-space: normal;
+}
+
+.category:hover
+{
+    color: #00f;
+    box-shadow: 2px 2px 10px #00f;
+}
+
+.name
+{
+    font-size: 30px;
+}
+
+div > div
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.star
+{
+    margin: 0;
+    color: #00d444;
+}
