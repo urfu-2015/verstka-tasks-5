@@ -3,8 +3,6 @@ body
     font-family: 'Jura', sans-serif;
     width: 95%;
     margin: auto;
-    /*background-color: red;*/
-    /*border: 2px solid red;*/
 }
 .title
 {
@@ -18,28 +16,26 @@ body
 .main-block
 {
     text-align: center;
-    /*border: 2px solid orange;*/
 }
 .sale-block
 {
     display: inline-table;
     max-width: 300px;
     min-width: 300px;
-    /*border: 2px solid black;*/
     margin: 5px;
     padding: 5px;
     text-align: left;
-    -webkit-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
-    -moz-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
-    -khtml-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
-    box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
+    -webkit-box-shadow: 0 0 15px 10px rgba(255, 255, 255, .75);
+    -moz-box-shadow: 0 0 15px 10px rgba(255, 255, 255, .75);
+    -khtml-box-shadow: 0 0 15px 10px rgba(255, 255, 255, .75);
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, .75);
 }
 .sale-block:hover
 {
-    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
-    -moz-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
-    -khtml-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
-    box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
+    -webkit-box-shadow: 0 0 15px 5px rgba(0, 185, 233, .75);
+    -moz-box-shadow: 0 0 15px 5px rgba(0, 185, 233, .75);
+    -khtml-box-shadow: 0 0 15px 5px rgba(0, 185, 233, .75);
+    box-shadow: 0 0 15px 5px rgba(0, 185, 233, .75);
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
@@ -60,10 +56,10 @@ body
 }
 .img-cat:hover
 {
-    -webkit-box-shadow: 0px 0px 15px 15px #fff;
-    -moz-box-shadow: 0px 0px 15px 15px #fff;
-    -khtml-box-shadow: 0px 0px 15px 15px #fff;
-    box-shadow: 0px 0px 15px 15px #fff;
+    -webkit-box-shadow: 0 0 15px 15px #fff;
+    -moz-box-shadow: 0 0 15px 15px #fff;
+    -khtml-box-shadow: 0 0 15px 15px #fff;
+    box-shadow: 0 0 15px 15px #fff;
     -webkit-border-radius:50%;
     -moz-border-radius: 50%;
     -khtml-border-radius: 50%;
@@ -80,8 +76,8 @@ body
     width: 300px;
     font-size: 25px;
     text-align: center;
-    overflow: hidden; 
-    white-space: nowrap; 
+    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
 }
 .title-url
@@ -111,17 +107,19 @@ a
     unicode-bidi: bidi-override;
     direction: rtl;
 }
-.rating > span {
+.rating > span 
+{
     display: inline-block;
     position: relative;
     width: 25px;
     text-align: center;
 }
 .rating > span:hover:before,
-.rating > span:hover ~ span:before {
+.rating > span:hover ~ span:before 
+{
     content: "\2605";
     position: absolute;
-    color: #FFF900;
+    color: #fff900;
 }
 .price,
 .old-price
@@ -132,12 +130,12 @@ a
 .price
 {
     font-size: 20px;
-    color: #C50000;
+    color: #c50000;
 }
 .old-price
 {
     font-size: 15px;
-    color: #000000;
+    color: #000;
     text-decoration: line-through;
 }
 .title-desc,
@@ -161,7 +159,6 @@ a
 {
     display: table;
     max-width: 100%;
-    /*border: 2px solid black;*/
 }
 #list:checked ~ .main-block .sale-block .image-block
 {
