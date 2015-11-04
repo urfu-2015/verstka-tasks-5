@@ -78,11 +78,11 @@ article
 }
 
 #list-view:checked ~ article img
- {
-     width: 80%;
-     display: block;
-     margin: 0 auto;
- }
+{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
 
 #list-view:checked ~ article img:hover
 {
