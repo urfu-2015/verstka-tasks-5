@@ -1,1 +1,45 @@
+.photo
+{
+    width: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
+}
 
+.wrap-image
+{
+    width: 200px;
+    height: 200px;
+}
+
+.box
+{
+    padding: 25px;
+    margin: 25px;
+    float: left;
+    width: 200px;
+    word-wrap: break-word;
+}
+
+.price
+{
+	border: solid #08f84c;
+	background: #f89008;
+}
+#list:checked ~ article > .box
+{
+    float: none;
+    width: 100%;
+    display: inline-block;
+}
+
+.box:hover
+{
+    background-color: rgba(205,183,158,.6);
+}
+
+.description:hover
+{
+    background-color: rgba(72,209,204,.4);
+    border: 5px solid #00ffff ;
+}
