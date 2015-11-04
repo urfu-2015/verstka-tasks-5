@@ -201,7 +201,7 @@ body
 
 .card:hover
 {
-    background-color: rgba(1, 1, 1, 0.15);
+    background-color: rgba(1, 1, 1, .15);
 }
 
 .card-header
