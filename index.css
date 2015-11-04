@@ -46,6 +46,7 @@
 .name
 {
     font-size: 18px;
+    text-overflow: ellipsis;
 }
 
 .price
@@ -53,6 +54,7 @@
     font-size: 22px;
     color: #f00;
     cursor: default;
+    clear: both;
 }
 
 .price:hover
@@ -65,233 +67,262 @@
     color: #000;
 }
 
+/* LIST */
+
+input#viewmode-list:checked + .container div.block
+{
+    width: 100%;
+    height: 300px;
+}
+
+input#viewmode-list:checked + .container div.block .blockimg
+{
+    float: left;
+}
+
+input#viewmode-list:checked + .container div.block .blockinfo
+{
+    float: left;
+    position: relative;
+    top: 150px;
+    left: 20px;
+}
+
+input#viewmode-list:checked + .container div.block .description
+{
+    position: relative;
+    top: 150px;
+    left: 10px;
+}
+
+.viewbuttont
+{
+    border: solid;
+    border-color: #e0e0e0;
+    border-width: 2px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.viewbuttonl
+{
+    border: solid;
+    border-color: #e0e0e0;
+    border-width: 2px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.viewbuttont:hover
+{
+    border: solid;
+    border-color: #cd5151;
+    border-width: 2px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.viewbuttonl:hover
+{
+    border: solid;
+    border-color: #cd5151;
+    border-width: 2px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.blockinfo
+{
+    width: 200px;
+}
+
 /* STARS */
 
 .rating
 {
-    background: url('stars_2.png') -132px 0 no-repeat;
+    background: url('stars_2.png') -180px 0 no-repeat;
+    width: 150px;
+    height: 30px;
+    overflow: hidden;
 }
 
 .star
 {
-    width: 11px;
-    height: 20px;
-    display: inline-block;
+    width: 15px;
+    height: 30px;
+    display: block;
+    float: left;
     cursor: pointer;
     position: relative;
 }
 
-.star input
+input
 {
     visibility: hidden;
 }
 
-.star-1h
-{
+.serv {
+    position: absolute;
+    top: 0;
     left: 0;
 }
 
-.star-1
-{
-    left: -4px;
-}
-
-.star-2h
-{
-    left: -8px;
-}
-
-.star-2
-{
-    left: -12px;
-}
-
-.star-3h
-{
-    left: -16px;
-}
-
-.star-3
-{
-    left: -20px;
-}
-
-.star-4h
-{
-    left: -24px;
-}
-
-.star-4
-{
-    left: -28px;
-}
-
-.star-5h
-{
-    left: -32px;
-}
-
-.star-5
-{
-    left: -36px;
-}
-
-.star-1h:hover input:after,
-.star-1h input:checked:after
+.star-1h:hover input + span:after,
+.star-1h input:checked + span:after
 {
     content: '';
     visibility: visible;
-    width: 22px;
-    height: 20px;
-    background: url('stars_2.png') -111px 0 no-repeat;
+    width: 15px;
+    height: 30px;
+    background: url('stars_2.png') -150px 0 no-repeat;
     display: inline-block;
     position: relative;
-    top: -3px;
-    left: -5px;
+    top: 0px;
+    left: 0px;
     cursor: pointer;
     pointer-events: none;
 }
 
-.star-1:hover input:after,
-.star-1 input:checked:after
+.star-1:hover input + span:after,
+.star-1 input:checked + span:after
 {
     content: '';
     visibility: visible;
-    width: 20px;
-    height: 20px;
-    background: url('stars_2.png') -89px 0 no-repeat;
+    width: 30px;
+    height: 30px;
+    background: url('stars_2.png') -120px 0 no-repeat;
     display: inline-block;
     position: relative;
-    top: -3px;
-    left: -16px;
+    top: 0px;
+    left: -15px;
     cursor: pointer;
     pointer-events: none;
 }
 
-.star-2h:hover input:after,
-.star-2h input:checked:after
+.star-2h:hover input + span:after,
+.star-2h input:checked + span:after
 {
     content: '';
     visibility: visible;
-    width: 42px;
-    height: 20px;
-    background: url('stars_2.png') -89px 0 no-repeat;
+    width: 45px;
+    height: 30px;
+    background: url('stars_2.png') -120px 0 no-repeat;
     display: inline-block;
     position: relative;
-    top: -3px;
-    left: -27px;
+    top: 0px;
+    left: -30px;
     cursor: pointer;
     pointer-events: none;
 }
 
-.star-2:hover input:after,
-.star-2 input:checked:after
+.star-2:hover input + span:after,
+.star-2 input:checked + span:after
 {
     content: '';
     visibility: visible;
-    width: 42px;
-    height: 20px;
-    background: url('stars_2.png') -67px 0 no-repeat;
+    width: 60px;
+    height: 30px;
+    background: url('stars_2.png') -90px 0 no-repeat;
     display: inline-block;
     position: relative;
-    top: -3px;
-    left: -37px;
+    top: 0px;
+    left: -45px;
     cursor: pointer;
     pointer-events: none;
 }
 
-.star-3h:hover input:after,
-.star-3h input:checked:after
+.star-3h:hover input + span:after,
+.star-3h input:checked + span:after
 {
     content: '';
     visibility: visible;
-    width: 64px;
-    height: 20px;
-    background: url('stars_2.png') -67px 0 no-repeat;
+    width: 75px;
+    height: 30px;
+    background: url('stars_2.png') -90px 0 no-repeat;
     display: inline-block;
     position: relative;
-    top: -3px;
-    left: -48px;
+    top: 0px;
+    left: -60px;
     cursor: pointer;
     pointer-events: none;
 }
 
-.star-3:hover input:after,
-.star-3 input:checked:after
+.star-3:hover input + span:after,
+.star-3 input:checked + span:after
 {
     content: '';
     visibility: visible;
-    width: 64px;
-    height: 20px;
-    background: url('stars_2.png') -45px 0 no-repeat;
+    width: 90px;
+    height: 30px;
+    background: url('stars_2.png') -60px 0 no-repeat;
     display: inline-block;
     position: relative;
-    top: -3px;
-    left: -59px;
+    top: 0px;
+    left: -75px;
     cursor: pointer;
     pointer-events: none;
 }
 
-.star-4h:hover input:after,
-.star-4h input:checked:after
+.star-4h:hover input + span:after,
+.star-4h input:checked + span:after
 {
     content: '';
     visibility: visible;
-    width: 86px;
-    height: 20px;
-    background: url('stars_2.png') -45px 0 no-repeat;
+    width: 105px;
+    height: 30px;
+    background: url('stars_2.png') -60px 0 no-repeat;
     display: inline-block;
     position: relative;
-    top: -3px;
-    left: -70px;
+    top: 0px;
+    left: -90px;
     cursor: pointer;
     pointer-events: none;
 }
 
-.star-4:hover input:after,
-.star-4 input:checked:after
+.star-4:hover input + span:after,
+.star-4 input:checked + span:after
 {
     content: '';
     visibility: visible;
-    width: 86px;
-    height: 20px;
-    background: url('stars_2.png') -23px 0 no-repeat;
+    width: 125px;
+    height: 30px;
+    background: url('stars_2.png') -30px 0 no-repeat;
     display: inline-block;
     position: relative;
-    top: -3px;
-    left: -81px;
+    top: 0px;
+    left: -105px;
     cursor: pointer;
     pointer-events: none;
 }
 
-.star-5h:hover input:after,
-.star-5h input:checked:after
+.star-5h:hover input + span:after,
+.star-5h input:checked + span:after
 {
     content: '';
     visibility: visible;
-    width: 108px;
-    height: 20px;
-    background: url('stars_2.png') -23px 0 no-repeat;
+    width: 140px;
+    height: 30px;
+    background: url('stars_2.png') -30px 0 no-repeat;
     display: inline-block;
     position: relative;
-    top: -3px;
-    left: -92px;
+    top: 0px;
+    left: -120px;
     cursor: pointer;
     pointer-events: none;
 }
 
-.star-5:hover input:after,
-.star-5 input:checked:after
+.star-5:hover input + span:after,
+.star-5 input:checked + span:after
 {
     content: '';
     visibility: visible;
-    width: 108px;
-    height: 20px;
-    background: url('stars_2.png') -1px 0 no-repeat;
+    width: 155px;
+    height: 30px;
+    background: url('stars_2.png') 0px 0 no-repeat;
     display: inline-block;
     position: relative;
-    top: -3px;
-    left: -103px;
+    top: 0px;
+    left: -135px;
     cursor: pointer;
     pointer-events: none;
 }
