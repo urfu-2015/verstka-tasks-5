@@ -15,7 +15,7 @@ abbr
 
 .price
 {
-    color: brown;
+    color: #a52a2a;
     font-weight: bold;
     font-size: .85em;
 }
@@ -31,8 +31,8 @@ abbr
 
 .kittenCard:hover
 {
-    border: 3px ridge #301a91;
-    background-color: azure;
+    border: 3px ridge black;
+    background-color: #f0ffff;
 }
 
 #lines:checked ~ .kittenCard
@@ -80,7 +80,6 @@ abbr
     bottom: 0;
     left:0;
     right:0;
-    /*margin: auto;*/
 }
 
 #blocks:checked ~ .kittenCard .pictureBlock .pictureSelf
@@ -99,7 +98,6 @@ abbr
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    /*border: 1px solid black;*/
     position: relative;
 }
 
@@ -109,9 +107,6 @@ abbr
     right: 60%;
     margin: 0 20px;
     position: relative;
-    /*border: 1px dotted green;*/
-    /*float: left;*/
-    /*height: 300px;*/
 }
 
 #blocks:checked ~ .kittenCard .titleInfo
@@ -119,7 +114,6 @@ abbr
     right: auto;
     left: auto;
     margin: 0;
-    /*position: absolute;*/
     float: none;
     height: auto;
 }
@@ -129,9 +123,7 @@ abbr
     font-size: 20px;
     display: block;
     position: relative;
-    /*border: 1px solid black;*/
     bottom: 0;
-
 }
 
 #lines:checked ~ .kittenCard .description
@@ -166,7 +158,7 @@ abbr
     opacity: 0;
 }
 
-.rating-star 
+.rating-star
 {
     display: block;
     width: 32px;
@@ -174,12 +166,12 @@ abbr
     background: url('star.png') 0 -32px;
 }
 
-.rating-star:hover 
+.rating-star:hover
 {
     background-position: 0 0;
 }
 
-.rating-star 
+.rating-star
 {
     position: relative;
     float: right;
@@ -190,14 +182,14 @@ abbr
 }
 
 .rating-star:hover,
-.rating-star:hover ~ .rating-star 
+.rating-star:hover ~ .rating-star
 {
     background-position: 0 0;
 }
 
 .rating-star:hover,
 .rating-star:hover ~ .rating-star,
-.rating-input:checked ~ .rating-star 
+.rating-input:checked ~ .rating-star
 {
     background-position: 0 0;
 }
