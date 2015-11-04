@@ -7,6 +7,8 @@
 {
     display: list-item;
     list-style-type: none;
+    white-space: nowrap;
+    width: 605px;
 }
 
 section
@@ -14,6 +16,13 @@ section
     margin: 10px;
     width: 300px;
     vertical-align: top;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+section:hover
+{
+    border: 1px solid #999;
 }
 
 .image
@@ -32,13 +41,20 @@ section
     max-width: 100%;
     max-height: 100%;
     margin: 0 auto;
+    border: 2px solid transparent;
 }
 
-/*.kitty img*/
-/*{*/
-    /*width: 100%;*/
-    /*/!*vertical-align: bottom;*!/*/
-/*}*/
+.image img:hover
+{
+    border-radius: 10px;
+    border: 2px solid #232323;
+}
+
+.kitty > div
+{
+    width: 300px;
+    display: inline-block;
+}
 
 p, label, .description
 {
@@ -53,15 +69,36 @@ p, label, .description
     margin: 5px 0;
 }
 
-/*.name:hover*/
-/*{*/
-    /*overflow: visible;*/
-/*}*/
+.name a:hover
+{
+    color: #800;
+    text-decoration: none;
+}
 
 .category a
 {
     color: #888;
     font-size: 13px;
+}
+
+.category a:hover
+{
+    text-decoration: none;
+}
+
+.category a:hover:before
+{
+    content: '(=^ ';
+}
+
+.category a:hover:after
+{
+    content: ' ^=)';
+}
+
+.rating-of-kindness img
+{
+    width: 60%;
 }
 
 .price
@@ -79,4 +116,6 @@ p, label, .description
 .text-description
 {
     white-space: normal;
+    display: inline-block;
+    width: 300px;
 }
