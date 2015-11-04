@@ -1,1 +1,114 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cat {
+    width: 200px;
+    float: left;
+    margin: 0.5%;
+    height: 520px;
+}
+
+.cat:hover {
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 0 12px rgba(0, 0, 0, .7);
+    box-shadow: 0 0 12px rgba(0, 0, 0, .7);
+}
+
+.cat .description {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+    height: 220px;
+    white-space: normal;
+}
+
+.type,
+.price,
+.name-link {
+    font-size: 20px;
+    text-align: center;
+}
+
+.price {
+}
+
+.cat .photo img {
+    width: 100%;
+}
+
+.cat .photo img:hover {
+    -webkit-box-shadow: 5px 5px 8px rgba(219, 112, 147, 0.7),
+    -5px -5px 8px rgba(219, 112, 147, 0.7);
+    -moz-box-shadow: 5px 5px 8px rgba(219, 112, 147, 0.7),
+    -5px -5px 8px rgba(219, 112, 147, 0.7);
+    box-shadow: 5px 5px 8px rgba(219, 112, 147, 0.7),
+    -5px -5px 8px rgba(219, 112, 147, 0.7);
+}
+
+.name-link {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: auto auto;
+    padding: 0 10px;
+}
+
+.name-link a:hover {
+    color: #008b8a;
+}
+
+.name-link a:visited:hover {
+    color: #008b8a;
+}
+
+.name-link a:visited {
+    color: #db7093;
+}
+
+.cat .rating {
+    width: 100%;
+    margin-left: -18%;
+    border: none;
+    padding-bottom: 0;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label:before {
+    margin: 5px;
+    font-size: 1.5em;
+    font-family: FontAwesome, serif;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+.cat > .rating > input:checked ~ label,
+.cat > .rating:not(:checked) > label:hover,
+.cat > .rating:not(:checked) > label:hover ~ label {
+    color: #FFD700;
+}
+
+.cat > .rating > input:checked + label:hover,
+.cat > .rating > input:checked ~ label:hover,
+.cat > .rating > label:hover ~ input:checked ~ label,
+.cat > .rating > input:checked ~ label:hover ~ label {
+    color: #FFED85;
+}
