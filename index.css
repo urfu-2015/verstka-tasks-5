@@ -1,1 +1,102 @@
-
+html{
+    background-color: #fff;
+}
+body{
+    width: auto;
+    margin: auto;
+    padding: 10px;
+}
+header{
+    text-align: center;
+    font-family: 'Philosopher';
+    color: red;
+    background-color: #EDEDED;
+    padding: 15px;
+}
+footer{
+    text-align: right;
+}
+main{
+    text-align: center;
+    margin: 5px 0;
+}
+.style_page{
+    width: 100%;
+    background-color: #EDEDED;
+    padding: 10px;
+    margin: 5px auto;
+}
+.block{
+    vertical-align: top;
+    display: inline-block;
+    width: 300px;
+    background-color: #F0F0F0;
+    padding: 5px;
+    margin: 5px;
+}
+.block:hover{
+    background-color: rgba(255, 225, 200, 0.5);
+}
+#toList:checked ~ div > .block {
+    width: auto;
+    display: block;
+}
+#toList:checked ~ div > .block .photo{
+    width: 15%;
+    display: inline-block;
+}
+#toList:checked ~ div > .block .info{
+    padding-top: 10px;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+#toList:checked ~ div > .block .info .price{
+    text-align: center;
+}
+#toList:checked ~ div > .block .description{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+.photo{
+    width: 250px;
+    padding: 10px 25px;
+}
+.name{
+    text-align: center;
+    font: 24px 'Philosopher';
+    text-decoration: none;
+    color: red;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.name:hover{
+    font-weight: bold;
+}
+.category{
+    display: block;
+    margin: 10px;
+}
+.rating{
+    display: block;
+    margin: 10px;
+}
+.rating img{
+    width: 20px;
+}
+.price{
+    display: block;
+    color: red;
+    font-size: 18px;
+    margin: 10px;
+    text-align: left;
+}
+.description{
+    display: block;
+    margin: 10px;
+    text-align: justify;
+}
