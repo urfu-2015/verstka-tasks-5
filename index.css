@@ -11,10 +11,10 @@ header,
 main
 {
     margin: 0 auto;
-    padding: 10px 0px;
+    padding: 10px 0;
     width: 1710px;
     max-width: 1710px;
-    background-color: #63ADD0;
+    background-color: #63add0;
 }
 
 main
@@ -44,11 +44,11 @@ h1
 
 .showTypeTableLabel
 {
-    content: "";
+    content: '';
     display: inline-block;
     width: 48px;
     height: 48px;
-    background: url("table.png") no-repeat;
+    background: url('table.png') no-repeat;
     margin: 0 15px;
 }
 
@@ -59,11 +59,11 @@ h1
 
 .showTypeListLabel
 {
-    content: "";
+    content: '';
     display: inline-block;
     width: 48px;
     height: 48px;
-    background: url("list.png") no-repeat;
+    background: url('list.png') no-repeat;
     margin: 0 15px;
 }
 
@@ -75,12 +75,11 @@ h1
     max-height: 630px;
     width: 380px;
     max-width: 380px;
-    background-color: #FFBE73;
+    background-color: #ffbe73;
     padding: 10px;
     margin: 10px;
     border: 2px solid #034769;
 }
-
 
 .photoContainer
 {
@@ -112,7 +111,7 @@ h1
 
 .catCategory
 {
-    color: #235D79;
+    color: #235d79;
     font-size: 14px;
     margin: 3px 0 10px;
 }
@@ -152,7 +151,8 @@ h1
     margin: 25px 0 0;
 }
 
-.catDescriptionHeader {
+.catDescriptionHeader
+{
     font-weight: bold;
 }
 
@@ -218,7 +218,7 @@ p
     height: 48px;
     top: 0;
     width: 240px;
-    background-image: url("star_off.png");
+    background-image: url('star_off.png');
     background-repeat: repeat-x;
     z-index: 0;
     pointer-events: none;
@@ -230,8 +230,8 @@ p
     left: 0;
     top: 0;
     height: 48px;
-    width: 0px;
-    background-image: url("star_on.png");
+    width: 0;
+    background-image: url('star_on.png');
     background-repeat: repeat-x;
     z-index: 1;
     pointer-events: none;
