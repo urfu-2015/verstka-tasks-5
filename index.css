@@ -1,1 +1,84 @@
+@import "http://webfonts.ru/import/arnamu.css";
 
+div {
+    width: 23%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.info
+{
+    width: 100%;
+}
+
+h1
+{
+    font-size: 3em;
+    text-align: center;
+    background: url(h1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h1::first-letter
+{
+    color: red;
+}
+
+h2
+{
+    text-align: center;
+}
+
+body
+{
+    font-family: 'Arian AMU', sans-serif;
+    font-size: 1.3em;
+}
+
+.category
+{
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #36BBCE;
+}
+
+.category:hover
+{
+    text-shadow: 2px 2px 2px #FFCE73;
+}
+
+.stars
+{
+    width: 165px;
+    height: 35px;
+    background: url(empty_star.png);
+    background-repeat: repeat-x;
+}
+
+img:hover
+{
+    /*width: 100%;*/
+    padding-left: 10%;
+}
+
+input[value="line"]:checked ~ div
+{
+    display: block;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+
+.info
+{
+    padding: 5px;
+    border-radius: 5%;
+}
+
+.info:hover
+{
+    font-weight: bolder;
+}
