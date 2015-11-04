@@ -227,7 +227,7 @@ body
 
 .card-last-cost
 {
-    color: #000000;
+    color: #000;
     font-weight: 200;
     text-decoration: line-through;
     display: inline-block;
@@ -252,12 +252,12 @@ a:link
 
 /* Не совсем честно, конечно, но раз используем по макету только col-3 ...*/
 
-#list:checked~.grid-container .row .col-3
+#list:checked ~ .grid-container .row .col-3
 {
     width: 100%;
 }
 
-#plitki:checked~.grid-container .row .col-3
+#plitki:checked ~ .grid-container .row .col-3
 {
     width: 25%;
 }
