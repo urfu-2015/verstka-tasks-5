@@ -206,9 +206,31 @@ body
 
 .card-header
 {
+    font-size: 17px;
+    font-weight: 600;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+
+.card-category
+{
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.card-cost
+{
+    font-weight: 800;
+    color: #da2d04;
+}
+
+.card-last-cost
+{
+    color: #000000;
+    font-weight: 200;
+    text-decoration: line-through;
+    display: inline-block;
 }
 
 .card-description
@@ -226,4 +248,16 @@ a:link
 {
     text-underline: blue;
     color: blue;
+}
+
+/* Не совсем честно, конечно, но раз используем по макету только col-3 ...*/
+
+#list:checked~.grid-container .row .col-3
+{
+    width: 100%;
+}
+
+#plitki:checked~.grid-container .row .col-3
+{
+    width: 25%;
 }
