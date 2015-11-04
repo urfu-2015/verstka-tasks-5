@@ -25,7 +25,9 @@ mixin rating(count, name)
 mixin shop-item(item)
     .column
         div.image-box
-            img(src=item.img, alt=item.name+'_фото')
+            if (src=item.img)
+                img(src=item.img, alt=item.name+'_фото')
+            .stub
         .column-info
             h2.item-name
                 a(href='#') #{item.name}
