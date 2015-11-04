@@ -103,7 +103,7 @@ h1
     bottom: 0;
 }
 
-.catImage:hover
+.photoContainer:hover .catImage
 {
     max-height: 300px;
     max-width: 380px;
