@@ -10,15 +10,18 @@
 {
     width: 200px;
     height: 200px;
+    display: table-cell;
+    vertical-align: bottom;
 }
 
 .box
 {
     padding: 25px;
     margin: 25px;
-    float: left;
     width: 200px;
     word-wrap: break-word;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .price
@@ -26,11 +29,16 @@
 	border: solid #08f84c;
 	background: #f89008;
 }
-#list:checked ~ article > .box
+
+[value="list"]:checked ~ section > .box
 {
-    float: none;
+    display: table;
     width: 100%;
-    display: inline-block;
+}
+
+[value="list"]:checked ~ section .wrap-image
+{
+    vertical-align: top;
 }
 
 .box:hover
