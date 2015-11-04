@@ -14,8 +14,7 @@ article {
     margin-right: 10px; 
 }
 
-input[class="list"]:checked ~ article div
-{
+input[class="list"]:checked ~ article div {
     overflow: hidden;
     max-height: 240px;
     width: 300px;
@@ -38,7 +37,7 @@ input[class="list"]:checked ~ article {
 }
 
 article:hover {
-    background-color: #87CEFA;
+    background-color: #87cefa;
 }
 
 article img {
