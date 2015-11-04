@@ -9,11 +9,26 @@
     list-style-type: none;
     white-space: nowrap;
     width: 605px;
+
 }
 
-[value="Список"]:checked ~ section div
+[value="Список"]:checked ~ section .image img,
+[value="Список"]:checked ~ section .description
 {
+    position: relative;
     vertical-align: top;
+}
+
+[value="Список"]:checked ~ section .image
+{
+    height: 100%;
+}
+
+[value="Список"]:checked ~ section .description
+{
+    position: relative;
+    vertical-align: top;
+    margin-left: 5px;
 }
 
 section
@@ -34,7 +49,6 @@ section:hover
 {
     position: relative;
     height: 300px;
-    /*vertical-align: inherit;*/
 }
 
 .image img
