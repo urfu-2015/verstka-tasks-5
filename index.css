@@ -1,1 +1,105 @@
+.description,
+.title
+{
+    display: block;
+    width: 300px;
+}
+
+.item
+{
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #fff;
+    vertical-align: top;
+}
+
+.item:hover
+{
+    border: 2px solid #ffeb9e
+}
+img
+{
+    margin: -5px;
+    max-height: 300px;
+    max-width: 300px;
+    vertical-align: bottom;
+}
+
+.img
+{
+    height: 300px;
+    line-height: 300px;
+}
+
+#inline:checked ~ .item
+{
+    display: inline-block;
+}
+
+#block:checked ~ .item
+{
+    display: block;
+}
+
+#block:checked ~ .item > *
+{
+    display: inline-block;
+    height: auto;
+    width: 300px;
+    vertical-align: top;
+    line-height: normal;
+}
+
+.goodness
+{
+    direction: rtl;
+    text-align: left;;
+}
+
+.goodness > div
+{
+    display: inline-block;
+    height: 30px;
+    width: 15px;
+    background: url('/rating.png') -85px 0;
+}
+
+.goodness > div:nth-child(2n)
+{
+    margin: 0 -5px;
+    background: url('/rating.png') -70px 0;
+}
+
+.goodness > div:nth-child(2n):hover
+{
+    background: url('/rating.png') 0 0;
+}
+
+.goodness > div:nth-child(2n+1):hover
+{
+    background: url('/rating.png') -15px 0;
+}
+
+.goodness > div:hover ~ div:nth-child(2n):before
+{
+    content: '';
+    position:absolute;
+    margin-right: -15px;
+    height: 30px;
+    width: 15px;
+    background: url('/rating.png') 0 0;
+}
+
+.goodness > div:hover ~ div:nth-child(2n+1):before
+{
+    content: '';
+    position:absolute;
+    margin-right: -15px;
+    height: 30px;
+    width: 15px;
+    background: url('/rating.png') -15px 0;
+}
+
+
 
