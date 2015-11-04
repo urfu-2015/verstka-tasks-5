@@ -51,7 +51,7 @@ body
     -webkit-transition: all 0.7s ease;
     -moz-transition: all 0.7s ease;
     -khtml-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+    transition: 0.7s ease;
     opacity: 1;
 }
 .img-cat:hover
@@ -117,7 +117,7 @@ a
 .rating > span:hover:before,
 .rating > span:hover ~ span:before 
 {
-    content: "\2605";
+    content: '\2605';
     position: absolute;
     color: #fff900;
 }
