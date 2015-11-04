@@ -1,36 +1,47 @@
 
-.cat-block {
+.cat-block
+{
     padding: 20px;
     margin: 10px;
     float: left;
     width: 300px;
-    border: 3px solid #ffffff;
+    border: 3px solid #fff;
 }
-.cat-block img {
+.cat-block img
+{
     max-width: 100%;
     vertical-align: bottom;
 }
-.cat-image {
+.cat-image
+{
     width: 300px;
     height: 300px;
     line-height: 300px;
     float: left;
 }
-h1 {
+h1
+{
     font-size: 20px;
 }
-h2 {
+h2
+{
     font-size: 15px;
     text-decoration: underline;
 }
-#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+#reviewStars-input input:checked ~ label,
+    #reviewStars-input label,
+    #reviewStars-input label:hover,
+    #reviewStars-input label:hover ~ label
+{
     background: url('http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png') no-repeat;
 }
-#reviewStars-input {
+#reviewStars-input
+{
     float: left;
 }
 
-#reviewStars-input input {
+#reviewStars-input input
+{
     opacity: 0;
     width: 43px;
     height: 40px;
@@ -39,7 +50,8 @@ h2 {
     z-index: 0;
 }
 
-#reviewStars-input label {
+#reviewStars-input label
+{
     background-position: 0 0;
     height: 40px;
     width: 43px;
@@ -68,7 +80,7 @@ h2 {
     left: 265px;
 }
 .price {
-    color: #ff0000;
+    color: #ff0;
     font-size: 30px;
 }
 .controlSize {
