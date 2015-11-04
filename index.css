@@ -1,9 +1,9 @@
-[value="Плитка"]:checked ~ section
+[value='Плитка']:checked ~ section
 {
     display: inline-block;
 }
 
-[value="Список"]:checked ~ section
+[value='Список']:checked ~ section
 {
     display: list-item;
     list-style-type: none;
@@ -12,19 +12,19 @@
 
 }
 
-[value="Список"]:checked ~ section .image img,
-[value="Список"]:checked ~ section .description
+[value='Список']:checked ~ section .image img,
+[value='Список']:checked ~ section .description
 {
     position: relative;
     vertical-align: top;
 }
 
-[value="Список"]:checked ~ section .image
+[value='Список']:checked ~ section .image
 {
     height: 100%;
 }
 
-[value="Список"]:checked ~ section .description
+[value='Список']:checked ~ section .description
 {
     margin-left: 5px;
 }
@@ -74,7 +74,9 @@ section:hover
     display: inline-block;
 }
 
-p, label, .description
+p,
+label,
+.description
 {
     font: 14px Arial, sans-serif;
     white-space: nowrap;
