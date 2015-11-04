@@ -26,8 +26,6 @@
 
 [value="Список"]:checked ~ section .description
 {
-    position: relative;
-    vertical-align: top;
     margin-left: 5px;
 }
 
