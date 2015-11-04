@@ -62,23 +62,23 @@ img
     display: inline-block;
     height: 30px;
     width: 15px;
-    background: url('/rating.png') -85px 0;
+    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -85px 0;
 }
 
 .goodness > div:nth-child(2n)
 {
     margin: 0 -5px;
-    background: url('/rating.png') -70px 0;
+    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -70px 0;
 }
 
 .goodness > div:nth-child(2n):hover
 {
-    background: url('/rating.png') 0 0;
+    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') 0 0;
 }
 
 .goodness > div:nth-child(2n+1):hover
 {
-    background: url('/rating.png') -15px 0;
+    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -15px 0;
 }
 
 .goodness > div:hover ~ div:nth-child(2n):before
@@ -88,7 +88,7 @@ img
     margin-right: -15px;
     height: 30px;
     width: 15px;
-    background: url('/rating.png') 0 0;
+    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') 0 0;
 }
 
 .goodness > div:hover ~ div:nth-child(2n+1):before
@@ -98,7 +98,7 @@ img
     margin-right: -15px;
     height: 30px;
     width: 15px;
-    background: url('/rating.png') -15px 0;
+    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -15px 0;
 }
 
 
