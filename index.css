@@ -1,1 +1,77 @@
+.cat
+{
+    padding: 15px;
+    margin: 15px;
+    display: table;
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.cat:hover
+{
+    width: 200px;
+    box-shadow: 0 0 10px #888888;
+}
+
+.image
+{
+    width: 200px;
+}
+
+.discription
+{
+    width: 160px;
+    overflow: hidden;
+}
+
+.name
+{
+    font-size: 20px;
+}
+
+.wrapper
+{
+    display: table;
+}
+
+.starCheck {
+    display: none;
+}
+
+.marks {
+    direction: rtl;
+    float: left;
+    font-size: 0;
+}
+.marks label {
+    border:solid 5px rgba(0, 0, 0, 0);
+    border-width: 5px 0 5px 5px;
+    display: inline-block;
+    font-size: 30px;
+    margin-right: -3px;
+    color: #bbb;
+}
+.R {
+    transform: scale(-1, 1);
+    margin:-1;
+}
+.fa-star-half:hover {
+    color: #fdd134;
+    cursor: pointer;
+}
+.fa-star-half:hover ~ .fa-star-half {
+    color: #fdd134;
+}
+input[name="star"]:checked ~ label {
+    color: #fdd134;
+}
+
+input[id='list']:checked ~ .cat
+{
+    width: 100%;
+    display: inline-block;
+}
+
 
