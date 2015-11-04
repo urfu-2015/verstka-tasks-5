@@ -1,1 +1,213 @@
 
+header
+{
+    text-align: center;
+}
+
+.wrap-inner
+{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.gallery-cat
+{
+    padding-top: 20px;
+}
+
+.header-title
+{
+    font-size: 25px;
+    color: #3a3a3c;
+    background: #d9d9d9;
+}
+
+.header-description
+{
+    font-size: 13px;
+    color: #3a3a3c;
+    background: #d9d9d9;
+    padding-bottom: 8px;
+}
+
+.header-title::first-letter
+{
+    color: #96070a;
+}
+
+.gallery-cat-item
+{
+    display:inline-block;
+    width: 21%;
+    height: 620px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 65px;
+}
+
+.gallery-cat-item:nth-child(4),
+.gallery-cat-item:nth-child(8)
+{
+    margin-right: 0;
+}
+
+.gallery-cat-image
+{
+    width: 275px;
+    height: 250px;
+}
+
+.gallery-cat-image:hover
+{
+    opacity: 0.6;
+}
+
+.gallery-cat-name
+{
+    color: #2e3192;
+    font-size: 20px;
+}
+
+.gallery-cat-name:hover
+{
+    color: #96070a;
+}
+
+.gallery-cat-category
+{
+    font-size: 14px;
+    text-decoration: underline;
+    color: #58585a;
+    font-weight: bold;
+}
+
+.gallery-cat-category:hover
+{
+    color: #96070a;
+    cursor: pointer;
+}
+
+.gallery-cat-price
+{
+    margin: 14px 0;
+    color: #96070a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gallery-cat-price-old
+{
+    color: #3a3a3c;
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+.gallery-cat-title
+{
+    font-weight: bold;
+}
+
+.gallery-cat-description
+{
+    text-align: justify;
+}
+
+div div div:hover
+{
+    background: #d9d9d9;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .gallery-cat-item:nth-child(4),
+    .gallery-cat-item:nth-child(8)
+    {
+        margin-right: 65px;
+    }
+
+    .gallery-cat-item:nth-child(3),
+    .gallery-cat-item:nth-child(6),
+    .gallery-cat-item:nth-child(9)
+    {
+        margin-right: 0;
+    }
+}
+
+.gallery-cat-rating input:checked ~ label,
+.gallery-cat-rating label,
+.gallery-cat-rating label:hover,
+.gallery-cat-rating label:hover ~ label
+{
+    background: url('img/star.png') no-repeat;
+}
+
+.gallery-cat-rating
+{
+    text-align: center;
+    margin: 10px auto;
+    width: 230px;
+    position: relative;
+    float: left;
+}
+
+.gallery-cat-rating input
+{
+    opacity: 0;
+    width: 23px;
+    height: 21px;
+    position: absolute;
+
+}
+
+.gallery-cat-rating input:checked ~ label
+{
+    background-position: 0 -21px;
+    width: 23px;
+    height: 21px;
+}
+
+.gallery-cat-rating label
+{
+    background-position: 0 0;
+    width: 23px;
+    height: 21px;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-cat-rating label:hover,
+.gallery-cat-rating label:hover ~ label
+{
+    background-position: 0 -21px;
+    width: 23px;
+    height: 21px;
+}
+
+input[class=list]:checked ~ article .gallery-cat .gallery-cat-item .gallery-cat-image
+{
+    float: left;
+}
+
+input[class=list]:checked ~ article .gallery-cat .gallery-cat-item
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    vertical-align: middle;
+    margin-right: 0;
+}
+
+input[class=list]:checked ~ article .gallery-cat .gallery-cat-item .gallery-cat-rating
+{
+    width: 13%;
+}
+
+
+
+
