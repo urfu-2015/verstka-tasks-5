@@ -38,32 +38,62 @@ header h1
 .describe
 {
     font-size: 12px;
-    width: 100%;
+    margin: 10px;
+}
+
+.info
+{
+    margin: 20px;
 }
 
 .horizont:target ~ .card
 {
-    float: none;
+    clear: both;
+    width: 100%;
+}
+
+.horizont:target ~ .card .photo
+{
+    width: 30%;
+    float: left;
+}
+
+.horizont:target ~ .card .info
+{
+    float: left;
+    width: 30%;
+}
+
+.horizont:target ~ .card .describe
+{
+    float: left;
+    width: 30%;
 }
 
 .matrix:target ~ .card
 {
     float: left;
+    width: 450px;
 }
 
-.horizont:target ~ .card div
+.matrix:target ~ .card .photo
 {
-    float: left;
+    float: none;
 }
 
-.matrix:target ~ .card div
+.matrix:target ~ .card .info
+{
+    float: none;
+}
+
+.matrix:target ~ .card .describe
 {
     float: none;
 }
 
 .floatleftClear {
-    clear: both;
-    width: 0px;
+    clear: none;
+    width: 0;
 }
 
 .views .views
