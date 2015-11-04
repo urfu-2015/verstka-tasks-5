@@ -1,5 +1,3 @@
-body {
-}
 header {
     font-family: fantasy;
     font-size: 50px;
@@ -22,8 +20,6 @@ input[id="tiles"]:checked ~ .item .itemImg {
     height: 200px;
     width: auto;
 }
-input[id="list"]:checked ~ .item .itemImg {
-}
 .oldPrice {
     text-decoration: line-through;
     font-size: smaller;
@@ -42,7 +38,6 @@ input[id="list"]:checked ~ .item .itemImg {
 .item:hover {
     border:2px dashed blueviolet;
 }
-
 ul.starRating {
     margin: 0;
     padding: 0;
