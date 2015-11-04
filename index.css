@@ -30,13 +30,13 @@
     background: #f89008;
 }
 
-[value="list"]:checked ~ section > .box
+[value='list']:checked ~ section > .box
 {
     display: table;
     width: 100%;
 }
 
-[value="list"]:checked ~ section .wrap-image
+[value='list']:checked ~ section .wrap-image
 {
     vertical-align: top;
 }
@@ -49,5 +49,5 @@
 .description:hover
 {
     background-color: rgba(72,209,204,.4);
-    border: 5px solid #0ff;
+    border: 5px solid #00ffff ;
 }
