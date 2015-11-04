@@ -1,1 +1,195 @@
+label
+{
+    font-size: 30px;
+}
 
+p
+{
+    margin: 10px 0;
+}
+
+abbr
+{
+    text-decoration: underline;
+}
+
+.price
+{
+    color: #a52a2a;
+    font-weight: bold;
+    font-size: .85em;
+}
+
+.kittenCard
+{
+    border: 3px solid white;
+    left: 0;
+    right: auto;
+    position: relative;
+    float: left;
+}
+
+.kittenCard:hover
+{
+    border: 3px ridge black;
+    background-color: #f0ffff;
+}
+
+#lines:checked ~ .kittenCard
+{
+    height: 300px;
+    width: 100%;
+    display: inline-flex;
+    margin: 15px 0;
+}
+
+#blocks:checked ~ .kittenCard
+{
+    margin: 10px 15px;
+    height: 700px;
+    width: 340px;
+    display: block;
+}
+
+#blocks:checked ~ .kittenCard .pictureBlock
+{
+    height: 40%;
+    width: 100%;
+    position: relative;
+}
+
+#lines:checked ~ .kittenCard .pictureBlock
+{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.pictureSelf
+{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    margin: auto;
+}
+
+#lines:checked ~ .kittenCard .pictureBlock .pictureSelf
+{
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+#blocks:checked ~ .kittenCard .pictureBlock .pictureSelf
+{
+    bottom: 0;
+    top: auto;
+    left:0;
+    right:0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.titleInfo
+{
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+#lines:checked ~ .kittenCard .titleInfo
+{
+    left: 0;
+    right: 60%;
+    margin: 0 20px;
+    position: relative;
+}
+
+#blocks:checked ~ .kittenCard .titleInfo
+{
+    right: auto;
+    left: auto;
+    margin: 0;
+    float: none;
+    height: auto;
+}
+
+.description
+{
+    font-size: 20px;
+    display: block;
+    position: relative;
+    bottom: 0;
+}
+
+#lines:checked ~ .kittenCard .description
+{
+    right: 0;
+    margin-left: auto;
+    margin-right: 30px;
+    width: 350px;
+}
+
+#blocks:checked ~ .kittenCard .description
+{
+    width: 90%;
+    margin: auto;
+}
+
+/*RATING STARS*/
+
+.rating
+{
+    overflow: hidden;
+    display: inline-block;
+}
+
+.rating-input
+{
+    float: right;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0 0 0 -32px;
+    opacity: 0;
+}
+
+.rating-star
+{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url('star.png') 0 -32px;
+}
+
+.rating-star:hover
+{
+    background-position: 0 0;
+}
+
+.rating-star
+{
+    position: relative;
+    float: right;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url('star.png') 0 -32px;
+}
+
+.rating-star:hover,
+.rating-star:hover ~ .rating-star
+{
+    background-position: 0 0;
+}
+
+.rating-star:hover,
+.rating-star:hover ~ .rating-star,
+.rating-input:checked ~ .rating-star
+{
+    background-position: 0 0;
+}
