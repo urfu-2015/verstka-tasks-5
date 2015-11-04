@@ -81,6 +81,11 @@ h1
     border: 2px solid #034769;
 }
 
+.catItem:hover
+{
+    background-color: #ffd073;
+}
+
 .photoContainer
 {
     height: 300px;
@@ -92,10 +97,16 @@ h1
 
 .catImage
 {
-    max-height: 300px;
-    max-width: 380px;
+    max-height: 260px;
+    max-width: 340px;
     position: absolute;
     bottom: 0;
+}
+
+.catImage:hover
+{
+    max-height: 300px;
+    max-width: 380px;
 }
 
 .catName
@@ -109,11 +120,22 @@ h1
     overflow: hidden;
 }
 
+.catName:hover
+{
+    color: #f00;
+    text-decoration: underline;
+}
+
 .catCategory
 {
     color: #235d79;
     font-size: 14px;
     margin: 3px 0 10px;
+}
+
+.catSubcategory:hover
+{
+    text-decoration: underline;
 }
 
 .catRating
