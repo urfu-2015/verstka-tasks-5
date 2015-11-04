@@ -130,7 +130,6 @@ article p
     width: 80%;
 }
 
-
 .style-filter[value='tile']:checked ~ main article
 {
     display: inline-block;
