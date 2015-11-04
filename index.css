@@ -1,1 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
 
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.grid-container
+{
+    width: 100%;
+}
+
+.grid-container *
+{
+    box-sizing: border-box;
+}
+
+.row:before,
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='col-']
+{
+    float: left;
+    min-height: 1px;
+    width: 8.33%;
+    padding: 12px;
+    /*background-color: #FFDCDC;*/
+    height: 500px;
+    overflow: hidden;
+}
+
+/*.outline, .outline **/
+/*{*/
+    /*outline: 1px solid #F6A1A1;*/
+/*}*/
+/*.outline*/
+/*{*/
+    /*outline: 1px solid #F6A1A1;*/
+/*}*/
+
+.col-1
+{
+    width: 8.33%;
+}
+
+.col-2
+{
+    width: 16.66%;
+}
+
+.col-3
+{
+    width: 25%;
+}
+
+.col-4
+{
+    width: 33.33%;
+}
+
+.col-5
+{
+    width: 41.66%;
+}
+
+.col-6
+{
+    width: 50%;
+}
+
+.col-7
+{
+    width: 58.33%;
+}
+
+.col-8
+{
+    width: 66.66%;
+}
+
+.col-9
+{
+    width: 75%;
+}
+
+.col-10
+{
+    width: 83.33%;
+}
+
+.col-11
+{
+    width: 91.66%;
+}
+
+.col-12
+{
+    width: 100%;
+}
+
+@media all and (max-width:800px)
+{
+    .col-1
+    {
+        width: 16.66%;
+    }
+    .col-2
+    {
+        width: 33.33%;
+    }
+    .col-3
+    {
+        width: 33.33%;
+    }
+    .col-4
+    {
+        width: 66.66%;
+    }
+    .col-5
+    {
+        width: 83.33%;
+    }
+    .col-6
+    {
+        width: 100%;
+    }
+    .col-7
+    {
+        width: 100%;
+    }
+    .col-8
+    {
+        width: 100%;
+    }
+    .col-9
+    {
+        width: 100%;
+    }
+    .col-10
+    {
+        width: 100%;
+    }
+    .col-11
+    {
+        width: 100%;
+    }
+    .col-12
+    {
+        width: 100%;
+    }
+
+    .row .col-5:last-of-type
+    {
+        width: 100%;
+    }
+
+    .row .col-5 ~ .col-4
+    {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:650px)
+{
+    .col-1
+    {
+        width: 50%;
+    }
+    .col-2
+    {
+        width: 100%;
+    }
+    .col-3
+    {
+        width: 100%;
+    }
+    .col-4
+    {
+        width: 100%;
+    }
+    .col-5
+    {
+        width: 100%;
+    }
+    .col-6
+    {
+        width: 100%;
+    }
+}
+
+[class*='col-'] > p
+{
+    background-color: #FFC2C2;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.card
+{
+    margin: 0 auto;
+    height: 500px;
+}
+
+.card:hover
+{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.card-header
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card-description
+{
+    overflow: hidden;
+}
+
+.cat-image
+{
+    width: 100px;
+    height: 100px;
+}
+
+a:link
+{
+    text-underline: blue;
+    color: blue;
+}
