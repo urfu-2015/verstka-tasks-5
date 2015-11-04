@@ -8,8 +8,6 @@
 .item
 {
     display: block;
-    margin: 20px;
-    padding: 20px;
     border: 2px solid #fff;
     vertical-align: top;
 }
@@ -29,6 +27,7 @@ img
 .img
 {
     height: 300px;
+    margin: 15px;
     line-height: 300px;
 }
 
