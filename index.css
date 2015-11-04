@@ -1,194 +1,194 @@
 body
 {
-	font-family: 'Jura', sans-serif;
-	width: 95%;
-	margin: auto;
-	/*background-color: red;*/
-	/*border: 2px solid red;*/
+    font-family: 'Jura', sans-serif;
+    width: 95%;
+    margin: auto;
+    /*background-color: red;*/
+    /*border: 2px solid red;*/
 }
 .title
 {
-	text-align: center;
-	font-style: italic;
+    text-align: center;
+    font-style: italic;
 }
 .title:first-letter
 {
-	color: red;
+    color: red;
 }
 .main-block
 {
-	text-align: center;
-	/*border: 2px solid orange;*/
+    text-align: center;
+    /*border: 2px solid orange;*/
 }
 .sale-block
 {
-	display: inline-table;
-	max-width: 300px;
-	min-width: 300px;
-	/*border: 2px solid black;*/
-	margin: 5px;
-	padding: 5px;
-	text-align: left;
-	-webkit-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
-	-moz-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
-	-khtml-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
-	box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
+    display: inline-table;
+    max-width: 300px;
+    min-width: 300px;
+    /*border: 2px solid black;*/
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+    -webkit-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
+    -moz-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
+    -khtml-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
+    box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
 }
 .sale-block:hover
 {
-	-webkit-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
-	-moz-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
-	-khtml-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
-	box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
-	-webkit-transition: all 0.7s ease;
-	transition: all 0.7s ease;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
+    -khtml-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
+    box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
 }
 .img-cat
 {
-	display: block;
-	margin: auto;
- 	height: 200px;
- 	-webkit-border-radius:50px;
-	-moz-border-radius: 50px;
-	-khtml-border-radius: 50px;
-	border-radius: 50px;
-	-webkit-transition: all 0.7s ease;
-	-moz-transition: all 0.7s ease;
-	-khtml-transition: all 0.7s ease;
-	transition: all 0.7s ease;
-	opacity: 1;
+    display: block;
+    margin: auto;
+    height: 200px;
+    -webkit-border-radius:50px;
+    -moz-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -khtml-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    opacity: 1;
 }
 .img-cat:hover
 {
-	-webkit-box-shadow: 0px 0px 15px 15px #fff;
-	-moz-box-shadow: 0px 0px 15px 15px #fff;
-	-khtml-box-shadow: 0px 0px 15px 15px #fff;
-	box-shadow: 0px 0px 15px 15px #fff;
-	-webkit-border-radius:50%;
-	-moz-border-radius: 50%;
-	-khtml-border-radius: 50%;
-	border-radius: 50%;
-	-webkit-transform: rotate(720deg);
-	-moz-transform: rotate(720deg);
-	-khtml-transform: rotate(720deg);
-	transform: rotate(720deg);
-	opacity: 0.6;
+    -webkit-box-shadow: 0px 0px 15px 15px #fff;
+    -moz-box-shadow: 0px 0px 15px 15px #fff;
+    -khtml-box-shadow: 0px 0px 15px 15px #fff;
+    box-shadow: 0px 0px 15px 15px #fff;
+    -webkit-border-radius:50%;
+    -moz-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -khtml-transform: rotate(720deg);
+    transform: rotate(720deg);
+    opacity: 0.6;
 }
 .title-url
 {
-	display: block;
-	width: 300px;
-	font-size: 25px;
-	text-align: center;
-	overflow: hidden; 
-	white-space: nowrap; 
-	text-overflow: ellipsis;
+    display: block;
+    width: 300px;
+    font-size: 25px;
+    text-align: center;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
 }
 .title-url
 a
 {
-	text-decoration: none;
+    text-decoration: none;
 }
 .name:hover
 {
-	text-decoration: underline;
-	font-style: italic;
+    text-decoration: underline;
+    font-style: italic;
 }
 .categorys
 {
-	display: block;
-	padding: 1px;
+    display: block;
+    padding: 1px;
 }
 .categorys
 a
 {
-	color: #928282;
+    color: #928282;
 }
 .rating
 {
-	display: block;
-	margin: 5px 0;
-	unicode-bidi: bidi-override;
-  	direction: rtl;
+    display: block;
+    margin: 5px 0;
+    unicode-bidi: bidi-override;
+    direction: rtl;
 }
 .rating > span {
-  display: inline-block;
-  position: relative;
-  width: 25px;
-  text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    text-align: center;
 }
 .rating > span:hover:before,
 .rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
-   color: #FFF900;
+    content: "\2605";
+    position: absolute;
+    color: #FFF900;
 }
 .price,
 .old-price
 {
-	display: inline-block;
-	padding: 5px;
+    display: inline-block;
+    padding: 5px;
 }
 .price
 {
-	font-size: 20px;
-	color: #C50000;
+    font-size: 20px;
+    color: #C50000;
 }
 .old-price
 {
-	font-size: 15px;
-	color: #000000;
-	text-decoration: line-through;
+    font-size: 15px;
+    color: #000000;
+    text-decoration: line-through;
 }
 .title-desc,
 .desc
 {
-	margin: 5px 0;
+    margin: 5px 0;
 }
 
 #list,
 #standart
 {
-	margin: 10px 15px;
+    margin: 10px 15px;
 }
 
 /* Вёрстка списком */
 #list:checked ~ .main-block
 {
-	padding: 0 100px;
+    padding: 0 100px;
 }
 #list:checked ~ .main-block .sale-block
 {
-	display: table;
-	max-width: 100%;
-	/*border: 2px solid black;*/
+    display: table;
+    max-width: 100%;
+    /*border: 2px solid black;*/
 }
 #list:checked ~ .main-block .sale-block .image-block
 {
-	display: table-cell;
-	max-width: 400px;
-	min-width: 300px;
+    display: table-cell;
+    max-width: 400px;
+    min-width: 300px;
 }
 #list:checked ~ .main-block .sale-block .image-block .img-cat
 {
-	width: 200px;
+    width: 200px;
 }
 #list:checked ~ .main-block .sale-block .info-block
 {
-	display: table-cell;
-	max-width: 500px;
-	min-width: 400px;
-	text-align: left;
-	vertical-align: top;
+    display: table-cell;
+    max-width: 500px;
+    min-width: 400px;
+    text-align: left;
+    vertical-align: top;
 }
 #list:checked ~ .main-block .sale-block .info-block .title-url
 {
-	text-align: left;
+    text-align: left;
 }
 #list:checked ~ .main-block .sale-block .desc-block
 {
-	display: table-cell;
-	max-width: 300px;
-	min-width: 200px;
-	vertical-align: top;
+    display: table-cell;
+    max-width: 300px;
+    min-width: 200px;
+    vertical-align: top;
 }
