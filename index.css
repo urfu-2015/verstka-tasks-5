@@ -96,7 +96,8 @@ input
 
 article img
 {
-    margin: 10px;
+    display: block;
+    margin: 20px;
     border-radius: 50px;
 }
 
@@ -130,17 +131,20 @@ article p
     margin: 0;
 }
 
+
 .style-filter[value='tile']:checked ~ main article
 {
     display: inline-block;
-    width: 300px;
+    width: 330px;
     margin-top: 20px;
+    vertical-align: top;
 }
 
 .style-filter[value='tile']:checked ~ main img
 {
     display: block;
     margin: 10px auto;
+    height: 180px;
 }
 
 .style-filter[value='list']:checked ~ main article
@@ -152,14 +156,15 @@ article p
 .style-filter[value='list']:checked ~ main .details-about-cat
 {
     display: inline-block;
-    width: 25%;
-    margin: 0 10px;
+    width: 23%;
+    margin: 10px;
+    vertical-align: top;
 }
 
 .style-filter[value='list']:checked ~ main .description
 {
     display: inline-block;
-    width: 40%;
+    width: 49%;
 }
 
 a:hover
