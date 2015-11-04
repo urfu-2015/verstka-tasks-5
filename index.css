@@ -5,16 +5,16 @@
     display: inline-block;
     vertical-align: top;
     width: 350px;
-    border: 2px solid #FFF;
+    border: 2px solid #fff;
 }
 
 .item:hover
 {
-    background: rgba(67,158,210,0.2);
-    border: 2px solid #04396C;
-    -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.5);
-    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.5);
+    background: rgba(67,158,210,.2);
+    border: 2px solid #04396c;
+    -webkit-box-shadow: 10px 10px 25px 0 rgba(0,0,0,.5);
+    -moz-box-shadow: 10px 10px 25px 0 rgba(0,0,0,.5);
+    box-shadow: 10px 10px 25px 0 rgba(0,0,0,.5);
 }
 
 .item-picture
@@ -37,14 +37,14 @@
 .item-picture > img:hover
 {
     cursor: pointer;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.75);
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,.75);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.75);
 }
 
 .item-header > .item-name
 {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
     display: block;
     text-align: center;
@@ -57,7 +57,7 @@
 
 .item-header > .item-type
 {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     display: block;
     color: #200772;
@@ -69,22 +69,22 @@
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    color: #FFF;
-    background: #00AF64;
+    color: #fff;
+    background: #00af64;
 }
 
 .item-header > .item-cost:hover
 {
     cursor: pointer;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.75);
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,.75);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.75);
 }
 
 .item-description
 {
     text-align: justify;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 
@@ -145,7 +145,7 @@
 .item-stars > label:hover ~ label:before
 {
     cursor: pointer;
-    color: #BF3030;
+    color: #bf3030;
 }
 
 .item-stars > input
@@ -155,5 +155,5 @@
 
 .item-stars > input[type='radio']:checked ~ label
 {
-    color: #F00;
+    color: #f00;
 }
