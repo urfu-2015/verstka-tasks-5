@@ -11,6 +11,11 @@
     width: 605px;
 }
 
+[value="Список"]:checked ~ section div
+{
+    vertical-align: top;
+}
+
 section
 {
     margin: 10px;
@@ -29,6 +34,7 @@ section:hover
 {
     position: relative;
     height: 300px;
+    /*vertical-align: inherit;*/
 }
 
 .image img
