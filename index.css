@@ -1,1 +1,407 @@
+@font-face
+{
+    font-family: 'SourceSansProLight';
+    src: url('fonts/SourceSansProLight/SourceSansProLight.eot'),
+        url('fonts/SourceSansProLight/SourceSansProLight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SourceSansProLight/SourceSansProLight.woff') format('woff'),
+        url('fonts/SourceSansProLight/SourceSansProLight.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
 
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    -webkit-font-smoothing: antialiased;
+}
+
+body
+{
+    background: #fdfff4;
+    color: #000;
+}
+
+/* логотип и название */
+
+h1
+{
+    font: 18px 'SourceSansProLight', Helvetica, Arial, sans-serif;
+    color: #fff;
+    position: absolute;
+    top: 0;
+}
+
+h1 img
+{
+    opacity: .85;
+    vertical-align: middle;
+    margin: 15px 10px 15px 30px;
+    height: 50px;
+    width: auto;
+}
+
+/* описание */
+
+.description-shop
+{
+    font: 52px 'SourceSansProLight', Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+    padding: 60px 40px;
+    width: 500px;
+    position: relative;
+    top: 260px;
+    right: -53%;
+}
+
+hr
+{
+    margin: 7px 50px 2px;
+    border-color: rgba(255, 255, 255, .2);
+}
+
+/* кнопка */
+
+.btn
+{
+    border: 1px solid rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, .1);
+    width: 100px;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 60px auto 0;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.description-shop a
+{
+    text-decoration: none;
+    width: 100px;
+    color: rgba(255, 255, 255, .4);
+}
+
+a:visited .btn
+{
+    color: rgba(255, 255, 255, .4);
+}
+
+.btn:hover
+{
+    background-color: rgba(255, 255, 255, .4);
+}
+
+/* фоновая картинка */
+
+.background-image
+{
+    position: absolute;
+    z-index: -1;
+}
+
+.background-image img
+{
+    width: 100%;
+    max-height: 800px;
+}
+
+/* переключатели */
+
+#tile,
+#list
+{
+    display: none;
+}
+
+.list
+{
+    background: url(images/switch-list.png) no-repeat;
+    background-size: 30px;
+    position: fixed;
+    top: 40px;
+    right: 60px;
+}
+
+.tile
+{
+    background: url(images/06_menu_apps-64.png) no-repeat;
+    background-size: 30px;
+    position: fixed;
+    top: 40px;
+    right: 110px;
+}
+
+#tile:checked + .switch-style,
+#list:checked + .switch-style
+{
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+
+.switch-style
+{
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    -webkit-filter: brightness(10) opacity(.6);
+    -moz-filter: brightness(10) opacity(.6);
+    filter: brightness(10) opacity(.6);
+}
+
+.switch-style:hover
+{
+    -webkit-filter: brightness(10) grayscale(.5) opacity(.8);
+    -moz-filter: brightness(10) grayscale(.5) opacity(.8);
+    filter: brightness(10) grayscale(.5) opacity(.8);
+}
+
+/* карточки котиков */
+
+main
+{
+    padding: 0;
+    margin: 520px auto 0;
+    max-width: 80%;
+    min-width: 700px;
+}
+
+.content
+{
+    max-width: 90%;
+    width: 886px;
+    margin: 40px auto 80px;
+}
+
+.item
+{
+    background-color: rgba(141,141,141,.2);
+    border-radius: 3px;
+    height: 460px;
+    width: 252px;
+    margin: 2px 0;
+    padding: 20px;
+    display: inline-block;
+}
+
+.item:hover
+{
+    background-color: rgba(141,141,141,.1);
+}
+
+.description-section
+{
+    padding: 10px 0;
+    float: left;
+}
+
+.cat-name
+{
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    float: left;
+    margin: 10px 0;
+    width: 100%;
+    padding: 0;
+    max-width: 230px;
+}
+
+.cat-name:visited
+{
+    color: #000;
+}
+
+.cat-name:hover,
+.category:hover
+{
+    color: #cb2d22;
+}
+
+.long
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.price
+{
+    font-size: 30px;
+    padding-top: 12px;
+}
+
+.current-price
+{
+    font-size: 30px;
+    color: #cb2d22;
+    margin: 0;
+}
+
+.old-price
+{
+    font-size: 22px;
+    color: rgba(0,0,0,.5);
+    margin: 0 5px;
+    text-decoration: line-through;
+}
+
+/* рейтинг */
+
+fieldset,
+label
+{
+    padding: 0;
+    margin: 0;
+}
+
+.rating
+{
+    border: none;
+    width: 160px;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label.full
+{
+    background: url('images/r1.png') no-repeat;
+    width: 16px;
+    height: 32px;
+}
+
+.rating > label.half
+{
+    background: url('images/l1.png') no-repeat;
+    width: 16px;
+    height: 32px;
+}
+
+.rating > label
+{
+    float: right;
+}
+
+.rating > input:checked ~ label.full,
+.rating:not(:checked) > label.full:hover,
+.rating:not(:checked) > label.full:hover ~ label.full
+{
+    background: url('images/r2.png') no-repeat;
+}
+
+.rating:not(:checked) > label.full:hover ~ label.half
+{
+    background: url('images/l2.png') no-repeat;
+}
+
+.rating > input:checked ~ label.half,
+.rating:not(:checked) > label.half:hover,
+.rating:not(:checked) > label.half:hover ~ label.half
+{
+    background: url('images/l2.png') no-repeat;
+}
+
+.rating:not(:checked) > label.half:hover ~ label.full
+{
+    background: url('images/r2.png') no-repeat;
+}
+
+/* эффект для фото котика */
+
+figure
+{
+    width: 250px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.effect-image img
+{
+    width: 250px;
+    max-height: 200px;
+    position: absolute;
+    bottom: 0;
+    opacity: .95;
+    -webkit-transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: scale3d(1.05,1.05,1);
+    transform: scale3d(1.05,1.05,1);
+}
+
+.effect-image figcaption::before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.5);
+    content: '';
+    -webkit-transition: -webkit-transform .6s;
+    transition: transform .6s;
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+.effect-image:hover img
+{
+    opacity: .8;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+.effect-image:hover figcaption::before
+{
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+/* настройки отображения */
+
+#list:checked ~ .content .item
+{
+    width: 100%;
+    height: 220px;
+}
+
+#list:checked ~ .content .item .description-section .cat-name
+{
+    margin-right: 315px;
+}
+
+#list:checked ~ .content .item .description-section
+{
+    padding: 0;
+    float: left;
+    margin-left: 30px;
+    width: 400px;
+}
+
+#list:checked ~ .content .item .description-section .category
+{
+    margin-bottom: 10px;
+}
+
+#list:checked ~ .content .item .description-section .description
+{
+    margin-top: 55px;
+}
+
+#list:checked ~ .content .item .img,
+#list:checked ~ .content .item .img figure img,
+#list:checked ~ .content .rating
+{
+    float: left;
+}
