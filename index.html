@@ -3,9 +3,360 @@
     <head>
         <meta charset="utf-8">
         <title>Мяндекс.Муррркет</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+        rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,latin"
+        rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=cyrillic"
+        rel="stylesheet" type="text/css">
     </head>
     <body>
-        <!-- Здесь прикладывать основное усилие -->
+        <main>
+            <header>
+        		<h1><span class="red">М</span>яндекс.<span class="red">М</span>уррркет</h1>
+        	</header>
+            <span class="display-label">Display:</span>
+            <label for="blocks" class="display-label">blocks</label>
+            <input type="radio" name="display" id="blocks" checked="checked">
+            <label for="list" class="display-label">list</label>
+            <input type="radio" name="display" id="list">
+        	<section>
+                <article class="cat">
+                    <div class="foto">
+                        <img src="http://goo.gl/iZBY4s" alt="cat_1">
+                    </div>
+                    <div class="info">
+                        <div class="name">Лапка-царапка</div>
+                        <div class="category">Охос азулес. Голубоглазка</div>
+                        <div class="rating">
+                            <input type="radio" class="rating-input" id="1-input-5" name="rating_1" checked>
+                            <label for="1-input-5" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="1-input-4" name="rating_1">
+                            <label for="1-input-4" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="1-input-3" name="rating_1">
+                            <label for="1-input-3" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="1-input-2" name="rating_1">
+                            <label for="1-input-2" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="1-input-1" name="rating_1">
+                            <label for="1-input-1" class="rating-star"></label>
+                        </div>
+                        <div class="price">18000<span class="old">20000</span></div>
+                    </div>
+                    <div class="features">
+                        Воздушный весенний котик. Глаза – визитная карточка Лапки. 
+                        Очень выразительные и большие. Спокойный, уравновешенный характер.
+                        Он обладает высоким интеллектом, а также немалым терпением.
+                    </div>
+                </article>
+                <article class="cat">
+                    <div class="foto">
+                        <img src="http://goo.gl/W6vwjL" alt="cat_2">
+                    </div>
+                    <div class="info">
+                     <div class="name">Мэрфи</div>
+                        <div class="category">Британская кошка шиншилла</div>
+                        <div class="rating">
+                            <input type="radio" class="rating-input" id="2-input-5" name="rating_2">
+                            <label for="2-input-5" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="2-input-4" name="rating_2" checked>
+                            <label for="2-input-4" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="2-input-3" name="rating_2">
+                            <label for="2-input-3" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="2-input-2" name="rating_2">
+                            <label for="2-input-2" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="2-input-1" name="rating_2">
+                            <label for="2-input-1" class="rating-star"></label>
+                        </div>
+                        <div class="price">20000</div>
+                    </div>
+                    <div class="features">
+                        В Мерфи с рожденья заложены хорошие манеры.
+                        Она обладает спокойным нравом, милым характером, сообразительностью, 
+                        иногда даже чересчур, и интеллигентной важностью.
+                        Независима, аристократична и невозмутимо спокойна в любых ситуациях.
+                        Довольно упряма.
+                    </div>
+                </article>
+                <article class="cat">
+                    <div class="foto">
+                        <img src="http://goo.gl/dV86Ji" alt="cat_3">
+                    </div>
+                    <div class="info">
+                        <div class="name">Ася</div>
+                        <div class="category">Турецкая ангора</div>
+                        <div class="rating">
+                            <input type="radio" class="rating-input" id="3-input-5" name="rating_3" checked>
+                            <label for="3-input-5" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="3-input-4" name="rating_3">
+                            <label for="3-input-4" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="3-input-3" name="rating_3">
+                            <label for="3-input-3" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="3-input-2" name="rating_3">
+                            <label for="3-input-2" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="3-input-1" name="rating_3">
+                            <label for="3-input-1" class="rating-star"></label>
+                        </div>
+                        <div class="price">23000<span class="old">25000</span></div>
+                    </div>
+                    <div class="features">
+                        Молодая и прекрасная. Необычная внешность гармонично дополняется хорошим
+                        характером и добрым нравом. Она прекрасная актриса. 
+                        Активная и компанейская Ася не любят пребывать в одиночестве. 
+                    </div>
+                </article>
+                <article class="cat">
+                    <div class="foto">
+                        <img src="http://goo.gl/IYSSvn" alt="cat_4">
+                    </div>
+                    <div class="info">
+                        <div class="name">Брюс Уэйн</div>
+                        <div class="category">Британская Короткошерстная</div>
+                        <div class="stars">
+                        <span class="rating">
+                            <input type="radio" class="rating-input" id="4-input-5" name="rating_4" checked>
+                            <label for="4-input-5" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="4-input-4" name="rating_4">
+                            <label for="4-input-4" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="4-input-3" name="rating_4">
+                            <label for="4-input-3" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="4-input-2" name="rating_4">
+                            <label for="4-input-2" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="4-input-1" name="rating_4">
+                            <label for="4-input-1" class="rating-star"></label>
+                        </span>
+                        </div>
+                        <div class="price">19000</div>
+                    </div>
+                    <div class="features">
+                        Брюс спасет мир без особых усилий!
+                        Все его движения очень точны, грациозны и стремительны.
+                        Враги трепетают перед его мощью.
+                    </div>
+                </article>
+                <article class="cat">
+                    <div class="foto">
+                        <img src="http://goo.gl/nra49c" alt="cat_5">
+                    </div>
+                    <div class="info">
+                        <div class="name">Рыся</div>
+                        <div class="category">Сервал. Кустарниковая кошка</div>
+                        <div class="rating">
+                            <input type="radio" class="rating-input" id="5-input-5" name="rating_5">
+                            <label for="5-input-5" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="5-input-4" name="rating_5" checked>
+                            <label for="5-input-4" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="5-input-3" name="rating_5">
+                            <label for="5-input-3" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="5-input-2" name="rating_5">
+                            <label for="5-input-2" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="5-input-1" name="rating_5">
+                            <label for="5-input-1" class="rating-star"></label>
+                        </div>
+                        <div class="price">480000</div>
+                    </div>
+                    <div class="features">
+                        Рыся - это настоящий "котопесик".
+                        Любит играть в "апорт"" и приносить хозяину брошенные им мячики.
+                        Он обожает повисеть на веревках, шнурках и проводах.
+                        Этот проказник может беспечно запустить свою длинную лапу туда, где, 
+                        как ему покажется, спрятано лакомство.
+                    </div>
+                </article>
+                <article class="cat">
+                    <div class="foto">
+                        <img src="http://goo.gl/Nw5M67" alt="cat_6">
+                    </div>
+                    <div class="info">
+                        <div class="name" title="Ричард Джордж Фридерих фон дем Теодор Гурион Младший">
+                            Ричард Джордж Фридерих фон дем Теодор Гурион Младший
+                        </div>
+                        <div class="category">Мейн-кун</div>
+                        <div class="rating">
+                            <input type="radio" class="rating-input" id="6-input-5" name="rating_6" checked>
+                            <label for="6-input-5" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="6-input-4" name="rating_6">
+                            <label for="6-input-4" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="6-input-3" name="rating_6">
+                            <label for="6-input-3" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="6-input-2" name="rating_6">
+                            <label for="6-input-2" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="6-input-1" name="rating_6">
+                            <label for="6-input-1" class="rating-star"></label>
+                        </div>
+                        <div class="price">46000<span class="old">50000</span></div>
+                    </div>
+                    <div class="features">
+                        Настоящий аристократ. В нем поразительно сочетаются мощь и сила
+                        со сливочным характером, взгляд дикого зверя с нежным мурлыканьем.
+                        Ричард очень умный и благородный кот, красота которого будет радовать вас,
+                        как все совершенное. Характер у Ричарда Джорджа многогранный, который по 
+                        настоящему можно раскрыть только живя с ним рука об руку каждый день.
+                    </div>
+                </article>
+                <article class="cat">
+                    <div class="foto">
+                        <img src="http://goo.gl/JIPgHx" alt="cat_7">
+                    </div>
+                    <div class="info">
+                        <div class="name">Пледик</div>
+                        <div class="category">Шартрез. Картезианская кошка</div>
+                        <div class="rating">
+                            <input type="radio" class="rating-input" id="7-input-5" name="rating_7" checked>
+                            <label for="7-input-5" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="7-input-4" name="rating_7">
+                            <label for="7-input-4" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="7-input-3" name="rating_7">
+                            <label for="7-input-3" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="7-input-2" name="rating_7">
+                            <label for="7-input-2" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="7-input-1" name="rating_7">
+                            <label for="7-input-1" class="rating-star"></label>
+                        </div>
+                        <div class="price">23100</div>
+                    </div>
+                    <div class="features">
+                        Пледик сдержан, но не равнодушен, деликатен, улыбчив, не шумный
+                        и при этом невероятно отважен. Он ко всему относится спокойно и 
+                        предпочтет быть наблюдателем, нежели смелым реформатором.
+                        Из всех занятий больше всего любит спать.
+                    </div>
+                </article>
+                <article class="cat">
+                    <div class="foto">
+                        <img src="http://goo.gl/tNQg7C" alt="cat_8">
+                    </div>
+                    <div class="info">
+                        <div class="name">Роджер</div>
+                        <div class="category">Невская маскарадная</div>
+                        <div class="rating">
+                            <input type="radio" class="rating-input" id="8-input-5" name="rating_8" checked>
+                            <label for="8-input-5" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="8-input-4" name="rating_8">
+                            <label for="8-input-4" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="8-input-3" name="rating_8">
+                            <label for="8-input-3" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="8-input-2" name="rating_8">
+                            <label for="8-input-2" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="8-input-1" name="rating_8">
+                            <label for="8-input-1" class="rating-star"></label>
+                        </div>
+                        <div class="price">31000<span class="old">32100</span></div>
+                    </div>
+                    <div class="features">
+                        Роджер игрив и активен, но в меру. Темперамент у него не допускает излишеств.
+                        Упорства и упрямства этому коту не занимать, так что иногда вам придется показать,
+                        что в вас упрямства больше.
+                    </div>
+                </article>
+        		<article class="cat">
+                    <div class="foto">
+                        <img src="http://goo.gl/0hmE9E" alt="cat_9">
+                    </div>
+                    <div class="info">
+                        <div class="name">Персик</div>
+                        <div class="category">Экзотическая короткошёрстная кошка</div>
+                        <div class="rating">
+                            <input type="radio" class="rating-input" id="9-input-5" name="rating_9" checked>
+                            <label for="9-input-5" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="9-input-4" name="rating_9">
+                            <label for="9-input-4" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="9-input-3" name="rating_9">
+                            <label for="9-input-3" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="9-input-2" name="rating_9">
+                            <label for="9-input-2" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="9-input-1" name="rating_9">
+                            <label for="9-input-1" class="rating-star"></label>
+                        </div>
+                        <div class="price">17500</div>
+                    </div>
+                    <div class="features">
+                        Персик нежна, весела и преданна. Харизма и внешнее очарование 
+                        этого созданий являются подлинным выражением
+                        ее кроткой и дружелюбной натуры. Она создана исключительно для любви.
+                    </div>
+                </article>
+                <article class="cat">
+        			<div class="foto">
+        				<img src="http://goo.gl/R74p7Y" alt="cat_10">
+        			</div>
+        			<div class="info">
+                        <div class="name">Калм</div>
+                        <div class="category">Шотландская вислоухая кошка</div>
+                        <div class="rating">
+                            <input type="radio" class="rating-input" id="10-input-5" name="rating_10">
+                            <label for="10-input-5" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="10-input-4" name="rating_10" checked>
+                            <label for="10-input-4" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="10-input-3" name="rating_10">
+                            <label for="10-input-3" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="10-input-2" name="rating_10">
+                            <label for="10-input-2" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="10-input-1" name="rating_10">
+                            <label for="10-input-1" class="rating-star"></label>
+                        </div>
+                        <div class="price">31000<span class="old">32100</span></div>
+                    </div>
+                    <div class="features">
+                        Калм обрёл спокойствие и достиг нирваны.
+                        Он не поддается эмоциональным волнам и кошачьей истерии.
+                    </div>
+        		</article>
+                <article class="cat">
+        			<div class="foto">
+        				<img src="http://goo.gl/4LXMEO" alt="cat_11">
+        			</div>
+        			<div class="info">
+                        <div class="name">Клевер</div>
+                        <div class="category">Черепаховая кошка</div>
+                        <div class="rating">
+                            <input type="radio" class="rating-input" id="11-input-5" name="rating_11">
+                            <label for="11-input-5" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="11-input-4" name="rating_11" checked>
+                            <label for="11-input-4" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="11-input-3" name="rating_11">
+                            <label for="11-input-3" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="11-input-2" name="rating_11">
+                            <label for="11-input-2" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="11-input-1" name="rating_11">
+                            <label for="11-input-1" class="rating-star"></label>
+                        </div>
+                        <div class="price">15000</div>
+                    </div>
+                    <div class="features">
+                        Обладает выразительной внешность и веселым добродушным характером.
+                        Завораживает своей грацией, обаянием и красотой.
+                        Клевер принесет счастье и удачу в ваш дом.               
+                    </div>
+        		</article>
+                <article class="cat">
+                    <div class="foto">
+                        <img src="http://goo.gl/b4i2H7" alt="cat_12">
+                    </div>
+                    <div class="info">
+                        <div class="name">Имбирь</div>
+                        <div class="category">Рыжий кот</div>
+                        <div class="rating">
+                            <input type="radio" class="rating-input" id="12-input-5" name="rating_12">
+                            <label for="12-input-5" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="12-input-4" name="rating_12" checked>
+                            <label for="12-input-4" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="12-input-3" name="rating_12">
+                            <label for="12-input-3" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="12-input-2" name="rating_12">
+                            <label for="12-input-2" class="rating-star"></label>
+                            <input type="radio" class="rating-input" id="12-input-1" name="rating_12">
+                            <label for="12-input-1" class="rating-star"></label>
+                        </div>
+                        <div class="price">27000<span class="old">37120</span></div>
+                    </div>
+                    <div class="features">
+                        Имбирь несет в себе заряд солнечной энергии, веселья и добра.
+                        С радостью будет сидеть у вас на коленях и довольно мурлыкать.
+                    </div>
+                </article>
+            </section>
+        </main>
     </body>
 </html>
+
