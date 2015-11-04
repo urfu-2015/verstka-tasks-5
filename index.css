@@ -12,7 +12,7 @@
 .cat:hover
 {
     width: 200px;
-    box-shadow: 0 0 10px #888888;
+    box-shadow: 0 0 10px #888;
 }
 
 .image
@@ -36,16 +36,19 @@
     display: table;
 }
 
-.starCheck {
+.starCheck
+{
     display: none;
 }
 
-.marks {
+.marks
+{
     direction: rtl;
     float: left;
     font-size: 0;
 }
-.marks label {
+.marks label
+{
     border:solid 5px rgba(0, 0, 0, 0);
     border-width: 5px 0 5px 5px;
     display: inline-block;
@@ -53,18 +56,22 @@
     margin-right: -3px;
     color: #bbb;
 }
-.R {
+.R
+{
     transform: scale(-1, 1);
     margin:-1;
 }
-.fa-star-half:hover {
+.fa-star-half:hover
+{
     color: #fdd134;
     cursor: pointer;
 }
-.fa-star-half:hover ~ .fa-star-half {
+.fa-star-half:hover ~ .fa-star-half
+{
     color: #fdd134;
 }
-input[name="star"]:checked ~ label {
+input[name="star"]:checked ~ label
+{
     color: #fdd134;
 }
 
