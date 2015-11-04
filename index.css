@@ -1,1 +1,252 @@
 
+
+h1
+{
+    text-align: center;
+    color: #1e104b;
+}
+
+section.cat-shop
+{
+    margin: 0 auto;
+}
+
+#tile:checked ~ .cat-shop .shop-item
+{
+    display: inline-block;
+}
+
+#tile:checked ~ .cat-shop .shop-item .item-img
+{
+    display: block;
+}
+
+#tile:checked ~ .cat-shop .shop-item .item-description
+{
+    display: block;
+}
+
+#tile:checked ~ .cat-shop .shop-item .name
+{
+    text-align: center;
+}
+
+#list:checked ~ .cat-shop .shop-item
+{
+    display: block;
+    width: 900px;
+    height: 300px;
+}
+
+#list:checked ~ .cat-shop .shop-item .item-img
+{
+    display: block;
+    overflow: visible;
+    float: left;
+    width: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#list:checked ~ .cat-shop .shop-item .item-description
+{
+    display: block;
+    overflow: visible;
+    float: right;
+    width: 550px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#list:checked ~ .cat-shop .shop-item .name
+{
+    text-align: left;
+}
+
+.cat-shop img
+{
+    max-width: 250px;
+}
+
+.shop-item
+{
+    width: 250px;
+    padding: 10px;
+    margin: 30px 20px;
+}
+
+.shop-item a:hover
+{
+    color: #e58500;
+}
+
+.shop-item div .name
+{
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.shop-item .category
+{
+    text-decoration: underline;
+    color: #8A8A8A;
+}
+
+.shop-item .price, .shop-item .old-price
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: #c00315;
+}
+
+.shop-item .price::after, .shop-item .old-price::after
+{
+    content: "₽";
+}
+
+.shop-item .out-of-stock
+{
+    color: #595959;
+}
+
+.shop-item .old-price
+{
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+.shop-item .sale
+{
+    color: #e11900;
+}
+
+.shop-item input[type="radio"]
+{
+    display: none;
+}
+
+.shop-item input[type="radio"] + label
+{
+    background-image: url('img/0stars.png');
+    width: 96px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.shop-item input[type="radio"].stars0 + label
+{
+    background-image: url('img/0stars.png');
+    width: 96px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-right: 0;
+}
+
+.shop-item input[type="radio"].stars0_5 + label
+{
+    background-image: url('img/0_5stars.png');
+    width: 96px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-right: 0;
+}
+
+.shop-item input[type="radio"].stars1 + label
+{
+    background-image: url('img/1stars.png');
+    width: 96px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-right: 0;
+}
+
+.shop-item input[type="radio"].stars1_5 + label
+{
+    background-image: url('img/1_5stars.png');
+    width: 96px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-right: 0;
+}
+
+.shop-item input[type="radio"].stars2 + label
+{
+    background-image: url('img/2stars.png');
+    width: 96px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-right: 0;
+}
+
+.shop-item input[type="radio"].stars2_5 + label
+{
+    background-image: url('img/2_5stars.png');
+    width: 96px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-right: 0;
+}
+
+.shop-item input[type="radio"].stars3 + label
+{
+    background-image: url('img/3stars.png');
+    width: 96px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-right: 0;
+}
+
+.shop-item input[type="radio"].stars3_5 + label
+{
+    background-image: url('img/3_5stars.png');
+    width: 96px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-right: 0;
+}
+
+.shop-item input[type="radio"].stars4 + label
+{
+    background-image: url('img/4stars.png');
+    width: 96px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-right: 0;
+}
+
+.shop-item input[type="radio"].stars4_5 + label
+{
+    background-image: url('img/4_5stars.png');
+    width: 96px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-right: 0;
+}
+
+.shop-item input[type="radio"].stars5 + label
+{
+    background-image: url('img/5stars.png');
+    width: 96px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
