@@ -29,9 +29,9 @@ h2
     text-decoration: underline;
 }
 #reviewStars-input input:checked ~ label,
-    #reviewStars-input label,
-    #reviewStars-input label:hover,
-    #reviewStars-input label:hover ~ label
+#reviewStars-input label,
+#reviewStars-input label:hover,
+#reviewStars-input label:hover ~ label
 {
     background: url('http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png') no-repeat;
 }
@@ -61,10 +61,6 @@ h2
     z-index: 1;
 }
 
-#reviewStars-input #star-0
-{
-    left: 0px;
-}
 #reviewStars-input #star-1
 {
     left: 53px;
@@ -103,7 +99,7 @@ h2
 }
 .cat-block img:hover
 {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px;
 }
 h2:hover
 {
