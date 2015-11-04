@@ -153,3 +153,64 @@ header h1
     width: 15px;
     height: 13px;
 }
+
+.rating
+{
+    color: rgb(66, 66, 66);
+    display: block;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 12px;
+    height: 0px;
+    line-height: 14.772px;
+    width: 218px;
+}
+
+.rating div
+{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(icon-rating.png);
+    background-origin: padding-box;
+    background-size: auto;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(255, 255, 255);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(255, 255, 255);
+    border-top-style: none;
+    border-top-width: 0px;
+    color: rgb(255, 255, 255);
+    display: block;
+    float: left;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 12px;
+    height: 21px;
+    line-height: 14.772px;
+    margin-right: 4px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    width: 22px;
+}
+
+.rateactive
+{
+    background-position: 0px -21px;
+}
+
+.ratehalfactive
+{
+    background-position: 0px -42px;
+}
