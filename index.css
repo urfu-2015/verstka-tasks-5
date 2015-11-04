@@ -4,7 +4,6 @@ section
     margin-right: 10%;
 }
 
-
 h1 
 {
     text-align: center;
@@ -22,7 +21,7 @@ li
 {
     width: 250px;
     height: 500px;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 a 
