@@ -61,48 +61,61 @@ h2
     z-index: 1;
 }
 
-#reviewStars-input #star-0 {
+#reviewStars-input #star-0
+{
     left: 0px;
 }
-#reviewStars-input #star-1 {
+#reviewStars-input #star-1
+{
     left: 53px;
 }
-#reviewStars-input #star-2 {
+#reviewStars-input #star-2
+{
     left: 106px;
 }
-#reviewStars-input #star-3 {
+#reviewStars-input #star-3
+{
     left: 159px;
 }
-#reviewStars-input #star-4 {
+#reviewStars-input #star-4
+{
     left: 212px;
 }
-#reviewStars-input #star-5 {
+#reviewStars-input #star-5
+{
     left: 265px;
 }
-.price {
+.price
+{
     color: #ff0;
     font-size: 30px;
 }
-.controlSize {
+.controlSize
+{
     white-space: nowrap;
     overflow: hidden;
     padding: 5px;
     text-overflow: ellipsis;
 }
-.controlSize:hover {
+.controlSize:hover
+{
     box-shadow: 0 0 5px 2px red;
 }
-.cat-block img:hover {
+.cat-block img:hover
+{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-h2:hover {
+h2:hover
+{
     box-shadow: inset 0 0 6px;
 }
-.cat-block:hover {
+.cat-block:hover
+{
     box-shadow: 0 0 5px;
 }
 
-#inline:checked ~ .cat-block {
+#inline:checked ~ .cat-block
+{
     display: inline-block;
     width: 100%;
 }
