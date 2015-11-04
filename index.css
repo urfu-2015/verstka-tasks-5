@@ -34,9 +34,6 @@ body {
     text-align: center;
 }
 
-.price {
-}
-
 .cat .photo img {
     width: 100%;
 }
@@ -111,4 +108,58 @@ body {
 .cat > .rating > label:hover ~ input:checked ~ label,
 .cat > .rating > input:checked ~ label:hover ~ label {
     color: #FFED85;
+}
+
+#view,
+#view-label {
+    display: block;
+}
+
+#view:checked ~ .cat {
+    margin-right: 20px;
+    margin-left: auto;
+    width: 95%;
+    height: 300px;
+    /*border: 1px solid black;*/
+}
+
+#view:checked ~ .cat > .photo {
+    margin: 0;
+    padding: 20px 20px;
+    width: 20%;
+    float: left;
+}
+
+#view:checked ~ .cat .name-link {
+    width: 50%;
+    margin: 20px 0;
+    text-align: left;
+    float: none;
+}
+
+#view:checked ~ .cat .rating {
+    width: 15%;
+    text-align: left;
+    display: inline-block;
+    margin-left: -3%;
+    float: none;
+}
+
+#view:checked ~ .cat .type {
+    float: none;
+    width: 50%;
+    margin: 10px 20%;
+    padding-left: 50px;
+    text-align: left;
+}
+
+#view:checked ~ .cat .price {
+    float: none;
+    width: 50%;
+    margin: 0 20%;
+    padding-left: 50px;
+    text-align: left;
+}
+
+#view:checked ~ .cat .description {
 }
