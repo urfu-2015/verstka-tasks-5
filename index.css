@@ -50,13 +50,13 @@ body
     text-shadow: 2px 2px 2px #FFCE73;
 }
 
-.stars
+/*.stars
 {
     width: 165px;
     height: 35px;
     background: url(empty_star.png);
     background-repeat: repeat-x;
-}
+}*/
 
 img:hover
 {
@@ -78,7 +78,36 @@ input[value="line"]:checked ~ div
     border-radius: 5%;
 }
 
-.info:hover
+.stars
 {
-    font-weight: bolder;
+    display: inline;
+    margin: 0;
+    font-size: 33px;
+}
+
+input
+{
+    display:none;
+}
+
+input + label
+{
+   background: url(stars.png);
+   height: 33px;
+   width: 33px;
+   display:inline-block;
+   padding: 0 0 0 0px;
+}
+
+input[class~="star1"]:checked + label ~ input[class~="star1"] + label,
+input[class~="star2"]:checked + label ~ input[class~="star2"] + label,
+input[class~="star3"]:checked + label ~ input[class~="star3"] + label,
+input[class~="star4"]:checked + label ~ input[class~="star4"] + label,
+input[class~="star5"]:checked + label ~ input[class~="star5"] + label
+{
+    background: url(empty_star.png);
+    height: 33px;
+    width: 33px;
+    display:inline-block;
+    padding: 0 0 0 0px;
 }
