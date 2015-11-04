@@ -7,14 +7,14 @@ div
 {
     float: left;
     display: block;
-    background-color: #F0DC82;
-    color: #007FFF;
+    background-color: #f0dc82;
+    color: #007fff;
     margin: 1em 2em;
-    border: thick solid #FFDAB9;
+    border: thick solid #ffdab9;
 }
 div:hover
 {
-    color: #FF033E;
+    color: #ff033e;
 }
 label
 {
@@ -23,7 +23,7 @@ label
 body
 {
     display: block;
-    background-color: #FAEBD7;
+    background-color: #faebd7;
 }
 .text
 {
