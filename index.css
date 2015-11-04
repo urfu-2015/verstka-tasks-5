@@ -238,11 +238,6 @@ p
 
 .starRadio
 {
-    display: none;
-}
-
-.star
-{
     display: block;
     float: left;
     margin: 0;
@@ -250,6 +245,7 @@ p
     width: 24px;
     height: 48px;
     z-index: 2;
+    opacity: 0;
 }
 
 input.star0_5:checked ~ .stars_on
@@ -302,52 +298,52 @@ input.star5:checked ~ .stars_on
     width: 100%;
 }
 
-label.star0_5:hover ~ .stars_on
+input.star0_5:hover ~ .stars_on
 {
     width: 10% !important;
 }
 
-label.star1:hover ~ .stars_on
+input.star1:hover ~ .stars_on
 {
     width: 20% !important;
 }
 
-label.star1_5:hover ~ .stars_on
+input.star1_5:hover ~ .stars_on
 {
     width: 30% !important;
 }
 
-label.star2:hover ~ .stars_on
+input.star2:hover ~ .stars_on
 {
     width: 40% !important;
 }
 
-label.star2_5:hover ~ .stars_on
+input.star2_5:hover ~ .stars_on
 {
     width: 50% !important;
 }
 
-label.star3:hover ~ .stars_on
+input.star3:hover ~ .stars_on
 {
     width: 60% !important;
 }
 
-label.star3_5:hover ~ .stars_on
+input.star3_5:hover ~ .stars_on
 {
     width: 70% !important;
 }
 
-label.star4:hover ~ .stars_on
+input.star4:hover ~ .stars_on
 {
     width: 80% !important;
 }
 
-label.star4_5:hover ~ .stars_on
+input.star4_5:hover ~ .stars_on
 {
     width: 90% !important;
 }
 
-label.star5:hover ~ .stars_on
+input.star5:hover ~ .stars_on
 {
     width: 100% !important;
 }
