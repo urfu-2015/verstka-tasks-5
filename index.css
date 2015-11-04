@@ -100,14 +100,14 @@ body
 .cat > .rating:not(:checked) > label:hover,
 .cat > .rating:not(:checked) > label:hover ~ label
 {
-    color: #FFD700;
+    color: #ffd700;
 }
 .cat > .rating > input:checked + label:hover,
 .cat > .rating > input:checked ~ label:hover,
 .cat > .rating > label:hover ~ input:checked ~ label,
 .cat > .rating > input:checked ~ label:hover ~ label
 {
-    color: #FFED85;
+    color: #ffed85;
 }
 #view,
 #view-label
