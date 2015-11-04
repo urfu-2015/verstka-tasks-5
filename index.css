@@ -1,10 +1,8 @@
-
 .row
 {
     padding: 0;
     width: 100%;
 }
-
 
 h3
 {
@@ -21,7 +19,7 @@ h3
 .cat
 {
     border: 3px solid #410068;
-    background-color: #bbbbbb;
+    background-color: #bbb;
 }
 
 .cat:hover
@@ -38,11 +36,11 @@ h3
     left: 0;
     right: auto;
     float: left;
-    margin: 0.4em;
-    padding: 0.2em;
+    margin: .4em;
+    padding: .2em;
 }
 
-#tiles:checked ~ .row > .cat >.picha
+#tiles:checked ~ .row .picha
 {
     width: auto;
     height: 40%;
@@ -51,7 +49,7 @@ h3
     bottom: 0;
 }
 
-#tiles:checked ~ .row > .cat > .picha > .cat-img
+#tiles:checked ~ .row .cat-img
 {
     max-height: 98%;
     max-width: 98%;
@@ -63,22 +61,22 @@ h3
     margin: 0 auto;
 }
 
-#tiles:checked ~ .row > .cat > .character
+#tiles:checked ~ .row .character
 {
     padding: 0 6px;
 }
 
-#tiles:checked ~ .row > .cat > .description
+#tiles:checked ~ .row .description
 {
     padding: 0 6px;
 }
 
-#list:checked ~ .row > .cat
+#list:checked ~ .row .cat
 {
     width: 98%;
     height: 250px;
-    margin: 0.4em;
-    padding: 0.2em;
+    margin: .4em;
+    padding: .2em;
     display: block;
     position: relative;
 
@@ -87,7 +85,7 @@ h3
     float: left;
 }
 
-#list:checked ~ .row > .cat >.picha
+#list:checked ~ .row .picha
 {
     width: 19%;
     height: 100%;
@@ -96,7 +94,7 @@ h3
     float: left;
 }
 
-#list:checked ~ .row > .cat > .picha > .cat-img
+#list:checked ~ .row .cat-img
 {
     max-height: 98%;
     max-width: 98%;
@@ -108,7 +106,7 @@ h3
     margin: auto;
 }
 
-#list:checked ~ .row > .cat > .character
+#list:checked ~ .row .character
 {
     width: 53%;
     height: 100%;
@@ -117,7 +115,7 @@ h3
     padding-left: 2%;
 }
 
-#list:checked ~ .row > .cat > .description
+#list:checked ~ .row .description
 {
     width: 26%;
     height: 100%;
@@ -125,7 +123,6 @@ h3
     float: left;
 }
 
-/*Доделаю*/
 .rating
 {
     overflow: hidden;
