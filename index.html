@@ -4,8 +4,240 @@
         <meta charset="utf-8">
         <title>Мяндекс.Муррркет</title>
         <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <!-- Здесь прикладывать основное усилие -->
+        <h1 class="title">Мяндекс.Муррркет</h1>
+        <hr>
+        <input id="standart" type="radio" name="type-render" checked>Плитками</input>
+        <br>
+        <input id="list" type="radio" name="type-render">Списком</input>
+        <br>
+        <section class="main-block">
+	        <article class="sale-block">
+	        	<div class="image-block"> 
+	        		<img class="img-cat" src="img/romantic_cat.gif" alt="cat">
+	        	</div>
+	        	<div class="info-block">
+		        	<span class="title-url">
+		        		<a href="#">Кот романтик - <span class="name">Леонардо</span></a>
+	        		</span>
+		        	<span class="categorys"><a href="#">Коты</a> - <a href="#">Романтики</a></span>
+		        	<span class="rating">
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+	        		</span>
+		        	<span class="price">$55.99</span>
+		        </div>
+	        	<div class="desc-block">
+	        		<h4 class="title-desc">Описание товара</h4>
+		        	<p class="desc">
+		        		Данный кот может покорить сердце любой дамы.
+		        		<br>
+		        		Этакий Дон Жуан своего времени.
+		        	</p>
+	        	</div>
+	        </article>
+	        <article class="sale-block">
+	        	<div class="image-block"> 
+	        		<img class="img-cat" src="img/math_cat.jpg" alt="cat">
+	        	</div>
+	        	<div class="info-block">
+		        	<span class="title-url">
+		        		<a href="#">Кот математик - <span class="name">Эйлер</span></a>
+		        	</span>
+		        	<span class="categorys"><a href="#">Коты</a> - <a href="#">Мозговитые</a></span>
+		        	<span class="rating">
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+	        		</span>
+		        	<span class="price">$145</span><span class="old-price">$200</span>
+		        </div>
+	        	<div class="desc-block">
+	        		<i>Бесплатная доставка !</i>
+	        		<h4 class="title-desc">Описание товара</h4>
+		        	<p class="desc">
+		        		Фибонначи, Ньютон, Ананичев... Обо всех них он знает не по наслышке.
+		        		<br>
+		        		Кот занимался многими арифметическими задачами, разрабатывал криптографические алгоритмы,
+		        		преподавал в Бауманке, сейчас же просто вышел на пенсию и ищет спокойной тихой жизни.
+		        	</p>
+	        	</div>
+	        </article>
+	        <article class="sale-block">
+	        	<div class="image-block"> 
+	        		<img class="img-cat" src="img/prog_cat.jpg" alt="cat">
+	        	</div>
+	        	<div class="info-block">
+		        	<span class="title-url">
+		        		<a href="#">Кот программист - <span class="name">Стив</span></a>
+	        		</span>
+		        	<span class="categorys"><a href="#">Коты</a> - <a href="#">Работящие</a></span>
+		        	<span class="rating">
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+	        		</span>
+		        	<span class="price">$299</span>
+		        </div>
+	        	<div class="desc-block">
+	        		<h4 class="title-desc">Описание товара</h4>
+		        	<p class="desc">
+		        		Кот занимался фрилансом, после чего устроился на работу 
+		        		веб-разработчиком интерфейсов в Яндекс.
+		        		<br>
+		        		Cейчас же поднимается вверх 
+		        		по карьерной лестнице и ищет новый дом.
+		        	</p>
+	        	</div>
+	        </article>
+	        <article class="sale-block">
+	        	<div class="image-block"> 
+	        		<img class="img-cat" src="img/angry_cat.jpeg" alt="cat">
+	        	</div>
+	        	<div class="info-block">
+		        	<span class="title-url">
+		        		<a href="#">Кот бандит - <span class="name">Тони Котвионе</span></a>
+	        		</span>
+		        	<span class="categorys"><a href="#">Коты</a> - <a href="#">Опасные</a></span>
+		        	<span class="rating">
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+	        		</span>
+		        	<span class="price">$599.99</span><span class="old-price">$700.49</span>
+		        </div>
+	        	<div class="desc-block">
+	        		<i>Бесплатная доставка !</i>
+	        		<h4 class="title-desc">Описание товара</h4>
+		        	<p class="desc">
+		        		Тони вырос в неблагополучном районе, где царили деньги, криминал и убийство.
+		        		<br>
+		        		Это сказалось на его личности: сначала он занимался лёгким рэкитом, после
+		        		попал в семью Котвионе, и на сей момент является правой лапой Дона.
+		        	</p>
+	        	</div>
+	        </article>
+	        <article class="sale-block">
+	        	<div class="image-block"> 
+	        		<img class="img-cat" src="img/cute_cat.jpeg" alt="cat">
+	        	</div>
+	        	<div class="info-block">
+		        	<span class="title-url">
+		        		<a href="#">Кот милаш - <span class="name">Мурсик</span></a>
+	        		</span>
+		        	<span class="categorys"><a href="#">Коты</a> - <a href="#">Милые</a></span>
+		        	<span class="rating">
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+	        		</span>
+		        	<span class="price">$299.99</span><span class="old-price">$350</span>
+		        </div>
+	        	<div class="desc-block">
+	        		<h4 class="title-desc">Описание товара</h4>
+		        	<p class="desc">
+		        		Мурсик очень молодой и милый кот.
+		        		<br>
+		        		Ищет такого же милого и доброго хозяина :3.
+		        	</p>
+	        	</div>
+	        </article>
+	        <article class="sale-block">
+	        	<div class="image-block"> 
+	        		<img class="img-cat" src="img/hipster_cat.jpg" alt="cat">
+	        	</div>
+	        	<div class="info-block">
+		        	<span class="title-url">
+		        		<a href="#">Кот хипстер - <span class="name">Алекс</span></a>
+	        		</span>
+		        	<span class="categorys"><a href="#">Коты</a> - <a href="#">Неординарные</a></span>
+		        	<span class="rating">
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+	        		</span>
+		        	<span class="price">$199</span>
+		        </div>
+	        	<div class="desc-block">
+	        		<h4 class="title-desc">Описание товара</h4>
+		        	<p class="desc">
+		        		Кот, которого успела охватить эра хипстеров.
+		        		<br>
+		        		Имеет в своём арсенале iPhone, кеды и клетчатую рубашку. Ищет
+		        		хозяина, который смог бы разделить его интересы.
+		        	</p>
+	        	</div>
+	        </article>
+	        <article class="sale-block">
+	        	<div class="image-block"> 
+	        		<img class="img-cat" src="img/soldier_cat.jpg" alt="cat">
+	        	</div>
+	        	<div class="info-block">
+		        	<span class="title-url">
+		        		<a href="#">Кот вояка - <span class="name">Иван</span></a>
+	        		</span>
+		        	<span class="categorys"><a href="#">Коты</a> - <a href="#">Военные</a></span>
+		        	<span class="rating">
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+	        		</span>
+		        	<span class="price">$999</span>
+		        </div>
+	        	<div class="desc-block">
+	        		<h4 class="title-desc">Описание товара</h4>
+		        	<p class="desc">
+		        		Участник боевых действий, ветеран 5-ой войны за Whiskas.
+		        		<br>
+		        		Кот старой закалки, ему ничего не страшно, ищет такого же боевого хозяина,
+		        		ведь 6-я война не за горами...
+		        	</p>
+	        	</div>
+	        </article>
+	        <article class="sale-block">
+	        	<div class="image-block"> 
+	        		<img class="img-cat" src="img/pidr_cat.jpg" alt="cat">
+	        	</div>
+	        	<div class="info-block">
+		        	<span class="title-url">
+		        		<a href="#">Кот обычный - <span class="name">Пётр</span></a>
+	        		</span>
+		        	<span class="categorys"><a href="#">Коты</a> - <a href="#">Непопулярные</a></span>
+		        	<span class="rating">
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+		        		<span>☆</span>
+	        		</span>
+		        	<span class="price">$50</span><span class="old-price">$100</span>
+		        </div>
+	        	<div class="desc-block">
+	        		<h4 class="title-desc">Описание товара</h4>
+		        	<p class="desc">
+		        		Взгляд этого кота оставляет желать лучшего.
+		        		<br>
+		        		А сейчас он смотрит на тебя как на...
+		        	</p>
+	        	</div>
+	        </article>
+	    </section>
     </body>
 </html>
