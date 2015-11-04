@@ -27,7 +27,7 @@ header > h1
 .display-label
 {
     font-size: 25px;
-	font-weight: 900;
+    font-weight: 900;
 }
 
 section
@@ -38,20 +38,20 @@ section
 
 .cat
 {
-    float: left;;
-	position: relative;
-	width: 350px;
+    float: left;
+    position: relative;
+    width: 350px;
     min-height: 650px;
-	border-radius: 20px;
-    background-color: rgba(26, 26, 26, 0.7);
+    border-radius: 20px;
+    background-color: rgba(26, 26, 26, .7);
     color: #dedede;
-	margin: 20px;
-	padding: 30px 20px;
+    margin: 20px;
+    padding: 30px 20px;
 }
 
 .cat:hover
 {
-	box-shadow: 2px 5px 40px 20px rgba(26, 26, 26, 1); 
+    box-shadow: 2px 5px 40px 20px rgba(26, 26, 26, 1);
 }
 
 img
@@ -61,53 +61,54 @@ img
 
 img:hover
 {
-    box-shadow: 2px 5px 40px 28px rgba(32, 17, 50, 0.7); 
+    box-shadow: 2px 5px 40px 28px rgba(32, 17, 50, .7);
 }
 
 .foto
 {
-	height: 40%;
+    height: 40%;
 }
 
 .name
 {
-	white-space: nowrap;
+    white-space: nowrap;
     text-overflow: ellipsis;
-	overflow: hidden;
-	font-family: "Lobster", cursive;
-	font-size: 3em;
+    overflow: hidden;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
 }
 
 .name:hover
 {
     color: #000;
 }
+
 .price
 {
     display: inline-block;
-	width: 100%;
-	text-align: left;
-	font-family: "Lobster", cursive;
-	font-size: 2em;
+    width: 100%;
+    text-align: left;
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
     color: #a12;
-	text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 .old
 {
     color: #dedede;
-	text-decoration: line-through;
-	float: right;
+    text-decoration: line-through;
+    float: right;
 }
 
 .features,
 .category
 {
-    font-family: "Roboto Slab", serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .category:hover
@@ -176,7 +177,7 @@ img:hover
     display: block;
     width: 24px;
     height: 24px;
-    background: url("http://goo.gl/Ub6E4b") 0 -48px;
+    background: url('http://goo.gl/Ub6E4b') 0 -48px;
 }
 
 .rating:hover .rating-star:hover,
@@ -185,4 +186,3 @@ img:hover
 {
     background-position: 0 0;
 }
-
