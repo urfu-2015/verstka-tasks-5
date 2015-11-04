@@ -19,6 +19,7 @@ section.cat-shop
 #tile:checked ~ .cat-shop .shop-item .item-img
 {
     display: block;
+    bottom: 0;
 }
 
 #tile:checked ~ .cat-shop .shop-item .item-description
@@ -52,7 +53,6 @@ section.cat-shop
 {
     display: block;
     overflow: visible;
-    float: right;
     width: 550px;
     margin-left: 20px;
     margin-right: 20px;
@@ -66,6 +66,7 @@ section.cat-shop
 .cat-shop img
 {
     max-width: 250px;
+    max-height: 250px;
 }
 
 .shop-item
@@ -90,20 +91,28 @@ section.cat-shop
     overflow: hidden;
 }
 
+.cat-shop .shop-item .item-img
+{
+    height: 254px;
+    bottom: 0;
+}
+
 .shop-item .category
 {
     text-decoration: underline;
     color: #8a8a8a;
 }
 
-.shop-item .price, .shop-item .old-price
+.shop-item .price,
+.shop-item .old-price
 {
     font-size: 24px;
     font-weight: 700;
     color: #c00315;
 }
 
-.shop-item .price::after, .shop-item .old-price::after
+.shop-item .price::after,
+.shop-item .old-price::after
 {
     content: '₽';
 }
