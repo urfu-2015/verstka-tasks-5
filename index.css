@@ -63,6 +63,25 @@ h1
     margin: 0 15px;
 }
 
+.showTypeTableLabel,
+.showTypeListLabel
+{
+    transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+}
+
+.showTypeTableLabel:hover,
+.showTypeListLabel:hover
+{
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
 .catItem
 {
     display: inline-block;
