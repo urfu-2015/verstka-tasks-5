@@ -84,21 +84,29 @@ h1
     max-height: 300px;
     width: 380px;
     max-width: 380px;
+    overflow: hidden;
     position: relative;
 }
 
 .catImage
 {
-    max-height: 260px;
-    max-width: 340px;
+    max-height: 300px;
+    max-width: 380px;
     position: absolute;
     bottom: 0;
+    transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
 }
 
 .photoContainer:hover .catImage
 {
-    max-height: 300px;
-    max-width: 380px;
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .catName
