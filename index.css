@@ -1,1 +1,84 @@
-
+div
+{
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    padding: 0;
+    border: 0;
+    display: inline-table;
+}
+div:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+img:hover
+{
+    border-radius: 0;
+    width: 400px;
+    height: 300px;
+    z-index: 100;
+}
+img
+{
+    border-radius: 50%;
+    width: 350px;
+    height: 250px;
+}
+.name
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+p
+{
+    text-align: left;
+}
+strong
+{
+    font-size: 30px;
+    color: #f00;
+}
+@media screen and (max-width: 1100px)
+{
+    div
+    {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 840px)
+{
+    div
+    {
+        display: block;
+        width: 100%;
+        height: 350px;
+    }
+    img
+    {
+        float: left;
+    }
+}
+input[value = 's']:checked ~ div
+{
+    width: 100%;
+}
+.sun
+{
+    width: 15px;
+    height: 15px;
+    float: left;
+    display: none;
+}
+.vis:hover img
+{
+    display: block;
+}
+a:hover
+{
+    color: #0f0;
+}
