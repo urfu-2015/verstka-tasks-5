@@ -11,15 +11,10 @@ header,
 main
 {
     margin: 0 auto;
-    padding: 10px 0;
-    width: 1710px;
+    min-width: 425px;
     max-width: 1710px;
+    padding: 10px 0;
     background-color: #63add0;
-}
-
-main
-{
-    text-align: justify;
 }
 
 header
@@ -35,6 +30,7 @@ h1
     font-size: 150px;
     color: #034769;
     letter-spacing: 15px;
+    word-wrap: break-word;
 }
 
 .showTypeTable
@@ -71,10 +67,6 @@ h1
 {
     display: inline-block;
     vertical-align: bottom;
-    height: 630px;
-    max-height: 630px;
-    width: 380px;
-    max-width: 380px;
     background-color: #ffbe73;
     padding: 10px;
     margin: 10px;
@@ -183,12 +175,17 @@ p
     margin: 10px 0;
 }
 
+.showTypeTable:checked ~ .catItem
+{
+    width: 380px;
+    max-width: 380px;
+    height: 630px;
+    max-height: 630px;
+}
+
 .showTypeList:checked ~ .catItem
 {
     display: block;
-    width: 1650px;
-    max-width: 1650px;
-    height: 300px;
 }
 
 .showTypeList:checked ~ .catItem .photoContainer
@@ -213,7 +210,6 @@ p
 {
     vertical-align: top;
     display: inline-block;
-    width: 500px;
     margin-top: 0;
 }
 
@@ -221,7 +217,7 @@ p
 {
     vertical-align: top;
     display: inline-block;
-    width: 500px;
+    max-width: 500px;
     margin-top: 0;
 }
 
