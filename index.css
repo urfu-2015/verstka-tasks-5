@@ -187,7 +187,6 @@ article
     float: left;
     width: 300px;
     text-overflow: ellipsis;
-    display: block;
     margin-left: 20px;
     margin-top: 20px;
 }
