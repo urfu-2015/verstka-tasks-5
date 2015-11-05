@@ -68,6 +68,42 @@ article .info .link
     overflow: hidden;
 }
 
+article .info h1:hover
+{
+    font-size: xx-large;
+}
+
+article .info .Alignment:hover
+{
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+
+article .info .Alignment.evil:hover
+{
+    color: #ff0000;
+}
+article .info .Alignment.good:hover
+{
+    color: #00ff00;
+}
+article .info .Alignment.neutral:hover
+{
+    color: #0000ff;
+}
+
+article .image:hover
+{
+    width: 320px;
+    margin-left: -10px;
+}
+
+article .info .money:hover
+{
+    color: #ffd700;
+}
+
 article:hover
 {
     box-shadow: 4px 4px 4px 4px #023;
@@ -109,6 +145,7 @@ article .info
 .rating > span:hover ~ span:before
 {
     content: '\2605';
+    color: #ffff00;
     position: absolute;
 }
 
