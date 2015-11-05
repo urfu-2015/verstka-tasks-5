@@ -1,32 +1,39 @@
-html{
+html
+{
     background-color: #fff;
 }
-body{
+body
+{
     width: auto;
     margin: auto;
     padding: 10px;
 }
-header{
+header
+{
     text-align: center;
     font-family: 'Philosopher';
     color: red;
     background-color: #EDEDED;
     padding: 15px;
 }
-footer{
+footer
+{
     text-align: right;
 }
-main{
+main
+{
     text-align: center;
     margin: 5px 0;
 }
-.style_page{
+.style_page
+{
     width: 100%;
     background-color: #EDEDED;
     padding: 10px;
     margin: 5px auto;
 }
-.block{
+.block
+{
     vertical-align: top;
     display: inline-block;
     width: 300px;
@@ -34,42 +41,51 @@ main{
     padding: 5px;
     margin: 5px;
 }
-.block:hover{
+.block:hover
+{
     background-color: rgba(255, 225, 200, 0.5);
 }
-#toList:checked ~ div > .block {
+#toList:checked ~ div > .block
+{
     width: auto;
     display: block;
 }
-#toList:checked ~ div > .block .photo{
+#toList:checked ~ div > .block .photo
+{
     width: 15%;
     display: inline-block;
 }
-#toList:checked ~ div > .block .info{
+#toList:checked ~ div > .block .info
+{
     padding-top: 10px;
     width: 25%;
     display: inline-block;
     vertical-align: top;
 }
-#toList:checked ~ div > .block .info .price{
+#toList:checked ~ div > .block .info .price
+{
     text-align: center;
 }
-#toList:checked ~ div > .block .description{
+#toList:checked ~ div > .block .description
+{
     width: 50%;
     display: inline-block;
     vertical-align: top;
     margin: 0;
 }
-.photo{
+.photo
+{
     width: 250px;
     padding: 10px 25px;
 }
-.photo:hover{
+.photo:hover
+{
     width: 270px;
     padding: 0px;
     border: dotted 3px red;
 }
-.name{
+.name
+{
     text-align: center;
     font: 24px 'Philosopher';
     text-decoration: none;
@@ -79,31 +95,38 @@ main{
     overflow: hidden;
     white-space: nowrap;
 }
-.name:hover{
+.name:hover
+{
     font-weight: bold;
 }
-.category{
+.category
+{
     display: block;
     margin: 10px;
 }
-.category:hover{
+.category:hover
+{
 	border: solid 1px grey;
 }
-.rating{
+.rating
+{
     display: block;
     margin: 10px;
 }
-.rating img{
+.rating img
+{
     width: 20px;
 }
-.price{
+.price
+{
     display: block;
     color: red;
     font-size: 18px;
     margin: 10px;
     text-align: left;
 }
-.description{
+.description
+{
     display: block;
     margin: 10px;
     text-align: justify;
