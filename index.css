@@ -64,6 +64,11 @@ main{
     width: 250px;
     padding: 10px 25px;
 }
+.photo:hover{
+    width: 270px;
+    padding: 0px;
+    border: dotted 3px red;
+}
 .name{
     text-align: center;
     font: 24px 'Philosopher';
@@ -80,6 +85,9 @@ main{
 .category{
     display: block;
     margin: 10px;
+}
+.category:hover{
+	border: solid 1px grey;
 }
 .rating{
     display: block;
