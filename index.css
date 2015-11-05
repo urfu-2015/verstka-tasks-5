@@ -1,1 +1,366 @@
+h1
+{
+    text-align: center;
+    color: #1e104b;
+}
 
+main > input[type='radio']
+{
+    display: none;
+}
+
+main > input[type='radio'] + label
+{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+}
+
+main > input[type='radio'] + label:hover
+{
+    box-shadow: 0 0 10px #000;
+}
+
+main > input[type='radio']#tile + label
+{
+    background-image: url('img/tile.png');
+}
+
+main > input[type='radio']#list + label
+{
+    background-image: url('img/list.png');
+}
+
+section.cat-shop
+{
+    margin: 0 auto;
+}
+
+#tile:checked ~ .cat-shop .shop-item
+{
+    display: inline-block;
+}
+
+#tile:checked ~ .cat-shop .shop-item .item-img
+{
+    display: block;
+    bottom: 0;
+}
+
+#tile:checked ~ .cat-shop .shop-item .item-info
+{
+    display: block;
+}
+
+#tile:checked ~ .cat-shop .shop-item .name
+{
+    text-align: center;
+}
+
+#tile:checked ~ .cat-shop .shop-item img
+{
+    bottom: 0;
+}
+
+#list:checked ~ .cat-shop .shop-item
+{
+    display: block;
+    width: 950px;
+    height: 300px;
+}
+
+#list:checked ~ .cat-shop .shop-item .item-img
+{
+    display: block;
+    overflow: visible;
+    float: left;
+    width: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#list:checked ~ .cat-shop .shop-item .item-info
+{
+    display: inline-block;
+    overflow: visible;
+    width: 200px;
+    margin-left: 20px;
+}
+
+#list:checked ~ .cat-shop .shop-item .name
+{
+    text-align: left;
+}
+
+#list:checked ~ .cat-shop .shop-item img
+{
+    top: 0;
+    bottom: auto;
+}
+
+#list:checked ~ .cat-shop .shop-item  .item-description
+{
+    display: inline-block;
+    width: 350px;
+    margin-left: 20px;
+}
+
+.shop-item
+{
+    width: 270px;
+    height: 500px;
+    padding: 10px;
+    margin: 30px 20px;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+
+.shop-item:hover
+{
+    box-shadow: 0 0 10px rgba(49, 0, 75, .5);
+    border: 1px solid #aaa;
+}
+
+.cat-shop img
+{
+    max-width: 250px;
+    max-height: 250px;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.cat-shop .shop-item img:hover
+{
+    border-radius: 120px;
+    box-shadow: 0 0 10px rgba(125, 0, 197, .5);
+}
+
+.shop-item a:hover
+{
+    color: #e58500;
+}
+
+.shop-item div .name
+{
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cat-shop .shop-item .item-img
+{
+    height: 254px;
+    position: relative;
+}
+
+.shop-item .category
+{
+    color: #8a8a8a;
+}
+
+.cat-shop .shop-item .category:hover
+{
+    text-decoration: underline;
+    color: #fb021c;
+}
+
+.shop-item .price,
+.shop-item .old-price
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: #c00315;
+}
+
+.shop-item .price::after,
+.shop-item .old-price::after
+{
+    content: '₽';
+}
+
+.shop-item .out-of-stock
+{
+    color: #595959;
+}
+
+.shop-item .old-price
+{
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+.shop-item .sale
+{
+    color: #e11900;
+}
+
+.shop-item input[type='radio']
+{
+    display: none;
+}
+
+.shop-item .goodness
+{
+    position: relative;
+    height: 22px;
+    width: 100px;
+}
+
+.shop-item .no-star
+{
+    background-image: url('img/no-star.png');
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 22px;
+    background-repeat: repeat-x;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.shop-item .star
+{
+    background-image: url('img/star.png');
+    width: 0;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: 0;
+    pointer-events: none;
+}
+
+.shop-item .goodness input[type='radio']
+{
+    z-index: 2;
+    display: block;
+    float: left;
+    width: 10px;
+    height: 22px;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.shop-item input[type='radio'].star0:checked ~ .star
+{
+    width: 0;
+}
+
+.shop-item input[type='radio'].star0_5:checked ~ .star
+{
+    width: 10%;
+}
+
+.shop-item input[type='radio'].star1:checked ~ .star
+{
+    width: 20%;
+}
+
+.shop-item input[type='radio'].star1_5:checked ~ .star
+{
+    width: 30%;
+}
+
+.shop-item input[type='radio'].star2:checked ~ .star
+{
+    width: 40%;
+}
+
+.shop-item input[type='radio'].star2_5:checked ~ .star
+{
+    width: 50%;
+}
+
+.shop-item input[type='radio'].star3:checked ~ .star
+{
+    width: 60%;
+}
+
+.shop-item input[type='radio'].star3_5:checked ~ .star
+{
+    width: 70%;
+}
+
+.shop-item input[type='radio'].star4:checked ~ .star
+{
+    width: 80%;
+}
+
+.shop-item input[type='radio'].star4_5:checked ~ .star
+{
+    width: 90%;
+}
+
+.shop-item input[type='radio'].star5:checked ~ .star
+{
+    width: 100%;
+}
+
+.shop-item input[type='radio'].star0:hover ~ .star
+{
+    width: 0;
+}
+
+.shop-item input[type='radio'].star0_5:hover ~ .star
+{
+    width: 10%;
+}
+
+.shop-item input[type='radio'].star1:hover ~ .star
+{
+    width: 20%;
+}
+
+.shop-item input[type='radio'].star1_5:hover ~ .star
+{
+    width: 30%;
+}
+
+.shop-item input[type='radio'].star2:hover ~ .star
+{
+    width: 40%;
+}
+
+.shop-item input[type='radio'].star2_5:hover ~ .star
+{
+    width: 50%;
+}
+
+.shop-item input[type='radio'].star3:hover ~ .star
+{
+    width: 60%;
+}
+
+.shop-item input[type='radio'].star3_5:hover ~ .star
+{
+    width: 70%;
+}
+
+.shop-item input[type='radio'].star4:hover ~ .star
+{
+    width: 80%;
+}
+
+.shop-item input[type='radio'].star4_5:hover ~ .star
+{
+    width: 90%;
+}
+
+.shop-item input[type='radio'].star5:hover ~ .star
+{
+    width: 100%;
+}
