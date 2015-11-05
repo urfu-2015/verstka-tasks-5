@@ -130,7 +130,6 @@ article .info
     unicode-bidi: bidi-override;
     direction: rtl;
     display: inline-block;
-
 }
 
 .rating > span
@@ -152,4 +151,45 @@ article .description
 {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+form > input
+{
+    display: none;
+}
+
+form
+{
+    font-size: 0;
+    letter-spacing: 0;
+    direction: rtl;
+    position: relative;
+}
+
+form > label:not([class='empty']):before
+{
+    content: '\f089';
+    font-size: 20px;
+}
+
+label
+{
+    color: #000;
+}
+
+label:hover ~ label
+{
+    color: #ff0;
+    text-shadow: 1px 1px #ff0;
+}
+
+.right
+{
+    transform: scale(-1, 1);
+    margin-left: -2px;
+}
+
+input:checked ~ label
+{
+    color: #ff0;
 }
