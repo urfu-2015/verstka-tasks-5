@@ -145,7 +145,7 @@ a
 /* Вёрстка списком */
 #list:checked ~ .main-block
 {
-    padding: 0 100px;
+    margin: 0 150px;
 }
 #list:checked ~ .main-block .sale-block
 {
