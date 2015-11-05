@@ -1,17 +1,38 @@
+div
+{
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    padding: 0;
+    border: 0;
+    display: inline-table;
+}
+div:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+img:hover
+{
+    border-radius: 0;
+    width: 400px;
+    height: 300px;
+    z-index: 100;
+}
 img
 {
     border-radius: 50%;
     width: 350px;
     height: 250px;
 }
-div
+.name
 {
-    width: 33%;
-    height: auto;
     margin: 0;
     padding: 0;
     border: 0;
-    display: inline-table;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 p
 {
@@ -45,4 +66,19 @@ strong
 input[value = 's']:checked ~ div
 {
     width: 100%;
+}
+.sun
+{
+    width: 15px;
+    height: 15px;
+    float: left;
+    display: none;
+}
+.vis:hover img
+{
+    display: block;
+}
+a:hover
+{
+    color: #0f0;
 }
