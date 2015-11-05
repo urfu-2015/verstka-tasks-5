@@ -3,10 +3,9 @@
 .item
 {
     width: 250px;
-    height: 500px;
-    float: left;
+    display: inline-block;
     margin: 30px;
-    padding-top: auto;
+    vertical-align: top;
 }
 .item:hover
 {
@@ -17,7 +16,6 @@ img
     max-width: 100%;
     max-height: 100%;
     vertical-align: bottom;
-    margin: auto auto;
 }
 img:hover
 {
@@ -47,10 +45,7 @@ img:hover
     font-size: 24px;
     color: #6a5acd;
 }
-.name a:visited
-{
-    color: #6a5acd;
-}
+.name a:visited,
 .name a:link
 {
     color: #6a5acd;
