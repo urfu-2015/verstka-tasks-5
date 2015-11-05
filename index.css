@@ -13,7 +13,7 @@ header
     text-align: center;
     font-family: 'Philosopher';
     color: red;
-    background-color: #EDEDED;
+    background-color: #ededed#f0f0f0;
     padding: 15px;
 }
 footer
@@ -28,7 +28,7 @@ main
 .style_page
 {
     width: 100%;
-    background-color: #EDEDED;
+    background-color: #ededed;
     padding: 10px;
     margin: 5px auto;
 }
@@ -37,13 +37,13 @@ main
     vertical-align: top;
     display: inline-block;
     width: 300px;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     padding: 5px;
     margin: 5px;
 }
 .block:hover
 {
-    background-color: rgba(255, 225, 200, 0.5);
+    background-color: rgba(255, 225, 200, .5);
 }
 #toList:checked ~ div > .block
 {
@@ -81,7 +81,7 @@ main
 .photo:hover
 {
     width: 270px;
-    padding: 0px;
+    padding: 0;
     border: dotted 3px red;
 }
 .name
@@ -106,7 +106,7 @@ main
 }
 .category:hover
 {
-	border: solid 1px grey;
+    border: solid 1px grey;
 }
 .rating
 {
