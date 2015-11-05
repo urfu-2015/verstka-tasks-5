@@ -1,21 +1,19 @@
 body
 {
     font-family: 'Jura', sans-serif;
-    width: 95%;
+}
+.main-block
+{
+    text-align: center;
     margin: auto;
 }
 .title
 {
-    text-align: center;
     font-style: italic;
 }
 .title:first-letter
 {
     color: red;
-}
-.main-block
-{
-    text-align: center;
 }
 .sale-block
 {
@@ -27,16 +25,15 @@ body
     text-align: left;
     -webkit-box-shadow: 0 0 15px 10px rgba(255, 255, 255, .75);
     -moz-box-shadow: 0 0 15px 10px rgba(255, 255, 255, .75);
-    -khtml-box-shadow: 0 0 15px 10px rgba(255, 255, 255, .75);
     box-shadow: 0 0 15px 10px rgba(255, 255, 255, .75);
 }
 .sale-block:hover
 {
     -webkit-box-shadow: 0 0 15px 5px rgba(0, 185, 233, .75);
     -moz-box-shadow: 0 0 15px 5px rgba(0, 185, 233, .75);
-    -khtml-box-shadow: 0 0 15px 5px rgba(0, 185, 233, .75);
     box-shadow: 0 0 15px 5px rgba(0, 185, 233, .75);
     -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
     transition: all .7s ease;
 }
 .img-cat
@@ -46,27 +43,22 @@ body
     height: 200px;
     -webkit-border-radius:50px;
     -moz-border-radius: 50px;
-    -khtml-border-radius: 50px;
     border-radius: 50px;
     -webkit-transition: all .7s ease;
     -moz-transition: all .7s ease;
-    -khtml-transition: all .7s ease;
-    transition: .7s ease;
+    transition: all .7s ease;
     opacity: 1;
 }
 .img-cat:hover
 {
-    -webkit-box-shadow: 0 0 15px 15px #fff;
-    -moz-box-shadow: 0 0 15px 15px #fff;
-    -khtml-box-shadow: 0 0 15px 15px #fff;
-    box-shadow: 0 0 15px 15px #fff;
+    -webkit-box-shadow: 0 0 3px 3px #000;
+    -moz-box-shadow: 0 0 3px 3px #000;
+    box-shadow: 0 0 3px 3px #000;
     -webkit-border-radius:50%;
     -moz-border-radius: 50%;
-    -khtml-border-radius: 50%;
     border-radius: 50%;
     -webkit-transform: rotate(720deg);
     -moz-transform: rotate(720deg);
-    -khtml-transform: rotate(720deg);
     transform: rotate(720deg);
     opacity: .6;
 }
