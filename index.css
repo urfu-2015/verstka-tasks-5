@@ -281,6 +281,19 @@ p
     pointer-events: none;
 }
 
+.stars_selected
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 48px;
+    width: 0;
+    background-image: url('star_select.png');
+    background-repeat: repeat-x;
+    z-index: 2;
+    pointer-events: none;
+}
+
 .starRadio
 {
     display: block;
@@ -289,106 +302,66 @@ p
     padding: 0;
     width: 24px;
     height: 48px;
-    z-index: 2;
+    z-index: 3;
     opacity: 0;
 }
 
-input.star0_5:checked ~ .stars_on
+input.star0_5:checked ~ .stars_on,
+input.star0_5:hover ~ .stars_selected
 {
     width: 10%;
 }
 
-input.star1:checked ~ .stars_on
+input.star1:checked ~ .stars_on,
+input.star1:hover ~ .stars_selected
 {
     width: 20%;
 }
 
-input.star1_5:checked ~ .stars_on
+input.star1_5:checked ~ .stars_on,
+input.star1_5:hover ~ .stars_selected
 {
     width: 30%;
 }
 
-input.star2:checked ~ .stars_on
+input.star2:checked ~ .stars_on,
+input.star2:hover ~ .stars_selected
 {
     width: 40%;
 }
 
-input.star2_5:checked ~ .stars_on
+input.star2_5:checked ~ .stars_on,
+input.star2_5:hover ~ .stars_selected
 {
     width: 50%;
 }
 
-input.star3:checked ~ .stars_on
+input.star3:checked ~ .stars_on,
+input.star3:hover ~ .stars_selected
 {
     width: 60%;
 }
 
-input.star3_5:checked ~ .stars_on
+input.star3_5:checked ~ .stars_on,
+input.star3_5:hover ~ .stars_selected
 {
     width: 70%;
 }
 
-input.star4:checked ~ .stars_on
+input.star4:checked ~ .stars_on,
+input.star4:hover ~ .stars_selected
 {
     width: 80%;
 }
 
-input.star4_5:checked ~ .stars_on
+input.star4_5:checked ~ .stars_on,
+input.star4_5:hover ~ .stars_selected
 {
     width: 90%;
 }
 
-input.star5:checked ~ .stars_on
+input.star5:checked ~ .stars_on,
+input.star5:hover ~ .stars_selected
 {
     width: 100%;
-}
-
-input.star0_5:hover ~ .stars_on
-{
-    width: 10% !important;
-}
-
-input.star1:hover ~ .stars_on
-{
-    width: 20% !important;
-}
-
-input.star1_5:hover ~ .stars_on
-{
-    width: 30% !important;
-}
-
-input.star2:hover ~ .stars_on
-{
-    width: 40% !important;
-}
-
-input.star2_5:hover ~ .stars_on
-{
-    width: 50% !important;
-}
-
-input.star3:hover ~ .stars_on
-{
-    width: 60% !important;
-}
-
-input.star3_5:hover ~ .stars_on
-{
-    width: 70% !important;
-}
-
-input.star4:hover ~ .stars_on
-{
-    width: 80% !important;
-}
-
-input.star4_5:hover ~ .stars_on
-{
-    width: 90% !important;
-}
-
-input.star5:hover ~ .stars_on
-{
-    width: 100% !important;
 }
