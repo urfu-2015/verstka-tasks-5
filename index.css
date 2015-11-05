@@ -10,7 +10,7 @@
 }
 .item:hover
 {
-    box-shadow: 0 0 10px 5px rgba(0,0,0,.5);
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
 }
 img
 {
@@ -65,7 +65,7 @@ img:hover
 .cost:hover
 {
     font-size: 26px;
-    color: #e00;
+    color: #ee0000;
 }
 .cost
 {
@@ -97,6 +97,10 @@ p
     width: 100px;
     height: 20px;
     display: block;
+}
+.colomnRight, .colomnCenter
+{
+    margin-left: 7px
 }
 
 input[type='radio']
