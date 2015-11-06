@@ -4,19 +4,19 @@ header
     font-size: 50px;
 }
 
-input[id="tiles"]:checked ~ .item
+input[id='tiles']:checked ~ .item article
 {
     display: inline-block;
     width: 400px;
 }
 
-input[id="list"]:checked ~ .item
+input[id='list']:checked ~ .item article
 {
     display: block;
     border-bottom: 1px solid black;
 }
 
-.item
+.item article
 {
     font-size: 18px;
     font-family: sans-serif;
@@ -24,46 +24,55 @@ input[id="list"]:checked ~ .item
     vertical-align: top;
 }
 
-input[id="tiles"]:checked ~ .item .itemImg
+input[id='tiles']:checked ~ .item article .itemimg
 {
     height: 200px;
     width: auto;
 }
 
-.oldPrice
+.old-price
 {
     text-decoration: line-through;
     font-size: smaller;
 }
 
-.itemPrice
+.item-price
 {
     color: #7e0600;
     font-weight: bold;
     font-size: larger;
 }
 
-.itemName
+.item-name
 {
     display: block;
     font-size: 180%;
     font-weight: bold;
     font-family: Comic Sans, Comic Sans MS, cursive;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
 }
 
-.item:hover
+.item-name:hover
+{
+    white-space: normal;
+}
+
+.item article:hover
 {
     box-shadow: 0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 30px #fff,
-    0 0 40px #ff00de,
-    0 0 70px #ff00de,
-    0 0 80px #ff00de,
-    0 0 100px #ff00de,
-    0 0 150px #ff00de;
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #ff00de,
+        0 0 70px #ff00de,
+        0 0 80px #ff00de,
+        0 0 100px #ff00de,
+        0 0 150px #ff00de;
 }
 
-ul.starRating
+.star-rating
 {
     margin: 0;
     padding: 0;
@@ -74,14 +83,14 @@ ul.starRating
     background: url(http://www.aether.ru/example/stars/stars.png);
 }
 
-ul.starRating li
+.star-rating li
 {
     float: left;
     margin: 0;
     padding: 0;
 }
 
-ul.starRating li a
+.star-rating li a
 {
     display: block;
     width: 20px;
@@ -92,64 +101,60 @@ ul.starRating li a
     z-index: 10;
 }
 
-ul.starRating li a:hover
+.star-rating li a:hover
 {
     background: url(http://www.aether.ru/example/stars/stars.png) left center;
     left: 0;
     z-index: 2;
+    text-indent: 110px;
 }
 
-ul.starRating a.star1
+.star-rating a.star1
 {
     left: 0;
 }
 
-ul.starRating a.star1:hover
+.star-rating a.star1:hover
 {
     width: 20px;
 }
 
-ul.starRating a.star2
+.star-rating a.star2
 {
     left: 20px;
 }
 
-ul.starRating a.star2:hover
+.star-rating a.star2:hover
 {
     width: 40px;
 }
 
-ul.starRating a.star3
+.star-rating a.star3
 {
     left: 40px;
 }
 
-ul.starRating a.star3:hover
+.star-rating a.star3:hover
 {
     width: 60px;
 }
 
-ul.starRating a.star4
+.star-rating a.star4
 {
     left: 60px;
 }
 
-ul.starRating a.star4:hover
+.star-rating a.star4:hover
 {
     width: 80px;
 }
 
-ul.starRating a.star5
+.star-rating a.star5
 {
     left: 80px;
 }
 
-ul.starRating a.star5:hover
+.star-rating a.star5:hover
 {
     width: 100px;
-}
-
-ul.starRating li a:hover
-{
-    text-indent: 110px;
 }
