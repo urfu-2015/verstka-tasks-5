@@ -28,13 +28,14 @@ mixin shop-item(item)
             if (src=item.img)
                 img(src=item.img, alt=item.name+'_фото')
             .stub
-        .column-info
-            h2.item-name
-                a(href='#') #{item.name}
-            +category(item.category)
-            +rating(30, item.id)
-            +price({new: '100p.', old: '100000р.'})
-            p #{item.info}
+        .column-content
+            .column-info
+                h2.item-name
+                    a(href='#') #{item.name}
+                +category(item.category)
+                +rating(30, item.id)
+                +price({new: '100p.', old: '100000р.'})
+                p #{item.info}
         .column-description
             if (item.description)
                 +description(item.description)
