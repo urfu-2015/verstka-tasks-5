@@ -1,4 +1,3 @@
-
 header
 {
     text-align: center;
@@ -59,7 +58,7 @@ header
 
 .gallery-cat-image:hover
 {
-    opacity: 0.6;
+    opacity: .6;
 }
 
 .gallery-cat-name
@@ -114,25 +113,9 @@ header
     text-align: justify;
 }
 
-div div div:hover
+.gallery-cat-item:hover
 {
     background: #d9d9d9;
-}
-
-@media screen and (max-width: 1200px)
-{
-    .gallery-cat-item:nth-child(4),
-    .gallery-cat-item:nth-child(8)
-    {
-        margin-right: 65px;
-    }
-
-    .gallery-cat-item:nth-child(3),
-    .gallery-cat-item:nth-child(6),
-    .gallery-cat-item:nth-child(9)
-    {
-        margin-right: 0;
-    }
 }
 
 .gallery-cat-rating input:checked ~ label,
@@ -206,4 +189,20 @@ input[class=list]:checked ~ article .gallery-cat .gallery-cat-item
 input[class=list]:checked ~ article .gallery-cat .gallery-cat-item .gallery-cat-rating
 {
     width: 13%;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .gallery-cat-item:nth-child(4),
+    .gallery-cat-item:nth-child(8)
+    {
+        margin-right: 65px;
+    }
+
+    .gallery-cat-item:nth-child(3),
+    .gallery-cat-item:nth-child(6),
+    .gallery-cat-item:nth-child(9)
+    {
+        margin-right: 0;
+    }
 }
