@@ -1,1 +1,329 @@
+.container
+{
+    width: 90%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.block:hover
+{
+    border: solid;
+    border-color: #e0e0e0;
+    border-width: 2px;
+    margin: 8px;
+}
+
+.block
+{
+    color: #797478;
+    font: 10px/1.5 Verdana, Helvetica, sans-serif;
+    float: left;
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.block h3
+{
+    text-transform: uppercase;
+}
+
+.block img
+{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+.blockimg
+{
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+}
+
+.name
+{
+    font-size: 18px;
+    text-overflow: ellipsis;
+}
+
+.price
+{
+    font-size: 22px;
+    color: #f00;
+    cursor: default;
+    clear: both;
+}
+
+.price:hover
+{
+    font-weight: bold;
+}
+
+.category
+{
+    color: #000;
+}
+
+/* LIST */
+
+input#viewmode-list:checked + .container div.block
+{
+    width: 100%;
+    height: 300px;
+}
+
+input#viewmode-list:checked + .container div.block .blockimg
+{
+    float: left;
+}
+
+input#viewmode-list:checked + .container div.block .blockinfo
+{
+    float: left;
+    position: relative;
+    top: 150px;
+    left: 20px;
+}
+
+input#viewmode-list:checked + .container div.block .description
+{
+    position: relative;
+    top: 150px;
+    left: 10px;
+}
+
+.viewbuttont
+{
+    border: solid;
+    border-color: #e0e0e0;
+    border-width: 2px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.viewbuttonl
+{
+    border: solid;
+    border-color: #e0e0e0;
+    border-width: 2px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.viewbuttont:hover
+{
+    border: solid;
+    border-color: #cd5151;
+    border-width: 2px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.viewbuttonl:hover
+{
+    border: solid;
+    border-color: #cd5151;
+    border-width: 2px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.blockinfo
+{
+    width: 200px;
+}
+
+/* STARS */
+
+.rating
+{
+    background: url('stars_2.png') -180px 0 no-repeat;
+    width: 150px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.star
+{
+    width: 15px;
+    height: 30px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+
+input
+{
+    visibility: hidden;
+}
+
+.serv
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.star-1h:hover input + span:after,
+.star-1h input:checked + span:after
+{
+    content: '';
+    visibility: visible;
+    width: 15px;
+    height: 30px;
+    background: url('stars_2.png') -150px 0 no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.star-1:hover input + span:after,
+.star-1 input:checked + span:after
+{
+    content: '';
+    visibility: visible;
+    width: 30px;
+    height: 30px;
+    background: url('stars_2.png') -120px 0 no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -15px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.star-2h:hover input + span:after,
+.star-2h input:checked + span:after
+{
+    content: '';
+    visibility: visible;
+    width: 45px;
+    height: 30px;
+    background: url('stars_2.png') -120px 0 no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -30px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.star-2:hover input + span:after,
+.star-2 input:checked + span:after
+{
+    content: '';
+    visibility: visible;
+    width: 60px;
+    height: 30px;
+    background: url('stars_2.png') -90px 0 no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -45px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.star-3h:hover input + span:after,
+.star-3h input:checked + span:after
+{
+    content: '';
+    visibility: visible;
+    width: 75px;
+    height: 30px;
+    background: url('stars_2.png') -90px 0 no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -60px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.star-3:hover input + span:after,
+.star-3 input:checked + span:after
+{
+    content: '';
+    visibility: visible;
+    width: 90px;
+    height: 30px;
+    background: url('stars_2.png') -60px 0 no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -75px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.star-4h:hover input + span:after,
+.star-4h input:checked + span:after
+{
+    content: '';
+    visibility: visible;
+    width: 105px;
+    height: 30px;
+    background: url('stars_2.png') -60px 0 no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -90px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.star-4:hover input + span:after,
+.star-4 input:checked + span:after
+{
+    content: '';
+    visibility: visible;
+    width: 125px;
+    height: 30px;
+    background: url('stars_2.png') -30px 0 no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -105px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.star-5h:hover input + span:after,
+.star-5h input:checked + span:after
+{
+    content: '';
+    visibility: visible;
+    width: 140px;
+    height: 30px;
+    background: url('stars_2.png') -30px 0 no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -120px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.star-5:hover input + span:after,
+.star-5 input:checked + span:after
+{
+    content: '';
+    visibility: visible;
+    width: 155px;
+    height: 30px;
+    background: url('stars_2.png') 0 0 no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -135px;
+    cursor: pointer;
+    pointer-events: none;
+}
