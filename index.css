@@ -1,1 +1,160 @@
+header
+{
+    font-family: fantasy;
+    font-size: 50px;
+}
 
+input[id='tiles']:checked ~ .item article
+{
+    display: inline-block;
+    width: 400px;
+}
+
+input[id='list']:checked ~ .item article
+{
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+.item article
+{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 20px;
+    vertical-align: top;
+}
+
+input[id='tiles']:checked ~ .item article .itemimg
+{
+    height: 200px;
+    width: auto;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+    font-size: smaller;
+}
+
+.item-price
+{
+    color: #7e0600;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.item-name
+{
+    display: block;
+    font-size: 180%;
+    font-weight: bold;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+}
+
+.item-name:hover
+{
+    white-space: normal;
+}
+
+.item article:hover
+{
+    box-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #ff00de,
+        0 0 70px #ff00de,
+        0 0 80px #ff00de,
+        0 0 100px #ff00de,
+        0 0 150px #ff00de;
+}
+
+.star-rating
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    background: url(http://www.aether.ru/example/stars/stars.png);
+}
+
+.star-rating li
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.star-rating li a
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    position: absolute;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.star-rating li a:hover
+{
+    background: url(http://www.aether.ru/example/stars/stars.png) left center;
+    left: 0;
+    z-index: 2;
+    text-indent: 110px;
+}
+
+.star-rating a.star1
+{
+    left: 0;
+}
+
+.star-rating a.star1:hover
+{
+    width: 20px;
+}
+
+.star-rating a.star2
+{
+    left: 20px;
+}
+
+.star-rating a.star2:hover
+{
+    width: 40px;
+}
+
+.star-rating a.star3
+{
+    left: 40px;
+}
+
+.star-rating a.star3:hover
+{
+    width: 60px;
+}
+
+.star-rating a.star4
+{
+    left: 60px;
+}
+
+.star-rating a.star4:hover
+{
+    width: 80px;
+}
+
+.star-rating a.star5
+{
+    left: 80px;
+}
+
+.star-rating a.star5:hover
+{
+    width: 100px;
+}
