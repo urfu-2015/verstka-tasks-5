@@ -6,7 +6,6 @@
 
 h1
 {
-    color: #000;
     font: 50px 'Oswald',sans-serif;
     margin: 15px;
 }
@@ -15,8 +14,7 @@ h1 span
 {
     display: inline;
     border: 3px solid #fc0;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 0 30px 30px 0;
     padding: 5px;
     font: 50px 'Pussyfoot', fantasy;
 }
@@ -26,7 +24,7 @@ h1:first-letter
     color: #f00;
 }
 
-.designType
+.design-type
 {
     display: block;
 }
@@ -109,25 +107,30 @@ span
     color: #f00;
 }
 
+.price:hover
+{
+    font-weight: bold;
+}
+
 .description::before
 {
     content: 'Описание товара:';
     font-weight: bolder;
 }
 
-.designType[value='tile'] ~ .item
+.design-type[value='tile'] ~ article .item
 {
     display: inline-block;
 }
 
-.designType[value='tile'] ~ .item .pic,
-.designType[value='tile'] ~ .item .info
+.design-type[value='tile'] ~ article .item .pic,
+.design-type[value='tile'] ~ article .item .info
 {
     float: none;
     display: block;
 }
 
-.designType[value='list'] ~ .item
+.design-type[value='list'] ~ article .item
 {
     display: list-item;
     width: 100%;
@@ -135,20 +138,19 @@ span
     list-style: none;
 }
 
-.designType[value='list'] ~ .item .pic,
-.designType[value='list'] ~ .item .info
+.design-type[value='list'] ~ article .item .pic,
+.design-type[value='list'] ~ article .item .info
 {
     display: table-cell;
-    height: 100%;
 }
 
-.designType[value='list'] ~ .item .pic
+.design-type[value='list'] ~ article .item .pic
 {
     float: left;
     width: 27%;
 }
 
-.designType[value='list'] ~ .item .info
+.design-type[value='list'] ~ article .item .info
 {
     float: right;
     padding: 2%;
@@ -156,18 +158,18 @@ span
     position: absolute;
     top: 20%;
     right: 2%;
-    height: 60%;
+    height: auto;
 }
 
-.designType[value='list'] ~ .item .pic a
+.design-type[value='list'] ~ article .item .pic a
 {
     display: inline-block;
     height: 60%;
 }
 
-.designType[value='list'] ~ .item .pic img
+.design-type[value='list'] ~ article .item .pic img
 {
     width: 100%;
     position: absolute;
-    top: 20%;
+    top: 15%;
 }
