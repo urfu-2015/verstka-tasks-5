@@ -1,309 +1,316 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Мяндекс.Муррркет</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-    <!--<label for="plitki">Плитки</label>-->
-    <!--<input type="radio" id="plitki" name="view-style" value="plitki">-->
-    <label for="list">Список</label>
-    <input type="radio" id="list" name="view-style" value="list">
-    <div class="grid-container">
-        <div class="row">
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="cat-image" src="img/tonkin_cat.jpg">
-                    </div>
-                    <div class="card-header">
-                        <a href="#">Тонкинская кошка</a>
-                    </div>
-                    <div class="card-category">
-                        Категория котика 1
-                    </div>
-                    <div class="card-mark">
-                        Оценка котика
-                    </div>
-                    <div class="card-cost">
-                        $49.99 <div class="card-last-cost">$100</div>
-                    </div>
-                    <div class="card-description">
-                        Происхождение тонкинской породы  – это удивительная и запутанная история.
-                        Она напоминает бесконечный рассказ.
-                        Одна из версий гласит, что первая тонкинская кошка появилась в Англии
-                        в конце XIX века под видом шоколадной сиамской кошки.
-                        Привезенные с Востока кошки имели коричневый окрас, который был
-                        не характерным для сиамских кошек, и зеленовато-голубой или желтый цвет глаз.
-                    </div>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <title>Мяндекс.Муррркет</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<label for="plitki">Плитки</label>
+<input type="radio" id="plitki" name="view-style" value="plitki" checked>
+<label for="list">Список</label>
+<input type="radio" id="list" name="view-style" value="list">
+<section class="shop-name-wrapper">
+    <div class="shop-name">Мяндекс.Муррркет</div>
+</section>
+<section>
+    <div class="card">
+        <div class="card-image">
+            <img class="cat-image" src="img/tonkin_cat.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Тонкинская кошка</a>
             </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="cat-image" src="img/foreign_white.jpg">
-                    </div>
-                    <div class="card-header">
-                        <a href="#">Форин вайт</a>
-                    </div>
-                    <div class="card-category">
-                        Категория котика 2
-                    </div>
-                    <div class="card-mark">
-                        Оценка котика
-                    </div>
-                    <div class="card-cost">
-                        $500
-                    </div>
-                    <div class="card-description">
-                        Форин вайт – это порода, которая, согласно некоторым данным,
-                        стала подоплекой для генетического конструктора под названием "сиамская кошка".
-                        А история давно забытой породы такова: однажды, некая заводчица
-                        (Тернер) захотела удивить мир породой, которая была еще не известна.
-                        Изюминкой стал белый цвет. Именно так, Великобритания в 1964 году
-                        получила новую белошерстную породу кошек.
-                    </div>
-                </div>
+            <div class="card-category">
+                Категория котика 1
             </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="cat-image" src="img/japanese_bobtail.jpg">
-                    </div>
-                    <div class="card-header">
-                        <a href="#">Японский бобтейл</a>
-                    </div>
-                    <div class="card-category">
-                        Категория котика 3
-                    </div>
-                    <div class="card-mark">
-                        Оценка котика
-                    </div>
-                    <div class="card-cost">
-                        $600
-                    </div>
-                    <div class="card-description">
-                        Данная кошка с древних времен распространена в странах Дальнего Востока,
-                        позже она попала на Японские острова, а оттуда в 1968 году –
-                        в Америку, где и получила свое нынешнее название японский бобтейл.
-                        Сами же японцы называли ее «ми-ке». Изображения этого вида кошек имеются
-                        на старинных гравюрах и картинах императорских династий, а также
-                        в токийском храме Готокуджу.
-                    </div>
-                </div>
+            <div class="card-mark">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="cat-image" src="img/oriental_longhair_cat.jpg">
-                    </div>
-                    <div class="card-header">
-                        <a href="#">Ориентальная длинношерстная кошка</a>
-                    </div>
-                    <div class="card-category">
-                        Категория котика
-                    </div>
-                    <div class="card-mark">
-                        Оценка котика
-                    </div>
-                    <div class="card-cost">
-                        $10
-                    </div>
-                    <div class="card-description">
-                        Данная порода кошек родом из Северной Америки. Считается, что порода появилась
-                        в 1985 году. Согласно истории возникновения породы данный вид был получен путём
-                        случайного спаривания кошек короткошёрстной и сиамской пород.
-                        В результате спаривания
-                        зародилась новая порода. Данный вид уже признан многими ассоциациями, например,
-                        такими, как ACF, WCF, FIFE, GCCF и многими другими.
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="cat-image" src="img/minskin.jpg">
-                    </div>
-                    <div class="card-header">
-                        <a href="#">Минскин</a>
-                    </div>
-                    <div class="card-category">
-                        Категория котика
-                    </div>
-                    <div class="card-mark">
-                        Оценка котика
-                    </div>
-                    <div class="card-cost">
-                        $20
-                    </div>
-                    <div class="card-description">
-                        Порода минскин – очень редкая порода карликовых кошек.
-                        Она появилась в конце 90-х годов прошлого века в питомнике Бостона,
-                        при скрещивании манчкина и сфинкса. Затем были подключены породы бурму
-                        и девон-рекс.
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="cat-image" src="img/american_haired_cat.jpg">
-                    </div>
-                    <div class="card-header">
-                        <a href="#">Американская жесткошерстная кошка</a>
-                    </div>
-                    <div class="card-category">
-                        Категория котика
-                    </div>
-                    <div class="card-mark">
-                        Оценка котика
-                    </div>
-                    <div class="card-cost">
-                        $99.99
-                    </div>
-                    <div class="card-description">
-                        Американские жесткошерстные кошки очень похожи внешне и по многим
-                        факторам на американских короткошерстных кошек, просто по той причине,
-                        что произошли именно от них. По сути, породы отличают только по принципу
-                        «проволочная шубка». Хотя на самом деле, это лишь визуальный эффект.
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="cat-image" src="img/aegean_cat.jpg">
-                    </div>
-                    <div class="card-header">
-                        <a href="#">Эгейская кошка</a>
-                    </div>
-                    <div class="card-category">
-                        Категория котика
-                    </div>
-                    <div class="card-mark">
-                        Оценка котика
-                    </div>
-                    <div class="card-cost">
-                        $98
-                    </div>
-                    <div class="card-description">
-                        Эгейская кошка родом с острова Цикладис, который находится в Греции.
-                        Греческие селекционеры начали работать над выводом этой породы
-                        около двадцати лет назад. Так как эта порода обрела популярность не так давно,
-                        и является представителем экспериментальных пород, то большинство людей считает,
-                        что эгейская кошка – это представитель одного из редких видов.
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="cat-image" src="img/urals_rex.jpg">
-                    </div>
-                    <div class="card-header">
-                        <a href="#">Уральский рекс</a>
-                    </div>
-                    <div class="card-category">
-                        Категория котика
-                    </div>
-                    <div class="card-mark">
-                        Оценка котика
-                    </div>
-                    <div class="card-cost">
-                        $98
-                    </div>
-                    <div class="card-description">
-                        Уральский рекс характеризуется как развитое и некрупное животное
-                        с длинной волнистой шерстью. Тело отличается средними размерами,
-                        мускулистостью, стройностью и элегантностью. Кошка уральский рекс имеет
-                        ноги средней длины, стройные и сильные с овальными лапами. Хвост не длинный,
-                        у основания не широкий, кончик слегка округлый. Голова в виде широкого
-                        равностороннего треугольника.
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="cat-image" src="img/ojos_azules.jpg">
-                    </div>
-                    <div class="card-header">
-                        <a href="#">Охос азулес</a>
-                    </div>
-                    <div class="card-category">
-                        Категория котика
-                    </div>
-                    <div class="card-mark">
-                        Оценка котика
-                    </div>
-                    <div class="card-cost">
-                        $160
-                    </div>
-                    <div class="card-description">
-                        Порода охос азулес («голубоглазая»- исп.) выведена в США.
-                        В 1984 году внимание американских селекционеров привлек факт наличия
-                        у кошек, не имеющих сиамского окраса, голубого цвета глаз. Родоначальницей
-                        новой породы охос азулес стала кошка с черепаховым окрасом и голубыми
-                        глазами, ее звали Конфлауэ.
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="cat-image" src="img/havana.jpg">
-                    </div>
-                    <div class="card-header">
-                        <a href="#">Гавана</a>
-                    </div>
-                    <div class="card-category">
-                        Категория котика
-                    </div>
-                    <div class="card-mark">
-                        Оценка котика
-                    </div>
-                    <div class="card-cost">
-                        $87
-                    </div>
-                    <div class="card-description">
-                        Первая в мире разновидность ориентальной кошки была
-                        зарегистрирована в 1959 году – это Гавана. Данной породе кошек
-                        было присвоено такое название в честь кубинских сигар, так как их
-                        окрас с шоколадно-коричневым оттенком очень похож на цвет сигар.
-                        Кошка гавана своей внешностью схожа с сиамской кошкой. Но при этом она
-                        обладает совершенным обаянием и неповторимостью.
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="cat-image" src="img/karelian_bobtail.jpg">
-                    </div>
-                    <div class="card-header">
-                        <a href="#">Карельский бобтейл</a>
-                    </div>
-                    <div class="card-category">
-                        Категория котика
-                    </div>
-                    <div class="card-mark">
-                        Оценка котика
-                    </div>
-                    <div class="card-cost">
-                        $55
-                    </div>
-                    <div class="card-description">
-                        Карельский бобтейл – это довольно редкая и весьма немногочисленная
-                        порода очаровательных кошек с укороченным хвостом.
-                        Начало своей истории эта порода ведет с 1992 года. Она признана
-                        в клубах WCF, с присвоением стандарта CFF. Предположительно, карельский
-                        бобтейл является потомком норвежской дикой кошки. Он имеет крепкое
-                        телосложение, средние размеры, шерсть полудлинная.
-                    </div>
-                </div>
+            <div class="card-cost">
+                $49.99 <div class="card-last-cost">$100</div>
             </div>
         </div>
+        <div class="card-description">
+            Происхождение тонкинской породы  – это удивительная и запутанная история.
+            Она напоминает бесконечный рассказ.
+            Одна из версий гласит, что первая тонкинская кошка появилась в Англии
+            в конце XIX века под видом шоколадной сиамской кошки.
+            Привезенные с Востока кошки имели коричневый окрас, который был
+            не характерным для сиамских кошек, и зеленовато-голубой или желтый цвет глаз.
+        </div>
     </div>
-    </body>
+    <div class="card">
+        <div class="card-image">
+            <img class="cat-image" src="img/foreign_white.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Форин вайт</a>
+            </div>
+            <div class="card-category">
+                Категория котика 2
+            </div>
+            <div class="card-mark">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="card-cost">
+                $500
+            </div>
+        </div>
+        <div class="card-description">
+            Форин вайт – это порода, которая, согласно некоторым данным,
+            стала подоплекой для генетического конструктора под названием "сиамская кошка".
+            А история давно забытой породы такова: однажды, некая заводчица
+            (Тернер) захотела удивить мир породой, которая была еще не известна.
+            Изюминкой стал белый цвет. Именно так, Великобритания в 1964 году
+            получила новую белошерстную породу кошек.
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image">
+            <img class="cat-image" src="img/japanese_bobtail.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Японский бобтейл</a>
+            </div>
+            <div class="card-category">
+                Категория котика 3
+            </div>
+            <div class="card-mark">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="card-cost">
+                $600
+            </div>
+        </div>
+        <div class="card-description">
+            Данная кошка с древних времен распространена в странах Дальнего Востока,
+            позже она попала на Японские острова, а оттуда в 1968 году –
+            в Америку, где и получила свое нынешнее название японский бобтейл.
+            Сами же японцы называли ее «ми-ке». Изображения этого вида кошек имеются
+            на старинных гравюрах и картинах императорских династий, а также
+            в токийском храме Готокуджу.
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-image">
+            <img class="cat-image" src="img/oriental_longhair_cat.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Ориентальная длинношерстная кошка</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="card-cost">
+                $10
+            </div>
+        </div>
+        <div class="card-description">
+            Данная порода кошек родом из Северной Америки. Считается, что порода появилась
+            в 1985 году. Согласно истории возникновения породы данный вид был получен путём
+            случайного спаривания кошек короткошёрстной и сиамской пород.
+            В результате спаривания
+            зародилась новая порода. Данный вид уже признан многими ассоциациями, например,
+            такими, как ACF, WCF, FIFE, GCCF и многими другими.
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-image">
+            <img class="cat-image" src="img/minskin.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Минскин</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="card-cost">
+                $20
+            </div>
+        </div>
+        <div class="card-description">
+            Порода минскин – очень редкая порода карликовых кошек.
+            Она появилась в конце 90-х годов прошлого века в питомнике Бостона,
+            при скрещивании манчкина и сфинкса. Затем были подключены породы бурму
+            и девон-рекс.
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-image">
+            <img class="cat-image" src="img/american_haired_cat.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Американская жесткошерстная кошка</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="card-cost">
+                $99.99
+            </div>
+        </div>
+        <div class="card-description">
+            Американские жесткошерстные кошки очень похожи внешне и по многим
+            факторам на американских короткошерстных кошек, просто по той причине,
+            что произошли именно от них. По сути, породы отличают только по принципу
+            «проволочная шубка». Хотя на самом деле, это лишь визуальный эффект.
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-image">
+            <img class="cat-image" src="img/aegean_cat.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Эгейская кошка</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="card-cost">
+                $98
+            </div>
+        </div>
+        <div class="card-description">
+            Эгейская кошка родом с острова Цикладис, который находится в Греции.
+            Греческие селекционеры начали работать над выводом этой породы
+            около двадцати лет назад. Так как эта порода обрела популярность не так давно,
+            и является представителем экспериментальных пород, то большинство людей считает,
+            что эгейская кошка – это представитель одного из редких видов.
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-image">
+            <img class="cat-image" src="img/urals_rex.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Уральский рекс</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="card-cost">
+                $98
+            </div>
+        </div>
+        <div class="card-description">
+            Уральский рекс характеризуется как развитое и некрупное животное
+            с длинной волнистой шерстью. Тело отличается средними размерами,
+            мускулистостью, стройностью и элегантностью. Кошка уральский рекс имеет
+            ноги средней длины, стройные и сильные с овальными лапами. Хвост не длинный,
+            у основания не широкий, кончик слегка округлый. Голова в виде широкого
+            равностороннего треугольника.
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image">
+            <img class="cat-image" src="img/ojos_azules.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Охос азулес</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="card-cost">
+                $160
+            </div>
+        </div>
+        <div class="card-description">
+            Порода охос азулес («голубоглазая»- исп.) выведена в США.
+            В 1984 году внимание американских селекционеров привлек факт наличия
+            у кошек, не имеющих сиамского окраса, голубого цвета глаз. Родоначальницей
+            новой породы охос азулес стала кошка с черепаховым окрасом и голубыми
+            глазами, ее звали Конфлауэ.
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image">
+            <img class="cat-image" src="img/havana.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Гавана</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="card-cost">
+                $87
+            </div>
+        </div>
+        <div class="card-description">
+            Первая в мире разновидность ориентальной кошки была
+            зарегистрирована в 1959 году – это Гавана. Данной породе кошек
+            было присвоено такое название в честь кубинских сигар, так как их
+            окрас с шоколадно-коричневым оттенком очень похож на цвет сигар.
+            Кошка гавана своей внешностью схожа с сиамской кошкой. Но при этом она
+            обладает совершенным обаянием и неповторимостью.
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image">
+            <img class="cat-image" src="img/karelian_bobtail.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Карельский бобтейл</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="card-cost">
+                $55
+            </div>
+        </div>
+        <div class="card-description">
+            Карельский бобтейл – это довольно редкая и весьма немногочисленная
+            порода очаровательных кошек с укороченным хвостом.
+            Начало своей истории эта порода ведет с 1992 года. Она признана
+            в клубах WCF, с присвоением стандарта CFF. Предположительно, карельский
+            бобтейл является потомком норвежской дикой кошки. Он имеет крепкое
+            телосложение, средние размеры, шерсть полудлинная.
+        </div>
+    </div>
+</section>
+</body>
 </html>

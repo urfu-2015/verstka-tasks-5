@@ -5,198 +5,25 @@ body
     font-family: 'Open Sans', sans-serif;
 }
 
-.grid-container
+.shop-name-wrapper
 {
-    width: 100%;
-}
-
-.grid-container *
-{
-    box-sizing: border-box;
-}
-
-.row:before,
-.row:after
-{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-[class*='col-']
-{
-    float: left;
-    min-height: 1px;
-    width: 8.33%;
-    padding: 12px;
-    /*background-color: #FFDCDC;*/
-    height: 500px;
-    overflow: hidden;
-}
-
-.col-1
-{
-    width: 8.33%;
-}
-
-.col-2
-{
-    width: 16.66%;
-}
-
-.col-3
-{
-    width: 25%;
-}
-
-.col-4
-{
-    width: 33.33%;
-}
-
-.col-5
-{
-    width: 41.66%;
-}
-
-.col-6
-{
-    width: 50%;
-}
-
-.col-7
-{
-    width: 58.33%;
-}
-
-.col-8
-{
-    width: 66.66%;
-}
-
-.col-9
-{
-    width: 75%;
-}
-
-.col-10
-{
-    width: 83.33%;
-}
-
-.col-11
-{
-    width: 91.66%;
-}
-
-.col-12
-{
-    width: 100%;
-}
-
-@media all and (max-width:800px)
-{
-    .col-1
-    {
-        width: 16.66%;
-    }
-    .col-2
-    {
-        width: 33.33%;
-    }
-    .col-3
-    {
-        width: 33.33%;
-    }
-    .col-4
-    {
-        width: 66.66%;
-    }
-    .col-5
-    {
-        width: 83.33%;
-    }
-    .col-6
-    {
-        width: 100%;
-    }
-    .col-7
-    {
-        width: 100%;
-    }
-    .col-8
-    {
-        width: 100%;
-    }
-    .col-9
-    {
-        width: 100%;
-    }
-    .col-10
-    {
-        width: 100%;
-    }
-    .col-11
-    {
-        width: 100%;
-    }
-    .col-12
-    {
-        width: 100%;
-    }
-
-    .row .col-5:last-of-type
-    {
-        width: 100%;
-    }
-
-    .row .col-5 ~ .col-4
-    {
-        width: 100%;
-    }
-}
-
-@media all and (max-width:650px)
-{
-    .col-1
-    {
-        width: 50%;
-    }
-    .col-2
-    {
-        width: 100%;
-    }
-    .col-3
-    {
-        width: 100%;
-    }
-    .col-4
-    {
-        width: 100%;
-    }
-    .col-5
-    {
-        width: 100%;
-    }
-    .col-6
-    {
-        width: 100%;
-    }
-}
-
-[class*='col-'] > p
-{
-    background-color: #ffc2c2;
-    padding: 0;
-    margin: 0;
     text-align: center;
-    color: white;
+    margin-bottom: 10px;
+}
+
+.shop-name
+{
+    font-size: 30px;
+    font-weight: 300;
+    display: inline-block;
 }
 
 .card
 {
-    margin: 0 auto;
+    vertical-align: top;
+    display: inline-block;
     height: 500px;
+    width: 300px;
 }
 
 .card:hover
@@ -250,16 +77,68 @@ a:link
     color: blue;
 }
 
-/* Не совсем честно, конечно, но раз используем по макету только col-3 ...*/
-
-#list:checked ~ .grid-container .row .col-3
+#list:checked ~ section .card
 {
-    width: 100%;
+    display: block;
 }
 
-/* Понял, что так нам не сделать, ведь на разные разрешения разные значения ширины ( */
-
-#plitki:checked ~ .grid-container .row .col-3
+#list:checked ~ section .card .card-image,
+#list:checked ~ section .card .about-wrapper,
+#list:checked ~ section .card .card-description
 {
-    width: 25%;
+    display: inline-block;
+}
+
+#list:checked ~ section .card
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#list:checked ~ section .card-mark
+{
+    text-align: center;
+}
+
+#list:checked ~ section .card .card-image
+{
+    width: 10%;
+}
+
+#list:checked ~ section .card .about-wrapper
+{
+    width: 10%;
+}
+
+#list:checked ~ section .card .card-description
+{
+    width: 70%;
+    text-align: left;
+}
+
+#plitki:checked ~ section .card
+{
+    display: inline-block;
+}
+
+.card-mark {
+    direction: rtl;
+    text-align: left;
+}
+.card-mark > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+.card-mark > span:hover,
+.card-mark > span:hover ~ span {
+    color: transparent;
+}
+.card-mark > span:hover:before,
+.card-mark > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: gold;
 }
