@@ -140,7 +140,7 @@ a:link
 }
 .card-mark > span:hover:before,
 .card-mark > span:hover ~ span:before
-s{
+{
     content: '\2605';
     position: absolute;
     left: 0;
