@@ -1,51 +1,82 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
 body
 {
     margin: 0;
     padding: 0;
 }
+
 .cat
 {
     width: 200px;
     float: left;
-    margin: .5%;
-    height: 520px;
+    margin: 300px .5% 20px;
+    position: relative;
 }
+
 .cat:hover
 {
-    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, .7);
-    -moz-box-shadow: 0 0 12px rgba(0, 0, 0, .7);
     box-shadow: 0 0 12px rgba(0, 0, 0, .7);
 }
+
 .cat .description
 {
     overflow: hidden;
-    -ms-text-overflow: ellipsis;
-    text-overflow: ellipsis;
     padding: 0 10px;
-    height: 220px;
+    height: 300px;
+    margin-bottom: 0;
     white-space: normal;
 }
+
 .type,
 .price,
+.ex-price,
 .name-link
 {
     font-size: 20px;
     text-align: center;
 }
-.cat .photo img
+
+.price,
+.ex-price
 {
     width: 100%;
+    height: 22px;
+    float: left;
+    text-align: center;
+
 }
+
+.ex-price
+{
+    width: 100%;
+    text-decoration: line-through;
+    color: #f00;
+}
+
+#view:not(:checked) ~ .cat .photo
+{
+    position: relative;
+    top: 0;
+    overflow: visible;
+    float: left;
+    width: 200px;
+    height: auto;
+}
+
+#view:not(:checked) ~ .cat .photo img
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .cat .photo img:hover
 {
-    -webkit-box-shadow: 5px 5px 8px rgba(219, 112, 147, .7),
-        -5px -5px 8px rgba(219, 112, 147, .7);
-    -moz-box-shadow: 5px 5px 8px rgba(219, 112, 147, .7),
-        -5px -5px 8px rgba(219, 112, 147, .7);
     box-shadow: 5px 5px 8px rgba(219, 112, 147, .7),
-        -5px -5px 8px rgba(219, 112, 147, .7);
+    -5px -5px 8px rgba(219, 112, 147, .7);
 }
+
 .name-link
 {
     overflow: hidden;
@@ -55,18 +86,22 @@ body
     margin: auto auto;
     padding: 0 10px;
 }
+
 .name-link a:hover
 {
     color: #008b8a;
 }
+
 .name-link a:visited:hover
 {
     color: #008b8a;
 }
+
 .name-link a:visited
 {
     color: #db7093;
 }
+
 .cat .rating
 {
     width: 100%;
@@ -74,10 +109,12 @@ body
     border: none;
     padding-bottom: 0;
 }
+
 .rating input
 {
     display: none;
 }
+
 .rating label:before
 {
     margin: 5px;
@@ -86,22 +123,26 @@ body
     display: inline-block;
     content: '\f005';
 }
+
 .rating > .half:before
 {
     content: '\f089';
     position: absolute;
 }
+
 .rating > label
 {
     color: #ddd;
     float: right;
 }
+
 .cat > .rating > input:checked ~ label,
 .cat > .rating:not(:checked) > label:hover,
 .cat > .rating:not(:checked) > label:hover ~ label
 {
     color: #ffd700;
 }
+
 .cat > .rating > input:checked + label:hover,
 .cat > .rating > input:checked ~ label:hover,
 .cat > .rating > label:hover ~ input:checked ~ label,
@@ -109,25 +150,28 @@ body
 {
     color: #ffed85;
 }
+
 #view,
 #view-label
 {
     display: block;
 }
+
 #view:checked ~ .cat
 {
     margin-right: 20px;
     margin-left: auto;
     width: 95%;
-    height: 30%;
+    height: auto;
 }
+
 #view:checked ~ .cat > .photo
 {
     margin: 0;
     padding: 20px 20px;
-    width: 30%;
     float: left;
 }
+
 #view:checked ~ .cat .name-link
 {
     width: 300px;
@@ -135,6 +179,7 @@ body
     text-align: left;
     float: none;
 }
+
 #view:checked ~ .cat .rating
 {
     width: 190px;
@@ -143,19 +188,41 @@ body
     margin-left: -3%;
     float: none;
 }
-#view:checked ~ .cat .type
+
+#view:checked ~ .cat .type,
+#view:checked ~ .cat .price,
+#view:checked ~ .cat .ex-price
 {
-    float: none;
-    width: 50%;
-    margin: 10px 20%;
-    padding-left: 50px;
+    width: 100%;
+    margin: 0;
     text-align: left;
 }
-#view:checked ~ .cat .price
+
+#view:checked ~ .cat .ex-price
+{
+    float: left;
+}
+
+#view:checked ~ .cat .price,
+#view:checked ~ .cat .ex-price
+{
+    width: 15%;
+}
+
+#view:checked ~ .cat .description
+{
+    font-size: 18px;
+}
+
+.cat .description:hover
+{
+    overflow: scroll;
+}
+
+#view:checked ~ .cat .rating
 {
     float: none;
-    width: 50%;
-    margin: 0 20%;
-    padding-left: 50px;
-    text-align: left;
+    width: 180px;
+    margin: 0 20% 0 -2%;
+    text-align: center;
 }
