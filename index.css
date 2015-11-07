@@ -74,7 +74,7 @@ body
 .cat .photo img:hover
 {
     box-shadow: 5px 5px 8px rgba(219, 112, 147, .7),
-    -5px -5px 8px rgba(219, 112, 147, .7);
+        -5px -5px 8px rgba(219, 112, 147, .7);
 }
 
 .name-link
