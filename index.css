@@ -138,16 +138,16 @@ a:hover
     display: inline-block;
 }
 
-.stars > input[class~='first']:checked + label ~ input[class~="one"] + label,
-.stars > input[class~='second']:checked + label ~ input[class~="two"] + label,
-.stars > input[class~='third']:checked + label ~ input[class~="three"] + label,
-.stars > input[class~='fourth']:checked + label ~ input[class~="four"] + label,
-.stars > input[class~='fifth']:checked + label ~ input[class~="five"] + label,
-.stars > input[class~='first'] + label:hover ~ input[class~="one"] + label,
-.stars > input[class~='second'] + label:hover ~ input[class~="two"] + label,
-.stars > input[class~='third'] + label:hover ~ input[class~="three"] + label,
-.stars > input[class~='fourth'] + label:hover ~ input[class~="four"] + label,
-.stars > input[class~='fifth'] + label:hover ~ input[class~="five"] + label
+.stars > input[class~="first"]:checked + label ~ input[class~="one"] + label,
+.stars > input[class~="second"]:checked + label ~ input[class~="two"] + label,
+.stars > input[class~="third"]:checked + label ~ input[class~="three"] + label,
+.stars > input[class~="fourth"]:checked + label ~ input[class~="four"] + label,
+.stars > input[class~="fifth"]:checked + label ~ input[class~="five"] + label,
+.stars > input[class~="first"] + label:hover ~ input[class~="one"] + label,
+.stars > input[class~="second"] + label:hover ~ input[class~="two"] + label,
+.stars > input[class~="third"] + label:hover ~ input[class~="three"] + label,
+.stars > input[class~="fourth"] + label:hover ~ input[class~="four"] + label,
+.stars > input[class~="fifth"] + label:hover ~ input[class~="five"] + label
 {
     background: url(images/empty.png);
     background-repeat: no-repeat;
