@@ -122,22 +122,26 @@ a:link
     display: inline-block;
 }
 
-.card-mark {
+.card-mark
+{
     direction: rtl;
     text-align: left;
 }
-.card-mark > span {
+.card-mark > span
+{
     display: inline-block;
     position: relative;
     width: 1.1em;
 }
 .card-mark > span:hover,
-.card-mark > span:hover ~ span {
+.card-mark > span:hover ~ span
+{
     color: transparent;
 }
 .card-mark > span:hover:before,
-.card-mark > span:hover ~ span:before {
-    content: "\2605";
+.card-mark > span:hover ~ span:before
+s{
+    content: '\2605';
     position: absolute;
     left: 0;
     color: gold;
