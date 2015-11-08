@@ -10,11 +10,15 @@ body
 header,
 main
 {
-    margin: 0 auto;
     min-width: 425px;
+    margin: 0 auto;
     max-width: 1710px;
     padding: 10px 0;
     background-color: #63add0;
+}
+
+main
+{
 }
 
 header
@@ -66,20 +70,20 @@ h1
 .showTypeTableLabel,
 .showTypeListLabel
 {
-    transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
     -o-transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
 }
 
 .showTypeTableLabel:hover,
 .showTypeListLabel:hover
 {
-    transform: scale(1.2);
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .catItem
@@ -113,23 +117,25 @@ h1
     max-width: 380px;
     position: absolute;
     bottom: 0;
-    transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
     -o-transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
 }
 
 .photoContainer:hover .catImage
 {
-    transform: scale(1.2);
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .catName
 {
+    display: block;
+    text-decoration: none;
     color: #034769;
     font-size: 40px;
     margin: 3px 0;
@@ -150,6 +156,11 @@ h1
     color: #235d79;
     font-size: 14px;
     margin: 3px 0 10px;
+}
+
+.catSubcategory
+{
+    text-decoration: none;
 }
 
 .catSubcategory:hover
@@ -213,6 +224,8 @@ p
 .showTypeList:checked ~ .catItem
 {
     display: block;
+    min-width: 1400px;
+    height: auto;
 }
 
 .showTypeList:checked ~ .catItem .photoContainer
@@ -220,6 +233,7 @@ p
     vertical-align: top;
     display: inline-block;
     margin: 0 80px 0 5px;
+    height: 100%;
 }
 
 .showTypeList:checked ~ .catItem .photoContainer .catImage
@@ -253,56 +267,50 @@ p
     position: relative;
     height: 48px;
     width: 240px;
+    font-size: 0;
+    display: table;
 }
 
-.stars_off
-{
-    position: absolute;
-    left: 0;
-    height: 48px;
-    top: 0;
-    width: 240px;
-    background-image: url('star_off.png');
-    background-repeat: repeat-x;
-    z-index: 0;
-    pointer-events: none;
-}
-
-.stars_on
-{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 48px;
-    width: 0;
-    background-image: url('star_on.png');
-    background-repeat: repeat-x;
-    z-index: 1;
-    pointer-events: none;
-}
-
+.stars_off,
+.stars_on,
 .stars_selected
 {
     position: absolute;
     left: 0;
-    top: 0;
     height: 48px;
+    top: 0;
+    background-repeat: repeat-x;
+    pointer-events: none;
+}
+
+.stars_off
+{
+    width: 240px;
+    background-image: url('star_off.png');
+    z-index: 0;
+}
+
+.stars_on
+{
+    width: 0;
+    background-image: url('star_on.png');
+    z-index: 1;
+}
+
+.stars_selected
+{
     width: 0;
     background-image: url('star_select.png');
-    background-repeat: repeat-x;
     z-index: 2;
-    pointer-events: none;
 }
 
 .starRadio
 {
-    display: block;
-    float: left;
+    display: inline-block;
     margin: 0;
     padding: 0;
     width: 24px;
     height: 48px;
-    z-index: 3;
     opacity: 0;
 }
 
