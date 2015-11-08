@@ -3,6 +3,54 @@
 {
     display: block;
     width: 300px;
+    font-family: sans-serif;
+}
+
+.name
+{
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.name a
+{
+    font-size: 25px;
+}
+
+.name:hover
+{
+    white-space: normal;
+}
+
+.category a
+{
+    color: #777;
+}
+
+.price
+{
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.oldPrice
+{
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: bottom;
+    color: #555;
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.description
+{
+    color: #444;
+    font-family: sans-serif;
+    font-weight: 400;
 }
 
 .item
@@ -51,13 +99,19 @@ img
     line-height: normal;
 }
 
+#block:checked ~ .item > .img
+{
+    text-align: center;
+}
+
 .goodness
 {
     direction: rtl;
     text-align: left;
+    margin-left: 5px;
 }
 
-.goodness > div
+.goodness > label
 {
     display: inline-block;
     height: 30px;
@@ -65,23 +119,23 @@ img
     background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -85px 0;
 }
 
-.goodness > div:nth-child(2n)
+.goodness > label:nth-of-type(2n)
 {
     margin: 0 -5px;
     background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -70px 0;
 }
 
-.goodness > div:nth-child(2n):hover
+.goodness > label:nth-of-type(2n):hover
 {
     background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') 0 0;
 }
 
-.goodness > div:nth-child(2n+1):hover
+.goodness > label:nth-of-type(2n+1):hover
 {
     background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -15px 0;
 }
 
-.goodness > div:hover ~ div:nth-child(2n):before
+.goodness > label:hover ~ label:nth-of-type(2n):before
 {
     content: '';
     position:absolute;
@@ -91,7 +145,32 @@ img
     background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') 0 0;
 }
 
-.goodness > div:hover ~ div:nth-child(2n+1):before
+.goodness > label:hover ~ label:nth-of-type(2n+1):before
+{
+    content: '';
+    position:absolute;
+    margin-right: -15px;
+    height: 30px;
+    width: 15px;
+    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -15px 0;
+}
+
+.goodness > input
+{
+    display: none;
+}
+
+.goodness > input:checked ~ label:nth-of-type(2n):before
+{
+    content: '';
+    position:absolute;
+    margin-right: -15px;
+    height: 30px;
+    width: 15px;
+    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') 0 0;
+}
+
+.goodness > input:checked ~ label:nth-of-type(2n+1):before
 {
     content: '';
     position:absolute;
