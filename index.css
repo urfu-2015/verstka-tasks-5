@@ -1,3 +1,8 @@
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .item
 {
     padding: 15px;
@@ -44,7 +49,6 @@
 
 .item-header > .item-name
 {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
     display: block;
     text-align: center;
@@ -57,7 +61,6 @@
 
 .item-header > .item-type
 {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     display: block;
     color: #200772;
@@ -83,8 +86,8 @@
 
 .item-description
 {
+    padding: 10px;
     text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 
@@ -92,13 +95,14 @@
 {
     position: relative;
     display: block;
-    width: 70%;
+    width: 90%;
 }
 
 #mapping-list:checked ~ section > .item > .item-picture
 {
     display: inline-block;
-    width: 25%;
+    width: 20%;
+    min-width: 300px;
 }
 
 #mapping-list:checked ~ section > .item > .item-picture > img
@@ -111,6 +115,7 @@
     display: inline-block;
     vertical-align: top;
     width: 20%;
+    min-width: 300px;
     padding: 10px;
 }
 
@@ -118,7 +123,7 @@
 {
     display: inline-block;
     vertical-align: top;
-    width: 50%;
+    width: calc(90% - 600px);
     padding: 10px;
 }
 
