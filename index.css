@@ -1,12 +1,6 @@
 label
 {
-    display: inline-block;
-}
-
-input
-{
-    display: block;
-    width: auto;
+    font-size: 30px;
 }
 
 body
@@ -23,6 +17,17 @@ img
     border-radius: 20px;
 }
 
+.cat:hover
+{
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+img:hover
+{
+    -webkit-transform: scale(1.2);
+}
+
 strong
 {
     font-weight: bold;
@@ -33,6 +38,7 @@ strong
     position: relative;
     height: 300px;
     width: 100%;
+    overflow: hidden;
 }
 
 article
@@ -40,8 +46,15 @@ article
     display: block;
     float: left;
     margin: 20px;
+    padding: 20px;
     width: 300px;
-    height: 450px;
+    height: 500px;
+    border-radius: 50px;
+}
+
+article:hover
+{
+    box-shadow: 0 0 5px;
 }
 
 .info
@@ -53,15 +66,23 @@ article
 span.name
 {
     display: block;
+    width: 100%;
     font-size: 25px;
-    color: blue;
+    color: #00f;
     text-decoration: underline;
     text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+span.name:hover
+{
+    color: #800080;
 }
 
 span.price
 {
-    color: red;
+    color: #f00;
     font-weight: bold;
 }
 
@@ -72,7 +93,7 @@ span.price
 
 #list:checked ~ article
 {
-    width: 100%;
+    width: auto;
     height: 300px;
     float: none;
 }
