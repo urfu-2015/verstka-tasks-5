@@ -1,1 +1,135 @@
+label
+{
+    font-size: 30px;
+}
+
+body
+{
+    font-size: 20px;
+}
+
+img
+{
+    display: block;
+    max-height: 300px;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.cat:hover
+{
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+img:hover
+{
+    -webkit-transform: scale(1.2);
+}
+
+strong
+{
+    font-weight: bold;
+}
+
+.pic
+{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+article
+{
+    display: block;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    border-radius: 50px;
+}
+
+article:hover
+{
+    box-shadow: 0 0 5px;
+}
+
+.info
+{
+    width: 80%;
+    margin: auto;
+}
+
+.description
+{
+    width: 80%;
+    margin: auto;
+}
+
+span.name
+{
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    color: #00f;
+    text-decoration: underline;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+span.name:hover
+{
+    color: #800080;
+}
+
+span.price
+{
+    color: #f00;
+    font-weight: bold;
+}
+
+#list:checked ~ article
+{
+    width: 100%;
+}
+
+#list:checked ~ article
+{
+    width: auto;
+    height: 300px;
+    float: none;
+}
+#list:checked ~ article .pic
+{
+    float: left;
+    width: 30%;
+}
+
+#list:checked ~ article .info
+{
+    width: 30%;
+    float: left;
+    padding-left: 20px;
+    margin: auto;
+}
+
+#list:checked ~ article .description
+{
+    width: 30%;
+    float: left;
+    margin: auto;
+    height: 300px;
+    padding-top: 20px;
+}
+
+#list:checked ~ article .info .name
+{
+    width: auto;
+    text-align: left;
+}
 
