@@ -22,6 +22,8 @@
     word-wrap: break-word;
     display: inline-block;
     vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .price
@@ -33,7 +35,7 @@
 [value='list']:checked ~ section > .box
 {
     display: table;
-    width: 100%;
+    width: 90%;
 }
 
 [value='list']:checked ~ section .wrap-image
