@@ -63,6 +63,12 @@ article:hover
     margin: auto;
 }
 
+.description
+{
+    width: 80%;
+    margin: auto;
+}
+
 span.name
 {
     display: block;
@@ -73,6 +79,7 @@ span.name
     text-align: center;
     text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 span.name:hover
@@ -101,12 +108,28 @@ span.price
 {
     float: left;
     width: 30%;
-    margin: auto;
 }
 
 #list:checked ~ article .info
 {
-    width: 60%;
-    float: right;
+    width: 30%;
+    float: left;
+    padding-left: 20px;
+    margin: auto;
+}
+
+#list:checked ~ article .description
+{
+    width: 30%;
+    float: left;
+    margin: auto;
+    height: 300px;
+    padding-top: 20px;
+}
+
+#list:checked ~ article .info .name
+{
+    width: auto;
+    text-align: left;
 }
 
