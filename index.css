@@ -159,7 +159,6 @@ img:hover
     height: auto;
 }
 
-
 #list:checked + section .cat .foto
 {
     max-height: 350px;
@@ -195,21 +194,21 @@ img:hover
 }
 
 .rating-input
-{ 
-    display: none; 
-} 
+{
+    display: none;
+}
 
-.rating-star:before 
+.rating-star:before
 {
     margin: 3px;
     font-size: 24px;
     font-family: FontAwesome;
     display: inline-block;
-    content: "\f005";
+    content: '\f005';
 }
 
 .rating > .half:before
-{ 
+{
     content: "\f089";
     position: absolute;
 }
