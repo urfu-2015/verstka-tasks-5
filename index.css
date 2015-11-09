@@ -14,7 +14,7 @@ img
     bottom: 0;
 }
 
-img.header
+.header
 {
     display: inline;
     position: relative;
