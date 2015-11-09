@@ -209,7 +209,7 @@ img:hover
 
 .rating > .half:before
 {
-    content: "\f089";
+    content: '\f089';
     position: absolute;
 }
 
