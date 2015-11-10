@@ -42,10 +42,20 @@ body
     white-space: nowrap;
 }
 
+.card-header a:hover
+{
+    color: #da2d04;
+}
+
 .card-category
 {
     font-size: 11px;
     text-decoration: underline;
+}
+
+.card-category:hover
+{
+    color: #da2d04;
 }
 
 .card-cost
@@ -71,6 +81,11 @@ body
 {
     width: 100px;
     height: 100px;
+}
+
+.cat-image:hover
+{
+    transform: rotateY(180deg);
 }
 
 a:link
