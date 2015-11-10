@@ -1,43 +1,33 @@
 img
 {
-    height: 300px;
-    display: block;
+    max-width: 400px;
+    margin: 7px;
 }
-div
+dl
 {
-    float: left;
-    display: block;
     background-color: #f0dc82;
     color: #007fff;
-    margin: 1em 2em;
+    height: 700px;
+    min-width: 400px;
+    max-width: 600px;
     border: thick solid #ffdab9;
 }
-div:hover
+dl:hover
 {
     color: #ff033e;
 }
-label
-{
-    display: inline-block;
-}
 body
 {
-    display: block;
     background-color: #faebd7;
 }
-.text
+dl.second
 {
-    width: 40%;
-    margin: auto;
+    margin-top: -720px;
+    margin-left: 650px;
 }
-input
+input[class='List']:checked ~ .column
 {
-    display: block;
-    width: auto;
-}
-input[class='List']:checked ~ div
-{
-    text-align: left;
-    width: 100%;
-    height: 500px;
+    margin: 20px;
+    width: 1000px;
+    height: 700px;
 }
