@@ -1,1 +1,314 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 700px;
+    background-color: #ffd0db;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text
+{
+    width: 50%;
+    font-size: 18px;
+    text-align: right;
+    display: inline-block;
+}
+
+input[type=checkbox]
+{
+    display: none;
+}
+
+input[type=checkbox] + label
+{
+    width: 60px;
+    margin: 4px;
+    height: 24px;
+    padding: 2px;
+    cursor: pointer;
+    color: transparent;
+    border-radius: 14px;
+    display: inline-block;
+    background-color: #ccc;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+input[type=checkbox]:not(:checked) + label:before,
+input[type=checkbox]:checked + label:after
+{
+    content: '';
+    float: left;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+
+input[type=checkbox]:checked + label:after
+{
+    float: right;
+}
+
+input[type=checkbox]:checked + label
+{
+    background-color: #0e0;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+}
+
+main
+{
+    width: auto;
+    text-align: center;
+}
+
+.item
+{
+    width: 350px;
+    padding: 16px;
+    cursor: default;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.item > .item-image
+{
+    width: 100%;
+    font-size: 0;
+    height: 500px;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.item > .item-image > img
+{
+    bottom: 0;
+    width: 100%;
+    border-radius: 8px;
+    position: absolute;
+    box-shadow: 0 0 4px black;
+    box-sizing: border-box;
+}
+
+.item > .item-data
+{
+    width: 100%;
+}
+
+.item > .item-data > a
+{
+    color: blue;
+    width: 100%;
+    font-size: 1.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+
+.item > .item-data > a:hover
+{
+    color: #00a;
+    text-decoration: none;
+}
+
+.item > .item-data > ul
+{
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style: none;
+    overflow: hidden;
+}
+
+.item > .item-data > ul > li
+{
+    float: left;
+    padding: 4px;
+    font-size: .66em;
+}
+
+.item > .item-data > ul > li:not(:first-child):before
+{
+    color: #a99;
+    content: '—';
+    padding: 0 8px 0 0;
+}
+
+.item > .item-data > ul > li > a
+{
+    color: #a99;
+    text-decoration: underline;
+}
+
+.item > .item-data > ul > li:nth-child(odd)
+{
+    text-decoration: underline;
+}
+
+.item > .item-data > .price
+{
+    color: #700;
+    font-size: 1.5em;
+    overflow: hidden;
+    font-weight: bold;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.item > .item-data > .price > small
+{
+    color: black;
+    font-size: .75em;
+    margin: 0 0 0 16px;
+    display: inline-block;
+    text-decoration: line-through;
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+
+.item > .item-data > .star_rating
+{
+    padding: 8px 0;
+    display: block;
+    font-size: 24px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.item > .item-data > .star_rating > span,
+.item > .item-data > .star_rating > div
+{
+    float: left;
+}
+
+.item > .item-data > .star_rating > span
+{
+    font-size: .7em;
+    padding-top: 4px;
+    font-family: sans-serif;
+}
+
+.item > .item-data > .star_rating > div > input
+{
+    display: none;
+}
+
+.item > .item-data > .star_rating > div > label
+{
+    float: right;
+    cursor: pointer;
+    font-family: 'FontAwesome';
+}
+
+.item > .item-data > .star_rating > div > label:before
+{
+    padding: 0;
+    content: '';
+    margin: 0 4px;
+    display: inline-block;
+}
+
+.item > .item-data > .star_rating > div > label.full:before
+{
+    content: '\f005';
+    text-shadow: 0 1px 1px black,
+        1px 1px 1px black,
+        1px 0 1px black,
+        1px -1px 1px black,
+        0  -1px 1px black,
+        -1px -1px 1px black,
+        -1px 0 1px black,
+        -1px 1px 1px black;
+}
+
+.item > .item-data > .star_rating > div > label.half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.item > .item-data > .star_rating > div > label
+{
+    color: #bbb;
+}
+
+.item > .item-data > .star_rating > div > input:checked ~ label
+{
+    color: #0a0;
+}
+
+.item > .item-data > .star_rating[class=star_rating] > div:hover > label
+{
+    color: #bbb;
+}
+
+.item > .item-data > .star_rating[class=star_rating] > div > label:hover,
+.item > .item-data > .star_rating[class=star_rating] > div > label:hover ~ label
+{
+    color: #0e0;
+}
+
+.item > .item-data > .star_rating[class=star_rating] > div > label:active,
+.item > .item-data > .star_rating[class=star_rating] > div > label:active ~ label
+{
+    color: #0a0;
+}
+
+.item > .item-data > p
+{
+    margin: 0;
+}
+
+#style:checked ~ main > .item
+{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#style:checked ~ main > .item > .item-image
+{
+    float: left;
+    width: 350px;
+    height: 100%;
+    margin-right: 32px;
+    display: inline-block;
+}
+
+#style:checked ~ main > .item > .item-image > img
+{
+    position: static;
+}
+
+#style:checked ~ main > .item > .item-data
+{
+    width: calc(100% - 350px - 32px - 16px);
+    display: inline-block;
+}
