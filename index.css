@@ -138,44 +138,35 @@ input[value='block']:checked ~ main div
 .allPrice label
 {
     height: 40px;
-    width: 43px;
-    float: left;
-    margin-right: 10px;
+    width: 22px;
+    float: right;
 }
 
 .allPrice input
 {
     opacity: 0;
     position: absolute;
-    outline: 0;
-    border: none;
 }
 
-.allPrice label.right,
-.allPrice label.right:hover
+.allPrice label.left
 {
-    background: url('http://bit.ly/1lhXZhx') no-repeat;
-    background-position: 0 -40px;
-    margin-right: -11px;
-    margin-left: -3px;
-}
-
-.allPrice label.left,
-.allPrice label.left:hover
-{
-    background: url('http://bit.ly/1RKmpKQ') no-repeat;
-    background-position: 0 -40px;
-    margin-left: -11px;
-    margin-right: -3px;
-}
-
-.allPrice label:hover ~ label,
-.allPrice input:checked ~ label
-{
+    background: url('http://bit.ly/1kKh4bG') no-repeat;
     background-position: 0 0;
 }
 
-.allPrice input:checked ~ .allPrice label:hover::before
+.allPrice label.right
+{
+    background: url('http://bit.ly/1OC0GHp') no-repeat;
+    background-position: 0 0;
+}
+
+.allPrice input:checked ~ label
+{
+    background-position: 0 -80px;
+}
+
+.allPrice label:hover,
+.allPrice label:hover ~ label
 {
     background-position: 0 -40px;
 }
