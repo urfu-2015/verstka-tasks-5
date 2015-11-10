@@ -148,13 +148,13 @@
     display: block;
     width: 20px;
     height: 40px;
-    background: url('right.png') 0 -40px;
+    background: url('https://pp.vk.me/c624916/v624916151/6369a/JKksOx2PFIY.jpg') 0 -40px;
 }
 
 .rating-star:nth-child(4n),
 .rating:hover .rating-star:nth-child(4n)
 {
-    background: url('left.png') 0 -40px;
+    background: url('https://pp.vk.me/c624916/v624916151/63693/vBlqD52Py-4.jpg') 0 -40px;
 }
 
 .rating:hover .rating-star:hover,
