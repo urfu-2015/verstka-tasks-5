@@ -9,12 +9,6 @@ img
     width: 290px;
 }
 
-div
-{
-    display: inline-block;
-    width: 290px;
-}
-
 address
 {
     font: 20px Kaushan Script, cursive;
@@ -59,16 +53,18 @@ main p
     font: 20px Cosmic Sans;
 }
 
-#tile:checked ~ .cat
+.cat
 {
     padding: 6px;
     display: inline-block;
     width: 290px;
 }
 
-#tile:checked ~ .cat > div
+.cat > div
 {
     display: block;
+    margin: 0;
+    width: 100%;
 }
 
 #list:checked ~ .cat
@@ -83,16 +79,12 @@ main p
     display: inline-block;
     margin: auto;
     vertical-align: top;
+    width: 320px;
 }
 
 a:hover
 {
     color: #00c304;
-}
-
-.cat > div
-{
-    margin: 0;
 }
 
 .cat:hover
@@ -120,6 +112,8 @@ a:hover
 .stars
 {
     margin: 0;
+    width: 120px;
+    display: block;
 }
 
 .stars > input
@@ -132,25 +126,23 @@ a:hover
 .stars label
 {
     background: url(images/full.png);
-    background-repeat: no-repeat;
     width: 24px;
     height: 24px;
-    display: inline-block;
+    display: table-cell;
 }
 
-.stars > input[class~='first']:checked + label ~ input[class~='one'] + label,
-.stars > input[class~='second']:checked + label ~ input[class~='two'] + label,
-.stars > input[class~='third']:checked + label ~ input[class~='three'] + label,
-.stars > input[class~='fourth']:checked + label ~ input[class~='four'] + label,
-.stars > input[class~='fifth']:checked + label ~ input[class~='five'] + label,
-.stars > input[class~='first'] + label:hover ~ input[class~='one'] + label,
-.stars > input[class~='second'] + label:hover ~ input[class~='two'] + label,
-.stars > input[class~='third'] + label:hover ~ input[class~='three'] + label,
-.stars > input[class~='fourth'] + label:hover ~ input[class~='four'] + label,
-.stars > input[class~='fifth'] + label:hover ~ input[class~='five'] + label
+.first:checked + label ~ .one + label,
+.second:checked + label ~ .two + label,
+.third:checked + label ~ .three + label,
+.fourth:checked + label ~ .four + label,
+.fifth:checked + label ~ .five + label,
+.first + label:hover ~ .one + label,
+.second + label:hover ~ .two + label,
+.third + label:hover ~ .three + label,
+.fourth + label:hover ~ .four + label,
+.fifth + label:hover ~ .five + label
 {
     background: url(images/empty.png);
-    background-repeat: no-repeat;
     width: 24px;
     height: 24px;
 }
