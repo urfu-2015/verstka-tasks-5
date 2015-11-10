@@ -161,8 +161,8 @@ input.tile
 
 label.list:before
 {
-    content: " ";
-    background: url("images/list.png");
+    content: ' ';
+    background: url('images/list.png');
     display: inline-block;
     height: 20px;
     width: 80px;
@@ -170,8 +170,8 @@ label.list:before
 
 label.tile:before
 {
-    content: " ";
-    background: url("images/tile.png");
+    content: ' ';
+    background: url('images/tile.png');
     display: inline-block;
     height: 20px;
     width: 80px;
@@ -266,10 +266,10 @@ input.three:checked ~ label.chose-three:before,
 input.two:checked ~ label.chose-two:before,
 input.one:checked ~ label.chose-one:before
 {
-    content: " ";
+    content: ' ';
     font-size: 1em;
     position: relative;
-    background: url("images/full-star.png");
+    background: url('images/full-star.png');
     display: inline-block;
     height: 23px;
     width: 25px;
@@ -277,10 +277,10 @@ input.one:checked ~ label.chose-one:before
 
 label:before
 {
-    content: " ";
+    content: ' ';
     font-size: 1em;
     position: relative;
-    background: url("images/empty-star.png");
+    background: url('images/empty-star.png');
     display: inline-block;
     height: 23px;
     width: 25px;
@@ -319,29 +319,29 @@ label.one:before
     width: 12%;
 }
 
-.find-cat[value="Снежок"] ~ main article:not([class~="snowcat"]),
-.find-cat[value~="бурмилла"] ~ main article:not([class~="burmill"]),
-.find-cat[value="Бегемот"] ~ main article:not([class~="begemot"]),
-.find-cat[value~="бомбейская"] ~ main article:not([class~="bombei"]),
-.find-cat[value="Живоглот"] ~ main article:not([class~="germion-cat"]),
-.find-cat[value="мейн-кун"] ~ main article:not([class~="maincoon"]),
-.find-cat[value="Гарфилд"] ~ main article:not([class~="garfild"]),
-.find-cat[value~="британская"] ~ main article:not([class~="britain"]),
-.find-cat[value="Матроскин"] ~ main article:not([class~="matroskin"]),
-.find-cat[value="египетская мау"] ~ main article:not([class~="egypt"]),
-.find-cat[value="Ушастик"] ~ main article:not([class~="ushastik"]),
-.find-cat[value="сомали"] ~ main article:not([class~="somali"]),
-.find-cat[value="Салем"] ~ main article:not([class~="salem"]),
-.find-cat[value~="калифорнийская"] ~ main article:not([class~="california"]),
-.find-cat[value="Леопольд"] ~ main article:not([class~="leo"]),
-.find-cat[value="рагамаффин"] ~ main article:not([class~="ragamaffin"]),
-.find-cat[value="Зира"] ~ main article:not([class~="zeera"]),
-.find-cat[value="Кову"] ~ main article:not([class~="kovu"]),
-.find-cat[value="Симба"] ~ main article:not([class~="simba"]),
-.find-cat[value="Муфаса"] ~ main article:not([class~="mufasa"]),
-.find-cat[value~="американская"] ~ main article:not([class~="usa-cat"]),
-.find-cat[value="Том"] ~ main article:not([class~="tom"]),
-.find-cat[value~="сибирская"] ~ main article:not([class~="russian-cat"])
+.find-cat[value='Снежок'] ~ main article:not([class~='snowcat']),
+.find-cat[value~='бурмилла'] ~ main article:not([class~='burmill']),
+.find-cat[value='Бегемот'] ~ main article:not([class~='begemot']),
+.find-cat[value~='бомбейская'] ~ main article:not([class~='bombei']),
+.find-cat[value='Живоглот'] ~ main article:not([class~='germion-cat']),
+.find-cat[value='мейн-кун'] ~ main article:not([class~='maincoon']),
+.find-cat[value='Гарфилд'] ~ main article:not([class~='garfild']),
+.find-cat[value~='британская'] ~ main article:not([class~='britain']),
+.find-cat[value='Матроскин'] ~ main article:not([class~='matroskin']),
+.find-cat[value='египетская мау'] ~ main article:not([class~='egypt']),
+.find-cat[value='Ушастик'] ~ main article:not([class~='ushastik']),
+.find-cat[value='сомали'] ~ main article:not([class~='somali']),
+.find-cat[value='Салем'] ~ main article:not([class~='salem']),
+.find-cat[value~='калифорнийская'] ~ main article:not([class~='california']),
+.find-cat[value='Леопольд'] ~ main article:not([class~='leo']),
+.find-cat[value='рагамаффин'] ~ main article:not([class~='ragamaffin']),
+.find-cat[value='Зира'] ~ main article:not([class~='zeera']),
+.find-cat[value='Кову'] ~ main article:not([class~='kovu']),
+.find-cat[value='Симба'] ~ main article:not([class~='simba']),
+.find-cat[value='Муфаса'] ~ main article:not([class~='mufasa']),
+.find-cat[value~='американская'] ~ main article:not([class~='usa-cat']),
+.find-cat[value='Том'] ~ main article:not([class~='tom']),
+.find-cat[value~='сибирская'] ~ main article:not([class~='russian-cat'])
 {
     display: none;
 }
