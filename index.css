@@ -1,16 +1,4 @@
 @import "http://webfonts.ru/import/arnamu.css";
-
-div {
-    width: 23%;
-    display: inline-block;
-    margin: 10px;
-}
-
-.info
-{
-    width: 100%;
-}
-
 h1
 {
     font-size: 3em;
@@ -38,44 +26,56 @@ body
     font-size: 1.3em;
 }
 
-.category
+.box-with-kitten {
+    width: 425px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.name
 {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font-size: 1.7em;
     font-weight: bold;
     color: #36BBCE;
+    margin-bottom: 0;
 }
 
-.category:hover
+.name:hover
 {
+    overflow: visible;
+    white-space: nowrap;
     text-shadow: 2px 2px 2px #FFCE73;
 }
 
-/*.stars
+img
 {
-    width: 165px;
-    height: 35px;
-    background: url(empty_star.png);
-    background-repeat: repeat-x;
-}*/
+    position: absolute;
+}
 
 img:hover
 {
-    /*width: 100%;*/
     padding-left: 10%;
 }
 
-input[value="line"]:checked ~ div
+p
 {
-    display: block;
-    margin: auto;
-    width: 70%;
-    text-align: center;
+    margin-top: 5px;
 }
-
-.info
+.category
 {
-    padding: 5px;
-    border-radius: 5%;
+    margin-top: 10px;
+    color: #00AB6F;
+    text-align: center;
+    font-size: 1.3em;
+}
+.container
+{
+    margin-top: 20px;
+    margin-left: 40px;
 }
 
 .stars
@@ -85,12 +85,102 @@ input[value="line"]:checked ~ div
     font-size: 33px;
 }
 
-input
+
+.image
+{
+    display: block;
+    position: relative;
+    margin: 0;
+    height: 256px;
+}
+
+.info
+{
+    width: 90%;
+    display: block;
+    position: relative;
+    margin: 0;
+    height: 50%;
+}
+
+.price
+{
+    text-align: center;
+    font-size: 1.2em;
+    color: red;
+}
+
+.price::after
+{
+    content: " ♥♥♥";
+}
+input[value="line"] + label
+{
+   background: url(line.png);
+   background-repeat: no-repeat;
+   width: 50px;
+   height: 50px;
+   display:inline-block;
+   padding: 0 0 0 0px;
+}
+
+input[value="block"] + label
+{
+   background: url(block.png);
+   background-repeat: no-repeat;
+   width: 50px;
+   height: 50px;
+   display:inline-block;
+   padding: 0 0 0 0px;
+}
+
+input[value="line"]:checked ~ div div.box-with-kitten
+{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+input[value="line"]:checked ~ div div.box-with-kitten .image
+{
+    width: 20%;
+    display: inline-block;
+}
+
+input[value="line"]:checked ~ div div.box-with-kitten .image a img
+{
+    width: 70%;
+}
+
+input[value="line"]:checked ~ .container .box-with-kitten .info
+{
+    padding-top: 2%;
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+}
+
+input[value="line"]:checked ~ .container .box-with-kitten .info .name
+{
+    overflow: visible;
+    white-space: normal;
+}
+
+input[value="line"]:checked ~ .container .box-with-kitten .description
+{
+    padding-top: 4%;
+    vertical-align: top;
+    width: 50%;
+    display: inline-block;
+}
+
+input[name*="star"],
+input[name="view"]
 {
     display:none;
 }
 
-input + label
+input[name*="star"] + label
 {
    background: url(stars.png);
    height: 33px;
