@@ -1,1 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500|Arimo:400,700&subset=latin,cyrillic);
 
+.item
+{
+    width: 250px;
+    display: inline-block;
+    margin: 30px;
+    vertical-align: top;
+    padding-bottom: 20px;
+}
+.item figcaption
+{
+    margin: 0;
+    padding: 0 7px;
+}
+.item:hover
+{
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+}
+.image
+{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    height: 200px;
+    line-height: 200px;
+}
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
+}
+img:hover
+{
+    border-radius: 30px;
+}
+.name
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    color: #6a5acd;
+    margin: 0;
+}
+.name a:visited,
+.name a:link
+{
+    color: #1e90ff;
+}
+.name:hover a:visited,
+.name:hover a:link
+{
+    color: #4169e1;
+    font-weight: bold; 
+    text-shadow: 1px 1px 1px #000; 
+}
+.categories
+{
+    margin-bottom: 5px;
+}
+.categories > *
+{
+    font-size: 13px;
+    color: #696969;
+    font-weight: bold;
+}
+.categories a:hover
+{
+    color: #20b2aa;
+    text-shadow: 1px 1px 10px #87cefa; 
+}
+.cost
+{
+    color: #8b0000;
+    font-size: 24px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 7px;
+}
+.cost:hover
+{
+    color: #000; 
+    text-shadow:  0 0 4px #87ceeb;
+}
+.del
+{
+    margin-left: 10px;
+    color: #696969;
+    font-size: 18px;
+}
+p
+{
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #393939;
+}
+.descriptrion
+{
+    font-weight: bold;
+}
+.rating
+{
+    width: 100px;
+    height: 20px;
+    display: block;
+}
+.information > *
+{
+    margin-top: 5px;
+}
+.change-view,
+.out-table
+{
+    display: none;
+}
+.out-table,
+.in-table
+{
+    color: #483d8b;
+    text-shadow: 0 0 8px 8px #afeeee;
+}
+.out-table:hover,
+.in-table:hover
+{
+    color: #afeeee;
+    text-shadow: 0 0 8px 8px #483d8b;
+}
+.change-view:checked ~ .out-table
+{
+    display: block;
+}
+.change-view:checked ~ .in-table
+{
+    display: none;
+}
+.delimiter
+{
+    width: 100%;
+}
+.rating label
+{
+    display: block;
+    background-image: url(image/5stars.png);
+    padding: 0;
+    height: 16px;
+    width: 8px;
+    float: left;
+}
+
+input[type='radio']
+{
+    display:none;
+    margin: 0;
+    padding: 0;
+    height: 16px;
+    width: 8px;
+}
+input[type='radio'] + label:nth-of-type(2n)
+{
+    background-position: -8px 0;
+}
+input[type='radio'] + label
+{
+    background-position: 0 0;
+}
+
+input[type='radio']:checked +  label
+{
+    background-position: 0 0;
+}
+input[type='radio']:checked + label ~  label
+{
+    background-position: -16px 0;
+}
+
+input[type='radio']:checked + label:nth-of-type(2n)
+{
+    background-position: -8px 0;
+}
+input[type='radio']:checked + label ~ label:nth-of-type(2n)
+{
+    background-position: -24px 0;
+}
+
+input[type='radio']:hover + label ~  label
+{
+    background-position: -16px 0;
+}
+input[type='radio']:hover + label ~ label:nth-of-type(2n)
+{
+    background-position: -24px 0;
+}
+#table:checked ~ .item
+{
+    float: none;
+    width: calc(100vw - 200px);
+    height: 220px;
+    padding: 20px;
+    padding-bottom: 0;
+    min-width: 1000px;
+
+}
+#table:checked ~ .item .image
+{
+    width: 20vw;
+    min-width: 150px;
+}
+
+#table:checked ~ .item .image img
+{
+    vertical-align: top;
+ }
+#table:checked ~ .item > *,
+#table:checked ~ .item figcaption section
+{
+    display: inline-block;
+    vertical-align: top;
+    min-width: 200px;
+}
+#table:checked ~ .item .head-showcase
+{
+    width: 200px;
+    padding-left: 40px;
+}
+
+#table:checked ~ .item .information
+{
+    width: 40vw;
+    padding-left: 40px;
+}
