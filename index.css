@@ -27,6 +27,16 @@ body
     width: 300px;
 }
 
+/*.card:after*/
+/*{*/
+    /*content: ".";*/
+    /*display: block;*/
+    /*clear: both;*/
+    /*visibility: hidden;*/
+    /*line-height: 0;*/
+    /*height: 0;*/
+/*}*/
+
 .card:hover
 {
     background-color: rgba(1, 1, 1, .15);
@@ -170,9 +180,12 @@ label
 
 /** Highlight Stars on hover **/
 
-.rating > input:checked ~ label, /* show gold star when clicked */
-.rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label /* hover previous stars in list */
+/* show gold star when clicked */
+.rating > input:checked ~ label,
+/* hover current star */
+.rating:not(:checked) > label:hover,
+/* hover previous stars in list */
+.rating:not(:checked) > label:hover ~ label
 {
     color: #ffd700;
 }
