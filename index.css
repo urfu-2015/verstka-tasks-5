@@ -1,1 +1,63 @@
+.photo
+{
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
+}
 
+.wrap-image
+{
+    width: 200px;
+    height: 200px;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.box
+{
+    padding: 25px;
+    margin: 25px;
+    width: 200px;
+    word-wrap: break-word;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.overflow-name
+{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.price
+{
+    border: solid #08f84c;
+    background: #f89008;
+}
+
+[value='list']:checked ~ section > .box
+{
+    display: table;
+    width: 100%;
+}
+
+[value='list']:checked ~ section .wrap-image
+{
+    vertical-align: top;
+}
+
+.box:hover
+{
+    background-color: rgba(205,183,158,.6);
+}
+
+.description:hover
+{
+    background-color: rgba(72,209,204,.4);
+    border: 5px solid #0ff ;
+}
