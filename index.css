@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 body
 {
@@ -98,7 +99,8 @@ a:link
 
 #list:checked ~ section .card-mark
 {
-    text-align: center;
+    display: table;
+    margin: 0 auto;
 }
 
 #list:checked ~ section .card .card-image
@@ -108,7 +110,7 @@ a:link
 
 #list:checked ~ section .card .about-wrapper
 {
-    width: 10%;
+    width: 15%;
 }
 
 #list:checked ~ section .card .card-description
@@ -122,27 +124,61 @@ a:link
     display: inline-block;
 }
 
+/** Stars **/
 .card-mark
 {
-    direction: rtl;
-    text-align: left;
-}
-.card-mark > span
-{
     display: inline-block;
-    position: relative;
-    width: 1.1em;
 }
-.card-mark > span:hover,
-.card-mark > span:hover ~ span
+
+fieldset, label
 {
-    color: transparent;
+    margin: 0;
+    padding: 0;
 }
-.card-mark > span:hover:before,
-.card-mark > span:hover ~ span:before
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating > input
 {
-    content: '\2605';
+    display: none;
+}
+.rating > label:before
+{
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome, serif;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before
+{
+    content: "\f089";
     position: absolute;
-    left: 0;
-    color: gold;
+}
+
+.rating > label
+{
+    color: #ddd;
+    float: right;
+}
+
+/** Highlight Stars on hover **/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label /* hover previous stars in list */
+{
+    color: #FFD700;
+}
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label
+{
+    color: #FFED85;
 }
