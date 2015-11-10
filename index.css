@@ -172,19 +172,19 @@ label
 /** Highlight Stars on hover **/
 
 /* show gold star when clicked */
-.rating > input:checked ~ label,
 /* hover current star */
-.rating:not(:checked) > label:hover,
 /* hover previous stars in list */
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label
 {
     color: #ffd700;
 }
 
 /* hover current star when changing rating */
+/* lighten current selection */
 .rating > input:checked + label:hover,
 .rating > input:checked ~ label:hover,
-/* lighten current selection */
 .rating > label:hover ~ input:checked ~ label,
 .rating > input:checked ~ label:hover ~ label
 {
