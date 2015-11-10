@@ -1,1 +1,226 @@
+@font-face 
+{
+    font-family: fontAwesome;
+    src: url(fonts/fontawesome-webfont.ttf);
+}
 
+@font-face 
+{
+    font-family: Quick_Snack;
+    src: url(fonts/Quick_Snack.ttf);
+}
+
+body
+{
+    background-image: url(http://goo.gl/fb99Qd);
+}
+header
+{
+    margin: 30px 20px 10px;
+}
+
+header > h1
+{
+    margin: 0;
+    font-family: 'Quick_Snack';
+    font-weight: 700;
+    font-size: 6em;
+    font-style: italic;
+    text-align: center;
+}
+
+.name:hover::first-letter,
+.red
+{
+    color: #a12;
+}
+
+.display-label
+{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+section
+{
+    text-align: center;
+}
+
+.cat
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px;
+    margin: 10px;
+    width: 300px;
+    height: 830px;
+    border-radius: 20px;
+    background-color: rgba(26, 26, 26, .7);
+    color: #dedede;
+}
+
+.cat:hover
+{
+    box-shadow: 2px 5px 40px 20px rgba(26, 26, 26, 1);
+}
+
+.foto
+{
+    position: relative;
+    height: 350px;
+    width: 300px;
+}
+
+.foto img
+{
+    position: absolute;
+    max-height: 350px;
+    max-width: 300px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info,
+.features
+{
+    padding: 10px;
+}
+
+.features
+{
+    margin: 0;
+    overflow: auto;
+    max-height: 300px;
+}
+
+img:hover
+{
+    box-shadow: 2px 5px 40px 28px rgba(32, 17, 50, .7);
+}
+
+.name
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font: 2.5em 'Lobster', cursive;
+}
+
+.name:hover
+{
+    color: #000;
+}
+
+.price
+{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font: 2em 'Lobster', cursive;
+    color: #a12;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.old
+{
+    color: #dedede;
+    text-decoration: line-through;
+    float: right;
+}
+
+.features,
+.category
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+.features
+{
+    min-height: 300px;
+}
+
+.category:hover
+{
+    font-weight: 800;
+}
+
+#list:checked + section .cat
+{
+    display: inline-block;
+    width: 90%;
+    height: auto;
+}
+
+#list:checked + section .cat .foto
+{
+    max-height: 350px;
+}
+
+#list:checked + section .foto img
+{
+    top: 0;
+    max-height: 350px;
+}
+
+#list:checked + section .info,
+#list:checked + section .features,
+#list:checked + section .cat .foto
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+}
+
+#list:checked + section .features
+{
+    text-align: left;
+}
+
+.rating 
+{
+    width: 150px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.rating-input
+{
+    display: none;
+}
+
+.rating-star:before
+{
+    margin: 3px;
+    font-size: 24px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating-star
+{
+    color: #ddd;
+    float: right;
+}
+
+.rating > .rating-input:checked ~ .rating-star,
+.rating:not(:checked) > .rating-star:hover,
+.rating:not(:checked) > .rating-star:hover ~ .rating-star
+{
+    color: #feca1e;
+}
