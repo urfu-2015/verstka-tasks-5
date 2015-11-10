@@ -179,18 +179,6 @@ form > label:not([class='empty']):before
     font-size: 20px;
 }
 
-label
-{
-    color: #000;
-}
-
-label:hover ~ label,
-label:hover
-{
-    color: #ff0;
-    text-shadow: 1px 1px #ff0;
-}
-
 .right
 {
     transform: scale(-1, 1);
@@ -201,3 +189,11 @@ input:checked ~ label
 {
     color: #ff0;
 }
+
+label:hover,
+label:hover ~ label
+{
+    text-shadow: -1px -1px 2px #f0f;
+    color: #ff0;
+}
+
