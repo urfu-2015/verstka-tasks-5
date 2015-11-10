@@ -130,13 +130,15 @@ a:link
     display: inline-block;
 }
 
-fieldset, label
+fieldset,
+label
 {
     margin: 0;
     padding: 0;
 }
 
-.rating {
+.rating
+{
     border: none;
     float: left;
 }
@@ -151,12 +153,12 @@ fieldset, label
     font-size: 1.25em;
     font-family: FontAwesome, serif;
     display: inline-block;
-    content: "\f005";
+    content: '\f005';
 }
 
 .rating > .half:before
 {
-    content: "\f089";
+    content: '\f089';
     position: absolute;
 }
 
@@ -172,7 +174,7 @@ fieldset, label
 .rating:not(:checked) > label:hover, /* hover current star */
 .rating:not(:checked) > label:hover ~ label /* hover previous stars in list */
 {
-    color: #FFD700;
+    color: #ffd700;
 }
 
 .rating > input:checked + label:hover, /* hover current star when changing rating */
@@ -180,5 +182,5 @@ fieldset, label
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label
 {
-    color: #FFED85;
+    color: #ffed85;
 }
