@@ -4,8 +4,309 @@
         <meta charset="utf-8">
         <title>Мяндекс.Муррркет</title>
         <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" 
+        type="text/css">
     </head>
     <body>
         <!-- Здесь прикладывать основное усилие -->
+        <header>
+            <h1>Мяндекс.Муррркет</h1>
+        </header>
+        <main>
+            <p>Выберите способ показа:</p>
+            <input type="radio" name="choice" id="tile" checked>
+            <label for="tile">Плитками</label><br>
+            <input type="radio" name="choice" id="list">
+            <label for="list">Списком</label><br>
+            <article class="cat">
+                <div class="img">
+                    <img src="images\1.jpg" alt="Кузя" title="Кузьма">
+                </div>
+                <div class="main">
+                    <span class="name"><a href="#">Кузя</a></span><br>
+                    <span class="category">Гуляка</span><br>
+                    <div class="stars">
+                        <input type="radio" class="one first" name="1" id="11">
+                        <label for="11"></label>
+                        <input type="radio" class="one two second" name="1" id="12">
+                        <label for="12"></label>
+                        <input type="radio" class="one two three third" name="1" id="13">
+                        <label for="13"></label>
+                        <input type="radio" class="one two three four fourth" name="1" id="14" checked>
+                        <label for="14"></label>
+                        <input type="radio" class="one two three four five fifth" name="1" id="15">
+                        <label for="15"></label>
+                    </div>
+                    <span class="price">10 000 руб.</span>
+                </div>
+                <div class="description">
+                    Описание:<br>
+                    Вы любите гулять, но часто никого нет рядом? Есть решение! Кот Кузя составит Вам 
+                    компанию как летом, так и зимой. Он обожает гулять на свежем воздухе, к тому же 
+                    Вы будете в восторге от его кошачьей грации!
+                </div>
+            </article>
+            <article class="cat">
+                <div class="img">
+                    <img src="images\2.jpeg" alt="Соня" title="Соня">
+                </div>
+                <div class="main">
+                    <span class="name"><a href="#">Соня</a></span><br>
+                    <span class="category">Ласковая</span><br>
+                    <div class="stars">
+                        <input type="radio" class="one first" name="2" id="21">
+                        <label for="21"></label>
+                        <input type="radio" class="one two second" name="2" id="22">
+                        <label for="22"></label>
+                        <input type="radio" class="one two three third" name="2" id="23">
+                        <label for="23"></label>
+                        <input type="radio" class="one two three four fourth" name="2" id="24">
+                        <label for="24"></label>
+                        <input type="radio" class="one two three four five fifth" name="2" id="25" checked>
+                        <label for="25"></label>
+                    </div>
+                    <span class="price">15 000 руб.</span>
+                </div>
+                <div class="description">
+                    Описание:<br>
+                    Если Вы любите ласковых кошек, то Соня точно для Вас. Эта кошечка заставит Вас забыть,
+                    что такое грусть. Просто погладьте ее и мир преобразится!
+                </div>
+            </article>
+            <article class="cat">
+                <div class="img">
+                    <img src="images\5.jpg" alt="Вася" title="Васька">
+                </div>
+                <div class="main">
+                    <span class="name"><a href="#">Вася - Гроза всех ковров</a></span><br>
+                    <span class="category">Неугомонный шалопай</span><br>
+                    <div class="stars">
+                        <input type="radio" class="one first" name="3" id="31">
+                        <label for="31"></label>
+                        <input type="radio" class="one two second" name="3" id="32">
+                        <label for="32"></label>
+                        <input type="radio" class="one two three third" name="3" id="33" checked>
+                        <label for="33"></label>
+                        <input type="radio" class="one two three four fourth" name="3" id="34">
+                        <label for="34"></label>
+                        <input type="radio" class="one two three four five fifth" name="3" id="35">
+                        <label for="35"></label>
+                    </div>
+                    <span class="price">13 000 руб.</span>
+                    <span class="decor">15 000 руб.</span>
+                </div>
+                <div class="description">
+                    Описание:<br>
+                    Вам часто бывает скучно и нечем заняться? Васька сможет решить Вашу проблему. Просто 
+                    оставьте его одного на пару минут, и по Вашему дому пройдет небольшой ураган. Вы будете 
+                    не только умиляться от его выходок, но и придется немного поработать - Вася сам 
+                    квартиру не приберет!
+                </div>
+            </article>
+            <article class="cat">
+                <div class="img">
+                    <img src="images\4.jpg" alt="Пушок" title="Пушок">
+                </div>
+                <div class="main">
+                    <span class="name"><a href="#">Пушок</a></span><br>
+                    <span class="category">Расслабляющий</span><br>
+                    <div class="stars">
+                        <input type="radio" class="one first" name="4" id="41">
+                        <label for="41"></label>
+                        <input type="radio" class="one two second" name="4" id="42">
+                        <label for="42"></label>
+                        <input type="radio" class="one two three third" name="4" id="43">
+                        <label for="43"></label>
+                        <input type="radio" class="one two three four fourth" name="4" id="44" checked>
+                        <label for="44"></label>
+                        <input type="radio" class="one two three four five fifth" name="4" id="45">
+                        <label for="45"></label>
+                    </div>
+                    <span class="price">14 000 руб.</span>
+                </div>
+                <div class="description">
+                    Описание:<br>
+                    Вы сильно устаете на работе, но не знаете, как снять усталость? Мы знаем, что Вам 
+                    поможет! Пушок поможет расслабится на диване после тяжелой работы, помурчав Вам на 
+                    ухо. А если станет холодно, то устроится под боком, согрев Вас.
+                </div>
+            </article>
+            <article class="cat">
+                <div class="img">
+                    <img src="images\3.jpg" alt="Тимофей" title="Тимоша">
+                </div>
+                <div class="main">
+                    <span class="name"><a href="#">Тимофей</a></span><br>
+                    <span class="category">Интеллектуал</span><br>
+                    <div class="stars">
+                        <input type="radio" class="one first" name="5" id="51">
+                        <label for="51"></label>
+                        <input type="radio" class="one two second" name="5" id="52">
+                        <label for="52"></label>
+                        <input type="radio" class="one two three third" name="5" id="53" checked>
+                        <label for="53"></label>
+                        <input type="radio" class="one two three four fourth" name="5" id="54">
+                        <label for="54"></label>
+                        <input type="radio" class="one two three four five fifth" name="5" id="55">
+                        <label for="55"></label>
+                    </div>
+                    <span class="price">20 000 руб.</span>
+                </div>
+                <div class="description">
+                    Описание:<br>
+                    Вы занимаеетесь наукой, но никто Вас не понимает? Тимоша - отличный собеседник! Он 
+                    спокойно Вас выслушает, а также поможет разобраться в ошибках, не тратя нервы. 
+                    Просто погладьте Тимофея, и решение придет сразу же!
+                </div>
+            </article>
+            <article class="cat">
+                <div class="img">
+                    <img src="images\8.jpg" alt="Барсик" title="Барсик">
+                </div>
+                <div class="main">
+                    <span class="name"><a href="#">Барсик</a></span><br>
+                    <span class="category">Спокойный</span><br>
+                    <div class="stars">
+                        <input type="radio" class="one first" name="6" id="61">
+                        <label for="61"></label>
+                        <input type="radio" class="one two second" name="6" id="62">
+                        <label for="62"></label>
+                        <input type="radio" class="one two three third" name="6" id="63">
+                        <label for="63"></label>
+                        <input type="radio" class="one two three four fourth" name="6" id="64" checked>
+                        <label for="64"></label>
+                        <input type="radio" class="one two three four five fifth" name="6" id="65">
+                        <label for="65"></label>
+                    </div>
+                    <span class="price">10 000 руб.</span>
+                    <span class="decor">13 000 руб.</span>
+                </div>
+                <div class="description">
+                    Описание:<br>
+                    Нравится, когда в доме тихо и спокойно, но чего-то не хватает? Барсик - отличное 
+                    решение! Он наполнит Ваш дом уютом, и Вы просто будете наслаждаться его обществом.
+                    К тому же, если Вы его погладите, в Вашем доме зазвучит его прекрасное мурчание.
+                </div>
+            </article>
+            <article class="cat">
+                <div class="img">
+                    <img src="images\10.jpg" alt="Ася" title="Ася">
+                </div>
+                <div class="main">
+                    <span class="name"><a href="#">Ася</a></span><br>
+                    <span class="category">Игроманка</span><br>
+                    <div class="stars">
+                        <input type="radio" class="one first" name="7" id="71">
+                        <label for="71"></label>
+                        <input type="radio" class="one two second" name="7" id="72">
+                        <label for="72"></label>
+                        <input type="radio" class="one two three third" name="7" id="73">
+                        <label for="73"></label>
+                        <input type="radio" class="one two three four fourth" name="7" id="74">
+                        <label for="74"></label>
+                        <input type="radio" class="one two three four five fifth" name="7" id="75" checked>
+                        <label for="75"></label>
+                    </div>
+                    <span class="price">18 000 руб.</span>
+                </div>
+                <div class="description">
+                    Описание:<br>
+                    У Вас есть дети, но иногда Вам некогда с ними поиграть? Предоставьте все Асе! Эта 
+                    дружелюбная кошечка очень любит играть. Ваши дети будут в восторге, ведь она знает 
+                    кучу трюков, которые никого не оставят равнодушными.
+                </div>
+            </article>
+            <article class="cat">
+                <div class="img">
+                    <img src="images\6.jpg" alt="Персик" title="Персик">
+                </div>
+                <div class="main">
+                    <span class="name"><a href="#">Персик</a></span><br>
+                    <span class="category">Милый</span><br>
+                    <div class="stars">
+                        <input type="radio" class="one first" name="8" id="81">
+                        <label for="81"></label>
+                        <input type="radio" class="one two second" name="8" id="82">
+                        <label for="82"></label>
+                        <input type="radio" class="one two three third" name="8" id="83">
+                        <label for="83"></label>
+                        <input type="radio" class="one two three four fourth" name="8" id="84" checked>
+                        <label for="84"></label>
+                        <input type="radio" class="one two three four five fifth" name="8" id="85">
+                        <label for="85"></label>
+                    </div>
+                    <span class="price">10 000 руб.</span>
+                </div>
+                <div class="description">
+                    Описание:<br>
+                    Вы очень хотите котика, но боитесь, что не справитесь с ним? Тогда Персик точно для 
+                    Вас! Он оочень спокойный и к тому же легко поддается дрессировке. А от его милой 
+                    мордочки на Вашем лице будет всегда красоваться улыбка!
+                </div>
+            </article>
+            <article class="cat">
+                <div class="img">
+                    <img src="images\9.jpg" alt="Бонифаций" title="Боня">
+                </div>
+                <div class="main">
+                    <span class="name"><a href="#">Бонифаций - Артистичная звезда</a></span><br>
+                    <span class="category">Модник</span><br>
+                    <div class="stars">
+                        <input type="radio" class="one first" name="9" id="91">
+                        <label for="91"></label>
+                        <input type="radio" class="one two second" name="9" id="92">
+                        <label for="92"></label>
+                        <input type="radio" class="one two three third" name="9" id="93" checked>
+                        <label for="93"></label>
+                        <input type="radio" class="one two three four fourth" name="9" id="94">
+                        <label for="94"></label>
+                        <input type="radio" class="one two three four five fifth" name="9" id="95">
+                        <label for="95"></label>
+                    </div>
+                    <span class="price">10 000 руб.</span>
+                    <span class="decor">15 000 руб.</span>
+                </div>
+                <div class="description">
+                    Описание:<br>
+                    Вы любите наряжаться? Как же Бонифаций Вас понимает! Вместе с ним Вы можете устроить 
+                    показ мод, а также выбрать, что с чем лучше всего сочетается.
+                </div>
+            </article>
+            <article class="cat">
+                <div class="img">
+                    <img src="images\7.jpg" alt="Пуся и Фикс" title="Пушистики">
+                </div>
+                <div class="main">
+                    <span class="name"><a href="#">Пуся и Фикс</a></span><br>
+                    <span class="category">Пушистики</span><br>
+                    <div class="stars">
+                        <input type="radio" class="one first" name="10" id="01">
+                        <label for="01"></label>
+                        <input type="radio" class="one two second" name="10" id="02">
+                        <label for="02"></label>
+                        <input type="radio" class="one two three third" name="10" id="03">
+                        <label for="03"></label>
+                        <input type="radio" class="one two three four fourth" name="10" id="04">
+                        <label for="04"></label>
+                        <input type="radio" class="one two three four five fifth" name="10" id="05" checked>
+                        <label for="05"></label>
+                    </div>
+                    <span class="price">20 000 руб.</span>
+                </div>
+                <div class="description">
+                    Описание:<br>
+                    Успевайте! Только сегодня ограниченное предложение - 2 котика по цене одного! Вы не 
+                    просто получите двух котиков, но и запас неограниченной пушистости и доброты.
+                </div>
+            </article>
+        </main>
+        <footer>
+            <address>
+                По всем вопросам обращаться на почту:<br>
+                <a href="#">kotiki@gmail.com</a><br>
+                Или по телефону:<br>
+                8 (967) 135-12-34
+            </address>
+        </footer>
     </body>
 </html>

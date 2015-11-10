@@ -1,1 +1,182 @@
+body
+{
+    background-color: #f4fcc0;
+}
 
+img
+{
+    padding: 0;
+    width: 290px;
+}
+
+address
+{
+    font: 20px Kaushan Script, cursive;
+}
+
+span
+{
+    font: 20px Cosmic Sans, sans-serif;
+    white-space: nowrap;
+}
+
+.description
+{
+    font-size: 15px;
+}
+
+h1
+{
+    font: 40px Dancing Script, cursive;
+    text-align: center;
+    color: #6495ed;
+}
+
+h1:first-letter
+{
+    color: #00dc31;
+}
+
+.price,
+.decor
+{
+    color: #f00;
+}
+
+.decor
+{
+    text-decoration: line-through;
+}
+
+main p
+{
+    font: 20px Cosmic Sans;
+}
+
+.cat
+{
+    padding: 6px;
+    display: inline-block;
+    width: 290px;
+}
+
+.cat > div
+{
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+#list:checked ~ .cat
+{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+#list:checked ~ .cat > div
+{
+    display: inline-block;
+    margin: auto;
+    vertical-align: top;
+    width: 320px;
+}
+
+a:hover
+{
+    color: #00c304;
+}
+
+.cat:hover
+{
+    box-shadow: 0 0 10px #000;
+}
+
+.category:hover
+{
+    color: #00f;
+    box-shadow: 2px 2px 10px #00f;
+}
+
+.name
+{
+    font-size: 30px;
+}
+
+.main
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.stars
+{
+    margin: 0;
+    width: 120px;
+    display: block;
+}
+
+.stars > input
+{
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stars label
+{
+    background: url(images/full.png);
+    width: 24px;
+    height: 24px;
+    display: table-cell;
+}
+
+.first:checked + label ~ .one + label,
+.second:checked + label ~ .two + label,
+.third:checked + label ~ .three + label,
+.fourth:checked + label ~ .four + label,
+.fifth:checked + label ~ .five + label,
+.first + label:hover ~ .one + label,
+.second + label:hover ~ .two + label,
+.third + label:hover ~ .three + label,
+.fourth + label:hover ~ .four + label,
+.fifth + label:hover ~ .five + label
+{
+    background: url(images/empty.png);
+    width: 24px;
+    height: 24px;
+}
+
+.img
+{
+    padding: 0;
+}
+
+img:hover
+{
+    box-shadow: 0 0 30px #000;
+}
+
+#tile:checked ~ .cat
+{
+    height: 580px;
+    position: relative;
+}
+
+#tile:checked ~ .cat > .img
+{
+    position: absolute;
+    bottom: 290px;
+}
+
+#tile:checked ~ .cat > .description
+{
+    position: absolute;
+    top: 450px;
+}
+
+#tile:checked ~ .cat > .main
+{
+    position: absolute;
+    bottom: 170px;
+}
