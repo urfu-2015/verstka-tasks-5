@@ -7,8 +7,7 @@ body
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    min-width: 1024px;
+    min-width: 700px;
     background-color: #ffd0db;
     font-family: 'Open Sans', sans-serif;
 }
@@ -108,7 +107,12 @@ main
     box-sizing: border-box;
 }
 
-.item > a
+.item > .item-data
+{
+    width: 100%;
+}
+
+.item > .item-data > a
 {
     color: blue;
     width: 100%;
@@ -121,13 +125,13 @@ main
     font-family: sans-serif;
 }
 
-.item > a:hover
+.item > .item-data > a:hover
 {
     color: #00a;
     text-decoration: none;
 }
 
-.item > ul
+.item > .item-data > ul
 {
     margin: 0;
     padding: 0;
@@ -136,32 +140,32 @@ main
     overflow: hidden;
 }
 
-.item > ul > li
+.item > .item-data > ul > li
 {
     float: left;
     padding: 4px;
     font-size: .66em;
 }
 
-.item > ul > li:not(:first-child):before
+.item > .item-data > ul > li:not(:first-child):before
 {
     color: #a99;
     content: '—';
     padding: 0 8px 0 0;
 }
 
-.item > ul > li > a
+.item > .item-data > ul > li > a
 {
     color: #a99;
     text-decoration: underline;
 }
 
-.item > ul > li:nth-child(odd)
+.item > .item-data > ul > li:nth-child(odd)
 {
     text-decoration: underline;
 }
 
-.item > .price
+.item > .item-data > .price
 {
     color: #700;
     font-size: 1.5em;
@@ -171,15 +175,20 @@ main
     display: inline-block;
 }
 
-.item > .price > small
+.item > .item-data > .price > small
 {
     color: black;
     font-size: .75em;
-    margin-left: 16px;
+    margin: 0 0 0 16px;
+    display: inline-block;
     text-decoration: line-through;
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
 }
 
-.item > .star_rating
+.item > .item-data > .star_rating
 {
     padding: 8px 0;
     display: block;
@@ -192,32 +201,32 @@ main
     user-select: none;
 }
 
-.item > .star_rating > span,
-.item > .star_rating > div
+.item > .item-data > .star_rating > span,
+.item > .item-data > .star_rating > div
 {
     float: left;
 }
 
-.item > .star_rating > span
+.item > .item-data > .star_rating > span
 {
     font-size: .7em;
     padding-top: 4px;
     font-family: sans-serif;
 }
 
-.item > .star_rating > div > input
+.item > .item-data > .star_rating > div > input
 {
     display: none;
 }
 
-.item > .star_rating > div > label
+.item > .item-data > .star_rating > div > label
 {
     float: right;
     cursor: pointer;
     font-family: 'FontAwesome';
 }
 
-.item > .star_rating > div > label:before
+.item > .item-data > .star_rating > div > label:before
 {
     padding: 0;
     content: '';
@@ -225,7 +234,7 @@ main
     display: inline-block;
 }
 
-.item > .star_rating > div > label.full:before
+.item > .item-data > .star_rating > div > label.full:before
 {
     content: '\f005';
     text-shadow: 0 1px 1px black,
@@ -238,40 +247,40 @@ main
         -1px 1px 1px black;
 }
 
-.item > .star_rating > div > label.half:before
+.item > .item-data > .star_rating > div > label.half:before
 {
     content: '\f089';
     position: absolute;
 }
 
-.item > .star_rating > div > label
+.item > .item-data > .star_rating > div > label
 {
     color: #bbb;
 }
 
-.item > .star_rating > div > input:checked ~ label
+.item > .item-data > .star_rating > div > input:checked ~ label
 {
     color: #0a0;
 }
 
-.item > .star_rating[class=star_rating] > div:hover > label
+.item > .item-data > .star_rating[class=star_rating] > div:hover > label
 {
     color: #bbb;
 }
 
-.item > .star_rating[class=star_rating] > div > label:hover,
-.item > .star_rating[class=star_rating] > div > label:hover ~ label
+.item > .item-data > .star_rating[class=star_rating] > div > label:hover,
+.item > .item-data > .star_rating[class=star_rating] > div > label:hover ~ label
 {
     color: #0e0;
 }
 
-.item > .star_rating[class=star_rating] > div > label:active,
-.item > .star_rating[class=star_rating] > div > label:active ~ label
+.item > .item-data > .star_rating[class=star_rating] > div > label:active,
+.item > .item-data > .star_rating[class=star_rating] > div > label:active ~ label
 {
     color: #0a0;
 }
 
-.item > p
+.item > .item-data > p
 {
     margin: 0;
 }
@@ -279,14 +288,18 @@ main
 #style:checked ~ main > .item
 {
     width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 #style:checked ~ main > .item > .item-image
 {
     float: left;
     width: 350px;
-    height: auto;
+    height: 100%;
     margin-right: 32px;
+    display: inline-block;
 }
 
 #style:checked ~ main > .item > .item-image > img
@@ -294,7 +307,8 @@ main
     position: static;
 }
 
-#style:checked ~ main > .item > a
+#style:checked ~ main > .item > .item-data
 {
-    display: inline;
+    width: calc(100% - 350px - 32px - 16px);
+    display: inline-block;
 }
