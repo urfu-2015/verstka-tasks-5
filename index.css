@@ -30,54 +30,54 @@ img
     width: 60%;
 }
 
+span
+{
+    line-height: 1.7em;
+    text-overflow: ellipsis;
+}
+
+p
+{
+    padding: 2%;
+}
+
+div.text
+{
+    display: block;
+    width: 100%;
+    vertical-align: top;
+}
+
 img:hover,
-p:not(.types):hover
+div.text:hover
 {
     box-shadow: 2px 2px 5px 5px #ccc;
 }
 
 p.category
 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+p.category a
+{
     font-weight: bold;
     font-size: 1.2em;
     text-decoration: underline;
     color: #123345;
-    text-overflow: ellipsis;
 }
 
-p.category:hover
+p.category a:hover
 {
     color: #5c14ba;
 }
 
-p.category:hover ~ p span:first-child
+span:hover,
+a:hover
 {
-    text-decoration: underline;
-    color: #c9081b;
-}
-
-p.category span
-{
-    visibility: hidden;
-    position: absolute;
-    left: 20%;
-}
-
-p.category span img
-{
-    width: 10%;
-}
-
-p.category:hover span
-{
-    visibility: visible;
-    z-index: 10;
-}
-
-span
-{
-    line-height: 1.7em;
-    text-overflow: ellipsis;
+    color: #123345;
 }
 
 span.description
@@ -96,22 +96,38 @@ span.allPrice
     position: relative;
 }
 
-p
+span.categoryCats
 {
-    width: 80%;
-    padding: 2%;
+    font-size: .7em;
+    color: #ccc;
 }
 
-div.text
+span.categoryCats:hover
 {
-    display: block;
+    color: #4f4f4f;
+}
+
+input[value='inline']:checked ~ main div
+{
     width: 100%;
-    vertical-align: top;
+    margin-top: 5px;
 }
 
-input[value='inline']:checked ~ main div div p
+input[value='inline']:checked ~ main div div
 {
-    padding-right: 55%;
+    display: flex;
+    margin: auto;
+}
+
+input[value='inline']:checked ~ main div div p.category
+{
+    width: 300px;
+}
+
+input[value='inline']:checked ~ main div a img
+{
+    width: 100px;
+    padding: 10px;
 }
 
 input[value='block']:checked ~ main div
@@ -119,41 +135,47 @@ input[value='block']:checked ~ main div
     display: inline-block;
 }
 
-.allPrice label,
-.allPrice label:hover,
-.allPrice label:hover ~ label,
-.allPrice input:checked ~ label
+.allPrice label
 {
-    background: url('http://bit.ly/1Np73MH') no-repeat;
-}
-
-.allPrice label[for='18'],
-.allPrice label[for='55'],
-.allPrice label[for='111'],
-.allPrice label[for='16']
-{
-    background: url('http://bit.ly/1LOuwo6') no-repeat;
+    height: 40px;
+    width: 43px;
+    float: left;
+    margin-right: 10px;
 }
 
 .allPrice input
 {
     opacity: 0;
     position: absolute;
+    outline: 0;
+    border: none;
 }
 
-.allPrice label
+.allPrice label.right,
+.allPrice label.right:hover
 {
-    height: 40px;
-    width: 43px;
-    float: right;
-    margin-right: 10px;
+    background: url('http://bit.ly/1lhXZhx') no-repeat;
+    background-position: 0 -40px;
+    margin-right: -11px;
+    margin-left: -3px;
 }
 
-.allPrice label:hover,
+.allPrice label.left,
+.allPrice label.left:hover
+{
+    background: url('http://bit.ly/1RKmpKQ') no-repeat;
+    background-position: 0 -40px;
+    margin-left: -11px;
+    margin-right: -3px;
+}
+
 .allPrice label:hover ~ label,
 .allPrice input:checked ~ label
 {
+    background-position: 0 0;
+}
+
+.allPrice input:checked ~ .allPrice label:hover::before
+{
     background-position: 0 -40px;
-    height: 40px;
-    width: 43px;
 }
