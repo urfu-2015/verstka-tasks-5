@@ -58,7 +58,7 @@ article .info .rating
 
 article img
 {
-    width: 100%;
+    width: 300px;
 }
 
 article .info .link
@@ -70,32 +70,34 @@ article .info .link
 
 article .info h1:hover
 {
-    font-size: xx-large;
+    text-shadow: 2px 2px #af7892;
 }
 
-article .info .Alignment:hover
+article .info .Alignment
 {
-    font-size: xx-large;
-    font-weight: 900;
+    font-size: 25px;
 }
 
 article .info .Alignment.evil:hover
 {
     color: #f00;
+    text-shadow: 1px 1px #000;
 }
 article .info .Alignment.good:hover
 {
     color: #0f0;
+    text-shadow: 1px 1px #000;
 }
 article .info .Alignment.neutral:hover
 {
     color: #00f;
+    text-shadow: 1px 1px #000;
 }
 
-article .image:hover
+article .image:hover img
 {
-    width: 320px;
-    margin-left: -10px;
+    border: solid 3px #49ff1f;
+    width: 295px;
 }
 
 article .info .money:hover
@@ -116,6 +118,11 @@ article .info .money .oldPrice
 article .description p:first-child
 {
     font-weight: bolder;
+}
+
+article h1
+{
+    font-size: 30px;
 }
 
 article .info h1,
@@ -177,7 +184,8 @@ label
     color: #000;
 }
 
-label:hover ~ label
+label:hover ~ label,
+label:hover
 {
     color: #ff0;
     text-shadow: 1px 1px #ff0;
