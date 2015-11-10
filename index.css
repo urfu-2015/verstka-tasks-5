@@ -27,7 +27,7 @@ article
 {
     text-align: center;
     font-family: 'sladkoeshka';
-    font-size: 25px;
+    font-size: 1.25em;
     margin-top: 20px;
     border-top: 1px solid #000;
 }
@@ -35,13 +35,20 @@ article
 html,
 body
 {
-    height: 100%;
+    min-width: 800px;
+    font-size: 1.2vw;
 }
 
 header
 {
-    height: 30%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    min-height: 200px;
+}
+
+main
+{
+    top: 40%;
+    position: relative;
 }
 
 body
@@ -52,25 +59,28 @@ body
 .left-header
 {
     float: left;
-    height: 100%;
     width: 25%;
     text-align: center;
+}
+
+header img
+{
+    width: 70%;
+    height: auto;
 }
 
 .middle-header
 {
     float: left;
-    height: 100%;
     width: 59%;
     text-align: center;
-    pading: 2px;
+    padding: 2px;
     font-size: 40px;
 }
 
 .right-header
 {
     float: left;
-    height: 100%;
     width: 15%;
 }
 
@@ -87,7 +97,6 @@ input
     margin: 30px auto 0;
 }
 
-.find-cat,
 .right-header img
 {
     display: block;
@@ -99,11 +108,25 @@ article img
     display: block;
     margin: 20px;
     border-radius: 50px;
+    width: 80%;
+    height: auto;
+}
+
+article img:not(.square-picture)
+{
+    width: 85%;
+    height: auto;
+}
+
+article .square-picture
+{
+    width: 60%;
+    height: auto;
 }
 
 em
 {
-    font-size: 25px;
+    font-size: 1.25em;
 }
 
 article p
@@ -130,7 +153,38 @@ article p
     width: 80%;
 }
 
-.style-filter[value='tile']:checked ~ main article
+input.list,
+input.tile
+{
+    display: none;
+}
+
+label.list:before
+{
+    content: " ";
+    background: url("images/list.png");
+    display: inline-block;
+    height: 20px;
+    width: 80px;
+}
+
+label.tile:before
+{
+    content: " ";
+    background: url("images/tile.png");
+    display: inline-block;
+    height: 20px;
+    width: 80px;
+}
+
+input.tile:checked ~ label.tile:before,
+input.list:checked ~ label.list:before
+{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input.tile:checked ~ main article
 {
     display: inline-block;
     width: 330px;
@@ -138,31 +192,36 @@ article p
     vertical-align: top;
 }
 
-.style-filter[value='tile']:checked ~ main img
+input.tile:checked ~ main img
 {
     display: block;
     margin: 10px auto;
     height: 180px;
 }
 
-.style-filter[value='list']:checked ~ main article
+input.list:checked ~ main article
 {
     margin: 0 auto;
 }
 
-.style-filter[value='list']:checked ~ main img,
-.style-filter[value='list']:checked ~ main .details-about-cat
+input.list:checked ~ main img,
+input.list:checked ~ main .details-about-cat
 {
     display: inline-block;
-    width: 23%;
+    width: 20%;
     margin: 10px;
     vertical-align: top;
 }
 
-.style-filter[value='list']:checked ~ main .description
+input.list:checked ~ main .details-about-cat
+{
+    width: 30%;
+}
+
+input.list:checked ~ main .description
 {
     display: inline-block;
-    width: 49%;
+    width: 40%;
 }
 
 a:hover
@@ -184,4 +243,105 @@ article:hover
 {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, .7);
     border-radius: 15px;
+}
+
+input.rating
+{
+    display: none;
+}
+
+label.chose-five:hover:before,
+label.chose-four:hover:before,
+label.chose-three:hover:before,
+label.chose-two:hover:before,
+label.chose-one:hover:before,
+label.chose-five:hover ~ label.chose-five:before,
+label.chose-four:hover ~ label.chose-four:before,
+label.chose-three:hover ~ label.chose-three:before,
+label.chose-two:hover ~ label.chose-two:before,
+label.chose-one:hover ~ label.chose-one:before,
+input.rating:checked ~ label.chose-five:before,
+input.four:checked ~ label.chose-four:before,
+input.three:checked ~ label.chose-three:before,
+input.two:checked ~ label.chose-two:before,
+input.one:checked ~ label.chose-one:before
+{
+    content: " ";
+    font-size: 1em;
+    position: relative;
+    background: url("images/full-star.png");
+    display: inline-block;
+    height: 23px;
+    width: 25px;
+}
+
+label:before
+{
+    content: " ";
+    font-size: 1em;
+    position: relative;
+    background: url("images/empty-star.png");
+    display: inline-block;
+    height: 23px;
+    width: 25px;
+}
+
+label.five:before
+{
+    left: 95px;
+}
+
+label.four:before
+{
+    left: 40px;
+}
+
+label.three:before
+{
+    left: -15px;
+}
+
+label.two:before
+{
+    left: -70px;
+}
+
+label.one:before
+{
+    left: -125px;
+}
+
+.find-cat
+{
+    position: absolute;
+    top: 190px;
+    right: 2.5%;
+    width: 12%;
+}
+
+.find-cat[value="Снежок"] ~ main article:not([class~="snowcat"]),
+.find-cat[value~="бурмилла"] ~ main article:not([class~="burmill"]),
+.find-cat[value="Бегемот"] ~ main article:not([class~="begemot"]),
+.find-cat[value~="бомбейская"] ~ main article:not([class~="bombei"]),
+.find-cat[value="Живоглот"] ~ main article:not([class~="germion-cat"]),
+.find-cat[value="мейн-кун"] ~ main article:not([class~="maincoon"]),
+.find-cat[value="Гарфилд"] ~ main article:not([class~="garfild"]),
+.find-cat[value~="британская"] ~ main article:not([class~="britain"]),
+.find-cat[value="Матроскин"] ~ main article:not([class~="matroskin"]),
+.find-cat[value="египетская мау"] ~ main article:not([class~="egypt"]),
+.find-cat[value="Ушастик"] ~ main article:not([class~="ushastik"]),
+.find-cat[value="сомали"] ~ main article:not([class~="somali"]),
+.find-cat[value="Салем"] ~ main article:not([class~="salem"]),
+.find-cat[value~="калифорнийская"] ~ main article:not([class~="california"]),
+.find-cat[value="Леопольд"] ~ main article:not([class~="leo"]),
+.find-cat[value="рагамаффин"] ~ main article:not([class~="ragamaffin"]),
+.find-cat[value="Зира"] ~ main article:not([class~="zeera"]),
+.find-cat[value="Кову"] ~ main article:not([class~="kovu"]),
+.find-cat[value="Симба"] ~ main article:not([class~="simba"]),
+.find-cat[value="Муфаса"] ~ main article:not([class~="mufasa"]),
+.find-cat[value~="американская"] ~ main article:not([class~="usa-cat"]),
+.find-cat[value="Том"] ~ main article:not([class~="tom"]),
+.find-cat[value~="сибирская"] ~ main article:not([class~="russian-cat"])
+{
+    display: none;
 }

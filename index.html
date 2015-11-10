@@ -7,11 +7,12 @@
     </head>
     <body>
         <!-- Здесь прикладывать основное усилие -->
-        Стиль сайта:
-        <input id="style-filter" class="style-filter"
-                name="style-filter" type="radio" value="list">список
-        <input class="style-filter" name="style-filter"
-                type="radio" value="tile" checked>плитка
+        <input id="list" class="style-filter list"
+                name="style-filter" type="radio" value="list">
+        <label for="list" class="list" title="list"></label>
+        <input id="tile" class="style-filter tile" name="style-filter"
+                type="radio" value="tile" checked>
+        <label for="tile" class="tile" title="tile"></label>
         <br>
         <header>
             <div class="left-header">
@@ -24,24 +25,48 @@
                 <div>
                     <img src="images/login.png" alt="log in">
                     <img src="images/signup.png" alt="sign up">
-                    <input class="find-cat"
-                            type="text"
-                            placeholder="Поиск котика"
-                            value=""
-                            onkeyup="this.setAttribute('value', this.value)">
                 </div>
             </div>
         </header>
+        <input class="find-cat"
+               type="text"
+               placeholder="Поиск котика"
+               value=""
+               onkeyup="this.setAttribute('value', this.value)">
         <main>
             <section>
-                <article>
+                <article class="snowcat burmill">
                     <img src="images/cat1.jpg" alt="white-cat">
                     <p class="details-about-cat">
                         <em>Имя котика:</em> <a href="" title="Снежок">Снежок</a><br>
                         <span class="long-name">
-                            <em>Порода:</em>Бурмилла длинношерстная
+                            <em>Порода:</em> Бурмилла длинношерстная
                         </span><br>
-                        <em>Уровень доброты:</em> ♥♥♥♥♥<br>
+                        <em>Уровень доброты:</em>
+                        <input id="first-star-first-cat" class="rating five"
+                               name="first-rating" type="radio" value="five">
+                        <label for="first-star-first-cat" class="rating five chose-five" title="злой">
+                        </label>
+                        <input id="second-star-first-cat" class="rating four"
+                               name="first-rating" type="radio" value="four" checked>
+                        <label for="second-star-first-cat" class="rating four chose-five chose-four"
+                               title="вредный"></label>
+                        <input id="third-star-first-cat" class="rating three"
+                               name="first-rating" type="radio" value="three">
+                        <label for="third-star-first-cat"
+                               class="rating three chose-five chose-four chose-three"
+                               title="по настроению"></label>
+                        <input id="fourth-star-first-cat" class="rating two"
+                               name="first-rating" type="radio" value="two">
+                        <label for="fourth-star-first-cat"
+                               class="rating two chose-five chose-four chose-three chose-two"
+                               title="хороший"></label>
+                        <input id="fifth-star-first-cat" class="rating one"
+                               name="first-rating" type="radio" value="one">
+                        <label for="fifth-star-first-cat"
+                               class="rating one chose-five chose-four chose-three chose-two chose-one"
+                               title="самый ласковый мурлыка"></label>
+                        <br>
                         <em>Стоимость:</em> Помочь бабуленьке в огороде<br>
                     </p>
                     <p class="description">
@@ -55,12 +80,36 @@
                         поэтому бурмиллы чаще других попадают в «истории».
                     </p>
                 </article>
-                <article>
+                <article class="begemot bombei">
                     <img src="images/cat2.jpg" alt="bombei-cat">
                     <p class="details-about-cat">
                         <em>Имя котика:</em> <a href="" title="Бегемот">Бегемот</a><br>
                         <span class="long-name"><em>Порода:</em> Бомбейская кошка</span><br>
-                        <em>Уровень доброты:</em> ♥♥♥<br>
+                        <em>Уровень доброты:</em>
+                        <input id="first-star-second-cat" class="rating five"
+                               name="second-rating" type="radio" value="five">
+                        <label for="first-star-second-cat" class="rating five chose-five" title="злой">
+                        </label>
+                        <input id="second-star-second-cat" class="rating four"
+                               name="second-rating" type="radio" value="four" checked>
+                        <label for="second-star-second-cat" class="rating four chose-five chose-four"
+                               title="вредный"></label>
+                        <input id="third-star-second-cat" class="rating three"
+                               name="second-rating" type="radio" value="three">
+                        <label for="third-star-second-cat"
+                               class="rating three chose-five chose-four chose-three"
+                               title="по настроению"></label>
+                        <input id="fourth-star-second-cat" class="rating two"
+                               name="second-rating" type="radio" value="two">
+                        <label for="fourth-star-second-cat"
+                               class="rating two chose-five chose-four chose-three chose-two"
+                               title="хороший"></label>
+                        <input id="fifth-star-second-cat" class="rating one"
+                               name="second-rating" type="radio" value="one">
+                        <label for="fifth-star-second-cat"
+                               class="rating one chose-five chose-four chose-three chose-two chose-one"
+                               title="самый ласковый мурлыка"></label>
+                        <br>
                         <em>Стоимость:</em> Купить бабуленьке продуктов на месяц<br>
                     </p>
                     <p class="description">
@@ -74,12 +123,36 @@
                         Самое любимое место – колени хозяина.
                     </p>
                 </article>
-                <article>
+                <article class="germion-cat maincoon">
                     <img src="images/cat3.jpg" alt="meincoon-cat">
                     <p class="details-about-cat">
                         <em>Имя котика:</em> <a href="" title="Живоглот">Живоглот</a><br>
                         <span class="long-name"><em>Порода:</em> Мейн-кун</span><br>
-                        <em>Уровень доброты:</em> ♥♥♥<br>
+                        <em>Уровень доброты:</em>
+                        <input id="first-star-third-star" class="rating five"
+                               name="third-rating" type="radio" value="five">
+                        <label for="first-star-third-star" class="rating five chose-five" title="злой">
+                        </label>
+                        <input id="second-star-third-star" class="rating four"
+                               name="third-rating" type="radio" value="four" checked>
+                        <label for="second-star-third-star" class="rating four chose-five chose-four"
+                               title="вредный"></label>
+                        <input id="third-star-third-star" class="rating three"
+                               name="third-rating" type="radio" value="three">
+                        <label for="third-star-third-star"
+                               class="rating three chose-five chose-four chose-three"
+                               title="по настроению"></label>
+                        <input id="fourth-star-third-star" class="rating two"
+                               name="third-rating" type="radio" value="two">
+                        <label for="fourth-star-third-star"
+                               class="rating two chose-five chose-four chose-three chose-two"
+                               title="хороший"></label>
+                        <input id="fifth-star-third-star" class="rating one"
+                               name="third-rating" type="radio" value="one">
+                        <label for="fifth-star-third-star"
+                               class="rating one chose-five chose-four chose-three chose-two chose-one"
+                               title="самый ласковый мурлыка"></label>
+                        <br>
                         <em>Стоимость:</em> Отвезти бабуленьку к Семеновне<br>
                     </p>
                     <p class="description">
@@ -92,12 +165,36 @@
                         антресоли, полки и прочие любимые места типичных кошек.
                     </p>
                 </article>
-                <article>
+                <article class="garfild britain">
                     <img src="images/cat4.jpg" alt="britain-cat">
                     <p class="details-about-cat">
                         <em>Имя котика:</em> <a href="" title="Гарфилд">Гарфилд</a><br>
                         <span class="long-name"><em>Порода:</em> Британская длинношерстная кошка</span><br>
-                        <em>Уровень доброты:</em> ♥♥♥♥♥<br>
+                        <em>Уровень доброты:</em>
+                        <input id="first-star-fourth-cat" class="rating five"
+                               name="fourth-rating" type="radio" value="five">
+                        <label for="first-star-fourth-cat" class="rating five chose-five" title="злой">
+                        </label>
+                        <input id="second-star-fourth-cat" class="rating four"
+                               name="fourth-rating" type="radio" value="four" checked>
+                        <label for="second-star-fourth-cat" class="rating four chose-five chose-four"
+                               title="вредный"></label>
+                        <input id="third-star-fourth-cat" class="rating three"
+                               name="fourth-rating" type="radio" value="three">
+                        <label for="third-star-fourth-cat"
+                               class="rating three chose-five chose-four chose-three"
+                               title="по настроению"></label>
+                        <input id="fourth-star-fourth-cat" class="rating two"
+                               name="fourth-rating" type="radio" value="two">
+                        <label for="fourth-star-fourth-cat"
+                               class="rating two chose-five chose-four chose-three chose-two"
+                               title="хороший"></label>
+                        <input id="fifth-star-fourth-cat" class="rating one"
+                               name="fourth-rating" type="radio" value="one">
+                        <label for="fifth-star-fourth-cat"
+                               class="rating one chose-five chose-four chose-three chose-two chose-one"
+                               title="самый ласковый мурлыка"></label>
+                        <br>
                         <em>Стоимость:</em> Сходить за пенсией бабуленьки<br>
                     </p>
                     <p class="description">
@@ -112,12 +209,36 @@
                         адаптируется к новому месту жительства.
                     </p>
                 </article>
-                <article>
+                <article class="matroskin egypt">
                     <img src="images/cat5.jpg" alt="egypt-cat">
                     <p class="details-about-cat">
                         <em>Имя котика:</em> <a href="" title="Матроскин">Матроскин</a><br>
                         <span class="long-name"><em>Порода:</em> Египетская мау</span><br>
-                        <em>Уровень доброты:</em> ♥♥♥♥<br>
+                        <em>Уровень доброты:</em>
+                        <input id="first-star-fifth-cat" class="raiting five"
+                               name="fifth-rating" type="radio" value="five">
+                        <label for="first-star-fifth-cat" class="rating five chose-five" title="злой">
+                        </label>
+                        <input id="second-star-fifth-cat" class="rating four"
+                               name="fifth-rating" type="radio" value="four">
+                        <label for="second-star-fifth-cat" class="rating four chose-five chose-four"
+                               title="вредный"></label>
+                        <input id="third-star-fifth-cat" class="rating three"
+                               name="fifth-rating" type="radio" value="three" checked>
+                        <label for="third-star-fifth-cat"
+                               class="rating three chose-five chose-four chose-three"
+                               title="по настроению"></label>
+                        <input id="fourth-star-fifth-cat" class="rating two"
+                               name="fifth-rating" type="radio" value="two">
+                        <label for="fourth-star-fifth-cat"
+                               class="rating two chose-five chose-four chose-three chose-two"
+                               title="хороший"></label>
+                        <input id="fifth-star-fifth-cat" class="rating one"
+                               name="fifth-rating" type="radio" value="one">
+                        <label for="fifth-star-fifth-cat"
+                               class="rating one chose-five chose-four chose-three chose-two chose-one"
+                               title="самый ласковый мурлыка"></label>
+                        <br>
                         <em>Стоимость:</em> Отвезти бабуленьку в поликлинику<br>
                     </p>
                     <p class="description">
@@ -130,12 +251,37 @@
                         Поэтому с ним стоит почаще играть в активные игры, которые имитируют охоту.
                     </p>
                 </article>
-                <article>
+                <article class="ushastik somali">
                     <img src="images/cat6.jpg" alt="somali-cat">
                     <p class="details-about-cat">
                         <em>Имя котика:</em> <a href="" title="Ушастик">Ушастик</a><br>
-                        <span class="long-name"><em>Порода:</em> Сомали (Сомалийская кошка)</span><br>
-                        <em>Уровень доброты:</em> ♥♥♥♥♥<br>
+                        <span class="long-name"><em>Порода:</em> Сомали (Сомалийская кошка)</span>
+                        <br>
+                        <em>Уровень доброты:</em>
+                        <input id="first-star-sixth-cat" class="raiting five"
+                               name="sixth-rating" type="radio" value="five">
+                        <label for="first-star-sixth-cat" class="rating five chose-five" title="злой">
+                        </label>
+                        <input id="second-star-sixth-cat" class="rating four"
+                               name="sixth-rating" type="radio" value="four">
+                        <label for="second-star-sixth-cat" class="rating four chose-five chose-four"
+                               title="вредный"></label>
+                        <input id="third-star-sixth-cat" class="rating three"
+                               name="sixth-rating" type="radio" value="three" checked>
+                        <label for="third-star-sixth-cat"
+                               class="rating three chose-five chose-four chose-three"
+                               title="по настроению"></label>
+                        <input id="fourth-star-sixth-cat" class="rating two"
+                               name="sixth-rating" type="radio" value="two">
+                        <label for="fourth-star-sixth-cat"
+                               class="rating two chose-five chose-four chose-three chose-two"
+                               title="хороший"></label>
+                        <input id="fifth-star-sixth-cat" class="rating one"
+                               name="sixth-rating" type="radio" value="one">
+                        <label for="fifth-star-sixth-cat"
+                               class="rating one chose-five chose-four chose-three chose-two chose-one"
+                               title="самый ласковый мурлыка"></label>
+                        <br>
                         <em>Стоимость:</em> Научить бабуленьку пользоваться интернетом<br>
                     </p>
                     <p class="description">
@@ -147,12 +293,36 @@
                         Он любит бегать, играться, прыгать и, конечно, есть.
                     </p>
                 </article>
-                <article>
+                <article class="salem california">
                     <img src="images/cat7.jpg" alt="california-cat">
                     <p class="details-about-cat">
                         <em>Имя котика:</em> <a href="" title="Салем">Салем</a><br>
                         <span class="long-name"><em>Порода:</em> Калифорнийская сияющая кошка</span><br>
-                        <em>Уровень доброты:</em> ♥♥♥<br>
+                        <em>Уровень доброты:</em>
+                        <input id="first-star-seventh-cat" class="raiting five"
+                               name="seventh-rating" type="radio" value="five">
+                        <label for="first-star-seventh-cat" class="rating five chose-five" title="злой">
+                        </label>
+                        <input id="second-star-seventh-cat" class="rating four"
+                               name="seventh-rating" type="radio" value="four" checked>
+                        <label for="second-star-seventh-cat" class="rating four chose-five chose-four"
+                               title="вредный"></label>
+                        <input id="third-star-seventh-cat" class="rating three"
+                               name="seventh-rating" type="radio" value="three">
+                        <label for="third-star-seventh-cat"
+                               class="rating three chose-five chose-four chose-three"
+                               title="по настроению"></label>
+                        <input id="fourth-star-seventh-cat" class="rating two"
+                               name="seventh-rating" type="radio" value="two">
+                        <label for="fourth-star-seventh-cat"
+                               class="rating two chose-five chose-four chose-three chose-two"
+                               title="хороший"></label>
+                        <input id="fifth-star-seventh-cat" class="rating one"
+                               name="seventh-rating" type="radio" value="one">
+                        <label for="fifth-star-seventh-cat"
+                               class="rating one chose-five chose-four chose-three chose-two chose-one"
+                               title="самый ласковый мурлыка"></label>
+                        <br>
                         <em>Стоимость:</em> Погулять с бабуленькой в парке<br>
                     </p>
                     <p class="description">
@@ -165,12 +335,36 @@
                         Хорошо переносит одиночество.
                     </p>
                 </article>
-                <article>
+                <article class="leo ragamaffin">
                     <img src="images/cat8.jpg" alt="ragamaffin-cat">
                     <p class="details-about-cat">
                         <em>Имя котика:</em> <a href="" title="Леопольд">Леопольд</a><br>
                         <span class="long-name"><em>Порода:</em> Рагамаффин</span><br>
-                        <em>Уровень доброты:</em> ♥♥♥♥♥<br>
+                        <em>Уровень доброты:</em>
+                        <input id="first-star-eight-cat" class="rating five"
+                               name="eight-rating" type="radio" value="five" checked>
+                        <label for="first-star-eight-cat" class="rating five chose-five" title="злой">
+                        </label>
+                        <input id="second-star-eight-cat" class="rating four"
+                               name="eight-rating" type="radio" value="four">
+                        <label for="second-star-eight-cat" class="rating four chose-five chose-four"
+                               title="вредный"></label>
+                        <input id="third-star-eight-cat" class="rating three"
+                               name="eight-rating" type="radio" value="three">
+                        <label for="third-star-eight-cat"
+                               class="rating three chose-five chose-four chose-three"
+                               title="по настроению"></label>
+                        <input id="fourth-star-eight-cat" class="rating two"
+                               name="eight-rating" type="radio" value="two">
+                        <label for="fourth-star-eight-cat"
+                               class="rating two chose-five chose-four chose-three chose-two"
+                               title="хороший"></label>
+                        <input id="fifth-star-eight-cat" class="rating one"
+                               name="eight-rating" type="radio" value="one">
+                        <label for="fifth-star-eight-cat"
+                               class="rating one chose-five chose-four chose-three chose-two chose-one"
+                               title="самый ласковый мурлыка"></label>
+                        <br>
                         <em>Стоимость:</em> Скачать бабуленьке подборку бразильских сериалов<br>
                     </p>
                     <p class="description">
@@ -184,7 +378,7 @@
                         свою территорию или мстить – не в его характере.
                     </p>
                 </article>
-                <article>
+                <article class="zeera kovu simba mufasa usa-cat">
                     <img src="images/cat9.jpg" alt="usa-cat">
                     <p class="details-about-cat">
                         <em>Имя котика:</em>
@@ -192,7 +386,31 @@
                         <a href="" title="Симба">Симба</a>, <a href="" title="Муфаса">Муфаса</a><br>
                         <span class="long-name"><em>Порода:</em> Американская короткошерстная кошка</span>
                         <br>
-                        <em>Уровень доброты:</em> ♥♥♥♥<br>
+                        <em>Уровень доброты:</em>
+                        <input id="first-star-ninth-cat" class="rating five"
+                               name="ninth-rating" type="radio" value="five" checked>
+                        <label for="first-star-ninth-cat" class="rating five chose-five" title="злой">
+                        </label>
+                        <input id="second-star-ninth-cat" class="rating four"
+                               name="ninth-rating" type="radio" value="four">
+                        <label for="second-star-ninth-cat" class="rating four chose-five chose-four"
+                               title="вредный"></label>
+                        <input id="third-star-ninth-cat" class="rating three"
+                               name="ninth-rating" type="radio" value="three">
+                        <label for="third-star-ninth-cat"
+                               class="rating three chose-five chose-four chose-three"
+                               title="по настроению"></label>
+                        <input id="fourth-star-ninth-cat" class="rating two"
+                               name="ninth-rating" type="radio" value="two">
+                        <label for="fourth-star-ninth-cat"
+                               class="rating two chose-five chose-four chose-three chose-two"
+                               title="хороший"></label>
+                        <input id="fifth-star-ninth-cat" class="rating one"
+                               name="ninth-rating" type="radio" value="one">
+                        <label for="fifth-star-ninth-cat"
+                               class="rating one chose-five chose-four chose-three chose-two chose-one"
+                               title="самый ласковый мурлыка"></label>
+                        <br>
                         <em>Стоимость:</em> Купить корма для бабуленькиных котиков<br>
                     </p>
                     <p class="description">
@@ -202,12 +420,36 @@
                         проявляют огромный интерес к окружающей обстановке.
                     </p>
                 </article>
-                <article>
-                    <img src="images/cat10.jpg" alt="russian-cat">
+                <article class="tom russian-cat">
+                    <img src="images/cat10.jpg" alt="russian-cat" class="square-picture">
                     <p class="details-about-cat">
                         <em>Имя котика:</em> <a href="" title="Том">Том</a><br>
                         <span class="long-name"><em>Порода:</em> Сибирская кошка</span><br>
-                        <em>Уровень доброты:</em> ♥♥♥♥♥<br>
+                        <em>Уровень доброты:</em>
+                        <input id="first-star-tenth-cat" class="rating five"
+                               name="tenth-rating" type="radio" value="five">
+                        <label for="first-star-tenth-cat" class="rating five chose-five" title="злой">
+                        </label>
+                        <input id="second-star-tenth-cat" class="rating four"
+                               name="tenth-rating" type="radio" value="four">
+                        <label for="second-star-tenth-cat" class="rating four chose-five chose-four"
+                               title="вредный"></label>
+                        <input id="third-star-tenth-cat" class="rating three"
+                               name="tenth-rating" type="radio" value="three" checked>
+                        <label for="third-star-tenth-cat"
+                               class="rating three chose-five chose-four chose-three"
+                               title="по настроению"></label>
+                        <input id="fourth-star-tenth-cat" class="rating two"
+                               name="tenth-rating" type="radio" value="two">
+                        <label for="fourth-star-tenth-cat"
+                               class="rating two chose-five chose-four chose-three chose-two"
+                               title="хороший"></label>
+                        <input id="fifth-star-tenth-cat" class="rating one"
+                               name="tenth-rating" type="radio" value="one">
+                        <label for="fifth-star-tenth-cat"
+                               class="rating one chose-five chose-four chose-three chose-two chose-one"
+                               title="самый ласковый мурлыка"></label>
+                        <br>
                         <em>Стоимость:</em>
                         <span class="old-price">Привезти пенсию бабуленьки</span>
                         Решить с бабуленькой кроссворд<br>
