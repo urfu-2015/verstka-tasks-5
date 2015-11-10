@@ -1,1 +1,204 @@
+header h1,
+header h2
+{
+    margin-top: 0;
+    text-align: center;
+    font-size: 900;
+}
+
+input[class='tolist']:checked ~ article div
+{
+    overflow: hidden;
+    max-height: 240px;
+    width: 300px;
+}
+
+input[class='tolist']:checked ~ article div:not(.rating)
+{
+    display: inline;
+    margin-right: 40px;
+    float: left;
+}
+
+input[class='tolist']:checked ~ article .description
+{
+    width: 300px;
+    margin-left: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+input[class='tolist']:checked ~ article .description p
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+input[class='tolist']:checked ~ article
+{
+    width: 100%;
+    height: 240px;
+    margin-bottom: 10px;
+}
+
+article
+{
+    width: 300px;
+    float: left;
+    margin-right: 10px;
+    height: 600px;
+}
+
+article .info .link,
+article .info .Alignment,
+article .info .rating
+{
+    margin: 0;
+}
+
+article img
+{
+    width: 300px;
+}
+
+article .info .link
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+article .info h1:hover
+{
+    text-shadow: 2px 2px #af7892;
+}
+
+article .info .Alignment
+{
+    font-size: 25px;
+}
+
+article .info .Alignment.evil:hover
+{
+    color: #f00;
+    text-shadow: 1px 1px #000;
+}
+article .info .Alignment.good:hover
+{
+    color: #0f0;
+    text-shadow: 1px 1px #000;
+}
+article .info .Alignment.neutral:hover
+{
+    color: #00f;
+    text-shadow: 1px 1px #000;
+}
+
+article .image:hover img
+{
+    border: solid 3px #49ff1f;
+    width: 295px;
+}
+
+article .info .money:hover
+{
+    color: #ffd700;
+}
+
+article:hover
+{
+    box-shadow: 4px 4px 4px 4px #023;
+}
+
+article .info .money .oldPrice
+{
+    text-decoration: line-through;
+}
+
+article .description p:first-child
+{
+    font-weight: bolder;
+}
+
+article h1
+{
+    font-size: 30px;
+}
+
+article .info h1,
+article .info
+{
+    text-align: center;
+}
+
+.rating
+{
+    margin-bottom: 10px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    display: inline-block;
+}
+
+.rating > span
+{
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before
+{
+    content: '\2605';
+    color: #ff0;
+    position: absolute;
+}
+
+article .description
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+form > input
+{
+    display: none;
+}
+
+form
+{
+    font-size: 0;
+    letter-spacing: 0;
+    direction: rtl;
+    position: relative;
+}
+
+form > label:not([class='empty']):before
+{
+    content: '\f089';
+    font-size: 20px;
+}
+
+.right
+{
+    transform: scale(-1, 1);
+    margin-left: -2px;
+}
+
+input:checked ~ label
+{
+    color: #ff0;
+}
+
+label:hover,
+label:hover ~ label
+{
+    text-shadow: -1px -1px 2px #f0f;
+    color: #ffa500;
+}
+
+input:checked ~ label:hover
+{
+    color: #ffa500;
+}
 
