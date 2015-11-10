@@ -27,16 +27,6 @@ body
     width: 300px;
 }
 
-/*.card:after*/
-/*{*/
-    /*content: ".";*/
-    /*display: block;*/
-    /*clear: both;*/
-    /*visibility: hidden;*/
-    /*line-height: 0;*/
-    /*height: 0;*/
-/*}*/
-
 .card:hover
 {
     background-color: rgba(1, 1, 1, .15);
@@ -190,9 +180,11 @@ label
     color: #ffd700;
 }
 
-.rating > input:checked + label:hover, /* hover current star when changing rating */
+/* hover current star when changing rating */
+.rating > input:checked + label:hover,
 .rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+/* lighten current selection */
+.rating > label:hover ~ input:checked ~ label,
 .rating > input:checked ~ label:hover ~ label
 {
     color: #ffed85;
