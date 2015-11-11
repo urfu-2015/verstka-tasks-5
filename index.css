@@ -1,1 +1,155 @@
+body
+{
+    font: 14px Arial, sans-serif;
+}
 
+body > p
+{
+    font-weight: bold;
+}
+
+[value='masonry']:checked ~ section
+{
+    display: inline-block;
+}
+
+[value='list']:checked ~ section
+{
+    display: list-item;
+    list-style-type: none;
+    white-space: nowrap;
+    width: 605px;
+}
+
+[value='list']:checked ~ section .image img,
+[value='list']:checked ~ section .description
+{
+    position: relative;
+    vertical-align: top;
+}
+
+[value='list']:checked ~ section .image
+{
+    height: 100%;
+}
+
+[value='list']:checked ~ section .description
+{
+    margin-left: 5px;
+}
+
+section
+{
+    margin: 10px;
+    width: 300px;
+    vertical-align: top;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+section:hover
+{
+    border: 1px solid #999;
+}
+
+.image
+{
+    position: relative;
+    height: 300px;
+}
+
+.image img
+{
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    border: 2px solid transparent;
+}
+
+.image img:hover
+{
+    border-radius: 10px;
+    border: 2px solid #232323;
+}
+
+.kitty .image,
+.kitty .description
+{
+    width: 300px;
+    display: inline-block;
+}
+
+.description
+{
+    white-space: nowrap;
+}
+
+.description p
+{
+    margin: 5px 0;
+}
+
+h3
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+h3 a:hover
+{
+    color: #800;
+    text-decoration: none;
+}
+
+.category a
+{
+    color: #888;
+    font-size: 13px;
+}
+
+.category a:hover
+{
+    text-decoration: none;
+}
+
+.category a:hover:before
+{
+    content: '(=^ ';
+}
+
+.category a:hover:after
+{
+    content: ' ^=)';
+}
+
+.rating-of-kindness img
+{
+    width: 60%;
+}
+
+.price
+{
+    color: #800;
+    font-weight: bold;
+}
+
+del
+{
+    font-size: 80%;
+    color: #000;
+    font-weight: normal;
+}
+
+.text-description
+{
+    white-space: normal;
+    display: inline-block;
+    width: 300px;
+    line-height: 130%;
+}
