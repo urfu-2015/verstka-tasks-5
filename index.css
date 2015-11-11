@@ -1,1 +1,68 @@
+section 
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
+h1 
+{
+    text-align: center;
+    font-size: 50px;
+}
+
+.item-wrapper
+{
+    display: inline-block;
+    margin-right: 5%;
+    margin-bottom: 7%;
+    width: 200px;
+    height: 550px;
+    overflow: hidden;
+}
+
+a 
+{
+    white-space: nowrap;
+}
+
+img 
+{
+    width: 250px;
+    height: 200px;
+}
+
+.kindness-level
+{
+    height: 20px;
+    width: auto;
+}
+
+.price span 
+{
+    color: #f00;
+}
+
+.price-old 
+{
+    text-decoration: line-through;
+}
+
+#view-list:checked ~ ul li 
+{
+    display: list-item;
+}
+
+#view-block:checked ~ ul li 
+{
+    display: inline-block;
+}
+
+.item-wrapper:hover 
+{
+    box-shadow: 0 0 1px 1px;
+}
+
+.category:hover 
+{
+    text-decoration: underline;
+}
