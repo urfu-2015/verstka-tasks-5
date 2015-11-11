@@ -51,11 +51,6 @@ main
     position: relative;
 }
 
-body
-{
-    background: #fe8;
-}
-
 .left-header
 {
     float: left;
@@ -66,7 +61,6 @@ body
 header img
 {
     width: 70%;
-    height: auto;
 }
 
 .middle-header
@@ -109,19 +103,16 @@ article img
     margin: 20px;
     border-radius: 50px;
     width: 80%;
-    height: auto;
 }
 
 article img:not(.square-picture)
 {
     width: 85%;
-    height: auto;
 }
 
 article .square-picture
 {
     width: 60%;
-    height: auto;
 }
 
 em
@@ -199,6 +190,11 @@ input.tile:checked ~ main img
     height: 180px;
 }
 
+input.tile:checked ~ main .details-about-cat
+{
+    padding-left: 20px;
+}
+
 input.list:checked ~ main article
 {
     margin: 0 auto;
@@ -245,70 +241,69 @@ article:hover
     border-radius: 15px;
 }
 
-input.rating
+.rating label
 {
-    display: none;
-}
-
-label.chose-five:hover:before,
-label.chose-four:hover:before,
-label.chose-three:hover:before,
-label.chose-two:hover:before,
-label.chose-one:hover:before,
-label.chose-five:hover ~ label.chose-five:before,
-label.chose-four:hover ~ label.chose-four:before,
-label.chose-three:hover ~ label.chose-three:before,
-label.chose-two:hover ~ label.chose-two:before,
-label.chose-one:hover ~ label.chose-one:before,
-input.rating:checked ~ label.chose-five:before,
-input.four:checked ~ label.chose-four:before,
-input.three:checked ~ label.chose-three:before,
-input.two:checked ~ label.chose-two:before,
-input.one:checked ~ label.chose-one:before
-{
-    content: ' ';
-    font-size: 1em;
     position: relative;
-    background: url('images/full-star.png');
-    display: inline-block;
-    height: 23px;
-    width: 25px;
+    float: left;
+    z-index: 2;
+    width: 5px;
+    height: 16px;
 }
-
-label:before
+.rating input[type=radio]
 {
-    content: ' ';
-    font-size: 1em;
+    z-index: 1;
+    float: left;
+    width: 10px;
+    height: 10px;
     position: relative;
-    background: url('images/empty-star.png');
-    display: inline-block;
-    height: 23px;
-    width: 25px;
+    top: -28px;
+    left: 16px;
+
+}
+.star
+{
+    background: url("images/star.png") 0 -16px;
+    height: 16px;
+    width: 16px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    display: block;
+    cursor: pointer;
 }
 
-label.five:before
+.rating:hover .star
 {
-    left: 95px;
+    background-position: 0 -32px;
 }
 
-label.four:before
+input:checked ~ label .star
 {
-    left: 40px;
+    background-position: 0 0;
 }
 
-label.three:before
+input:checked + label .star
 {
-    left: -15px;
+    background-position: 0 -16px;
 }
 
-label.two:before
+label:hover ~ label .star
 {
-    left: -70px;
+    background-position: 0 0 !important;
 }
 
-label.one:before
+.rating
 {
-    left: -125px;
+    height: 20px;
+    width: 160px;
+    margin-left: 36%;
+    margin-top: -20px;
+}
+
+input.list:checked ~ main .rating
+{
+    margin-left: 30%;
+    margin-top: -20px;
 }
 
 .find-cat
