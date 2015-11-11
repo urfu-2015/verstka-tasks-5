@@ -15,6 +15,11 @@ figure
     display: inline-block;
 }
 
+section figure img
+{
+    border-radius: 10px;
+}
+
 section:hover
 {
     box-shadow: 1px 1px 15px 5px #888;
