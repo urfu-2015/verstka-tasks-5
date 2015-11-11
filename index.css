@@ -4,6 +4,11 @@
     src: url(Pussyfoo.ttf);
 }
 
+body
+{
+    min-width: 450px;
+}
+
 h1
 {
     font: 50px 'Oswald',sans-serif;
@@ -24,16 +29,11 @@ h1:first-letter
     color: #f00;
 }
 
-.design-type
-{
-    display: block;
-}
-
 .item
 {
     margin: 0;
     display: inline-block;
-    width: 250px;
+    width: 270px;
     position: relative;
     height: 640px;
 }
@@ -48,9 +48,10 @@ h1:first-letter
 .pic img
 {
     position: absolute;
-    width: 250px;
+    width: 270px;
     vertical-align: middle;
     bottom: 0;
+    max-height: 320px;
 }
 
 .info
@@ -71,12 +72,6 @@ a
     height: 50%;
     text-decoration: none;
 }
-
-span
-{
-    display: block;
-}
-
 .name
 {
     font: 30px 'Lora',serif;
@@ -89,22 +84,12 @@ span
     font-size: 15px;
 }
 
-.mark
-{
-    font: 25px 'Montserrat', sans-serif;
-    color: #ff0;
-    text-shadow: 1px 1px 5px #000;
-}
-
-.mark:hover
-{
-    color: #0f0;
-}
-
 .price
 {
     font: 25px 'Montserrat', sans-serif;
     color: #f00;
+    white-space: nowrap;
+    clear: both;
 }
 
 .price:hover
@@ -134,7 +119,7 @@ span
 {
     display: list-item;
     width: 100%;
-    height: 320px;
+    height: 50vh;
     list-style: none;
 }
 
@@ -148,6 +133,7 @@ span
 {
     float: left;
     width: 27%;
+    vertical-align: 70%;
 }
 
 .design-type[value='list'] ~ article .item .info
@@ -156,7 +142,6 @@ span
     padding: 2%;
     width: 67%;
     position: absolute;
-    top: 20%;
     right: 2%;
     height: auto;
 }
@@ -170,6 +155,55 @@ span
 .design-type[value='list'] ~ article .item .pic img
 {
     width: 100%;
+    max-width: 270px;
     position: absolute;
     top: 15%;
+}
+
+.mark input:checked ~ label,
+.mark label,
+.mark label:hover,
+.mark label:hover ~ label {
+    background: url('Images/stars.png') no-repeat;
+}
+
+.mark {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+.mark input {
+    opacity: 0;
+
+    width: 43px;
+    height: 40px;
+
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.mark input:checked ~ label {
+    background-position: 0 -40px;
+    height: 40px;
+    width: 43px;
+}
+
+.mark label {
+    background-position: 0 0;
+    height: 40px;
+    width: 43px;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.mark label:hover, .mark label:hover ~ label {
+    background-position: 0 -40px;
+    height: 40px;
+    width: 43px;
 }
