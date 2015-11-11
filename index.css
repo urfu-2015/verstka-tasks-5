@@ -1,1 +1,212 @@
 
+.title {
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center
+}
+
+.title::first-letter {
+    color: #f00;
+}
+
+div {
+    height: 10px;
+}
+
+div p {
+    margin: 5px ;
+    text-overflow: ellipsis;
+}
+
+.block {
+    margin: 10px;
+    height: 250px;
+    padding: 50px;
+    text-align: left;
+    width: 150px;
+    float: left;
+    text-overflow: ellipsis;
+}
+
+.name {
+    font-family: sans-serif;
+    font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name:hover {
+    color: #9a84ff;
+    font-weight: bold;
+    font-style: normal;
+    font-size: larger;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.category {
+    font-family: 'Poiret One', cursive;
+    font-style: oblique;
+}
+
+.category:hover {
+    color: #b38c62;
+    font-weight: bold;
+    font-style: normal;
+    font-size: larger;
+}
+
+.mark{
+    font-size:larger;
+
+}
+.price {
+    font-family: 'Pacifico', cursive;
+}
+
+.price:hover {
+    font-weight: bold;
+    font-size: larger;
+    color: #92b379;
+}
+
+.about {
+    font-family: serif;
+
+}
+
+.about:hover {
+    font-size: large;
+    font-weight: bold;
+    color: #b36370;
+
+}
+
+@media only screen and (max-device-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    div {
+        max-width: 68%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .title {
+        text-align: center;
+        font-size: 100%;
+    }
+
+    div {
+        max-width: 28%;
+        height: auto;
+    }
+}
+
+@font-face {
+    font-family: 'Poiret One', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic');
+}
+
+@font-face {
+    font-family: 'Indie Flower', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Indie+');
+}
+
+@font-face {
+    font-family: 'Pacifico', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Pacifico') ;
+}
+
+.cat1 {
+    background: url(sadcat.jpg);
+    display: block;
+    width: 196px;
+    height: 183px;
+}
+
+.cat2 {
+    background: url(lovelycat.jpg);
+    display: block;
+    width: 196px;
+    height: 183px;
+}
+
+.cat3 {
+    background: url(cinemacat.jpg);
+    display: block;
+    width: 196px;
+    height: 183px;
+}
+
+.cat4 {
+    background: url(confusecat.jpg);
+    display: block;
+    width: 196px;
+    height: 183px;
+}
+
+.cat5 {
+    background: url(007cat.jpg);
+    display: block;
+    width: 196px;
+    height: 183px;
+}
+
+.cat6 {
+    background: url(satisfiedcat.jpg);
+    display: block;
+    width: 196px;
+    height: 183px;
+}
+
+.cat7 {
+    background: url(funnycat.jpg);
+    display: block;
+    width: 196px;
+    height: 183px;
+}
+
+.cat8 {
+    background: url(scornfulcat.jpg);
+    display: block;
+    width: 196px;
+    height: 183px;
+}
+
+.cat9 {
+    background: url(seekcat.jpg);
+    display: block;
+    width: 196px;
+    height: 183px;
+}
+
+.cat10 {
+    background: url(hungrycat.jpg);
+    display: block;
+    width: 196px;
+    height: 183px;
+}
+
+.change:hover {
+    background: url(test.jpg);
+}
+
+input[type=checkbox]:checked ~ .to-be-changed {
+    width: 500px;
+    height: auto;
+    text-align: left;
+    margin: 0 8px 0 0;
+}
+div.rating {
+    width: 85px;
+    background: url('star-0-big.gif') repeat-x 0 0;
+}
+div.rating div {
+    height: 18px;
+    background: url('star-1-big.gif') repeat-x 0 0;
+    font-size: 1px;
+    text-indent: -9999px;
+}
