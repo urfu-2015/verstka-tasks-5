@@ -1,4 +1,9 @@
 
+input
+{
+    display: none;
+}
+
 article
 {
     padding-bottom: 5px;
@@ -7,7 +12,7 @@ article
 
 figure
 {
-    height: 50%;
+    height: 45%;
     width: 100%;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
@@ -46,6 +51,11 @@ div.rating
     padding: 0 8px 20px 8px;
 }
 
+#tile:checked ~ section figure
+{
+    margin-bottom: 5px;
+}
+
 #tile:checked ~ section figure img
 {
     max-height: 100%;
@@ -59,14 +69,13 @@ div.rating
 #tile:checked ~ section div.rating
 {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 5px auto 5px auto;
 }
 
 #list:checked ~ section
 {
     position: relative;
-    width: 95%;
+    width: 1100px;
     height: 205px;
     padding: 20px;
 }
@@ -108,5 +117,6 @@ div.rating
 #list:checked ~ section figure img
 {
     max-height: 150px;
+    max-width: 250px;
     margin: 20px;
 }
