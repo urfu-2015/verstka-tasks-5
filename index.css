@@ -1,1 +1,247 @@
+header h1
+{
+    color: rgb(255, 0, 0);
+}
 
+.card
+{
+    width: 450px;
+    float: left;
+    margin: 10px;
+}
+
+.photo img
+{
+    width: 100%;
+}
+
+.price
+{
+    color: rgb(169, 14, 6);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.name
+{
+    font-size: 22px;
+    color: rgb(52, 73, 169);
+}
+
+.category
+{
+    font-size: 10px;
+    color: rgb(70, 39, 39);
+}
+
+.describe
+{
+    font-size: 12px;
+    margin: 10px;
+}
+
+.info
+{
+    margin: 20px;
+}
+
+.horizont:target ~ .card
+{
+    clear: both;
+    width: 100%;
+}
+
+.horizont:target ~ .card .photo
+{
+    width: 30%;
+    float: left;
+}
+
+.horizont:target ~ .card .info
+{
+    float: left;
+    width: 30%;
+}
+
+.horizont:target ~ .card .describe
+{
+    float: left;
+    width: 30%;
+}
+
+.matrix:target ~ .card
+{
+    float: left;
+    width: 450px;
+}
+
+.matrix:target ~ .card .photo
+{
+    float: none;
+}
+
+.matrix:target ~ .card .info
+{
+    float: none;
+}
+
+.matrix:target ~ .card .describe
+{
+    float: none;
+}
+
+.floatleftClear
+{
+    clear: none;
+    width: 0;
+}
+
+.views .views
+{
+    color: rgb(66, 66, 66);
+    display: block;
+    font-family: 'PT Sans', Arial, sans-serif;
+    float: left;
+    font-size: 12px;
+    height: 17px;
+    line-height: 17px;
+    margin-bottom: 17px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 17px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+}
+
+.matrix
+{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(views-sprite.png);
+    background-origin: padding-box;
+    background-position: 0 -25px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: rgb(41, 41, 41);
+    cursor: auto;
+    display: inline;
+    font-weight: bold;
+    height: auto;
+    line-height: 17px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    outline-color: rgb(41, 41, 41);
+    outline-style: none;
+    outline-width: 0;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+}
+
+.horizont
+{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(views-sprite.png);
+    background-origin: padding-box;
+    background-position: 0 -73px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: rgb(41, 41, 41);
+    cursor: auto;
+    display: inline;
+    font-weight: bold;
+    height: auto;
+    line-height: 17px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    outline-color: rgb(41, 41, 41);
+    outline-style: none;
+    outline-width: 0;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+}
+
+.matrix.active
+{
+    background-position: 0 0;
+    width: 15px;
+    height: 15px;
+}
+
+.horizont.active
+{
+    background-position: 0 -50px;
+    width: 15px;
+    height: 13px;
+}
+
+.rating
+{
+    color: rgb(66, 66, 66);
+    display: block;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 12px;
+    height: 0;
+    line-height: 14.77px;
+    width: 218px;
+}
+
+.rating div
+{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(icon-rating.png);
+    background-origin: padding-box;
+    background-size: auto;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-style: none;
+    border-bottom-width: 0;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(255, 255, 255);
+    border-left-style: none;
+    border-left-width: 0;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: none;
+    border-right-width: 0;
+    border-top-color: rgb(255, 255, 255);
+    border-top-style: none;
+    border-top-width: 0;
+    color: rgb(255, 255, 255);
+    display: block;
+    float: left;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 12px;
+    height: 21px;
+    line-height: 14.77px;
+    margin-right: 4px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    width: 22px;
+}
+
+.rateactive
+{
+    background-position: 0 -21px;
+}
+
+.ratehalfactive
+{
+    background-position: 0 -42px;
+}
