@@ -4,6 +4,8 @@ body
     width: 100%;
     height: 100%;
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1
@@ -13,24 +15,7 @@ h1
     font-family: 'Andika', sans-serif;
 }
 
-h1 span
-{
-    color: #c9081b;
-}
-
-div
-{
-    display: flex;
-    margin: auto;
-    width: 33%;
-}
-
-img
-{
-    width: 60%;
-}
-
-span
+p
 {
     line-height: 1.7em;
     text-overflow: ellipsis;
@@ -38,7 +23,37 @@ span
 
 p
 {
-    padding: 2%;
+    padding: 4px;
+}
+
+a
+{
+    display: block;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+img
+{
+    width: 60%;
+}
+
+h1 span
+{
+    color: #c9081b;
+}
+
+a:hover
+{
+    color: #5c14ba;
+}
+
+div.cat
+{
+    width: 33%;
 }
 
 div.text
@@ -48,24 +63,18 @@ div.text
     vertical-align: top;
 }
 
-img:hover
-{
-    box-shadow: 2px 2px 5px 4px #ccc;
-}
-
+img:hover,
 div.cat:hover
 {
     box-shadow: 2px 2px 5px 5px #ccc;
 }
 
-p.category
+div.rating
 {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    width: 220px;
 }
 
-p.category a
+div a
 {
     font-weight: bold;
     font-size: 1.2em;
@@ -73,112 +82,141 @@ p.category a
     color: #123345;
 }
 
-p.category a:hover
-{
-    color: #5c14ba;
-}
-
-span:hover,
-a:hover
-{
-    color: #123345;
-}
-
-span.description
+div.description
 {
     text-decoration: underline;
     line-height: 3em;
 }
 
-span.allPrice
+.categoryCats
 {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    float: left;
-    width: 220px;
-    overflow: hidden;
-    position: relative;
-}
-
-span.categoryCats
-{
-    font-size: .7em;
+    margin: 0;
+    padding: 0;
+    font-size: .9em;
     color: #ccc;
 }
 
-span.categoryCats:hover
+.categoryCats:hover
 {
     color: #4f4f4f;
 }
 
-input[value='inline']:checked ~ main div
+input[value='inline']:checked ~ main
 {
     width: 100%;
+    display: table;
+    border-collapse: collapse;
+}
+
+input[value='inline']:checked ~ main div.cat
+{
+    display: table-row;
+    width: 100%;
     margin-top: 5px;
+    height: 70px;
+    padding: 2px;
 }
 
-input[value='inline']:checked ~ main div div
+input[value='inline']:checked ~ main div.cat a
 {
-    display: flex;
-    margin: auto;
+    display: table-cell;
+    width: 15%;
+    margin-top: 10px;
 }
 
-input[value='inline']:checked ~ main div div p.category
+input[value='inline']:checked ~ main div.cat a img
 {
-    width: 300px;
-}
-
-input[value='inline']:checked ~ main div a img
-{
+    display: table-cell;
     width: 100px;
-    padding: 10px;
 }
 
-input[value='block']:checked ~ main div div p span.allPrice
+input[value='inline']:checked ~ main div.cat div,
+input[value='inline']:checked ~ main div.cat p
 {
-    width: 320px;
+    width: 42%;
+    display: table-cell;
+    padding: 0;
+}
+
+input[value='inline']:checked ~ main div.cat div a
+{
+    display: block;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+input[value='inline']:checked ~ main div.cat div div
+{
+    display: block;
+    width: 100%;
+}
+
+input[value='inline']:checked ~ main div.cat div div div
+{
+    width: 150px;
+}
+
+input[value='inline']:checked ~ main div.cat div div div.rating
+{
+    float: left;
+    width: 250px;
 }
 
 input[value='block']:checked ~ main div
 {
     display: inline-block;
     text-align: center;
-    margin: auto;
+    margin: 0;
+    /*margin: auto;*/
 }
 
-.allPrice label
+input[value='block']:checked ~ main div div div,
+input[value='block']:checked ~ main div p div
+{
+    display: block;
+}
+
+input[value='block']:checked ~ main div div div div.rating
+{
+    margin-left: 25%;
+}
+
+.rating label
 {
     height: 40px;
     width: 22px;
     float: right;
 }
 
-.allPrice input
+.rating input
 {
     opacity: 0;
     position: absolute;
 }
 
-.allPrice label.left
+.rating label.left
 {
     background: url('http://bit.ly/1kKh4bG') no-repeat;
     background-position: 0 0;
 }
 
-.allPrice label.right
+.rating label.right
 {
     background: url('http://bit.ly/1OC0GHp') no-repeat;
     background-position: 0 0;
 }
 
-.allPrice input:checked ~ label
+.rating input:checked ~ label
 {
     background-position: 0 -80px;
 }
 
-.allPrice label:hover,
-.allPrice label:hover ~ label,
-.allPrice input:checked ~ label:hover
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label:hover
 {
     background-position: 0 -40px;
 }
