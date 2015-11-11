@@ -262,7 +262,7 @@ article:hover
 }
 .star
 {
-    background: url("images/star.png") 0 -16px;
+    background: url('images/star.png') 0 -16px;
     height: 16px;
     width: 16px;
     z-index: 1;
