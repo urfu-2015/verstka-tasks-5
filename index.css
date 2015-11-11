@@ -1,30 +1,39 @@
-[value='Плитка']:checked ~ section
+body
+{
+    font: 14px Arial, sans-serif;
+}
+
+body > p
+{
+    font-weight: bold;
+}
+
+[value='masonry']:checked ~ section
 {
     display: inline-block;
 }
 
-[value='Список']:checked ~ section
+[value='list']:checked ~ section
 {
     display: list-item;
     list-style-type: none;
     white-space: nowrap;
     width: 605px;
-
 }
 
-[value='Список']:checked ~ section .image img,
-[value='Список']:checked ~ section .description
+[value='list']:checked ~ section .image img,
+[value='list']:checked ~ section .description
 {
     position: relative;
     vertical-align: top;
 }
 
-[value='Список']:checked ~ section .image
+[value='list']:checked ~ section .image
 {
     height: 100%;
 }
 
-[value='Список']:checked ~ section .description
+[value='list']:checked ~ section .description
 {
     margin-left: 5px;
 }
@@ -68,28 +77,31 @@ section:hover
     border: 2px solid #232323;
 }
 
-.kitty > div
+.kitty .image,
+.kitty .description
 {
     width: 300px;
     display: inline-block;
 }
 
-p,
-label,
 .description
 {
-    font: 14px Arial, sans-serif;
     white-space: nowrap;
 }
 
-.name
+.description p
+{
+    margin: 5px 0;
+}
+
+h3
 {
     text-overflow: ellipsis;
     overflow: hidden;
     margin: 5px 0;
 }
 
-.name a:hover
+h3 a:hover
 {
     color: #800;
     text-decoration: none;
@@ -127,10 +139,11 @@ label,
     font-weight: bold;
 }
 
-.old-price
+del
 {
-    text-decoration: line-through;
     font-size: 80%;
+    color: #000;
+    font-weight: normal;
 }
 
 .text-description
@@ -138,4 +151,5 @@ label,
     white-space: normal;
     display: inline-block;
     width: 300px;
+    line-height: 130%;
 }
