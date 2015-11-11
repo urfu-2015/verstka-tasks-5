@@ -15,15 +15,9 @@ h1
     font-family: 'Andika', sans-serif;
 }
 
-p
+img
 {
-    line-height: 1.7em;
-    text-overflow: ellipsis;
-}
-
-p
-{
-    padding: 4px;
+    width: 60%;
 }
 
 a
@@ -33,12 +27,6 @@ a
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-img
-{
-    width: 60%;
 }
 
 h1 span
@@ -130,8 +118,7 @@ input[value='inline']:checked ~ main div.cat a img
     width: 100px;
 }
 
-input[value='inline']:checked ~ main div.cat div,
-input[value='inline']:checked ~ main div.cat p
+input[value='inline']:checked ~ main div.cat div
 {
     width: 42%;
     display: table-cell;
@@ -145,7 +132,6 @@ input[value='inline']:checked ~ main div.cat div a
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
 }
 
 input[value='inline']:checked ~ main div.cat div div
@@ -170,11 +156,9 @@ input[value='block']:checked ~ main div
     display: inline-block;
     text-align: center;
     margin: 0;
-    /*margin: auto;*/
 }
 
-input[value='block']:checked ~ main div div div,
-input[value='block']:checked ~ main div p div
+input[value='block']:checked ~ main div div div
 {
     display: block;
 }
