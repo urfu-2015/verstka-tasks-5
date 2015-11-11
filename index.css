@@ -48,8 +48,12 @@ div.text
     vertical-align: top;
 }
 
-img:hover,
-div.text:hover
+img:hover
+{
+    box-shadow: 2px 2px 5px 4px #ccc;
+}
+
+div.cat:hover
 {
     box-shadow: 2px 2px 5px 5px #ccc;
 }
@@ -91,7 +95,7 @@ span.allPrice
     unicode-bidi: bidi-override;
     direction: rtl;
     float: left;
-    width: 300px;
+    width: 220px;
     overflow: hidden;
     position: relative;
 }
@@ -130,9 +134,16 @@ input[value='inline']:checked ~ main div a img
     padding: 10px;
 }
 
+input[value='block']:checked ~ main div div p span.allPrice
+{
+    width: 320px;
+}
+
 input[value='block']:checked ~ main div
 {
     display: inline-block;
+    text-align: center;
+    margin: auto;
 }
 
 .allPrice label
@@ -166,7 +177,8 @@ input[value='block']:checked ~ main div
 }
 
 .allPrice label:hover,
-.allPrice label:hover ~ label
+.allPrice label:hover ~ label,
+.allPrice input:checked ~ label:hover
 {
     background-position: 0 -40px;
 }
