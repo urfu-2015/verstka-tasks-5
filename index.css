@@ -1,1 +1,206 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+h1
+{
+    font-size: 38px;
+    text-align: center;
+    font-family: 'Andika', sans-serif;
+}
+
+img
+{
+    width: 60%;
+}
+
+a
+{
+    display: block;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+h1 span
+{
+    color: #c9081b;
+}
+
+a:hover
+{
+    color: #5c14ba;
+}
+
+div.cat
+{
+    width: 33%;
+}
+
+div.text
+{
+    display: block;
+    width: 100%;
+    vertical-align: top;
+}
+
+img:hover,
+div.cat:hover
+{
+    box-shadow: 2px 2px 5px 5px #ccc;
+}
+
+div.rating
+{
+    width: 220px;
+}
+
+div a
+{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;
+    color: #123345;
+}
+
+div.description
+{
+    text-decoration: underline;
+    line-height: 3em;
+}
+
+.categoryCats
+{
+    margin: 0;
+    padding: 0;
+    font-size: .9em;
+    color: #ccc;
+}
+
+.categoryCats:hover
+{
+    color: #4f4f4f;
+}
+
+input[value='inline']:checked ~ main
+{
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+}
+
+input[value='inline']:checked ~ main div.cat
+{
+    display: table-row;
+    width: 100%;
+    margin-top: 5px;
+    height: 70px;
+    padding: 2px;
+}
+
+input[value='inline']:checked ~ main div.cat a
+{
+    display: table-cell;
+    width: 15%;
+    margin-top: 10px;
+}
+
+input[value='inline']:checked ~ main div.cat a img
+{
+    display: table-cell;
+    width: 100px;
+}
+
+input[value='inline']:checked ~ main div.cat div
+{
+    width: 42%;
+    display: table-cell;
+    padding: 0;
+}
+
+input[value='inline']:checked ~ main div.cat div a
+{
+    display: block;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+input[value='inline']:checked ~ main div.cat div div
+{
+    display: block;
+    width: 100%;
+}
+
+input[value='inline']:checked ~ main div.cat div div div
+{
+    width: 150px;
+}
+
+input[value='inline']:checked ~ main div.cat div div div.rating
+{
+    float: left;
+    width: 250px;
+}
+
+input[value='block']:checked ~ main div
+{
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+input[value='block']:checked ~ main div div div
+{
+    display: block;
+}
+
+input[value='block']:checked ~ main div div div div.rating
+{
+    margin-left: 25%;
+}
+
+.rating label
+{
+    height: 40px;
+    width: 22px;
+    float: right;
+}
+
+.rating input
+{
+    opacity: 0;
+    position: absolute;
+}
+
+.rating label.left
+{
+    background: url('http://bit.ly/1kKh4bG') no-repeat;
+    background-position: 0 0;
+}
+
+.rating label.right
+{
+    background: url('http://bit.ly/1OC0GHp') no-repeat;
+    background-position: 0 0;
+}
+
+.rating input:checked ~ label
+{
+    background-position: 0 -80px;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label:hover
+{
+    background-position: 0 -40px;
+}
