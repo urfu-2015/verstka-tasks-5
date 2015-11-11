@@ -10,11 +10,11 @@ body
 {
     width: 200px;
     float: left;
-    margin: 300px .5% 20px;
+    margin: 0 .5% 20px;
     position: relative;
 }
 
-.cat:hover
+.cat .description:hover
 {
     box-shadow: 0 0 12px rgba(0, 0, 0, .7);
 }
@@ -26,6 +26,14 @@ body
     height: 300px;
     margin-bottom: 0;
     white-space: normal;
+}
+
+#view:not(:checked) ~ .cat .description:hover
+{
+    background-color: #a9a9a9;
+    position: absolute;
+    bottom: -300px;
+    height: auto;
 }
 
 .type,
@@ -47,6 +55,11 @@ body
 
 }
 
+.price:hover
+{
+    color: #ffd700;
+}
+
 .ex-price
 {
     width: 100%;
@@ -61,7 +74,8 @@ body
     overflow: visible;
     float: left;
     width: 200px;
-    height: auto;
+    /*height: auto;*/
+    height: 300px;
 }
 
 #view:not(:checked) ~ .cat .photo img
@@ -74,7 +88,7 @@ body
 .cat .photo img:hover
 {
     box-shadow: 5px 5px 8px rgba(219, 112, 147, .7),
-        -5px -5px 8px rgba(219, 112, 147, .7);
+    -5px -5px 8px rgba(219, 112, 147, .7);
 }
 
 .name-link
@@ -105,8 +119,8 @@ body
 .cat .rating
 {
     width: 100%;
-    margin-left: -18%;
-    border: none;
+    margin-left: -30px;
+    border: 0;
     padding-bottom: 0;
 }
 
@@ -161,6 +175,7 @@ body
 {
     margin-right: 20px;
     margin-left: auto;
+    margin-top: 20px;
     width: 95%;
     height: auto;
 }
@@ -185,7 +200,13 @@ body
     width: 190px;
     text-align: left;
     display: inline-block;
-    margin-left: -3%;
+    margin-right: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-after: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
     float: none;
 }
 
@@ -193,9 +214,13 @@ body
 #view:checked ~ .cat .price,
 #view:checked ~ .cat .ex-price
 {
-    width: 100%;
     margin: 0;
     text-align: left;
+}
+
+#view:checked ~ .cat .type
+{
+    width: 100%;
 }
 
 #view:checked ~ .cat .ex-price
@@ -206,21 +231,22 @@ body
 #view:checked ~ .cat .price,
 #view:checked ~ .cat .ex-price
 {
-    width: 15%;
+    margin: 0;
+    width: 100px;
 }
 
 #view:checked ~ .cat .description
 {
     font-size: 18px;
-}
-
-.cat .description:hover
-{
-    overflow: scroll;
+    display: inline-block;
+    float: none;
+    width: 800px;
+    height: 200px;
 }
 
 #view:checked ~ .cat .rating
 {
+    overflow: hidden;
     float: none;
     width: 180px;
     margin: 0 20% 0 -2%;
