@@ -19,9 +19,9 @@
     font-size: 25px;
 }
 
-.name:hover
+.name:hover > a
 {
-    white-space: normal;
+    color: #0052d4;
 }
 
 .category a
@@ -31,9 +31,8 @@
 
 .price
 {
-    color: red;
-    font-size: 22px;
-    font-weight: bold;
+    color: #f00;
+    font: 22px bold;
 }
 
 .oldPrice
@@ -49,18 +48,18 @@
 .description
 {
     color: #444;
-    font-family: sans-serif;
-    font-weight: 400;
+    font: 16px bold sans-serif;
 }
 
-.item
+article
 {
     display: block;
+    padding: 5px;
     border: 2px solid #fff;
     vertical-align: top;
 }
 
-.item:hover
+article:hover
 {
     border: 2px solid #ffeb9e;
 }
@@ -80,17 +79,17 @@ img
     line-height: 300px;
 }
 
-#inline:checked ~ .item
+#inline:checked ~ article
 {
     display: inline-block;
 }
 
-#block:checked ~ .item
+#block:checked ~ article
 {
     display: block;
 }
 
-#block:checked ~ .item > *
+#block:checked ~ article > *
 {
     display: inline-block;
     height: auto;
@@ -99,7 +98,7 @@ img
     line-height: normal;
 }
 
-#block:checked ~ .item > .img
+#block:checked ~ article > .img
 {
     text-align: center;
 }
@@ -116,13 +115,13 @@ img
     display: inline-block;
     height: 30px;
     width: 15px;
-    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -85px 0;
+    background: url('/rating.png') -85px 0;
 }
 
 .goodness > label:nth-of-type(2n)
 {
     margin: 0 -5px;
-    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -70px 0;
+    background: url('/rating.png') -70px 0;
 }
 
 .goodness > input
@@ -132,30 +131,30 @@ img
 
 .goodness:not(:hover) > input:checked ~ label:nth-of-type(2n)
 {
-    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') 0 0;
+    background: url('/rating.png') 0 0;
 }
 
 .goodness:not(:hover) > input:checked ~ label:nth-of-type(2n+1)
 {
-    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -15px 0;
+    background: url('/rating.png') -15px 0;
 }
 
 .goodness > label:nth-of-type(2n):hover
 {
-    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') 0 0;
+    background: url('/rating.png') 0 0;
 }
 
 .goodness > label:nth-of-type(2n+1):hover
 {
-    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -15px 0;
+    background: url('/rating.png') -15px 0;
 }
 
 .goodness > label:hover ~ label:nth-of-type(2n)
 {
-    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') 0 0;
+    background: url('/rating.png') 0 0;
 }
 
 .goodness > label:hover ~ label:nth-of-type(2n+1)
 {
-    background: url('https://raw.githubusercontent.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -15px 0;
+    background: url('/rating.png') -15px 0;
 }
