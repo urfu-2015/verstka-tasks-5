@@ -4,19 +4,39 @@ input
     display: none;
 }
 
-article
+a
 {
-    padding-bottom: 5px;
     display: inline-block;
+    max-width: 230px;
+    min-width: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+a:hover + img
+{
+    display: inline;
 }
 
 figure
 {
-    height: 45%;
+    height: 200px;
     width: 100%;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     position: relative;
+    display: inline-block;
+}
+
+figure img:hover + img
+{
+    display: block;
+}
+
+article
+{
+    padding-bottom: 5px;
     display: inline-block;
 }
 
@@ -40,12 +60,33 @@ div.rating
     height: 20px;
 }
 
+img.gender
+{
+    height: 20px;
+}
+
+img.zoom
+{
+    display: none;
+    z-index: 2;
+    height: 50px;
+    top: 140px;
+    position: absolute;
+}
+
+img.cat-run
+{
+    display: none;
+    height: 25px;
+    position: absolute;
+}
+
 #tile:checked ~ section
 {
-    height: 430px;
+    text-align: center;
+    height: 460px;
     width: 250px;
     display: inline-block;
-    text-align: center;
     overflow: hidden;
     float: left;
     padding: 0 8px 20px 8px;
@@ -76,7 +117,7 @@ div.rating
 {
     position: relative;
     width: 1100px;
-    height: 205px;
+    height: 180px;
     padding: 20px;
 }
 
@@ -119,4 +160,23 @@ div.rating
     max-height: 150px;
     max-width: 250px;
     margin: 20px;
+}
+
+#list:checked ~ section img.gender
+{
+    position: absolute;
+    left: 380px;
+    top: 50px;
+}
+
+#list:checked ~ section img.cat-run
+{
+    position: absolute;
+    left: 335px;
+    top: 45px;
+}
+
+#list:checked ~ section img.zoom
+{
+    top: 100px;
 }
