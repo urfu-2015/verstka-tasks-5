@@ -1,19 +1,8 @@
 
-section
-{
-    height: 400px;
-    width: 250px;
-    display: inline-block;
-    text-align: center;
-    overflow: hidden;
-    float: left;
-    padding: 4px;
-    margin: 4px;
-}
-
 article
 {
     padding-bottom: 5px;
+    display: inline-block;
 }
 
 figure
@@ -22,24 +11,13 @@ figure
     width: 100%;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-}
-
-figure img
-{
-    max-height: 100%;
-    max-width: 100%;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    position: relative;
+    display: inline-block;
 }
 
 section:hover
 {
     box-shadow: 1px 1px 15px 5px #888;
-}
-
-section > img
-{
-    width: 40%;
 }
 
 div.rating
@@ -50,4 +28,80 @@ div.rating
     display: inline-block;
     width: 100px;
     height: 20px;
+}
+
+#tile:checked ~ section
+{
+    height: 430px;
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    padding: 0 8px 20px 8px;
+}
+
+#tile:checked ~ section figure img
+{
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 0 0 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+#tile:checked ~ section div.rating
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#list:checked ~ section
+{
+    position: relative;
+    width: 95%;
+    height: 205px;
+    padding: 20px;
+}
+
+#list:checked ~ section a
+{
+    position: absolute;
+    left: 405px;
+    top: 50px;
+}
+
+#list:checked ~ section div.rating
+{
+    position: absolute;
+    left: 400px;
+    top: 75px;
+}
+
+#list:checked ~ section div.price
+{
+    position: absolute;
+    left: 405px;
+    top: 110px;
+}
+
+#list:checked ~ section article
+{
+    position: absolute;
+    left: 700px;
+    top: 50px;
+    width: 400px;
+}
+
+#list:checked ~ section figure
+{
+    position: relative;
+}
+
+#list:checked ~ section figure img
+{
+    max-height: 150px;
+    margin: 20px;
 }
