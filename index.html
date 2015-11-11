@@ -7,5 +7,358 @@
     </head>
     <body>
         <!-- Здесь прикладывать основное усилие -->
+        <input id="list" class="style-filter list"
+                name="style-filter" type="radio" value="list">
+        <label for="list" class="list" title="list"></label>
+        <input id="tile" class="style-filter tile" name="style-filter"
+                type="radio" value="tile" checked>
+        <label for="tile" class="tile" title="tile"></label>
+        <br>
+        <header>
+            <div class="left-header">
+                <img src="images/logo.png" alt="lovely-cat">
+            </div>
+            <div class="middle-header">
+                <h1>Всем котиков!</h1>
+            </div>
+            <div class="right-header">
+                <div>
+                    <img src="images/login.png" alt="log in">
+                    <img src="images/signup.png" alt="sign up">
+                </div>
+            </div>
+        </header>
+        <input class="find-cat"
+                type="text"
+                placeholder="Поиск котика"
+                value=""
+                onkeyup="this.setAttribute('value', this.value)">
+        <main>
+            <section>
+                <article class="snowcat burmill">
+                    <img src="images/cat1.jpg" alt="white-cat">
+                    <div class="details-about-cat">
+                        <em>Имя котика:</em> <a href="" title="Снежок">Снежок</a><br>
+                        <span class="long-name">
+                            <em>Порода:</em> Бурмилла длинношерстная
+                        </span><br>
+                        <em>Уровень доброты:</em>
+                        <div class="rating">
+                            <input type="radio" name="first-star" id="first-star-first-cat">
+                            <label for="first-star-first-cat"><span class="star"></span></label>
+                            <input type="radio" name="first-star" id="second-star-first-cat">
+                            <label for="second-star-first-cat"><span class="star"></span></label>
+                            <input type="radio" name="first-star" id="third-star-first-cat">
+                            <label for="third-star-first-cat"><span class="star"></span></label>
+                            <input type="radio" name="first-star" id="fourth-star-first-cat" checked>
+                            <label for="fourth-star-first-cat"><span class="star"></span></label>
+                            <input type="radio" name="first-star" id="fifth-star-first-cat">
+                            <label for="fifth-star-first-cat"><span class="star"></span></label>
+                        </div>
+                        <br>
+                        <em>Стоимость:</em> Помочь бабуленьке в огороде<br>
+                    </div>
+                    <p class="description">
+                        <em>Описание:</em>
+                        Мама и папа передали Снежку неиссякаемую энергию и такую же нежность.
+                        Он всегда в настроении для игр и маленьких проказ.
+                        Повзрослев, он стал серьезнее, но не настолько, чтобы спать сутками напролет.
+                        Нет, Снежку всегда нужно быть в курсе всего происходящего в доме, поэтому,
+                        что бы вы не делали, кошка всегда рядом, комментируя и оставляя свои отзывы
+                        о происходящем. К слову, характер у кошек этой породы очень любознательный,
+                        поэтому бурмиллы чаще других попадают в «истории».
+                    </p>
+                </article>
+                <article class="begemot bombei">
+                    <img src="images/cat2.jpg" alt="bombei-cat">
+                    <div class="details-about-cat">
+                        <em>Имя котика:</em> <a href="" title="Бегемот">Бегемот</a><br>
+                        <span class="long-name"><em>Порода:</em> Бомбейская кошка</span><br>
+                        <em>Уровень доброты:</em>
+                        <div class="rating">
+                            <input type="radio" name="second-star" id="first-star-second-cat">
+                            <label for="first-star-second-cat"><span class="star"></span></label>
+                            <input type="radio" name="second-star" id="second-star-second-cat">
+                            <label for="second-star-second-cat"><span class="star"></span></label>
+                            <input type="radio" name="second-star" id="third-star-second-cat">
+                            <label for="third-star-second-cat"><span class="star"></span></label>
+                            <input type="radio" name="second-star" id="fourth-star-second-cat" checked>
+                            <label for="fourth-star-second-cat"><span class="star"></span></label>
+                            <input type="radio" name="second-star" id="fifth-star-second-cat">
+                            <label for="fifth-star-second-cat"><span class="star"></span></label>
+                        </div>
+                        <br>
+                        <em>Стоимость:</em> Купить бабуленьке продуктов на месяц<br>
+                    </div>
+                    <p class="description">
+                        <em>Описание:</em>
+                        Имеет весьма ласковый и дружелюбный характер.
+                        Очень игрив и привязывается к своим хозяевам очень сильно.
+                        Бегемот может быстро научиться открывать двери в доме,
+                        может часами смотреть телевизор.
+                        У ниго отлично развит охотничий инстинкт.
+                        Очень не любит, когда его оставляют в одиночестве.
+                        Самое любимое место – колени хозяина.
+                    </p>
+                </article>
+                <article class="germion-cat maincoon">
+                    <img src="images/cat3.jpg" alt="meincoon-cat">
+                    <div class="details-about-cat">
+                        <em>Имя котика:</em> <a href="" title="Живоглот">Живоглот</a><br>
+                        <span class="long-name"><em>Порода:</em> Мейн-кун</span><br>
+                        <em>Уровень доброты:</em>
+                        <div class="rating">
+                            <input type="radio" name="third-star" id="first-star-third-cat">
+                            <label for="first-star-third-cat"><span class="star"></span></label>
+                            <input type="radio" name="third-star" id="second-star-third-cat">
+                            <label for="second-star-third-cat"><span class="star"></span></label>
+                            <input type="radio" name="third-star" id="third-star-third-cat">
+                            <label for="third-star-third-cat"><span class="star"></span></label>
+                            <input type="radio" name="third-star" id="fourth-star-third-cat" checked>
+                            <label for="fourth-star-third-cat"><span class="star"></span></label>
+                            <input type="radio" name="third-star" id="fifth-star-third-cat">
+                            <label for="fifth-star-third-cat"><span class="star"></span></label>
+                        </div>
+                        <br>
+                        <em>Стоимость:</em> Отвезти бабуленьку к Семеновне<br>
+                    </div>
+                    <p class="description">
+                        <em>Описание:</em>
+                        Отличается завидным миролюбием.
+                        Ему никогда не придет в голову смахнуть могучей лапой вазу с тюльпанами со стола.
+                        Он аккуратен и осознанно делит все предметы в доме на свои и чужие.
+                        Живоглот ненавидит узкие ограниченные пространства,
+                        поэтому предпочитает не лазить на шкафы,
+                        антресоли, полки и прочие любимые места типичных кошек.
+                    </p>
+                </article>
+                <article class="garfild britain">
+                    <img src="images/cat4.jpg" alt="britain-cat">
+                    <div class="details-about-cat">
+                        <em>Имя котика:</em> <a href="" title="Гарфилд">Гарфилд</a><br>
+                        <span class="long-name"><em>Порода:</em> Британская длинношерстная кошка</span><br>
+                        <em>Уровень доброты:</em>
+                        <div class="rating">
+                            <input type="radio" name="fourth-star" id="first-star-fourth-cat">
+                            <label for="first-star-fourth-cat"><span class="star"></span></label>
+                            <input type="radio" name="fourth-star" id="second-star-fourth-cat">
+                            <label for="second-star-fourth-cat"><span class="star"></span></label>
+                            <input type="radio" name="fourth-star" id="third-star-fourth-cat">
+                            <label for="third-star-fourth-cat"><span class="star"></span></label>
+                            <input type="radio" name="fourth-star" id="fourth-star-fourth-cat">
+                            <label for="fourth-star-fourth-cat"><span class="star"></span></label>
+                            <input type="radio" name="fourth-star" id="fifth-star-fourth-cat" checked>
+                            <label for="fifth-star-fourth-cat"><span class="star"></span></label>
+                        </div>
+                        <br>
+                        <em>Стоимость:</em> Сходить за пенсией бабуленьки<br>
+                    </div>
+                    <p class="description">
+                        <em>Описание:</em>
+                        Котята длинношерстной британки довольно активны и ведут себя,
+                        как и все остальные – любят погоняться за мячиком, запрыгнуть на шторы,
+                        проявляют огромный интерес к окружающей обстановке.
+                        Взрослая кошка – воплощение спокойствия и стойкости.
+                        Ее довольно трудно испугать и вызвать на эмоции, но бывают случаи,
+                        когда животное может обидеться и спрятаться в укромное место.
+                        Быстро находит общий язык с другими животными и легко
+                        адаптируется к новому месту жительства.
+                    </p>
+                </article>
+                <article class="matroskin egypt">
+                    <img src="images/cat5.jpg" alt="egypt-cat">
+                    <div class="details-about-cat">
+                        <em>Имя котика:</em> <a href="" title="Матроскин">Матроскин</a><br>
+                        <span class="long-name"><em>Порода:</em> Египетская мау</span><br>
+                        <em>Уровень доброты:</em>
+                        <div class="rating">
+                            <input type="radio" name="fifth-star" id="first-star-fifth-cat">
+                            <label for="first-star-fifth-cat"><span class="star"></span></label>
+                            <input type="radio" name="fifth-star" id="second-star-fifth-cat">
+                            <label for="second-star-fifth-cat"><span class="star"></span></label>
+                            <input type="radio" name="fifth-star" id="third-star-fifth-cat" checked>
+                            <label for="third-star-fifth-cat"><span class="star"></span></label>
+                            <input type="radio" name="fifth-star" id="fourth-star-fifth-cat">
+                            <label for="fourth-star-fifth-cat"><span class="star"></span></label>
+                            <input type="radio" name="fifth-star" id="fifth-star-fifth-cat">
+                            <label for="fifth-star-fifth-cat"><span class="star"></span></label>
+                        </div>
+                        <br>
+                        <em>Стоимость:</em> Отвезти бабуленьку в поликлинику<br>
+                    </div>
+                    <p class="description">
+                        <em>Описание:</em>
+                        Матроскин умный, игривый, активный и любознательный кот.
+                        Для него обязательно стоит купить специальные игрушки, иначе он использует в качестве
+                        игрушки все, что ему понравится. Также он очень ценит свободу,
+                        он просто обожают гонять на открытом пространстве,
+                        а особенно ловить мышей при возможности.
+                        Поэтому с ним стоит почаще играть в активные игры, которые имитируют охоту.
+                    </p>
+                </article>
+                <article class="ushastik somali">
+                    <img src="images/cat6.jpg" alt="somali-cat">
+                    <div class="details-about-cat">
+                        <em>Имя котика:</em> <a href="" title="Ушастик">Ушастик</a><br>
+                        <span class="long-name"><em>Порода:</em> Сомали (Сомалийская кошка)</span>
+                        <br>
+                        <em>Уровень доброты:</em>
+                        <div class="rating">
+                            <input type="radio" name="sixth-star" id="first-star-sixth-cat">
+                            <label for="first-star-sixth-cat"><span class="star"></span></label>
+                            <input type="radio" name="sixth-star" id="second-star-sixth-cat">
+                            <label for="second-star-sixth-cat"><span class="star"></span></label>
+                            <input type="radio" name="sixth-star" id="third-star-sixth-cat">
+                            <label for="third-star-sixth-cat"><span class="star"></span></label>
+                            <input type="radio" name="sixth-star" id="fourth-star-sixth-cat">
+                            <label for="fourth-star-sixth-cat"><span class="star"></span></label>
+                            <input type="radio" name="sixth-star" id="fifth-star-sixth-cat" checked>
+                            <label for="fifth-star-sixth-cat"><span class="star"></span></label>
+                        </div>
+                        <br>
+                        <em>Стоимость:</em> Научить бабуленьку пользоваться интернетом<br>
+                    </div>
+                    <p class="description">
+                        <em>Описание:</em>
+                        Если вы ищете кошку, которая целыми днями валялась бы на диване, подоконнике
+                        или в домике для кошки, то порода Ушастик не для вас.
+                        Конечно, он очень дружелюбен, но имеет яркую черту – игривость,
+                        которая не проходит с возрастом.
+                        Он любит бегать, играться, прыгать и, конечно, есть.
+                    </p>
+                </article>
+                <article class="salem california">
+                    <img src="images/cat7.jpg" alt="california-cat">
+                    <div class="details-about-cat">
+                        <em>Имя котика:</em> <a href="" title="Салем">Салем</a><br>
+                        <span class="long-name"><em>Порода:</em> Калифорнийская сияющая кошка</span><br>
+                        <em>Уровень доброты:</em>
+                        <div class="rating">
+                            <input type="radio" name="seventh-star" id="first-star-seventh-cat">
+                            <label for="first-star-seventh-cat"><span class="star"></span></label>
+                            <input type="radio" name="seventh-star" id="second-star-seventh-cat">
+                            <label for="second-star-seventh-cat"><span class="star"></span></label>
+                            <input type="radio" name="seventh-star" id="third-star-seventh-cat">
+                            <label for="third-star-seventh-cat"><span class="star"></span></label>
+                            <input type="radio" name="seventh-star" id="fourth-star-seventh-cat" checked>
+                            <label for="fourth-star-seventh-cat"><span class="star"></span></label>
+                            <input type="radio" name="seventh-star" id="fifth-star-seventh-cat">
+                            <label for="fifth-star-seventh-cat"><span class="star"></span></label>
+                        </div>
+                        <br>
+                        <em>Стоимость:</em> Погулять с бабуленькой в парке<br>
+                    </div>
+                    <p class="description">
+                        <em>Описание:</em>
+                        Характер у этого хвостатого мурлыки покладистый.
+                        В детстве он был активным, но с возрастом предпочитает спокойный образ жизни.
+                        Хорошо развит охотничий инстинкт - с удовольствием охотится на движущиеся предметы,
+                        иногда это могут быть ноги хозяев.
+                        Не отличаются болтливостью, без надобности они не мяукают.
+                        Хорошо переносит одиночество.
+                    </p>
+                </article>
+                <article class="leo ragamaffin">
+                    <img src="images/cat8.jpg" alt="ragamaffin-cat">
+                    <div class="details-about-cat">
+                        <em>Имя котика:</em> <a href="" title="Леопольд">Леопольд</a><br>
+                        <span class="long-name"><em>Порода:</em> Рагамаффин</span><br>
+                        <em>Уровень доброты:</em>
+                        <div class="rating">
+                            <input type="radio" name="eight-star" id="first-star-eight-cat">
+                            <label for="first-star-eight-cat"><span class="star"></span></label>
+                            <input type="radio" name="eight-star" id="second-star-eight-cat">
+                            <label for="second-star-eight-cat"><span class="star"></span></label>
+                            <input type="radio" name="eight-star" id="third-star-eight-cat">
+                            <label for="third-star-eight-cat"><span class="star"></span></label>
+                            <input type="radio" name="eight-star" id="fourth-star-eight-cat">
+                            <label for="fourth-star-eight-cat"><span class="star"></span></label>
+                            <input type="radio" name="eight-star" id="fifth-star-eight-cat" checked>
+                            <label for="fifth-star-eight-cat"><span class="star"></span></label>
+                        </div>
+                        <br>
+                        <em>Стоимость:</em> Скачать бабуленьке подборку бразильских сериалов<br>
+                    </div>
+                    <p class="description">
+                        <em>Описание:</em>
+                        Попадая на руки хозяину, Леопольд расслабляется и обмякает,
+                        словно растворяясь в объятиях. Он способен принимать и удерживать любые
+                        немыслимые позы. Но в этой сверхрасслабленности кроется угроза: падая,
+                        животное может не приземлиться на лапы, что чревато травмами.
+                        Ему необходимо постоянное общение. На руках хозяина он забывает обо всем, потому
+                        что любит его больше жизни. Никогда не будет капризничать, отстаивать
+                        свою территорию или мстить – не в его характере.
+                    </p>
+                </article>
+                <article class="zeera kovu simba mufasa usa-cat">
+                    <img src="images/cat9.jpg" alt="usa-cat">
+                    <div class="details-about-cat">
+                        <em>Имя котика:</em>
+                        <a href="" title="Зира">Зира</a>, <a href="" title="Кову">Кову</a>,
+                        <a href="" title="Симба">Симба</a>, <a href="" title="Муфаса">Муфаса</a><br>
+                        <span class="long-name"><em>Порода:</em> Американская короткошерстная кошка</span>
+                        <br>
+                        <em>Уровень доброты:</em>
+                        <div class="rating">
+                            <input type="radio" name="ninth-star" id="first-star-ninth-cat">
+                            <label for="first-star-ninth-cat"><span class="star"></span></label>
+                            <input type="radio" name="ninth-star" id="second-star-ninth-cat">
+                            <label for="second-star-ninth-cat"><span class="star"></span></label>
+                            <input type="radio" name="ninth-star" id="third-star-ninth-cat" checked>
+                            <label for="third-star-ninth-cat"><span class="star"></span></label>
+                            <input type="radio" name="ninth-star" id="fourth-star-ninth-cat">
+                            <label for="fourth-star-ninth-cat"><span class="star"></span></label>
+                            <input type="radio" name="ninth-star" id="fifth-star-ninth-cat">
+                            <label for="fifth-star-ninth-cat"><span class="star"></span></label>
+                        </div>
+                        <br>
+                        <em>Стоимость:</em> Купить корма для бабуленькиных котиков<br>
+                    </div>
+                    <p class="description">
+                        <em>Описание:</em>
+                        Довольно активны и ведут себя,
+                        как и все остальные – любят погоняться за мячиком, запрыгнуть на шторы,
+                        проявляют огромный интерес к окружающей обстановке.
+                    </p>
+                </article>
+                <article class="tom russian-cat">
+                    <img src="images/cat10.jpg" alt="russian-cat" class="square-picture">
+                    <div class="details-about-cat">
+                        <em>Имя котика:</em> <a href="" title="Том">Том</a><br>
+                        <span class="long-name"><em>Порода:</em> Сибирская кошка</span><br>
+                        <em>Уровень доброты:</em>
+                        <div class="rating">
+                            <input type="radio" name="tenth-star" id="first-star-tenth-cat">
+                            <label for="first-star-tenth-cat"><span class="star"></span></label>
+                            <input type="radio" name="tenth-star" id="second-star-tenth-cat">
+                            <label for="second-star-tenth-cat"><span class="star"></span></label>
+                            <input type="radio" name="tenth-star" id="third-star-tenth-cat">
+                            <label for="third-star-tenth-cat"><span class="star"></span></label>
+                            <input type="radio" name="tenth-star" id="fourth-star-tenth-cat" checked>
+                            <label for="fourth-star-tenth-cat"><span class="star"></span></label>
+                            <input type="radio" name="tenth-star" id="fifth-star-tenth-cat">
+                            <label for="fifth-star-tenth-cat"><span class="star"></span></label>
+                        </div>
+                        <br>
+                        <em>Стоимость:</em>
+                        <span class="old-price">Привезти пенсию бабуленьки</span>
+                        Решить с бабуленькой кроссворд<br>
+                    </div>
+                    <p class="description">
+                        <em>Описание:</em>
+                        Том идеальный вариант, если вы хотите нежного и общительного кота,
+                        которая любит быть рядом, но не на коленях. Если вы проводите весь день
+                        на работе, он так же является хорошим выбором.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div class="page-footer">
+                Адрес бабуленьки:
+                <address>Тисовая улица, дом 4</address>
+                <time datetime="2015">2015</time>
+            </div>
+        </footer>
     </body>
 </html>

@@ -1,1 +1,342 @@
+@font-face
+{
+    font-family: 'sladkoeshka';
+    src: url('sladkoeshka.woff2') format('woff2'),
+        url('sladkoeshka.woff') format('woff');
+}
 
+@font-face
+{
+    font-family: 'allodswest';
+    src: url('allods-west.woff2') format('woff2'),
+        url('allods-west.woff') format('woff');
+}
+
+em,
+.middle-header
+{
+    font-family: 'sladkoeshka';
+}
+
+article
+{
+    font-family: allodswest;
+}
+
+.page-footer
+{
+    text-align: center;
+    font-family: 'sladkoeshka';
+    font-size: 1.25em;
+    margin-top: 20px;
+    border-top: 1px solid #000;
+}
+
+html,
+body
+{
+    min-width: 800px;
+    font-size: 1.2vw;
+}
+
+header
+{
+    margin-bottom: 50px;
+    min-height: 200px;
+}
+
+main
+{
+    top: 40%;
+    position: relative;
+}
+
+.left-header
+{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+header img
+{
+    width: 70%;
+}
+
+.middle-header
+{
+    float: left;
+    width: 59%;
+    text-align: center;
+    padding: 2px;
+    font-size: 40px;
+}
+
+.right-header
+{
+    float: left;
+    width: 15%;
+}
+
+.right-header div
+{
+    margin-top: 40px;
+}
+
+.left-header img,
+input
+{
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px auto 0;
+}
+
+.right-header img
+{
+    display: block;
+    margin: 20px auto;
+}
+
+article img
+{
+    display: block;
+    margin: 20px;
+    border-radius: 50px;
+    width: 80%;
+}
+
+article img:not(.square-picture)
+{
+    width: 85%;
+}
+
+article .square-picture
+{
+    width: 60%;
+}
+
+em
+{
+    font-size: 1.25em;
+}
+
+article p
+{
+    margin-left: 10px;
+}
+
+.description
+{
+    text-indent: 30px;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+}
+
+.long-name
+{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+}
+
+input.list,
+input.tile
+{
+    display: none;
+}
+
+label.list:before
+{
+    content: ' ';
+    background: url('images/list.png');
+    display: inline-block;
+    height: 20px;
+    width: 80px;
+}
+
+label.tile:before
+{
+    content: ' ';
+    background: url('images/tile.png');
+    display: inline-block;
+    height: 20px;
+    width: 80px;
+}
+
+input.tile:checked ~ label.tile:before,
+input.list:checked ~ label.list:before
+{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input.tile:checked ~ main article
+{
+    display: inline-block;
+    width: 330px;
+    margin-top: 20px;
+    vertical-align: top;
+}
+
+input.tile:checked ~ main img
+{
+    display: block;
+    margin: 10px auto;
+    height: 180px;
+}
+
+input.tile:checked ~ main .details-about-cat
+{
+    padding-left: 20px;
+}
+
+input.list:checked ~ main article
+{
+    margin: 0 auto;
+}
+
+input.list:checked ~ main img,
+input.list:checked ~ main .details-about-cat
+{
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+    vertical-align: top;
+}
+
+input.list:checked ~ main .details-about-cat
+{
+    width: 30%;
+}
+
+input.list:checked ~ main .description
+{
+    display: inline-block;
+    width: 40%;
+}
+
+a:hover
+{
+    color: #33c;
+}
+
+article img:hover
+{
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .7);
+}
+
+.long-name:hover
+{
+    text-shadow: 1px 1px 2px black;
+}
+
+article:hover
+{
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .7);
+    border-radius: 15px;
+}
+
+.rating label
+{
+    position: relative;
+    float: left;
+    z-index: 2;
+    width: 5px;
+    height: 16px;
+}
+.rating input[type=radio]
+{
+    z-index: 1;
+    float: left;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: -28px;
+    left: 16px;
+
+}
+.star
+{
+    background: url('images/star.png') 0 -16px;
+    height: 16px;
+    width: 16px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    display: block;
+    cursor: pointer;
+}
+
+.rating:hover .star
+{
+    background-position: 0 -32px;
+}
+
+input:checked ~ label .star
+{
+    background-position: 0 0;
+}
+
+input:checked + label .star
+{
+    background-position: 0 -16px;
+}
+
+label:hover ~ label .star
+{
+    background-position: 0 0 !important;
+}
+
+.rating
+{
+    height: 20px;
+    width: 160px;
+    margin-left: 36%;
+    margin-top: -20px;
+}
+
+input.list:checked ~ main .rating
+{
+    margin-left: 30%;
+    margin-top: -20px;
+}
+
+.find-cat
+{
+    position: absolute;
+    top: 190px;
+    right: 2.5%;
+    width: 12%;
+}
+
+.find-cat[value='Снежок'] ~ main article:not([class~='snowcat']),
+.find-cat[value~='бурмилла'] ~ main article:not([class~='burmill']),
+.find-cat[value='Бегемот'] ~ main article:not([class~='begemot']),
+.find-cat[value~='бомбейская'] ~ main article:not([class~='bombei']),
+.find-cat[value='Живоглот'] ~ main article:not([class~='germion-cat']),
+.find-cat[value='мейн-кун'] ~ main article:not([class~='maincoon']),
+.find-cat[value='Гарфилд'] ~ main article:not([class~='garfild']),
+.find-cat[value~='британская'] ~ main article:not([class~='britain']),
+.find-cat[value='Матроскин'] ~ main article:not([class~='matroskin']),
+.find-cat[value='египетская мау'] ~ main article:not([class~='egypt']),
+.find-cat[value='Ушастик'] ~ main article:not([class~='ushastik']),
+.find-cat[value='сомали'] ~ main article:not([class~='somali']),
+.find-cat[value='Салем'] ~ main article:not([class~='salem']),
+.find-cat[value~='калифорнийская'] ~ main article:not([class~='california']),
+.find-cat[value='Леопольд'] ~ main article:not([class~='leo']),
+.find-cat[value='рагамаффин'] ~ main article:not([class~='ragamaffin']),
+.find-cat[value='Зира'] ~ main article:not([class~='zeera']),
+.find-cat[value='Кову'] ~ main article:not([class~='kovu']),
+.find-cat[value='Симба'] ~ main article:not([class~='simba']),
+.find-cat[value='Муфаса'] ~ main article:not([class~='mufasa']),
+.find-cat[value~='американская'] ~ main article:not([class~='usa-cat']),
+.find-cat[value='Том'] ~ main article:not([class~='tom']),
+.find-cat[value~='сибирская'] ~ main article:not([class~='russian-cat'])
+{
+    display: none;
+}
