@@ -1,4 +1,4 @@
-@import "http://webfonts.ru/import/arnamu.css";
+@import 'http://webfonts.ru/import/arnamu.css';
 h1
 {
     font-size: 3em;
@@ -26,7 +26,8 @@ body
     font-size: 1.3em;
 }
 
-.box-with-kitten {
+.box-with-kitten 
+{
     width: 425px;
     display: inline-block;
     vertical-align: top;
@@ -40,7 +41,7 @@ body
     white-space: nowrap;
     font-size: 1.7em;
     font-weight: bold;
-    color: #36BBCE;
+    color: #36bbce;
     margin-bottom: 0;
 }
 
@@ -48,7 +49,7 @@ body
 {
     overflow: visible;
     white-space: nowrap;
-    text-shadow: 2px 2px 2px #FFCE73;
+    text-shadow: 2px 2px 2px #ffce73;
 }
 
 img
@@ -68,7 +69,7 @@ p
 .category
 {
     margin-top: 10px;
-    color: #00AB6F;
+    color: #00ab6f;
     text-align: center;
     font-size: 1.3em;
 }
@@ -84,7 +85,6 @@ p
     margin: 0;
     font-size: 33px;
 }
-
 
 .image
 {
@@ -112,47 +112,48 @@ p
 
 .price::after
 {
-    content: " ♥♥♥";
-}
-input[value="line"] + label
-{
-   background: url(line.png);
-   background-repeat: no-repeat;
-   width: 50px;
-   height: 50px;
-   display:inline-block;
-   padding: 0 0 0 0px;
+    content: ' ♥♥♥';
 }
 
-input[value="block"] + label
+input[value='line'] + label
 {
-   background: url(block.png);
-   background-repeat: no-repeat;
-   width: 50px;
-   height: 50px;
-   display:inline-block;
-   padding: 0 0 0 0px;
+    background: url(line.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display:inline-block;
+    padding: 0 0 0 0;
 }
 
-input[value="line"]:checked ~ div div.box-with-kitten
+input[value='block'] + label
+{
+    background: url(block.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display:inline-block;
+    padding: 0 0 0 0;
+}
+
+input[value='line']:checked ~ div div.box-with-kitten
 {
     display: block;
     margin: auto;
     width: 100%;
 }
 
-input[value="line"]:checked ~ div div.box-with-kitten .image
+input[value='line']:checked ~ div div.box-with-kitten .image
 {
     width: 20%;
     display: inline-block;
 }
 
-input[value="line"]:checked ~ div div.box-with-kitten .image a img
+input[value='line']:checked ~ div div.box-with-kitten .image a img
 {
     width: 70%;
 }
 
-input[value="line"]:checked ~ .container .box-with-kitten .info
+input[value='line']:checked ~ .container .box-with-kitten .info
 {
     padding-top: 2%;
     vertical-align: top;
@@ -160,13 +161,13 @@ input[value="line"]:checked ~ .container .box-with-kitten .info
     display: inline-block;
 }
 
-input[value="line"]:checked ~ .container .box-with-kitten .info .name
+input[value='line']:checked ~ .container .box-with-kitten .info .name
 {
     overflow: visible;
     white-space: normal;
 }
 
-input[value="line"]:checked ~ .container .box-with-kitten .description
+input[value='line']:checked ~ .container .box-with-kitten .description
 {
     padding-top: 4%;
     vertical-align: top;
@@ -174,30 +175,43 @@ input[value="line"]:checked ~ .container .box-with-kitten .description
     display: inline-block;
 }
 
-input[name*="star"],
-input[name="view"]
+input[name*='star'],
+input[name='view']
 {
     display:none;
 }
 
-input[name*="star"] + label
+input[name*='star'] + label
 {
-   background: url(stars.png);
-   height: 33px;
-   width: 33px;
-   display:inline-block;
-   padding: 0 0 0 0px;
+    background: url(stars.png);
+    height: 33px;
+    width: 33px;
+    display:inline-block;
+    padding: 0 0 0 0;
 }
 
-input[class~="star1"]:checked + label ~ input[class~="star1"] + label,
-input[class~="star2"]:checked + label ~ input[class~="star2"] + label,
-input[class~="star3"]:checked + label ~ input[class~="star3"] + label,
-input[class~="star4"]:checked + label ~ input[class~="star4"] + label,
-input[class~="star5"]:checked + label ~ input[class~="star5"] + label
+input[class~='star1']:checked + label ~ input[class~='star1'] + label,
+input[class~='star2']:checked + label ~ input[class~='star2'] + label,
+input[class~='star3']:checked + label ~ input[class~='star3'] + label,
+input[class~='star4']:checked + label ~ input[class~='star4'] + label,
+input[class~='star5']:checked + label ~ input[class~='star5'] + label
 {
     background: url(empty_star.png);
     height: 33px;
     width: 33px;
     display:inline-block;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
+}
+
+input[class~='star1']:hover + label ~ input[class~='star1'] + label,
+input[class~='star2']:hover + label ~ input[class~='star2'] + label,
+input[class~='star3']:hover + label ~ input[class~='star3'] + label,
+input[class~='star4']:hover + label ~ input[class~='star4'] + label,
+input[class~='star5']:hover + label ~ input[class~='star5'] + label
+{
+    background: url(stars.png);
+    height: 33px;
+    width: 33px;
+    display:inline-block;
+    padding: 0 0 0 0;
 }
