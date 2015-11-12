@@ -10,15 +10,10 @@ header:first-letter
 {
     color: red;
 }
-div
-{
-    display: inline-block;
-}
-.flex > div
+.flex > *
 {
     display: block;
 }
-/*карточка*/
 .card
 {
     position: relative;
@@ -31,10 +26,9 @@ div
 }
 .card:hover
 {
-    background: #FDF5E6;
-    border: 20px solid #FDF5E6;
+    background: #fdf5e6;
+    border: 20px solid #fdf5e6;
 }
-/*элементы карточки*/
 .img
 {
     display: block;
@@ -48,7 +42,7 @@ div
 {
     max-width: 250px;
     width: 250px;
-    border: 10px solid #FDF5E6;
+    border: 10px solid #fdf5e6;
 }
 .name
 {
@@ -58,98 +52,31 @@ div
 }
 .decription
 {
-
+    display: inline-block;
     vertical-align: top;
+    text-align: left;
+}
+.decription > p, .decription > h2
+{
+    display: block;
 }
 .level
 {
     width: 250px;
     display: block;
 }
-/*Звезды*/
-.level::before
+.level > .one
 {
-    content: url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png");
+    content: url('http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png');
 }
-.level.one:hover::before
+.level > .half
 {
-    content: url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png");
+    content: url('http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_16.png');
 }
-
-.level.two:hover::before
+.level > .zero
 {
-    content: url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png");
+    content: url('http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png');
 }
-.level.three:hover::before
-{
-    content: url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png");
-}
-.level.four:hover::before
-{
-    content: url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png");
-}
-.level.five:hover::before
-{
-    content: url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png");
-}
-.level.one.half:hover::before
-{
-    content: url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_16.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png");
-}
-.level.two.half:hover::before
-{
-    content: url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_16.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png");
-}
-.level.three.half:hover::before
-{
-    content: url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_16.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png");
-}
-.level.four.half:hover::before
-{
-    content: url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_16.png")
-    url("http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png");
-}
-/*Переключение*/
 input#mode1:checked ~ section > .card
 {
     display: inline-block;
@@ -163,23 +90,25 @@ input#mode2:checked ~ section > .card
 }
 input#mode1:checked ~ section > .card > .flex
 {
-    /*display: block;*/
 }
 input#mode2:checked ~ section > .card > .flex
 {
     display: inline-block;
     vertical-align: top;
 }
-/*Типы котиков*/
+input#mode2:checked ~ section > .card > .flex
+{
+    display: inline-block;
+    vertical-align: top;
+}
+input#mode2:checked ~ section > .card > .flex.decription
+{
+    width: auto;
+}
 .type
 {
     font-size: 1.5em;
-    border: 10px solid #FDF5E6;
-}
-.fatty
-{
-
-
+    border: 10px solid #fdf5e6;
 }
 .fatty:hover
 {
@@ -201,7 +130,7 @@ input#mode2:checked ~ section > .card > .flex
     border: 10px solid crimson;
     color: crimson;
 }
-.softie
+.softie:hover
 {
     border: 10px solid lightblue;
     color: lightblue;
@@ -214,4 +143,9 @@ input#mode2:checked ~ section > .card > .flex
 .past_price
 {
     text-decoration: line-through;
+}
+p
+{
+    text-align-all: justify;
+    text-after-overflow: ellipsis;
 }
