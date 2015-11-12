@@ -35,8 +35,8 @@ header:first-letter
 }
 .img:hover > img
 {
-    border: 10px solid azure;
     box-shadow: 0 0 10px blue;
+    border: 10px solid azure;
 }
 .img > img
 {
@@ -46,17 +46,18 @@ header:first-letter
 }
 .name
 {
-    display: block;
     vertical-align: top;
+    display: block;
     position: relative;
 }
 .decription
 {
-    display: inline-block;
     vertical-align: top;
     text-align: left;
+    display: inline-block;
 }
-.decription > p, .decription > h2
+.decription > p,
+.decription > h2
 {
     display: block;
 }
@@ -79,17 +80,14 @@ header:first-letter
 }
 input#mode1:checked ~ section > .card
 {
-    display: inline-block;
     max-width: 250px;
+    display: inline-block;
 }
 input#mode2:checked ~ section > .card
 {
     display: block;
     width: 100%;
     height: 100%;
-}
-input#mode1:checked ~ section > .card > .flex
-{
 }
 input#mode2:checked ~ section > .card > .flex
 {
