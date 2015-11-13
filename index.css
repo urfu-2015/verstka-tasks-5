@@ -112,8 +112,8 @@ img.fs-close
     position: absolute;
     display: none;
     top: 10vh;
-    right: 100px;
-    width: 50px;
+    right: 5vw;
+    width: 5vw;
 }
 
 #tile:checked ~ section
@@ -219,6 +219,9 @@ img.fs-close
 #fs-close:not(:checked) ~ main
 {
     visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 #fs-close:not(:checked) ~ label img.fs-close
