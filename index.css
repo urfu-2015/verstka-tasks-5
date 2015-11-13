@@ -14,7 +14,7 @@ a
     white-space: nowrap;
 }
 
-a:hover + img
+a:hover + img.cat-run
 {
     display: inline;
 }
@@ -29,7 +29,12 @@ figure
     display: inline-block;
 }
 
-figure img:hover + img
+figure img:hover + label img.zoom
+{
+    display: block;
+}
+
+figure img + label img.zoom:hover
 {
     display: block;
 }
@@ -50,6 +55,12 @@ section:hover
     box-shadow: 1px 1px 15px 5px #888;
 }
 
+div.view
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 div.rating
 {
     background-image: url(http://thrivesearch.com/wp-content/uploads/2015/03/Review-Stars.png);
@@ -60,6 +71,22 @@ div.rating
     height: 20px;
 }
 
+img.fs
+{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 80vh;
+    max-width: 80vw;
+    min-height: 10vh;
+    min-width: 10vw;
+}
+
 img.gender
 {
     height: 20px;
@@ -68,9 +95,8 @@ img.gender
 img.zoom
 {
     display: none;
-    z-index: 2;
     height: 50px;
-    top: 140px;
+    top: 150px;
     position: absolute;
 }
 
@@ -79,6 +105,15 @@ img.cat-run
     display: none;
     height: 25px;
     position: absolute;
+}
+
+img.fs-close
+{
+    position: absolute;
+    display: none;
+    top: 10vh;
+    right: 100px;
+    width: 50px;
 }
 
 #tile:checked ~ section
@@ -172,11 +207,71 @@ img.cat-run
 #list:checked ~ section img.cat-run
 {
     position: absolute;
-    left: 335px;
+    left: 330px;
     top: 45px;
 }
 
 #list:checked ~ section img.zoom
 {
     top: 100px;
+}
+
+#fs-close:not(:checked) ~ main
+{
+    visibility: hidden;
+}
+
+#fs-close:not(:checked) ~ label img.fs-close
+{
+    display: inline;
+}
+
+#img1:checked ~ img.img1
+{
+    display: inline;
+}
+
+#img2:checked ~ img.img2
+{
+    display: inline;
+}
+
+#img3:checked ~ img.img3
+{
+    display: inline;
+}
+
+#img4:checked ~ img.img4
+{
+    display: inline;
+}
+
+#img5:checked ~ img.img5
+{
+    display: inline;
+}
+
+#img6:checked ~ img.img6
+{
+    display: inline;
+}
+
+#img7:checked ~ img.img7
+{
+    display: inline;
+}
+
+#img8:checked ~ img.img8
+{
+    display: inline;
+}
+
+#img9:checked ~ img.img9
+{
+    display: inline;
+}
+
+#img10:checked ~ img.img10
+{
+    display: inline;
 }
