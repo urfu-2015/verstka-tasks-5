@@ -58,8 +58,8 @@ h2:hover
 {
     box-shadow: 0 0 5px;
 }
-
-.rating {
+.rating
+{
     overflow: hidden;
     display: inline-block;
 }
@@ -71,7 +71,8 @@ h2:hover
     margin: 0 0 0 -16px;
     opacity: 0;
 }
-.rating-star {
+.rating-star
+{
     position: relative;
     float: right;
     display: block;
@@ -81,7 +82,8 @@ h2:hover
 }
 .rating-star:hover,
 .rating-star:hover ~ .rating-star,
-.rating-input-1:checked ~ .rating-star-1 {
+.rating-input-1:checked ~ .rating-star-1
+{
     background-position: 0 0;
 }
 #inline:checked ~ .cat-block
