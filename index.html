@@ -6,476 +6,481 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <label for="inline">inline</label>
-        <input name="switch" type="radio" id="inline">
-        <label for="blocks">block</label>
-        <input id="blocks" name="switch" type="radio" checked="checked">
-        <div class="cat-block">
-            <div class="cat-image">
-                <img src="http://www.zooclub.ru/attach/10000/10990.jpg" alt="Барсик">
-            </div>
-            <h1 class="controlSize">
-                <a href="#">Барсик(А тут пример очень длинного названия кошки)</a>
-            </h1>
-            <h2 class="category">
-                Британский
-            </h2>
-                <div id="reviewStars-input">
-                    <input id="star-4" type="radio" name="reviewStars">
-                    <label title="gorgeous" for="star-4"></label>
-
-                    <input id="star-3" type="radio" name="reviewStars">
-                    <label title="good" for="star-3"></label>
-
-                    <input id="star-2" type="radio" name="reviewStars">
-                    <label title="regular" for="star-2"></label>
-
-                    <input id="star-1" type="radio" name="reviewStars">
-                    <label title="poor" for="star-1"></label>
-
-                    <input id="star-0" type="radio" name="reviewStars">
-                    <label title="bad" for="star-0"></label>
+        <main>
+            <article>
+                <div class="cat-block">
+                    <div class="cat-image">
+                        <img src="http://www.zooclub.ru/attach/10000/10990.jpg" alt="Барсик">
+                    </div>
+                    <h2 class="controlSize">
+                        <a href="#">Барсик(А тут пример очень длинного названия кошки)</a>
+                    </h2>
+                    <h2 class="category">
+                        Британский
+                    </h2>
+                    <span class="rating">
+                        <input type="radio" class="rating-input"
+                               id="rating-input-1-5" name="rating-input-1">
+                        <label for="rating-input-1-5" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-1-4" name="rating-input-1">
+                        <label for="rating-input-1-4" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-1-3" name="rating-input-1">
+                        <label for="rating-input-1-3" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-1-2" name="rating-input-1">
+                        <label for="rating-input-1-2" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-1-1" name="rating-input-1">
+                        <label for="rating-input-1-1" class="rating-star"></label>
+                    </span>
+                    <div class="price">
+                        $50.00
+                    </div>
+                    <div class="about">
+                        Одна из старейших кошачьих пород,
+                        британская короткошерстная известна с 19 века.
+                        Она родом из Англии, и сегодня существует несколько
+                        легенд ее происхождения. Вспоминают римских завоевателей,
+                        которые могли завезти британок на остров, а также говорят
+                        о французских мореплавателях, чьи припасы охраняли британские кошки.
+                        И так попали в Англию.
+                    </div>
                 </div>
-            <br>
-            <br>
-            <br>
-            <div class="price">
-                $50.00
-            </div>
-            <div class="about">
-                Одна из старейших кошачьих пород,
-                британская короткошерстная известна с 19 века.
-                Она родом из Англии, и сегодня существует несколько
-                легенд ее происхождения. Вспоминают римских завоевателей,
-                которые могли завезти британок на остров, а также говорят
-                о французских мореплавателях, чьи припасы охраняли британские кошки.
-                И так попали в Англию.
-            </div>
-        </div>
-        <div class="cat-block">
-            <div class="cat-image">
-                <img src="http://starsky.com.ua/_files/usr/img_0082_w.jpg" alt="Кузя">
-            </div>
-            <h1 class="controlSize">
-                <a href="#">Кузя</a>
-            </h1>
-            <h2 class="category">
-                Мейн-кун
-            </h2>
-            <div id="reviewStars-input">
-                <input id="star-4" type="radio" name="reviewStars">
-                <label title="gorgeous" for="star-4"></label>
-
-                <input id="star-3" type="radio" name="reviewStars">
-                <label title="good" for="star-3"></label>
-
-                <input id="star-2" type="radio" name="reviewStars">
-                <label title="regular" for="star-2"></label>
-
-                <input id="star-1" type="radio" name="reviewStars">
-                <label title="poor" for="star-1"></label>
-
-                <input id="star-0" type="radio" name="reviewStars">
-                <label title="bad" for="star-0"></label>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="price">
-                $50.00
-            </div>
-            <div class="about">
-                Визитной карточкой мейн-кунов является их крупное
-                мускулистое тело, имеющее прямоугольную форму и
-                широкую грудную клетку. Крупная голова крепко
-                сидит на мощной шее средней длины и обладает
-                резкими чертами.
-            </div>
-        </div>
-        <div class="cat-block">
-            <div class="cat-image">
-                <img src="http://i.ifreeads.ru/2013/05/18/82371/82371_1368832756_1.jpg" alt="Кекс">
-            </div>
-            <h1 class="controlSize">
-                <a href="#">Кекс</a>
-            </h1>
-            <h2 class="category">
-                Канадский сфинкс
-            </h2>
-            <div id="reviewStars-input">
-                <input id="star-4" type="radio" name="reviewStars">
-                <label title="gorgeous" for="star-4"></label>
-
-                <input id="star-3" type="radio" name="reviewStars">
-                <label title="good" for="star-3"></label>
-
-                <input id="star-2" type="radio" name="reviewStars">
-                <label title="regular" for="star-2"></label>
-
-                <input id="star-1" type="radio" name="reviewStars">
-                <label title="poor" for="star-1"></label>
-
-                <input id="star-0" type="radio" name="reviewStars">
-                <label title="bad" for="star-0"></label>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="price">
-                $50.00
-            </div>
-            <div class="about">
-                Канадские сфинксы – уникальная порода кошек,
-                лишенных шерсти. Этих утонченных животных любят
-                деятели искусства и моды, а также просто творческие
-                личности и сторонники духовных практик. Из-за необычного
-                внешнего вида и особенного характера им часто приписывают
-                мистические свойства. Считается, что первые кошки породы
-                сфинкс пожертвовали свою шерсть, чтобы согреть своих хозяев
-                – богов.
-            </div>
-        </div>
-        <div class="cat-block">
-            <div class="cat-image">
-                <img src="http://goo.gl/684jMF" alt="">
-            </div>
-            <h1 class="controlSize">
-                <a href="#">Персик</a>
-            </h1>
-            <h2 class="category">
-                Абиссинская
-            </h2>
-            <div id="reviewStars-input">
-                <input id="star-4" type="radio" name="reviewStars">
-                <label title="gorgeous" for="star-4"></label>
-
-                <input id="star-3" type="radio" name="reviewStars">
-                <label title="good" for="star-3"></label>
-
-                <input id="star-2" type="radio" name="reviewStars">
-                <label title="regular" for="star-2"></label>
-
-                <input id="star-1" type="radio" name="reviewStars">
-                <label title="poor" for="star-1"></label>
-
-                <input id="star-0" type="radio" name="reviewStars">
-                <label title="bad" for="star-0"></label>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="price">
-                $50.00
-            </div>
-            <div class="about">
-                Первыми предками абиссинок были древние кошки, обитавшие
-                2000 лет назад на территории Абиссинии (Эфиопии). Это были
-                священные животные, и держать их могли только фараоны и
-                члены их семей. Поэтому грациозность и королевское достоинство
-                у абиссинской породы в крови.
-            </div>
-        </div><div class="cat-block">
-            <div class="cat-image">
-                <img src="http://goo.gl/pP8YCO" alt="">
-            </div>
-            <h1 class="controlSize">
-                <a href="#">Тишка</a>
-            </h1>
-            <h2 class="category">
-                Бенгальская
-            </h2>
-            <div id="reviewStars-input">
-                <input id="star-4" type="radio" name="reviewStars">
-                <label title="gorgeous" for="star-4"></label>
-
-                <input id="star-3" type="radio" name="reviewStars">
-                <label title="good" for="star-3"></label>
-
-                <input id="star-2" type="radio" name="reviewStars">
-                <label title="regular" for="star-2"></label>
-
-                <input id="star-1" type="radio" name="reviewStars">
-                <label title="poor" for="star-1"></label>
-
-                <input id="star-0" type="radio" name="reviewStars">
-                <label title="bad" for="star-0"></label>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="price">
-                $50.00
-            </div>
-            <div class="about">
-                Бенгальские кошки разрушают стереотипы.
-                Это настоящие хищники с игривым и ласковым
-                характером домашней кошки. Они совсем не
-                боятся других животных, даже самых крупных.
-                Более того, они считают собак своими друзьями
-                и играют с ними. Бенгальцы могут даже сторожить
-                дом, ведь у них прекрасно развиты чувства территории
-                и контроля.
-            </div>
-        </div>
-        <div class="cat-block">
-            <div class="cat-image">
-                <img src="http://goo.gl/2IpNPP" alt="">
-            </div>
-            <h1 class="controlSize">
-                <a href="#">Тимоша</a>
-            </h1>
-            <h2 class="category">
-                Невская маскарадная
-            </h2>
-            <div id="reviewStars-input">
-                <input id="star-4" type="radio" name="reviewStars">
-                <label title="gorgeous" for="star-4"></label>
-
-                <input id="star-3" type="radio" name="reviewStars">
-                <label title="good" for="star-3"></label>
-
-                <input id="star-2" type="radio" name="reviewStars">
-                <label title="regular" for="star-2"></label>
-
-                <input id="star-1" type="radio" name="reviewStars">
-                <label title="poor" for="star-1"></label>
-
-                <input id="star-0" type="radio" name="reviewStars">
-                <label title="bad" for="star-0"></label>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="price">
-                $50.00
-            </div>
-            <div class="about">
-                Невская маскарадная кошка подойдет тем,
-                кто хочет иметь в доме животное, нежное
-                как кошка и преданное как собака, кому
-                нужен хороший друг и компаньон. Кошки
-                этой породы очень сильно привязываются
-                к хозяевам, подобно собакам отличаются
-                большой преданностью. Дом и обстановка
-                для невской сибирской кошки стоят на
-                втором плане, главное для них – получать
-                любовь от своих хозяев.
-            </div>
-        </div>
-        <div class="cat-block">
-            <div class="cat-image">
-                <img src="http://goo.gl/3l3zI2" alt="">
-            </div>
-                <h1 class="controlSize">
-                    <a href="#">Дымок</a>
-                </h1>
-                <h2 class="category">
-                    Курильский бобтейл
-                </h2>
-                <div id="reviewStars-input">
-                    <input id="star-4" type="radio" name="reviewStars">
-                    <label title="gorgeous" for="star-4"></label>
-
-                    <input id="star-3" type="radio" name="reviewStars">
-                    <label title="good" for="star-3"></label>
-
-                    <input id="star-2" type="radio" name="reviewStars">
-                    <label title="regular" for="star-2"></label>
-
-                    <input id="star-1" type="radio" name="reviewStars">
-                    <label title="poor" for="star-1"></label>
-
-                    <input id="star-0" type="radio" name="reviewStars">
-                    <label title="bad" for="star-0"></label>
+            </article>
+            <article>
+                <div class="cat-block">
+                    <div class="cat-image">
+                        <img src="http://starsky.com.ua/_files/usr/img_0082_w.jpg" alt="Кузя">
+                    </div>
+                    <h2 class="controlSize">
+                        <a href="#">Кузя</a>
+                    </h2>
+                    <h2 class="category">
+                        Мейн-кун
+                    </h2>
+                    <span class="rating">
+                        <input type="radio" class="rating-input"
+                            id="rating-input-2-5" name="rating-input-2">
+                        <label for="rating-input-2-5" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-2-4" name="rating-input-2">
+                        <label for="rating-input-2-4" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-2-3" name="rating-input-2">
+                        <label for="rating-input-2-3" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-2-2" name="rating-input-2">
+                        <label for="rating-input-2-2" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-2-1" name="rating-input-2">
+                        <label for="rating-input-2-1" class="rating-star"></label>
+                    </span>
+                    <div class="price">
+                        $50.00
+                    </div>
+                    <div class="about">
+                        Визитной карточкой мейн-кунов является их крупное
+                        мускулистое тело, имеющее прямоугольную форму и
+                        широкую грудную клетку. Крупная голова крепко
+                        сидит на мощной шее средней длины и обладает
+                        резкими чертами.
+                    </div>
                 </div>
-                <br>
-                <br>
-                <br>
-                <div class="price">
-                    $50.00
+            </article>
+            <article>
+                <div class="cat-block">
+                    <div class="cat-image">
+                        <img src="http://goo.gl/AGWyhT" alt="Кекс">
+                    </div>
+                    <h2 class="controlSize">
+                        <a href="#">Кекс</a>
+                    </h2>
+                    <h2 class="category">
+                        Канадский сфинкс
+                    </h2>
+                    <span class="rating">
+                        <input type="radio" class="rating-input"
+                               id="rating-input-3-5" name="rating-input-3">
+                        <label for="rating-input-3-5" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-3-4" name="rating-input-3">
+                        <label for="rating-input-3-4" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-3-3" name="rating-input-3">
+                        <label for="rating-input-3-3" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-3-2" name="rating-input-3">
+                        <label for="rating-input-3-2" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-3-1" name="rating-input-3">
+                        <label for="rating-input-3-1" class="rating-star"></label>
+                    </span>
+                    <div class="price">
+                        $50.00
+                    </div>
+                    <div class="about">
+                        Канадские сфинксы – уникальная порода кошек,
+                        лишенных шерсти. Этих утонченных животных любят
+                        деятели искусства и моды, а также просто творческие
+                        личности и сторонники духовных практик. Из-за необычного
+                        внешнего вида и особенного характера им часто приписывают
+                        мистические свойства. Считается, что первые кошки породы
+                        сфинкс пожертвовали свою шерсть, чтобы согреть своих хозяев
+                        – богов.
+                    </div>
                 </div>
-                <div class="about">
-                    Эта кошка, на первый взгляд, имеет маленькие размеры,
-                    серый цвет и не производит впечатление. Однако хвост,
-                    вернее то, что осталось от оного, очень умилял.
-                    Он напоминал маленький флажок, который всегда поднят вверх,
-                    а при взгляде сзади кошка напоминала кролика. Однако
-                    уже на первый день пребывания курильского бобтейла в нашем
-                    семействе мы поняли, насколько необычную и яркую личность
-                    мы получили в лице данной кошки. Ее преданность месту уступала
-                    преданности хозяевам, ей сразу же удалось обучиться
-                    некоторым командам, при этом отзывалась она исключительно на имя.
+            </article>
+            <article>
+                <div class="cat-block">
+                    <div class="cat-image">
+                        <img src="http://goo.gl/684jMF" alt="">
+                    </div>
+                    <h2 class="controlSize">
+                        <a href="#">Персик</a>
+                    </h2>
+                    <h2 class="category">
+                        Абиссинская
+                    </h2>
+                    <span class="rating">
+                        <input type="radio" class="rating-input"
+                               id="rating-input-4-5" name="rating-input-4">
+                        <label for="rating-input-4-5" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-4-4" name="rating-input-4">
+                        <label for="rating-input-4-4" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-4-3" name="rating-input-4">
+                        <label for="rating-input-4-3" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-4-2" name="rating-input-4">
+                        <label for="rating-input-4-2" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-4-1" name="rating-input-4">
+                        <label for="rating-input-4-1" class="rating-star"></label>
+                    </span>
+                    <div class="price">
+                        $50.00
+                    </div>
+                    <div class="about">
+                        Первыми предками абиссинок были древние кошки, обитавшие
+                        2000 лет назад на территории Абиссинии (Эфиопии). Это были
+                        священные животные, и держать их могли только фараоны и
+                        члены их семей. Поэтому грациозность и королевское достоинство
+                        у абиссинской породы в крови.
+                    </div>
                 </div>
-            </div>
-            <div class="cat-block">
-                <div class="cat-image">
-                    <img src="http://goo.gl/tA7NtD" alt="">
+            </article>
+            <article>
+                <div class="cat-block">
+                    <div class="cat-image">
+                        <img src="http://goo.gl/pP8YCO" alt="">
+                    </div>
+                    <h2 class="controlSize">
+                        <a href="#">Тишка</a>
+                    </h2>
+                    <h2 class="category">
+                        Бенгальская
+                    </h2>
+                    <span class="rating">
+                        <input type="radio" class="rating-input"
+                               id="rating-input-5-5" name="rating-input-5">
+                        <label for="rating-input-5-5" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-5-4" name="rating-input-5">
+                        <label for="rating-input-5-4" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-5-3" name="rating-input-5">
+                        <label for="rating-input-5-3" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-5-2" name="rating-input-5">
+                        <label for="rating-input-5-2" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-5-1" name="rating-input-5">
+                        <label for="rating-input-5-1" class="rating-star"></label>
+                    </span>
+                    <div class="price">
+                        $50.00
+                    </div>
+                    <div class="about">
+                        Бенгальские кошки разрушают стереотипы.
+                        Это настоящие хищники с игривым и ласковым
+                        характером домашней кошки. Они совсем не
+                        боятся других животных, даже самых крупных.
+                        Более того, они считают собак своими друзьями
+                        и играют с ними. Бенгальцы могут даже сторожить
+                        дом, ведь у них прекрасно развиты чувства территории
+                        и контроля.
+                    </div>
                 </div>
-                <h1 class="controlSize">
-                    <a href="#">Симба</a>
-                </h1>
-                <h2 class="category">
-                    Манчкин
-                </h2>
-                <div id="reviewStars-input">
-                    <input id="star-4" type="radio" name="reviewStars">
-                    <label title="gorgeous" for="star-4"></label>
-
-                    <input id="star-3" type="radio" name="reviewStars">
-                    <label title="good" for="star-3"></label>
-
-                    <input id="star-2" type="radio" name="reviewStars">
-                    <label title="regular" for="star-2"></label>
-
-                    <input id="star-1" type="radio" name="reviewStars">
-                    <label title="poor" for="star-1"></label>
-
-                    <input id="star-0" type="radio" name="reviewStars">
-                    <label title="bad" for="star-0"></label>
+            </article>
+            <article>
+                <div class="cat-block">
+                    <div class="cat-image">
+                        <img src="http://goo.gl/2IpNPP" alt="">
+                    </div>
+                    <h2 class="controlSize">
+                        <a href="#">Тимоша</a>
+                    </h2>
+                    <h2 class="category">
+                        Невская маскарадная
+                    </h2>
+                    <span class="rating">
+                        <input type="radio" class="rating-input"
+                               id="rating-input-6-5" name="rating-input-6">
+                        <label for="rating-input-6-5" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-6-4" name="rating-input-6">
+                        <label for="rating-input-6-4" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-6-3" name="rating-input-6">
+                        <label for="rating-input-6-3" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-6-2" name="rating-input-6">
+                        <label for="rating-input-6-2" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-6-1" name="rating-input-6">
+                        <label for="rating-input-6-1" class="rating-star"></label>
+                    </span>
+                    <div class="price">
+                        $50.00
+                    </div>
+                    <div class="about">
+                        Невская маскарадная кошка подойдет тем,
+                        кто хочет иметь в доме животное, нежное
+                        как кошка и преданное как собака, кому
+                        нужен хороший друг и компаньон. Кошки
+                        этой породы очень сильно привязываются
+                        к хозяевам, подобно собакам отличаются
+                        большой преданностью. Дом и обстановка
+                        для невской сибирской кошки стоят на
+                        втором плане, главное для них – получать
+                        любовь от своих хозяев.
+                    </div>
                 </div>
-                <br>
-                <br>
-                <br>
-                <div class="price">
-                    $50.00
+            </article>
+            <article>
+                <div class="cat-block">
+                    <div class="cat-image">
+                        <img src="http://goo.gl/3l3zI2" alt="">
+                    </div>
+                    <h2 class="controlSize">
+                        <a href="#">Дымок</a>
+                    </h2>
+                    <h2 class="category">
+                        Курильский бобтейл
+                    </h2>
+                    <span class="rating">
+                        <input type="radio" class="rating-input"
+                               id="rating-input-7-5" name="rating-input-7">
+                        <label for="rating-input-7-5" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-7-4" name="rating-input-7">
+                        <label for="rating-input-7-4" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-7-3" name="rating-input-7">
+                        <label for="rating-input-7-3" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-7-2" name="rating-input-7">
+                        <label for="rating-input-7-2" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-7-1" name="rating-input-7">
+                        <label for="rating-input-7-1" class="rating-star"></label>
+                    </span>
+                    <div class="price">
+                        $50.00
+                    </div>
+                    <div class="about">
+                        Эта кошка, на первый взгляд, имеет маленькие размеры,
+                        серый цвет и не производит впечатление. Однако хвост,
+                        вернее то, что осталось от оного, очень умилял.
+                        Он напоминал маленький флажок, который всегда поднят вверх,
+                        а при взгляде сзади кошка напоминала кролика. Однако
+                        уже на первый день пребывания курильского бобтейла в нашем
+                        семействе мы поняли, насколько необычную и яркую личность
+                        мы получили в лице данной кошки. Ее преданность месту уступала
+                        преданности хозяевам, ей сразу же удалось обучиться
+                        некоторым командам, при этом отзывалась она исключительно на имя.
+                    </div>
                 </div>
-                <div class="about">
-                    Манчкин является личностью, маленькой кошкой,
-                    наделенной недюжинным интеллектом. Они имеют
-                    разумный обдуманный взгляд на происходящее вокруг них.
-                    Кошки эти являются самодостаточными и уверенными в себе
-                    существами, любопытными и всегда желающими получить
-                    больше информации обо всем, что их окружает.
+            </article>
+            <article>
+                <div class="cat-block">
+                    <div class="cat-image">
+                        <img src="http://goo.gl/tA7NtD" alt="">
+                    </div>
+                    <h2 class="controlSize">
+                        <a href="#">Симба</a>
+                    </h2>
+                    <h2 class="category">
+                        Манчкин
+                    </h2>
+                    <span class="rating">
+                        <input type="radio" class="rating-input"
+                               id="rating-input-8-5" name="rating-input-8">
+                        <label for="rating-input-8-5" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-8-4" name="rating-input-8">
+                        <label for="rating-input-8-4" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-8-3" name="rating-input-8">
+                        <label for="rating-input-8-3" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-8-2" name="rating-input-8">
+                        <label for="rating-input-8-2" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-8-1" name="rating-input-8">
+                        <label for="rating-input-8-1" class="rating-star"></label>
+                    </span>
+                    <div class="price">
+                        $50.00
+                    </div>
+                    <div class="about">
+                        Манчкин является личностью, маленькой кошкой,
+                        наделенной недюжинным интеллектом. Они имеют
+                        разумный обдуманный взгляд на происходящее вокруг них.
+                        Кошки эти являются самодостаточными и уверенными в себе
+                        существами, любопытными и всегда желающими получить
+                        больше информации обо всем, что их окружает.
+                    </div>
                 </div>
-            </div>
-            <div class="cat-block">
-                <div class="cat-image">
-                    <img src="http://goo.gl/qccNGU" alt="">
+            </article>
+            <article>
+                <div class="cat-block">
+                    <div class="cat-image">
+                        <img src="http://goo.gl/qccNGU" alt="">
+                    </div>
+                    <h2 class="controlSize">
+                        <a href="#">Маркиз</a>
+                    </h2>
+                    <h2 class="category">
+                        Шотландская
+                    </h2>
+                    <span class="rating">
+                        <input type="radio" class="rating-input"
+                               id="rating-input-9-5" name="rating-input-9">
+                        <label for="rating-input-9-5" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-9-4" name="rating-input-9">
+                        <label for="rating-input-9-4" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-9-3" name="rating-input-9">
+                        <label for="rating-input-9-3" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-9-2" name="rating-input-9">
+                        <label for="rating-input-9-2" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-9-1" name="rating-input-9">
+                        <label for="rating-input-9-1" class="rating-star"></label>
+                    </span>
+                    <div class="price">
+                        $50.00
+                    </div>
+                    <div class="about">
+                        Одна из самых забавных особенностей в поведении
+                        шотландской вислоухой – ее любимая прямая стойка.
+                        Очень часто кошки этой породы любят выпрямлять спину
+                        и становиться на задние лапы, подобно столбику.
+                        Разумеется, делают они это не для того, чтобы увидеть
+                        что-нибудь вдалеке или просто показаться милыми
+                        и стать героями Youtube. Таким образом они разминают позвоночник.
+                        Многие шотландские вислоухие боятся высоты. Это связано с
+                        особенностями устройства их вестибулярного аппарата.
+                        Поэтому при играх они точно не будут прыгать со штор
+                        на антресоли. Шотландские вислоухие любят развлекаться,
+                        но делают это с аристократическим достоинством.
+                    </div>
                 </div>
-                <h1 class="controlSize">
-                    <a href="#">Маркиз</a>
-                </h1>
-                <h2 class="category">
-                    Шотландская
-                </h2>
-                <div id="reviewStars-input">
-                    <input id="star-4" type="radio" name="reviewStars">
-                    <label title="gorgeous" for="star-4"></label>
-
-                    <input id="star-3" type="radio" name="reviewStars">
-                    <label title="good" for="star-3"></label>
-
-                    <input id="star-2" type="radio" name="reviewStars">
-                    <label title="regular" for="star-2"></label>
-
-                    <input id="star-1" type="radio" name="reviewStars">
-                    <label title="poor" for="star-1"></label>
-
-                    <input id="star-0" type="radio" name="reviewStars">
-                    <label title="bad" for="star-0"></label>
+            </article>
+            <article>
+                <div class="cat-block">
+                    <div class="cat-image">
+                        <img src="https://pp.vk.me/c10204/u16759075/124147619/x_f5575d43.jpg" alt="">
+                    </div>
+                    <h2 class="controlSize">
+                        <a href="#">Снежок</a>
+                    </h2>
+                    <h2 class="category">
+                        Норвежская лесная
+                    </h2>
+                    <span class="rating">
+                        <input type="radio" class="rating-input"
+                               id="rating-input-10-5" name="rating-input-10">
+                        <label for="rating-input-10-5" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-10-4" name="rating-input-10">
+                        <label for="rating-input-10-4" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-10-3" name="rating-input-10">
+                        <label for="rating-input-10-3" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-10-2" name="rating-input-10">
+                        <label for="rating-input-10-2" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-10-1" name="rating-input-10">
+                        <label for="rating-input-10-1" class="rating-star"></label>
+                    </span>
+                    <div class="price">
+                        $50.00
+                    </div>
+                    <div class="about">
+                        Норвежские лесные кошки весьма крупные.
+                        Взрослый самец этой породы весит от 5 до 7 кг.
+                        Самка весит немного меньше. Их отличительной чертой
+                        является двухслойная влагонепроницаемая шёрстка.
+                        Покровной слой шерсти длинный, мягкий, блестящий.
+                        А внутренний слой густой с масляными водоотталкивающими волосками.
+                    </div>
                 </div>
-                <br>
-                <br>
-                <br>
-                <div class="price">
-                    $50.00
+            </article>
+            <article>
+                <div class="cat-block">
+                    <div class="cat-image">
+                        <img src="http://goo.gl/g1IdxI" alt="">
+                    </div>
+                    <h2 class="controlSize">
+                        <a href="#">Зефир</a>
+                    </h2>
+                    <h2 class="category">
+                        Экзотическая
+                    </h2>
+                    <span class="rating">
+                        <input type="radio" class="rating-input"
+                               id="rating-input-11-5" name="rating-input-11">
+                        <label for="rating-input-11-5" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-11-4" name="rating-input-11">
+                        <label for="rating-input-11-4" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-11-3" name="rating-input-11">
+                        <label for="rating-input-11-3" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-11-2" name="rating-input-11">
+                        <label for="rating-input-11-2" class="rating-star"></label>
+                        <input type="radio" class="rating-input"
+                               id="rating-input-11-1" name="rating-input-11">
+                        <label for="rating-input-11-1" class="rating-star"></label>
+                    </span>
+                    <div class="price">
+                        $50.00
+                    </div>
+                    <div class="about">
+                        Согласно наблюдениям фелинологов, экзотические
+                        короткошерстные наряду с более активной жизненной
+                        позицией обладают и чуть более высоким интеллектом,
+                        чем персы. Они очень спокойно переносят переезды,
+                        путешествия и даже походы к ветеринару, ведь чувствуют,
+                        что рядом с ними любящий хозяин и понимают, что им ничего не угрожает.
+                    </div>
                 </div>
-                <div class="about">
-                    Одна из самых забавных особенностей в поведении
-                    шотландской вислоухой – ее любимая прямая стойка.
-                    Очень часто кошки этой породы любят выпрямлять спину
-                    и становиться на задние лапы, подобно столбику.
-                    Разумеется, делают они это не для того, чтобы увидеть
-                    что-нибудь вдалеке или просто показаться милыми
-                    и стать героями Youtube. Таким образом они разминают позвоночник.
-                    Многие шотландские вислоухие боятся высоты. Это связано с
-                    особенностями устройства их вестибулярного аппарата.
-                    Поэтому при играх они точно не будут прыгать со штор
-                    на антресоли. Шотландские вислоухие любят развлекаться,
-                    но делают это с аристократическим достоинством.
-                </div>
-            </div>
-            <div class="cat-block">
-                <div class="cat-image">
-                    <img src="https://pp.vk.me/c10204/u16759075/124147619/x_f5575d43.jpg" alt="">
-                </div>
-                <h1 class="controlSize">
-                    <a href="#">Снежок</a>
-                </h1>
-                <h2 class="category">
-                    Норвежская лесная
-                </h2>
-                <div id="reviewStars-input">
-                    <input id="star-4" type="radio" name="reviewStars">
-                    <label title="gorgeous" for="star-4"></label>
-
-                    <input id="star-3" type="radio" name="reviewStars">
-                    <label title="good" for="star-3"></label>
-
-                    <input id="star-2" type="radio" name="reviewStars">
-                    <label title="regular" for="star-2"></label>
-
-                    <input id="star-1" type="radio" name="reviewStars">
-                    <label title="poor" for="star-1"></label>
-
-                    <input id="star-0" type="radio" name="reviewStars">
-                    <label title="bad" for="star-0"></label>
-                </div>
-                <br>
-                <br>
-                <br>
-                <div class="price">
-                    $50.00
-                </div>
-                <div class="about">
-                    Норвежские лесные кошки весьма крупные.
-                    Взрослый самец этой породы весит от 5 до 7 кг.
-                    Самка весит немного меньше. Их отличительной чертой
-                    является двухслойная влагонепроницаемая шёрстка.
-                    Покровной слой шерсти длинный, мягкий, блестящий.
-                    А внутренний слой густой с масляными водоотталкивающими волосками.
-                </div>
-            </div>
-            <div class="cat-block">
-                <div class="cat-image">
-                    <img src="http://goo.gl/g1IdxI" alt="">
-                </div>
-                <h1 class="controlSize">
-                    <a href="#">Зефир</a>
-                </h1>
-                <h2 class="category">
-                    Экзотическая
-                </h2>
-                <div id="reviewStars-input">
-                    <input id="star-4" type="radio" name="reviewStars">
-                    <label title="gorgeous" for="star-4"></label>
-
-                    <input id="star-3" type="radio" name="reviewStars">
-                    <label title="good" for="star-3"></label>
-
-                    <input id="star-2" type="radio" name="reviewStars">
-                    <label title="regular" for="star-2"></label>
-
-                    <input id="star-1" type="radio" name="reviewStars">
-                    <label title="poor" for="star-1"></label>
-
-                    <input id="star-0" type="radio" name="reviewStars">
-                    <label title="bad" for="star-0"></label>
-                </div>
-                <br>
-                <br>
-                <br>
-                <div class="price">
-                    $50.00
-                </div>
-                <div class="about">
-                    Согласно наблюдениям фелинологов, экзотические
-                    короткошерстные наряду с более активной жизненной
-                    позицией обладают и чуть более высоким интеллектом,
-                    чем персы. Они очень спокойно переносят переезды,
-                    путешествия и даже походы к ветеринару, ведь чувствуют,
-                    что рядом с ними любящий хозяин и понимают, что им ничего не угрожает.
-                </div>
-            </div>
+            </article>
+            <section>
+                <label for="inline">inline</label>
+                <input name="switch" type="radio" id="inline">
+                <label for="blocks">block</label>
+                <input id="blocks" name="switch" type="radio" checked="checked">
+            </section>
+        </main>
     </body>
 </html>

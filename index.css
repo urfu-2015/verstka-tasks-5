@@ -5,6 +5,7 @@
     margin: 10px;
     float: left;
     width: 300px;
+    height: 770px;
     border: 3px solid #fff;
 }
 .cat-block img
@@ -14,6 +15,7 @@
 }
 .cat-image
 {
+    margin: 10px;
     width: 300px;
     height: 300px;
     line-height: 300px;
@@ -27,59 +29,6 @@ h2
 {
     font-size: 15px;
     text-decoration: underline;
-}
-#reviewStars-input input:checked ~ label,
-#reviewStars-input label,
-#reviewStars-input label:hover,
-#reviewStars-input label:hover ~ label
-{
-    background: url('http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png') no-repeat;
-}
-#reviewStars-input
-{
-    float: left;
-}
-
-#reviewStars-input input
-{
-    opacity: 0;
-    width: 43px;
-    height: 40px;
-    position: absolute;
-    top: 0;
-    z-index: 0;
-}
-
-#reviewStars-input label
-{
-    background-position: 0 0;
-    height: 40px;
-    width: 43px;
-    float: right;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-}
-
-#reviewStars-input #star-1
-{
-    left: 53px;
-}
-#reviewStars-input #star-2
-{
-    left: 106px;
-}
-#reviewStars-input #star-3
-{
-    left: 159px;
-}
-#reviewStars-input #star-4
-{
-    left: 212px;
-}
-#reviewStars-input #star-5
-{
-    left: 265px;
 }
 .price
 {
@@ -110,8 +59,34 @@ h2:hover
     box-shadow: 0 0 5px;
 }
 
+.rating {
+    overflow: hidden;
+    display: inline-block;
+}
+.rating-input {
+    float: right;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0 0 0 -16px;
+    opacity: 0;
+}
+.rating-star {
+    position: relative;
+    float: right;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('http://kubyshkin.ru/samples/star-rating/star.png') 0 -16px;
+}
+.rating-star:hover,
+.rating-star:hover ~ .rating-star,
+.rating-input-1:checked ~ .rating-star-1 {
+    background-position: 0 0;
+}
 #inline:checked ~ .cat-block
 {
     display: inline-block;
     width: 100%;
+    height: 300px;
 }
