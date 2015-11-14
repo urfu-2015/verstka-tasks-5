@@ -80,12 +80,10 @@ div.buy-button
     position: absolute;
     width: 50%;
     border: 2px solid #eee;
-    /*border-right: 1px solid black;
-    border-top: 1px solid black;*/
     height: 35px;
     left: 0;
     bottom: 0;
-    background-color: #ffcc33;/*#ffcc33*/
+    background-color: #ffcc33;
 }
 
 div.buy-button:hover
@@ -95,7 +93,6 @@ div.buy-button:hover
 
 div.price
 {
-    /*font-family: Price;*/
     font-weight: 100;
     font-size: 25px;
     position: absolute;
@@ -160,7 +157,6 @@ img.fs-close
 img.cart
 {
     height: 25px;
-    /*margin: 5px;*/
     margin-left: auto;
     margin-right: auto;
     left: 0;
