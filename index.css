@@ -1,12 +1,18 @@
 @font-face
 {
     font-family: 'SourceSansProLight';
-    src: url('fonts/SourceSansProLight/SourceSansProLight.eot'),
-        url('fonts/SourceSansProLight/SourceSansProLight.eot?#iefix') format('embedded-opentype'),
-        url('fonts/SourceSansProLight/SourceSansProLight.woff') format('woff'),
-        url('fonts/SourceSansProLight/SourceSansProLight.ttf') format('truetype');
+    src: url(fonts/SourceSansProLight/SourceSansProLight.eot),
+        url(fonts/SourceSansProLight/SourceSansProLight.eot?#iefix) format('embedded-opentype'),
+        url(fonts/SourceSansProLight/SourceSansProLight.woff) format('woff'),
+        url(fonts/SourceSansProLight/SourceSansProLight.ttf) format('truetype');
     font-style: normal;
     font-weight: normal;
+}
+
+@font-face
+{
+    font-family: 'Rub';
+    src: url(data:font/truetype;charset=utf-8;base64,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) format('truetype');
 }
 
 html,
@@ -29,7 +35,7 @@ body
 
 /* логотип и название */
 
-h1
+.site-name
 {
     font: 18px 'SourceSansProLight', Helvetica, Arial, sans-serif;
     color: #fff;
@@ -43,7 +49,6 @@ h1 img
     vertical-align: middle;
     margin: 15px 10px 15px 30px;
     height: 50px;
-    width: auto;
 }
 
 /* описание */
@@ -51,13 +56,13 @@ h1 img
 .description-shop
 {
     font: 52px 'SourceSansProLight', Helvetica, Arial, sans-serif;
-    color: rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, .6);
     text-align: center;
     padding: 60px 40px;
     width: 500px;
-    position: relative;
-    top: 260px;
-    right: -53%;
+    position: absolute;
+    bottom: 19%;
+    right: 12%;
 }
 
 hr
@@ -72,8 +77,8 @@ hr
 {
     border: 1px solid rgba(255, 255, 255, .3);
     background-color: rgba(255, 255, 255, .1);
-    width: 100px;
     font-size: 15px;
+    width: 100px;
     font-weight: 300;
     margin: 60px auto 0;
     text-align: center;
@@ -83,32 +88,40 @@ hr
 .description-shop a
 {
     text-decoration: none;
-    width: 100px;
-    color: rgba(255, 255, 255, .4);
+    color: inherit;
 }
 
 a:visited .btn
 {
-    color: rgba(255, 255, 255, .4);
+    color: inherit;
 }
 
 .btn:hover
 {
-    background-color: rgba(255, 255, 255, .4);
+    background-color: inherit;
 }
 
 /* фоновая картинка */
 
 .background-image
 {
-    position: absolute;
+    max-width: 100%;
     z-index: -1;
 }
 
 .background-image img
 {
+    position: absolute;
+    min-width: 900px;
     width: 100%;
-    max-height: 800px;
+}
+
+.site-header
+{
+    position: relative;
+    height: 56.25vw;
+    max-height: 2160px;
+    min-height: 506px;
 }
 
 /* переключатели */
@@ -119,21 +132,24 @@ a:visited .btn
     display: none;
 }
 
-.list
+.list,
+.tile
 {
-    background: url(images/switch-list.png) no-repeat;
-    background-size: 30px;
+    width: 32px;
+    height: 32px;
     position: fixed;
     top: 40px;
+}
+
+.list
+{
+    background: url(images/switch.png) 0 0;
     right: 60px;
 }
 
 .tile
 {
-    background: url(images/06_menu_apps-64.png) no-repeat;
-    background-size: 30px;
-    position: fixed;
-    top: 40px;
+    background: url(images/switch.png) -32px 0;
     right: 110px;
 }
 
@@ -149,11 +165,11 @@ a:visited .btn
 {
     cursor: pointer;
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    -webkit-filter: brightness(10) opacity(.6);
-    -moz-filter: brightness(10) opacity(.6);
-    filter: brightness(10) opacity(.6);
+    width: 32px;
+    height: 32px;
+    -webkit-filter: brightness(1) opacity(.4);
+    -moz-filter: brightness(1) opacity(.4);
+    filter: brightness(1) opacity(.4);
 }
 
 .switch-style:hover
@@ -168,15 +184,16 @@ a:visited .btn
 main
 {
     padding: 0;
-    margin: 520px auto 0;
-    max-width: 80%;
+    margin: 0 auto;
     min-width: 700px;
+    width: 80%;
 }
 
 .content
 {
     max-width: 90%;
-    width: 886px;
+    min-width: 700px;
+    width: 1372px;
     margin: 40px auto 80px;
 }
 
@@ -184,11 +201,12 @@ main
 {
     background-color: rgba(141,141,141,.2);
     border-radius: 3px;
-    height: 460px;
-    width: 252px;
+    width: 300px;
     margin: 2px 0;
     padding: 20px;
     display: inline-block;
+    vertical-align: top;
+    min-height: 508px;
 }
 
 .item:hover
@@ -198,31 +216,49 @@ main
 
 .description-section
 {
+    max-width: 300px;
     padding: 10px 0;
-    float: left;
+    display: inline-block;
 }
 
 .cat-name
 {
+    display: inherit;
+    max-width: 300px;
     text-decoration: none;
     font-size: 24px;
     color: #000;
-    float: left;
     margin: 10px 0;
-    width: 100%;
     padding: 0;
-    max-width: 230px;
 }
 
 .cat-name:visited
 {
-    color: #000;
+    color: inherit;
 }
 
 .cat-name:hover,
 .category:hover
 {
     color: #cb2d22;
+}
+
+.long-description
+{
+    max-height: 90px;
+    line-height: 22px;
+    overflow: hidden;
+    position: relative;
+}
+
+.long-description:after
+{
+    color: inherit;
+    bottom: 0;
+    content: '...';
+    padding-bottom: 2px;
+    position: absolute;
+    right: 0;
 }
 
 .long
@@ -236,6 +272,12 @@ main
 {
     font-size: 30px;
     padding-top: 12px;
+}
+
+.rub
+{
+    font: 18px 'Rub', sans-serif;
+    color: inherit;
 }
 
 .current-price
@@ -275,14 +317,14 @@ label
 
 .rating > label.full
 {
-    background: url('images/r1.png') no-repeat;
+    background: url(images/rating.png) -16px 0;
     width: 16px;
     height: 32px;
 }
 
 .rating > label.half
 {
-    background: url('images/l1.png') no-repeat;
+    background: url(images/rating.png) 0 0;
     width: 16px;
     height: 32px;
 }
@@ -292,35 +334,35 @@ label
     float: right;
 }
 
-.rating > input:checked ~ label.full,
+.rating:not(:hover) > input:checked ~ label.full,
 .rating:not(:checked) > label.full:hover,
 .rating:not(:checked) > label.full:hover ~ label.full
 {
-    background: url('images/r2.png') no-repeat;
+    background: url(images/rating.png) -48px 0;
 }
 
 .rating:not(:checked) > label.full:hover ~ label.half
 {
-    background: url('images/l2.png') no-repeat;
+    background: url(images/rating.png) -32px 0;
 }
 
-.rating > input:checked ~ label.half,
+.rating:not(:hover) > input:checked ~ label.half,
 .rating:not(:checked) > label.half:hover,
 .rating:not(:checked) > label.half:hover ~ label.half
 {
-    background: url('images/l2.png') no-repeat;
+    background: url(images/rating.png) -32px 0;
 }
 
 .rating:not(:checked) > label.half:hover ~ label.full
 {
-    background: url('images/r2.png') no-repeat;
+    background: url(images/rating.png) -48px 0;
 }
 
 /* эффект для фото котика */
 
 figure
 {
-    width: 250px;
+    width: 300px;
     height: 200px;
     position: relative;
     overflow: hidden;
@@ -329,7 +371,7 @@ figure
 
 .effect-image img
 {
-    width: 250px;
+    width: 300px;
     max-height: 200px;
     position: absolute;
     bottom: 0;
@@ -340,7 +382,7 @@ figure
     transform: scale3d(1.05,1.05,1);
 }
 
-.effect-image figcaption::before
+.effect-image::after
 {
     position: absolute;
     top: 0;
@@ -351,8 +393,8 @@ figure
     content: '';
     -webkit-transition: -webkit-transform .6s;
     transition: transform .6s;
-    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
-    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-110%,0);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-110%,0);
 }
 
 .effect-image:hover img
@@ -362,7 +404,7 @@ figure
     transform: scale3d(1,1,1);
 }
 
-.effect-image:hover figcaption::before
+.effect-image:hover::after
 {
     -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
     transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
@@ -373,35 +415,26 @@ figure
 #list:checked ~ .content .item
 {
     width: 100%;
-    height: 220px;
-}
-
-#list:checked ~ .content .item .description-section .cat-name
-{
-    margin-right: 315px;
+    min-height: 250px;
+    min-width: 700px;
 }
 
 #list:checked ~ .content .item .description-section
 {
     padding: 0;
-    float: left;
     margin-left: 30px;
-    width: 400px;
-}
-
-#list:checked ~ .content .item .description-section .category
-{
-    margin-bottom: 10px;
+    min-width: 360px;
 }
 
 #list:checked ~ .content .item .description-section .description
 {
-    margin-top: 55px;
+    min-width: inherit;
 }
 
 #list:checked ~ .content .item .img,
 #list:checked ~ .content .item .img figure img,
 #list:checked ~ .content .rating
 {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
 }
