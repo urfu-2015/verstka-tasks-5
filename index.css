@@ -7,7 +7,7 @@ input
 a
 {
     display: inline-block;
-    max-width: 230px;
+    max-width: 210px;
     min-width: 1px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -41,8 +41,11 @@ figure img + label img.zoom:hover
 
 article
 {
+    line-height: 18px;
     padding-bottom: 5px;
     display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 section figure img
@@ -53,6 +56,7 @@ section figure img
 section:hover
 {
     box-shadow: 1px 1px 15px 5px #888;
+    z-index: 1;
 }
 
 div.view
@@ -69,6 +73,41 @@ div.rating
     display: inline-block;
     width: 100px;
     height: 20px;
+}
+
+div.buy-button
+{
+    position: absolute;
+    width: 50%;
+    border: 2px solid #eee;
+    /*border-right: 1px solid black;
+    border-top: 1px solid black;*/
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    background-color: #ffcc33;/*#ffcc33*/
+}
+
+div.buy-button:hover
+{
+    opacity: .8;
+}
+
+div.price
+{
+    /*font-family: Price;*/
+    font-weight: 100;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    height: 32px;
+    width: 50%;
+    padding-bottom: 2px;
+    border-top: 2px solid #eee;
+    border-right: 2px solid #eee;
+    border-bottom:2px solid #eee;
 }
 
 img.fs
@@ -90,6 +129,8 @@ img.fs
 img.gender
 {
     height: 20px;
+    margin-bottom: -5px;
+    margin-left: 5px;
 }
 
 img.zoom
@@ -113,23 +154,53 @@ img.fs-close
     display: none;
     top: 10vh;
     right: 5vw;
-    width: 5vw;
+    width: 4vw;
+}
+
+img.cart
+{
+    height: 25px;
+    /*margin: 5px;*/
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 5px;
+    position: absolute;
+}
+
+img.ruble
+{
+    width: 21px;
+    margin-bottom: -2px;
+    margin-left: 2px;
+}
+
+#tile:checked ~ section article
+{
+    height: 140px;
 }
 
 #tile:checked ~ section
 {
+    position: relative;
     text-align: center;
-    height: 460px;
+    height: 470px;
     width: 250px;
     display: inline-block;
     overflow: hidden;
     float: left;
-    padding: 0 8px 20px 8px;
+    padding: 0 8px 0px 8px;
 }
 
 #tile:checked ~ section figure
 {
     margin-bottom: 5px;
+}
+
+#tile:checked ~ section img.cat-run
+{
+    margin-top: -3px;
 }
 
 #tile:checked ~ section figure img
@@ -167,14 +238,27 @@ img.fs-close
 {
     position: absolute;
     left: 400px;
-    top: 75px;
+    top: 100px;
 }
 
 #list:checked ~ section div.price
 {
     position: absolute;
-    left: 405px;
-    top: 110px;
+    left: 500px;
+    top: 152px;
+    width: 100px;
+    font-size: 20px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    height: 30px;
+}
+
+#list:checked ~ section div.buy-button
+{
+    position: absolute;
+    left: 400px;
+    top: 152px;
+    width: 100px;
 }
 
 #list:checked ~ section article
@@ -197,11 +281,11 @@ img.fs-close
     margin: 20px;
 }
 
-#list:checked ~ section img.gender
+#list:checked ~ section div.gender
 {
     position: absolute;
-    left: 380px;
-    top: 50px;
+    left: 405px;
+    top: 75px;
 }
 
 #list:checked ~ section img.cat-run
@@ -219,8 +303,8 @@ img.fs-close
 #fs-close:not(:checked) ~ main
 {
     visibility: hidden;
-    height: 100vh;
-    width: 100vw;
+    height: 97vh;
+    width: 97vw;
     overflow: hidden;
 }
 
