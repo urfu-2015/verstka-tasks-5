@@ -127,8 +127,7 @@ a:link
 
 #list:checked ~ section .card-mark
 {
-    display: table;
-    margin: 0 auto;
+    display: inline-block;
 }
 
 #list:checked ~ section .card .card-image
