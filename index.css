@@ -1,1 +1,360 @@
 
+input
+{
+    display: none;
+}
+
+a
+{
+    display: inline-block;
+    max-width: 210px;
+    min-width: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+a:hover + img.cat-run
+{
+    display: inline;
+}
+
+figure
+{
+    height: 200px;
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    position: relative;
+    display: inline-block;
+}
+
+figure img:hover + label img.zoom
+{
+    display: block;
+}
+
+figure img + label img.zoom:hover
+{
+    display: block;
+}
+
+article
+{
+    line-height: 18px;
+    padding-bottom: 5px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+section figure img
+{
+    border-radius: 10px;
+}
+
+section:hover
+{
+    box-shadow: 1px 1px 15px 5px #888;
+    z-index: 1;
+}
+
+div.view
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+div.rating
+{
+    background-image: url(http://thrivesearch.com/wp-content/uploads/2015/03/Review-Stars.png);
+    background-size: 100px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+}
+
+div.buy-button
+{
+    position: absolute;
+    width: 50%;
+    border: 2px solid #eee;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    background-color: #fc3;
+}
+
+div.buy-button:hover
+{
+    opacity: .8;
+}
+
+div.price
+{
+    font-weight: 100;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    height: 32px;
+    width: 50%;
+    padding-bottom: 2px;
+    border-top: 2px solid #eee;
+    border-right: 2px solid #eee;
+    border-bottom:2px solid #eee;
+}
+
+img.fs
+{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 80vh;
+    max-width: 80vw;
+    min-height: 10vh;
+    min-width: 10vw;
+}
+
+img.gender
+{
+    height: 20px;
+    margin-bottom: -5px;
+    margin-left: 5px;
+}
+
+img.zoom
+{
+    display: none;
+    height: 50px;
+    top: 150px;
+    position: absolute;
+}
+
+img.cat-run
+{
+    display: none;
+    height: 25px;
+    position: absolute;
+}
+
+img.fs-close
+{
+    position: absolute;
+    display: none;
+    top: 10vh;
+    right: 5vw;
+    width: 4vw;
+}
+
+img.cart
+{
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 5px;
+    position: absolute;
+}
+
+img.ruble
+{
+    width: 21px;
+    margin-bottom: -2px;
+    margin-left: 2px;
+}
+
+#tile:checked ~ section article
+{
+    height: 140px;
+}
+
+#tile:checked ~ section
+{
+    position: relative;
+    text-align: center;
+    height: 470px;
+    width: 250px;
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+    padding: 0 8px 0 8px;
+}
+
+#tile:checked ~ section figure
+{
+    margin-bottom: 5px;
+}
+
+#tile:checked ~ section img.cat-run
+{
+    margin-top: -3px;
+}
+
+#tile:checked ~ section figure img
+{
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 0 0 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+#tile:checked ~ section div.rating
+{
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+#list:checked ~ section
+{
+    position: relative;
+    width: 1100px;
+    height: 180px;
+    padding: 20px;
+}
+
+#list:checked ~ section a
+{
+    position: absolute;
+    left: 405px;
+    top: 50px;
+}
+
+#list:checked ~ section div.rating
+{
+    position: absolute;
+    left: 400px;
+    top: 100px;
+}
+
+#list:checked ~ section div.price
+{
+    position: absolute;
+    left: 500px;
+    top: 152px;
+    width: 100px;
+    font-size: 20px;
+    padding-bottom: 0;
+    padding-top: 5px;
+    height: 30px;
+}
+
+#list:checked ~ section div.buy-button
+{
+    position: absolute;
+    left: 400px;
+    top: 152px;
+    width: 100px;
+}
+
+#list:checked ~ section article
+{
+    position: absolute;
+    left: 700px;
+    top: 50px;
+    width: 400px;
+}
+
+#list:checked ~ section figure
+{
+    position: relative;
+}
+
+#list:checked ~ section figure img
+{
+    max-height: 150px;
+    max-width: 250px;
+    margin: 20px;
+}
+
+#list:checked ~ section div.gender
+{
+    position: absolute;
+    left: 405px;
+    top: 75px;
+}
+
+#list:checked ~ section img.cat-run
+{
+    position: absolute;
+    left: 330px;
+    top: 45px;
+}
+
+#list:checked ~ section img.zoom
+{
+    top: 100px;
+}
+
+#fs-close:not(:checked) ~ main
+{
+    visibility: hidden;
+    height: 97vh;
+    width: 97vw;
+    overflow: hidden;
+}
+
+#fs-close:not(:checked) ~ label img.fs-close
+{
+    display: inline;
+}
+
+#img1:checked ~ img.img1
+{
+    display: inline;
+}
+
+#img2:checked ~ img.img2
+{
+    display: inline;
+}
+
+#img3:checked ~ img.img3
+{
+    display: inline;
+}
+
+#img4:checked ~ img.img4
+{
+    display: inline;
+}
+
+#img5:checked ~ img.img5
+{
+    display: inline;
+}
+
+#img6:checked ~ img.img6
+{
+    display: inline;
+}
+
+#img7:checked ~ img.img7
+{
+    display: inline;
+}
+
+#img8:checked ~ img.img8
+{
+    display: inline;
+}
+
+#img9:checked ~ img.img9
+{
+    display: inline;
+}
+
+#img10:checked ~ img.img10
+{
+    display: inline;
+}
