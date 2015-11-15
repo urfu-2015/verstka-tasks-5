@@ -32,6 +32,7 @@ header:first-letter
 .img
 {
     display: block;
+    height: 500px;
 }
 .img:hover > img
 {
@@ -80,8 +81,10 @@ header:first-letter
 }
 input#mode1:checked ~ section > .card
 {
+    height: 800px;
     max-width: 250px;
     display: inline-block;
+
 }
 input#mode2:checked ~ section > .card
 {
@@ -91,12 +94,7 @@ input#mode2:checked ~ section > .card
 }
 input#mode2:checked ~ section > .card > .flex
 {
-    display: inline-block;
-    vertical-align: top;
-}
-input#mode2:checked ~ section > .card > .flex
-{
-    display: inline-block;
+    display: table-cell;
     vertical-align: top;
 }
 input#mode2:checked ~ section > .card > .flex.decription
