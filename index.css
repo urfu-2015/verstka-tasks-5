@@ -1,15 +1,21 @@
 img
 {
-    max-width: 400px;
+    max-width: 360px;
     margin: 7px;
+}
+.List
+{
+    display: block;
 }
 dl
 {
+    display:inline-block;
     background-color: #f0dc82;
     color: #007fff;
-    height: 700px;
-    min-width: 400px;
-    max-width: 600px;
+    height: 800px;
+    vertical-align: top;
+    min-width: 300px;
+    max-width: 380px;
     border: thick solid #ffdab9;
 }
 dl:hover
@@ -20,14 +26,10 @@ body
 {
     background-color: #faebd7;
 }
-dl.second
-{
-    margin-top: -720px;
-    margin-left: 650px;
-}
 input[class='List']:checked ~ .column
 {
     margin: 20px;
-    width: 1000px;
-    height: 700px;
+    min-width: 800px;
+    max-height: 600px;
+    display: block;
 }
