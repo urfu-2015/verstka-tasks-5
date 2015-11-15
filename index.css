@@ -15,6 +15,7 @@ main
     max-width: 1710px;
     padding: 10px 0;
     background-color: #63add0;
+    overflow: auto;
 }
 
 header
@@ -64,21 +65,18 @@ h1
 }
 
 .showTypeTableLabel,
-.showTypeListLabel
+.showTypeListLabel,
+.catImage
 {
-    -moz-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
 }
 
 .showTypeTableLabel:hover,
-.showTypeListLabel:hover
+.showTypeListLabel:hover,
+.photoContainer:hover .catImage
 {
-    -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -113,19 +111,10 @@ h1
     max-width: 380px;
     position: absolute;
     bottom: 0;
-    -moz-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
-}
-
-.photoContainer:hover .catImage
-{
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto 0;
 }
 
 .catName
@@ -176,11 +165,6 @@ h1
     margin: 3px 0;
 }
 
-.catPrice::after
-{
-    content: 'р.';
-}
-
 .catOldPrice
 {
     font-size: 18px;
@@ -188,15 +172,18 @@ h1
     text-decoration: line-through;
 }
 
-.catOldPrice::after
+.catOldPrice::before,
+.catPrice::before
 {
-    content: 'р.';
+    content: '₽ ';
 }
 
 .catDescription
 {
-    font-size: 15px;
     margin: 25px 0 0;
+    font-size: 15px;
+    height: 130px;
+    overflow-y: auto;
 }
 
 .catDescriptionHeader
@@ -220,7 +207,7 @@ p
 .showTypeList:checked ~ .catItem
 {
     display: block;
-    min-width: 1400px;
+    min-width: 1200px;
     height: auto;
 }
 
@@ -230,6 +217,7 @@ p
     display: inline-block;
     margin: 0 80px 0 5px;
     height: 100%;
+    text-align: center;
 }
 
 .showTypeList:checked ~ .catItem .photoContainer .catImage
@@ -254,8 +242,9 @@ p
 {
     vertical-align: top;
     display: inline-block;
-    max-width: 500px;
+    max-width: 400px;
     margin-top: 0;
+    height: auto;
 }
 
 .catRating
@@ -310,62 +299,62 @@ p
     opacity: 0;
 }
 
-input.star0_5:checked ~ .stars_on,
-input.star0_5:hover ~ .stars_selected
+.star0_5:checked ~ .stars_on,
+.star0_5:hover ~ .stars_selected
 {
     width: 10%;
 }
 
-input.star1:checked ~ .stars_on,
-input.star1:hover ~ .stars_selected
+.star1:checked ~ .stars_on,
+.star1:hover ~ .stars_selected
 {
     width: 20%;
 }
 
-input.star1_5:checked ~ .stars_on,
-input.star1_5:hover ~ .stars_selected
+.star1_5:checked ~ .stars_on,
+.star1_5:hover ~ .stars_selected
 {
     width: 30%;
 }
 
-input.star2:checked ~ .stars_on,
-input.star2:hover ~ .stars_selected
+.star2:checked ~ .stars_on,
+.star2:hover ~ .stars_selected
 {
     width: 40%;
 }
 
-input.star2_5:checked ~ .stars_on,
-input.star2_5:hover ~ .stars_selected
+.star2_5:checked ~ .stars_on,
+.star2_5:hover ~ .stars_selected
 {
     width: 50%;
 }
 
-input.star3:checked ~ .stars_on,
-input.star3:hover ~ .stars_selected
+.star3:checked ~ .stars_on,
+.star3:hover ~ .stars_selected
 {
     width: 60%;
 }
 
-input.star3_5:checked ~ .stars_on,
-input.star3_5:hover ~ .stars_selected
+.star3_5:checked ~ .stars_on,
+.star3_5:hover ~ .stars_selected
 {
     width: 70%;
 }
 
-input.star4:checked ~ .stars_on,
-input.star4:hover ~ .stars_selected
+.star4:checked ~ .stars_on,
+.star4:hover ~ .stars_selected
 {
     width: 80%;
 }
 
-input.star4_5:checked ~ .stars_on,
-input.star4_5:hover ~ .stars_selected
+.star4_5:checked ~ .stars_on,
+.star4_5:hover ~ .stars_selected
 {
     width: 90%;
 }
 
-input.star5:checked ~ .stars_on,
-input.star5:hover ~ .stars_selected
+.star5:checked ~ .stars_on,
+.star5:hover ~ .stars_selected
 {
     width: 100%;
 }
