@@ -26,18 +26,24 @@ header:first-letter
 }
 .card:hover
 {
+    display: block;
     background: #fdf5e6;
     border: 20px solid #fdf5e6;
 }
 .img
 {
-    display: block;
-    height: 500px;
+    position: relative;
+    height: 400px;
 }
 .img:hover > img
 {
     box-shadow: 0 0 10px blue;
     border: 10px solid azure;
+}
+input#mode1:checked ~ section > .card > .img > img
+{
+    position: absolute;
+    bottom: 0;
 }
 .img > img
 {
