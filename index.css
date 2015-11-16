@@ -132,7 +132,9 @@ a:link
 
 #list:checked ~ section .card-mark
 {
-    display: inline-block;
+    display: table;
+    margin: 0 auto;
+    min-width: 50px;
 }
 
 #list:checked ~ section .card .about-wrapper
