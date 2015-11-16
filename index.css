@@ -115,13 +115,13 @@ img
     display: inline-block;
     height: 30px;
     width: 15px;
-    background: url('/rating.png') -85px 0;
+    background: url('http://rawgit.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -85px 0;
 }
 
 .goodness > label:nth-of-type(2n)
 {
     margin: 0 -5px;
-    background: url('/rating.png') -70px 0;
+    background: url('http://rawgit.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -70px 0;
 }
 
 .goodness > input
@@ -131,30 +131,30 @@ img
 
 .goodness:not(:hover) > input:checked ~ label:nth-of-type(2n)
 {
-    background: url('/rating.png') 0 0;
+    background: url('http://rawgit.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') 0 0;
 }
 
 .goodness:not(:hover) > input:checked ~ label:nth-of-type(2n+1)
 {
-    background: url('/rating.png') -15px 0;
+    background: url('http://rawgit.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -15px 0;
 }
 
 .goodness > label:nth-of-type(2n):hover
 {
-    background: url('/rating.png') 0 0;
+    background: url('http://rawgit.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') 0 0;
 }
 
 .goodness > label:nth-of-type(2n+1):hover
 {
-    background: url('/rating.png') -15px 0;
+    background: url('http://rawgit.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -15px 0;
 }
 
 .goodness > label:hover ~ label:nth-of-type(2n)
 {
-    background: url('/rating.png') 0 0;
+    background: url('http://rawgit.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') 0 0;
 }
 
 .goodness > label:hover ~ label:nth-of-type(2n+1)
 {
-    background: url('/rating.png') -15px 0;
+    background: url('http://rawgit.com/NekrasovAlexey/verstka-tasks-5/master/rating.png') -15px 0;
 }
