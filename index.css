@@ -67,18 +67,18 @@ abbr
 {
     max-height: 300px;
     max-width: 300px;
+    display: inline-block;
 }
 
 #lines:checked ~ .kittenCard .pictureBlock .pictureSelf
 {
-    display: inline-block;
     vertical-align: bottom;
     text-align: center;
 }
 
 #blocks:checked ~ .kittenCard .pictureBlock .pictureSelf
 {
-    display: inline-block;
+
     vertical-align: bottom;
     text-align: center;
     top: 15px;
