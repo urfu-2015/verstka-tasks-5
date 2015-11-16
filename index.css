@@ -30,7 +30,7 @@ header:first-letter
     background: #fdf5e6;
     border: 20px solid #fdf5e6;
 }
-.img
+input#mode1:checked ~ section > .card > .img
 {
     position: relative;
     height: 400px;
