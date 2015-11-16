@@ -17,26 +17,20 @@ abbr
 
 .kittenCard
 {
-    border: 3px solid transparent;
-    left: 0;
-    top: 0;
-    right: auto;
+    border: 1px solid transparent;
 }
 
 .kittenCard:hover
 {
     border: 1px ridge black;
     background-color: #f0ffff;
-    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .75);
-    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .75);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .75);
 }
 
 #lines:checked ~ .kittenCard
 {
     height: 300px;
-    width: 100%;
-    margin: 15px 0;
+
     display: block;
 }
 
@@ -47,7 +41,6 @@ abbr
     width: 320px;
     vertical-align: bottom;
     display: inline-block;
-
 }
 
 .pictureBlock
@@ -67,7 +60,6 @@ abbr
 {
     display: inline-block;
     text-align: center;
-    align-content: center;
     width: 30%;
 }
 
@@ -89,8 +81,6 @@ abbr
     display: inline-block;
     vertical-align: bottom;
     text-align: center;
-    margin: 0 auto;
-    line-height: 1.25;
     top: 15px;
     bottom: 0;
 }
@@ -100,7 +90,6 @@ abbr
     font-size: 30px;
     white-space: nowrap;
     position: relative;
-
 }
 
 .titleInfo p
@@ -122,7 +111,6 @@ abbr
 #blocks:checked ~ .kittenCard .titleInfo
 {
     display: block;
-    margin: 0;
     height: 150px;
 }
 
