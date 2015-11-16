@@ -273,13 +273,13 @@ header h1
 
 .goods__item-rating input:checked ~ label
 {
-    color: #fc0 !important;
+    color: #fc0;
 }
 
 .goods__item-rating label:hover,
 .goods__item-rating label:hover ~ label
 {
-    color: #ffe685;
+    color: #ffe685 !important;
 }
 
 .goods__item-rating label:active::before,
