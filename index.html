@@ -4,8 +4,449 @@
         <meta charset="utf-8">
         <title>Мяндекс.Муррркет</title>
         <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <!-- Здесь прикладывать основное усилие -->
+        <header>
+            <h1>MYandex<span>Murket</span></h1>
+        </header>
+        <main>
+            <select
+                class="design-type"
+                onchange="this.setAttribute('value', this.options[this.options.selectedIndex].value)">
+                <option value="tile">Плитка</option>
+                <option value="list">Список</option>
+            </select>
+            <article>
+                <article class="item">
+                    <div class="pic">
+                        <a href="index.html">
+                            <img src="Images/cat1.jpg" alt="scared cat">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="name" title="Испуганный кот">Испуганный кот</div>
+                        <div class="category">Для пылесосов</div>
+                        <div class="mark">
+                            <input id="star14" type="radio" name="stars1">
+                            <label title="gorgeous" for="star14">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star13" type="radio" name="stars1">
+                            <label title="good" for="star13">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star12" type="radio" name="stars1">
+                            <label title="regular" for="star12">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star11" type="radio" name="stars1">
+                            <label title="poor" for="star11">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star10" type="radio" name="stars1">
+                            <label title="bad" for="star10">
+                                <div class="star"></div>
+                            </label>
+                        </div>
+                        <div class="price">2 000 р.</div>
+                        <div class="description">
+                            Этот кот - прекрасное развлечение для всей семьи! Бесконечные побеги
+                            от пылесосов, газонокосилок и всего, что шумит, скрасят вашу жизнь и
+                            порадуют детей и взрослых!
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <div class="pic">
+                        <a href="index.html">
+                            <img src="Images/cat2.jpg" alt="thinking cat">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="name" title="Очень задумчивый кот">Очень задумчивый кот</div>
+                        <div class="category">Для ценителей</div>
+                        <div class="mark">
+                            <input id="star24" type="radio" name="stars2">
+                            <label title="gorgeous" for="star24">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star23" type="radio" name="stars2">
+                            <label title="good" for="star23">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star22" type="radio" name="stars2">
+                            <label title="regular" for="star22">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star21" type="radio" name="stars2">
+                            <label title="poor" for="star21">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star20" type="radio" name="stars2">
+                            <label title="bad" for="star20">
+                                <div class="star"></div>
+                            </label>
+                        </div>
+                        <div class="price">3 500 р.</div>
+                        <div class="description">
+                            Если Вы любите подумать о вечном - то этот кот для Вас. Он поддержит
+                            любой философский спор и расскажет свою точку зрения по любому вопросу.
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <div class="pic">
+                        <a href="index.html">
+                            <img src="Images/cat3.jpg" alt="grumpy cat">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="name" title="Безысходный кот">Безысходный кот</div>
+                        <div class="category">Для унылых</div>
+                        <div class="mark">
+                            <input id="star34" type="radio" name="stars3">
+                            <label title="gorgeous" for="star34">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star33" type="radio" name="stars3">
+                            <label title="good" for="star33">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star32" type="radio" name="stars3">
+                            <label title="regular" for="star32">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star31" type="radio" name="stars3">
+                            <label title="poor" for="star31">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star30" type="radio" name="stars3">
+                            <label title="bad" for="star30">
+                                <div class="star"></div>
+                            </label>
+                        </div>
+                        <div class="price">13 000 р.</div>
+                        <div class="description">
+                            Если у Вас снова депрессия, мир не радует глаз, то этот кот - прекрасная
+                            покупка для Вас. Вы проведете осенние вечера вместе в депрессии, но,
+                            по крайней мере, не будете одни.
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <div class="pic">
+                        <a href="index.html">
+                            <img src="Images/cat4.jpg" alt="happy cat">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="name" title="Веселый кот">Веселый кот</div>
+                        <div class="category">Для детей</div>
+                        <div class="mark">
+                            <input id="star44" type="radio" name="stars4">
+                            <label title="gorgeous" for="star44">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star43" type="radio" name="stars4">
+                            <label title="good" for="star43">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star42" type="radio" name="stars4">
+                            <label title="regular" for="star42">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star41" type="radio" name="stars4">
+                            <label title="poor" for="star41">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star40" type="radio" name="stars4">
+                            <label title="bad" for="star40">
+                                <div class="star"></div>
+                            </label>
+                        </div>
+                        <div class="price">2 000 р.</div>
+                        <div class="description">
+                            Прекрасное развлечение для детишек! Маленький и жизнерадостный котик развеселит
+                            детей, гостей и друзей!
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <div class="pic">
+                        <a href="index.html">
+                            <img src="Images/cat5.jpg" alt="lovely cat">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="name" title="Няшный кот">Няшный кот</div>
+                        <div class="category">Для японцев</div>
+                        <div class="mark">
+                            <input id="star54" type="radio" name="stars5">
+                            <label title="gorgeous" for="star54">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star53" type="radio" name="stars5">
+                            <label title="good" for="star53">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star52" type="radio" name="stars5">
+                            <label title="regular" for="star52">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star51" type="radio" name="stars5">
+                            <label title="poor" for="star51">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star50" type="radio" name="stars5">
+                            <label title="bad" for="star50">
+                                <div class="star"></div>
+                            </label>
+                        </div>
+                        <div class="price">5 000 р.</div>
+                        <div class="description">
+                            Кот с шикарным разрезом глаз скрасит любую вечеринку своей няшностью.
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <div class="pic">
+                        <a href="index.html">
+                            <img src="Images/cat6.jpg" alt="cool cat">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="name" title="Четкий кот">Четкий кот</div>
+                        <div class="category">Для бизнеса</div>
+                        <div class="mark">
+                            <input id="star64" type="radio" name="stars6">
+                            <label title="gorgeous" for="star64">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star63" type="radio" name="stars6">
+                            <label title="good" for="star63">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star62" type="radio" name="stars6">
+                            <label title="regular" for="star62">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star61" type="radio" name="stars6">
+                            <label title="poor" for="star61">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star60" type="radio" name="stars6">
+                            <label title="bad" for="star60">
+                                <div class="star"></div>
+                            </label>
+                        </div>
+                        <div class="price">15 000 р.</div>
+                        <div class="description">
+                            Этот кот быстро найдет общий язык со всеми котами на районе. С этим котом Вам
+                            будут не страшны никакие воры, грабители, поскольку кот довольно хорошо
+                            обращается с кастетом и ножом.
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <div class="pic">
+                        <a href="index.html">
+                            <img src="Images/cat7.jpg" alt="misterious cat">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="name" title="Загадочный кот">Загадочный кот</div>
+                        <div class="category">Для искателей приключений</div>
+                        <div class="mark">
+                            <input id="star74" type="radio" name="stars7">
+                            <label title="gorgeous" for="star74">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star73" type="radio" name="stars7">
+                            <label title="good" for="star73">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star72" type="radio" name="stars7">
+                            <label title="regular" for="star72">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star71" type="radio" name="stars7">
+                            <label title="poor" for="star71">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star70" type="radio" name="stars7">
+                            <label title="bad" for="star70">
+                                <div class="star"></div>
+                            </label>
+                        </div>
+                        <div class="price">6 000 р.</div>
+                        <div class="description">
+                            Если Вы любите приключения - то этот кот для Вас! Каждый день он будет
+                            загадывать самые разные загадки. Один раз Вы не найдете его миски, второй
+                            раз - лотка, третий - придется искать его самого.
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <div class="pic">
+                        <a href="index.html">
+                            <img src="Images/cat8.jpg" alt="clever cat">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="name" title="Умный кот">Умный кот</div>
+                        <div class="category">Для тех, кому не с кем поговорить</div>
+                        <div class="mark">
+                            <input id="star84" type="radio" name="stars8">
+                            <label title="gorgeous" for="star84">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star83" type="radio" name="stars8">
+                            <label title="good" for="star83">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star82" type="radio" name="stars8">
+                            <label title="regular" for="star82">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star81" type="radio" name="stars8">
+                            <label title="poor" for="star81">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star80" type="radio" name="stars8">
+                            <label title="bad" for="star80">
+                                <div class="star"></div>
+                            </label>
+                        </div>
+                        <div class="price">10 000 р.</div>
+                        <div class="description">
+                            Кот-интеллектуал. Предпочитает хозяев только с большой библиотекой.
+                            Большая ходячая энциклопедия, знает ответы на все вопросы из более чем
+                            20 различных областей. Возьмите его с собой на экзамен, и Вы гарантированно
+                            получите положительную оценку!
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <div class="pic">
+                        <a href="index.html">
+                            <img src="Images/cat9.jpg" alt="professional cat">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="name" title="Кот-дублер">Кот-дублер</div>
+                        <div class="category">Для режиссеров</div>
+                        <div class="mark">
+                            <input id="star94" type="radio" name="stars9">
+                            <label title="gorgeous" for="star94">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star93" type="radio" name="stars9">
+                            <label title="good" for="star93">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star92" type="radio" name="stars9">
+                            <label title="regular" for="star92">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star91" type="radio" name="stars9">
+                            <label title="poor" for="star91">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star90" type="radio" name="stars9">
+                            <label title="bad" for="star90">
+                                <div class="star"></div>
+                            </label>
+                        </div>
+                        <div class="price">18 000 р.</div>
+                        <div class="description">
+                            Профессиональный кот-каскадер выполнит за Вашего кота любые трюки любой
+                            сложности, будь то прыжок на косяк двери или падение с него. Хорошо
+                            входит в образ.
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <div class="pic">
+                        <a href="index.html">
+                            <img src="Images/cat10.gif" alt="nyan cat">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="name" title="Нян-кот">Нян-кот</div>
+                        <div class="category">Для упоротых</div>
+                        <div class="mark">
+                            <input id="star104" type="radio" name="stars10">
+                            <label title="gorgeous" for="star104">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star103" type="radio" name="stars10">
+                            <label title="good" for="star103">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star102" type="radio" name="stars10">
+                            <label title="regular" for="star102">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star101" type="radio" name="stars10">
+                            <label title="poor" for="star101">
+                                <div class="star"></div>
+                            </label>
+
+                            <input id="star100" type="radio" name="stars10">
+                            <label title="bad" for="star100">
+                                <div class="star"></div>
+                            </label>
+                        </div>
+                        <div class="price">Договорная</div>
+                        <div class="description">
+                            Ня ня ня-ня ня-ня-ня-ня-ня ня-ня-ня ня-ня-ня ня-ня-ня-ня-ня-ня-ня-ня ня-ня-ня
+                            ня-ня-ня-ня-ня-ня-ня-ня ня-ня-ня-ня-ня ня-ня-ня ня-ня-ня!
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </main>
     </body>
 </html>

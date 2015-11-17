@@ -1,1 +1,210 @@
+@font-face
+{
+    font-family: Pussyfoot;
+    src: url(Pussyfoo.ttf);
+}
 
+body
+{
+    min-width: 450px;
+}
+
+h1
+{
+    font: 50px 'Oswald',sans-serif;
+    margin: 15px;
+}
+
+h1 span
+{
+    border: 3px solid #fc0;
+    border-radius: 0 30px 30px 0;
+    padding: 5px;
+    font: 50px 'Pussyfoot', fantasy;
+}
+
+h1:first-letter
+{
+    color: #f00;
+}
+
+.item
+{
+    margin: 0;
+    display: inline-block;
+    width: 270px;
+    position: relative;
+    height: 640px;
+}
+
+.pic
+{
+    height: 50%;
+    position: relative;
+    display: block;
+}
+
+.pic img
+{
+    position: absolute;
+    width: 270px;
+    vertical-align: middle;
+    bottom: 0;
+    max-height: 320px;
+}
+
+.info
+{
+    vertical-align: top;
+    height: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.item:hover
+{
+    box-shadow: 1px 1px 5px #000;
+}
+
+a
+{
+    height: 50%;
+    text-decoration: none;
+}
+.name
+{
+    font: 30px 'Lora',serif;
+    white-space: nowrap;
+    display: inline;
+}
+
+.category
+{
+    font-size: 15px;
+}
+
+.price
+{
+    font: 25px 'Montserrat', sans-serif;
+    color: #f00;
+    white-space: nowrap;
+    clear: both;
+}
+
+.price:hover
+{
+    font-weight: bold;
+}
+
+.description::before
+{
+    content: 'Описание товара:';
+    font-weight: bolder;
+}
+
+.design-type[value='tile'] ~ article .item
+{
+    display: inline-block;
+}
+
+.design-type[value='tile'] ~ article .item .pic,
+.design-type[value='tile'] ~ article .item .info
+{
+    float: none;
+    display: block;
+}
+
+.design-type[value='list'] ~ article .item
+{
+    display: list-item;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    list-style: none;
+    padding-bottom: 200px;
+}
+
+.design-type[value='list'] ~ article .item .pic,
+.design-type[value='list'] ~ article .item .info
+{
+    display: table-cell;
+}
+
+.design-type[value='list'] ~ article .item .pic
+{
+    float: left;
+    width: 27%;
+    vertical-align: 70%;
+}
+
+.design-type[value='list'] ~ article .item .info
+{
+    float: right;
+    padding: 2%;
+    width: 67%;
+    position: absolute;
+    right: 2%;
+    height: auto;
+}
+
+.design-type[value='list'] ~ article .item .pic a
+{
+    display: inline-block;
+    height: 60%;
+}
+
+.design-type[value='list'] ~ article .item .pic img
+{
+    width: 100%;
+    max-width: 270px;
+    position: absolute;
+    top: 15%;
+}
+
+.mark label
+{
+    position: relative;
+    display: inline-block;
+    float: left;
+    z-index:1;
+    width:5px;
+    height:16px;
+    padding: 10px;
+}
+.mark input[type=radio]
+{
+    z-index: 2;
+    display:inline;
+    float: left;
+    width:16px;
+    height:16px;
+    opacity: 0;
+}
+.star
+{
+    background:url('Images/stars.png') 0 -40px;
+    height:40px;
+    width:43px;
+    z-index:1;
+    position: absolute;
+    top: 0;
+    display:block;
+    cursor:pointer;
+    left: 0;
+}
+.mark:hover .star
+{
+    background-position: 0 -40px;
+}
+input:checked ~ label .star
+{
+    background-position: 0 0;
+}
+input:checked + label .star
+{
+    background-position: 0 -40px;
+}
+label:hover ~ label .star
+{
+    background-position: 0 0 !important;
+}
