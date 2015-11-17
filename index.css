@@ -30,13 +30,7 @@
 {
     width: 200px;
     height: 200px;
-    position: static;
     display: inline-block;
-}
-
-#list:checked ~ .container .column .image-box img
-{
-    position: static;
 }
 
 #list:checked ~ .container .column .item-name
