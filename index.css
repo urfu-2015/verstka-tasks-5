@@ -17,7 +17,6 @@ h1
 
 h1 span
 {
-    display: inline;
     border: 3px solid #fc0;
     border-radius: 0 30px 30px 0;
     padding: 5px;
@@ -119,8 +118,10 @@ a
 {
     display: list-item;
     width: 100%;
-    height: 50vh;
+    height: inherit;
+    overflow: hidden;
     list-style: none;
+    padding-bottom: 200px;
 }
 
 .design-type[value='list'] ~ article .item .pic,
@@ -160,57 +161,50 @@ a
     top: 15%;
 }
 
-.mark input:checked ~ label,
-.mark label,
-.mark label:hover,
-.mark label:hover ~ label
-{
-    background: url('Images/stars.png') no-repeat;
-}
-
-.mark
-{
-    display: block;
-    position: relative;
-    float: left;
-}
-
-.mark input
-{
-    opacity: 0;
-
-    width: 43px;
-    height: 40px;
-
-    position: absolute;
-    top: 0;
-    z-index: 0;
-}
-
-.mark input:checked ~ label
-{
-    background-position: 0 -40px;
-    height: 40px;
-    width: 43px;
-}
-
 .mark label
 {
-    background-position: 0 0;
-    height: 40px;
-    width: 43px;
-    float: right;
-    cursor: pointer;
-    margin-right: 10px;
-
     position: relative;
-    z-index: 1;
+    display: inline-block;
+    float: left;
+    z-index:1;
+    width:5px;
+    height:16px;
+    padding: 10px;
 }
-
-.mark label:hover,
-.mark label:hover ~ label
+.mark input[type=radio]
+{
+    z-index: 2;
+    display:inline;
+    float: left;
+    width:16px;
+    height:16px;
+    opacity: 0;
+}
+.star
+{
+    background:url('Images/stars.png') 0 -40px;
+    height:40px;
+    width:43px;
+    z-index:1;
+    position: absolute;
+    top: 0;
+    display:block;
+    cursor:pointer;
+    left: 0;
+}
+.mark:hover .star
 {
     background-position: 0 -40px;
-    height: 40px;
-    width: 43px;
+}
+input:checked ~ label .star
+{
+    background-position: 0 0;
+}
+input:checked + label .star
+{
+    background-position: 0 -40px;
+}
+label:hover ~ label .star
+{
+    background-position: 0 0 !important;
 }
