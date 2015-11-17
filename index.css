@@ -33,6 +33,13 @@
 .name
 {
     font-size: 20px;
+    text-decoration: none;
+}
+
+.name:hover
+{
+    color: red;
+    text-decoration: none;
 }
 
 .wrapper
@@ -69,10 +76,12 @@
 {
     color: #fdd134;
     cursor: pointer;
+    text-shadow: -1px 1px 0 #272822, -1px -1px 0 #272822;
 }
 .fa-star-half:hover ~ .fa-star-half
 {
     color: #fdd134;
+    text-shadow: -1px 1px 0 #272822, -1px -1px 0 #272822;
 }
 input[name='star']:checked ~ label
 {
@@ -94,6 +103,7 @@ input[id='list']:checked ~ .cat > div
 input[id='list']:checked ~ .cat > .text
 {
     width: 80%;
+    position: relative;
 }
 
 input[id='list']:checked ~ .cat > .pic > .image
