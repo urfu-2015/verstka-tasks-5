@@ -1,6 +1,6 @@
 label
 {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 abbr
@@ -30,7 +30,6 @@ abbr
 #lines:checked ~ .kittenCard
 {
     height: 300px;
-
     display: block;
 }
 
@@ -45,22 +44,20 @@ abbr
 
 .pictureBlock
 {
-    height: 300px;
+    display: inline-block;
+    text-align: center;
 }
 
 #blocks:checked ~ .kittenCard .pictureBlock
 {
     width: 300px;
-    display: inline-block;
     line-height: 300px;
-    text-align: center;
 }
 
 #lines:checked ~ .kittenCard .pictureBlock
 {
-    display: inline-block;
-    text-align: center;
     width: 30%;
+    line-height: 300px;
 }
 
 .pictureSelf
@@ -68,19 +65,17 @@ abbr
     max-height: 300px;
     max-width: 300px;
     display: inline-block;
+    text-align: center;
 }
 
 #lines:checked ~ .kittenCard .pictureBlock .pictureSelf
 {
-    vertical-align: bottom;
-    text-align: center;
+    vertical-align: middle;
 }
 
 #blocks:checked ~ .kittenCard .pictureBlock .pictureSelf
 {
-
     vertical-align: bottom;
-    text-align: center;
     top: 15px;
     bottom: 0;
 }
@@ -90,6 +85,7 @@ abbr
     font-size: 30px;
     white-space: nowrap;
     position: relative;
+    display: block;
 }
 
 .titleInfo p
@@ -101,16 +97,14 @@ abbr
 
 #lines:checked ~ .kittenCard .titleInfo
 {
-    display: block;
     left: 30%;
     width: 40%;
     height: 300px;
-    top: -304px;
+    top: -300px;
 }
 
 #blocks:checked ~ .kittenCard .titleInfo
 {
-    display: block;
     height: 150px;
 }
 
@@ -124,10 +118,9 @@ abbr
 #lines:checked ~ .kittenCard .description
 {
     left: 70%;
-    display: inline-block;
     width: 30%;
     height: 300px;
-    top: -605px;
+    top: -600px;
 
 }
 
@@ -147,9 +140,11 @@ abbr
 .rating
 {
     overflow: hidden;
+    display: inline-block;
+    left: 0;
     right: auto;
-    margin-right: auto;
-    float: left;
+    width: 200px;
+    line-height: 32px;
 }
 
 .rating-input
@@ -177,7 +172,7 @@ abbr
 .rating-star
 {
     float: right;
-    display: block;
+    display: inline-block;
     width: 32px;
     height: 32px;
     background: url('star.png') 0 -32px;
