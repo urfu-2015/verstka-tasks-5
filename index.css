@@ -172,6 +172,7 @@
 }
 
 
-.rating:hover .rating-star:hover {
+.rating:hover .rating-star:hover
+{
     background-position: top;
 }
