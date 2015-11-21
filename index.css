@@ -1,1 +1,97 @@
 
+.cat-block
+{
+    vertical-align: top;
+    overflow: hidden;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    display: inline-block;
+    border: 3px solid #fff;
+}
+.cat-block img
+{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+.cat-image
+{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    float: left;
+}
+h1
+{
+    font-size: 20px;
+}
+h2
+{
+    font-size: 15px;
+    text-decoration: underline;
+}
+.price
+{
+    color: #ff0;
+    font-size: 30px;
+}
+.controlSize
+{
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+}
+.controlSize:hover
+{
+    box-shadow: 0 0 5px 2px red;
+}
+.cat-block img:hover
+{
+    box-shadow: 0 0 10px;
+}
+h2:hover
+{
+    box-shadow: inset 0 0 6px;
+}
+.cat-block:hover
+{
+    box-shadow: 0 0 5px;
+}
+.rating
+{
+    overflow: hidden;
+    display: inline-block;
+}
+.rating-input
+{
+    float: right;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0 0 0 -16px;
+    opacity: 0;
+}
+.rating-star
+{
+    position: relative;
+    float: right;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('http://kubyshkin.ru/samples/star-rating/star.png') 0 -16px;
+}
+.rating-star:hover,
+.rating-star:hover ~ .rating-star,
+.rating-input-1:checked ~ .rating-star-1
+{
+    background-position: 0 0;
+}
+#inline:checked ~ article .cat-block
+{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+}
