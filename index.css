@@ -58,6 +58,7 @@
     float: left;
     font-size: 0;
 }
+
 .marks label
 {
     border:solid 5px rgba(0, 0, 0, 0);
@@ -67,22 +68,26 @@
     margin-right: -3px;
     color: #bbb;
 }
-.R
+
+.reversed
 {
     transform: scale(-1, 1);
-    margin:-1;
+    margin: -1;
 }
+
 .fa-star-half:hover
 {
     color: #fdd134;
     cursor: pointer;
     text-shadow: -1px 1px 0 #272822, -1px -1px 0 #272822;
 }
+
 .fa-star-half:hover ~ .fa-star-half
 {
     color: #fdd134;
     text-shadow: -1px 1px 0 #272822, -1px -1px 0 #272822;
 }
+
 input[name='star']:checked ~ label
 {
     color: #fdd134;
