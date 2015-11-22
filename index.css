@@ -1,1 +1,149 @@
+/*default*/
+header
+{
+    font: 300% 'Roboto';
+    text-align: center;
+}
+header:first-letter
+{
+    color: red;
+}
+.flex > *
+{
+    display: block;
+}
+.card
+{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 20px solid white;
+}
+.card:hover
+{
+    display: block;
+    background: #fdf5e6;
+    border: 20px solid #fdf5e6;
+}
+input#mode1:checked ~ section > .card > .img
+{
+    position: relative;
+    height: 400px;
+}
+.img:hover > img
+{
+    box-shadow: 0 0 10px blue;
+    border: 10px solid azure;
+}
+input#mode1:checked ~ section > .card > .img > img
+{
+    position: absolute;
+    bottom: 0;
+}
+.img > img
+{
+    max-width: 250px;
+    width: 250px;
+    border: 10px solid #fdf5e6;
+}
+.name
+{
+    vertical-align: top;
+    display: block;
+    position: relative;
+}
+.decription
+{
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+}
+.decription > p,
+.decription > h2
+{
+    display: block;
+}
+.level
+{
+    width: 250px;
+    display: block;
+}
+.level > .one
+{
+    content: url('http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_15.png');
+}
+.level > .half
+{
+    content: url('http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_16.png');
+}
+.level > .zero
+{
+    content: url('http://www.iconsearch.ru/uploads/icons/icojoy/24x24/001_17.png');
+}
+input#mode1:checked ~ section > .card
+{
+    height: 800px;
+    max-width: 250px;
+    display: inline-block;
 
+}
+input#mode2:checked ~ section > .card
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+input#mode2:checked ~ section > .card > .flex
+{
+    display: table-cell;
+    vertical-align: top;
+}
+input#mode2:checked ~ section > .card > .flex.decription
+{
+    width: auto;
+}
+.type
+{
+    font-size: 1.5em;
+    border: 10px solid #fdf5e6;
+}
+.fatty:hover
+{
+    border: 10px solid orange;
+    color: orange;
+}
+.sissy:hover
+{
+    border: 10px solid deeppink;
+    color: deeppink;
+}
+.pickle:hover
+{
+    border: 10px solid greenyellow;
+    color: greenyellow;
+}
+.mewing:hover
+{
+    border: 10px solid crimson;
+    color: crimson;
+}
+.softie:hover
+{
+    border: 10px solid lightblue;
+    color: lightblue;
+}
+.now_price
+{
+    font-size: 2em;
+    color: tomato;
+}
+.past_price
+{
+    text-decoration: line-through;
+}
+p
+{
+    text-align-all: justify;
+    text-after-overflow: ellipsis;
+}
