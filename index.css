@@ -1,1 +1,127 @@
+.cat
+{
+    padding: 15px;
+    margin: 15px;
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    vertical-align: text-top;
+}
 
+.cat:hover
+{
+    width: 200px;
+    box-shadow: 0 0 10px #888;
+}
+
+.image
+{
+    width: 200px;
+}
+
+.discription
+{
+    width: 160px;
+    overflow: hidden;
+}
+
+.rating
+{
+    margin-left: -7px;
+}
+
+.name
+{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.name:hover
+{
+    color: red;
+    text-decoration: none;
+}
+
+.wrapper
+{
+    display: table;
+}
+
+.starCheck
+{
+    display: none;
+}
+
+.marks
+{
+    direction: rtl;
+    float: left;
+    font-size: 0;
+}
+
+.marks label
+{
+    border:solid 5px rgba(0, 0, 0, 0);
+    border-width: 5px 0 5px 5px;
+    display: inline-block;
+    font-size: 30px;
+    margin-right: -3px;
+    color: #bbb;
+}
+
+.reversed
+{
+    transform: scale(-1, 1);
+    margin: -1;
+}
+
+.fa-star-half:hover
+{
+    color: #fdd134;
+    cursor: pointer;
+    text-shadow: -1px 1px 0 #272822, -1px -1px 0 #272822;
+}
+
+.fa-star-half:hover ~ .fa-star-half
+{
+    color: #fdd134;
+    text-shadow: -1px 1px 0 #272822, -1px -1px 0 #272822;
+}
+
+input[name='star']:checked ~ label
+{
+    color: #fdd134;
+}
+
+input[id='list']:checked ~ .cat
+{
+    width: 97%;
+}
+
+input[id='list']:checked ~ .cat > div
+{
+    display: inline-block;
+    padding-left: 30px;
+    vertical-align: text-top;
+}
+
+input[id='list']:checked ~ .cat > .text
+{
+    width: 80%;
+    position: relative;
+}
+
+input[id='list']:checked ~ .cat > .pic > .image
+{
+    width: 100px;
+}
+
+input[id='list']:checked ~ .cat > .text > .discription
+{
+    width: 100%;
+}
+
+.price
+{
+    font-size: 20px;
+}
