@@ -1,9 +1,7 @@
 /*default*/
 header
 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 300%;
-    /*font: 300% normal;*/
+    font: 300% 'Roboto';
     text-align: center;
 }
 header:first-letter
@@ -17,8 +15,6 @@ header:first-letter
 .card
 {
     position: relative;
-    /*bottom: 0px;
-    left: 0px;*/
     display: inline-block;
     margin: 10px;
     padding: 10px;
