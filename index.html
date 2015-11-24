@@ -1,11 +1,549 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Мяндекс.Муррркет</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <!-- Здесь прикладывать основное усилие -->
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Мяндекс.Муррркет</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<label for="plitki">Плитки</label>
+<input type="radio" id="plitki" name="view-style" value="plitki" checked>
+<label for="list">Список</label>
+<input type="radio" id="list" name="view-style" value="list">
+<section class="shop-name-wrapper">
+    <div class="shop-name">Мяндекс.Муррркет</div>
+</section>
+<section>
+    <article class="card">
+        <div class="card-image">
+            <img class="cat-image-sm" src="img/tonkin_cat.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Тонкинская кошка</a>
+            </div>
+            <div class="card-category">
+                Категория котика 1
+            </div>
+            <div class="card-mark">
+                <fieldset class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label class="full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half">
+                    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half">
+                    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label class="full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half">
+                    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half">
+                    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half">
+                    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+            </div>
+            <div class="card-cost">
+                $49.99 <div class="card-last-cost">$100</div>
+            </div>
+        </div>
+        <div class="card-description">
+            <p>
+                Происхождение тонкинской породы  – это удивительная и запутанная история.
+                Она напоминает бесконечный рассказ.
+                Одна из версий гласит, что первая тонкинская кошка появилась в Англии
+                в конце XIX века под видом шоколадной сиамской кошки.
+                Привезенные с Востока кошки имели коричневый окрас, который был
+                не характерным для сиамских кошек, и зеленовато-голубой или желтый цвет глаз.
+                Происхождение тонкинской породы  – это удивительная и запутанная история.
+                Она напоминает бесконечный рассказ.
+                Одна из версий гласит, что первая тонкинская кошка появилась в Англии
+                в конце XIX века под видом шоколадной сиамской кошки.
+                Привезенные с Востока кошки имели коричневый окрас, который был
+                не характерным для сиамских кошек, и зеленовато-голубой или желтый цвет глаз.
+            </p>
+        </div>
+    </article>
+    <article class="card">
+        <div class="card-image">
+            <img class="cat-image-md" src="img/foreign_white.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Форин вайт</a>
+            </div>
+            <div class="card-category">
+                Категория котика 2
+            </div>
+            <div class="card-mark">
+                <fieldset class="rating">
+                    <input type="radio" id="1-star5" name="1-rating" value="5">
+                    <label class="full" for="1-star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="1-star4half" name="1-rating" value="4 and a half">
+                    <label class="half" for="1-star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="1-star4" name="1-rating" value="4">
+                    <label class="full" for="1-star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="1-star3half" name="1-rating" value="3 and a half">
+                    <label class="half" for="1-star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="1-star3" name="1-rating" value="3">
+                    <label class="full" for="1-star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="1-star2half" name="1-rating" value="2 and a half">
+                    <label class="half" for="1-star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="1-star2" name="1-rating" value="2">
+                    <label class="full" for="1-star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="1-star1half" name="1-rating" value="1 and a half">
+                    <label class="half" for="1-star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="1-star1" name="1-rating" value="1">
+                    <label class="full" for="1-star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="1-starhalf" name="1-rating" value="half">
+                    <label class="half" for="1-starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+            </div>
+            <div class="card-cost">
+                $500
+            </div>
+        </div>
+        <div class="card-description">
+            Форин вайт – это порода, которая, согласно некоторым данным,
+            стала подоплекой для генетического конструктора под названием "сиамская кошка".
+            А история давно забытой породы такова: однажды, некая заводчица
+            (Тернер) захотела удивить мир породой, которая была еще не известна.
+            Изюминкой стал белый цвет. Именно так, Великобритания в 1964 году
+            получила новую белошерстную породу кошек.
+        </div>
+    </article>
+    <article class="card">
+        <div class="card-image">
+            <img class="cat-image-lg" src="img/japanese_bobtail.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Японский бобтейл</a>
+            </div>
+            <div class="card-category">
+                Категория котика 3
+            </div>
+            <div class="card-mark">
+                <fieldset class="rating">
+                    <input type="radio" id="2-star5" name="2-rating" value="5">
+                    <label class="full" for="2-star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="2-star4half" name="2-rating" value="4 and a half">
+                    <label class="half" for="2-star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="2-star4" name="2-rating" value="4">
+                    <label class="full" for="2-star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="2-star3half" name="2-rating" value="3 and a half">
+                    <label class="half" for="2-star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="2-star3" name="2-rating" value="3">
+                    <label class="full" for="2-star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="2-star2half" name="2-rating" value="2 and a half">
+                    <label class="half" for="2-star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="2-star2" name="2-rating" value="2">
+                    <label class="full" for="2-star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="2-star1half" name="2-rating" value="1 and a half">
+                    <label class="half" for="2-star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="2-star1" name="2-rating" value="1">
+                    <label class="full" for="2-star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="2-starhalf" name="2-rating" value="half">
+                    <label class="half" for="2-starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+            </div>
+            <div class="card-cost">
+                $600
+            </div>
+        </div>
+        <div class="card-description">
+            Данная кошка с древних времен распространена в странах Дальнего Востока,
+            позже она попала на Японские острова, а оттуда в 1968 году –
+            в Америку, где и получила свое нынешнее название японский бобтейл.
+            Сами же японцы называли ее «ми-ке». Изображения этого вида кошек имеются
+            на старинных гравюрах и картинах императорских династий, а также
+            в токийском храме Готокуджу.
+        </div>
+    </article>
+    <article class="card">
+        <div class="card-image">
+            <img class="cat-image-sm" src="img/oriental_longhair_cat.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Ориентальная длинношерстная кошка</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <fieldset class="rating">
+                    <input type="radio" id="3-star5" name="3-rating" value="5">
+                    <label class="full" for="3-star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="3-star4half" name="3-rating" value="4 and a half">
+                    <label class="half" for="3-star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="3-star4" name="3-rating" value="4">
+                    <label class="full" for="3-star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="3-star3half" name="3-rating" value="3 and a half">
+                    <label class="half" for="3-star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="3-star3" name="3-rating" value="3">
+                    <label class="full" for="3-star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="3-star2half" name="3-rating" value="2 and a half">
+                    <label class="half" for="3-star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="3-star2" name="3-rating" value="2">
+                    <label class="full" for="3-star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="3-star1half" name="3-rating" value="1 and a half">
+                    <label class="half" for="3-star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="3-star1" name="3-rating" value="1">
+                    <label class="full" for="3-star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="3-starhalf" name="3-rating" value="half">
+                    <label class="half" for="3-starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+            </div>
+            <div class="card-cost">
+                $10
+            </div>
+        </div>
+        <div class="card-description">
+            Данная порода кошек родом из Северной Америки. Считается, что порода появилась
+            в 1985 году. Согласно истории возникновения породы данный вид был получен путём
+            случайного спаривания кошек короткошёрстной и сиамской пород.
+            В результате спаривания
+            зародилась новая порода. Данный вид уже признан многими ассоциациями, например,
+            такими, как ACF, WCF, FIFE, GCCF и многими другими.
+        </div>
+    </article>
+    <article class="card">
+        <div class="card-image">
+            <img class="cat-image-lg" src="img/minskin.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Минскин</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <fieldset class="rating">
+                    <input type="radio" id="4-star5" name="4-rating" value="5">
+                    <label class="full" for="4-star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="4-star4half" name="4-rating" value="4 and a half">
+                    <label class="half" for="4-star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="4-star4" name="4-rating" value="4">
+                    <label class="full" for="4-star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="4-star3half" name="4-rating" value="3 and a half">
+                    <label class="half" for="4-star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="4-star3" name="4-rating" value="3">
+                    <label class="full" for="4-star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="4-star2half" name="4-rating" value="2 and a half">
+                    <label class="half" for="4-star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="4-star2" name="4-rating" value="2">
+                    <label class="full" for="4-star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="4-star1half" name="4-rating" value="1 and a half">
+                    <label class="half" for="4-star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="4-star1" name="4-rating" value="1">
+                    <label class="full" for="4-star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="4-starhalf" name="4-rating" value="half">
+                    <label class="half" for="4-starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+            </div>
+            <div class="card-cost">
+                $20
+            </div>
+        </div>
+        <div class="card-description">
+            Порода минскин – очень редкая порода карликовых кошек.
+            Она появилась в конце 90-х годов прошлого века в питомнике Бостона,
+            при скрещивании манчкина и сфинкса. Затем были подключены породы бурму
+            и девон-рекс.
+        </div>
+    </article>
+    <article class="card">
+        <div class="card-image">
+            <img class="cat-image-md" src="img/american_haired_cat.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Американская жесткошерстная кошка</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <fieldset class="rating">
+                    <input type="radio" id="5-star5" name="5-rating" value="5">
+                    <label class="full" for="5-star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="5-star4half" name="5-rating" value="4 and a half">
+                    <label class="half" for="5-star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="5-star4" name="5-rating" value="4">
+                    <label class="full" for="5-star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="5-star3half" name="5-rating" value="3 and a half">
+                    <label class="half" for="5-star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="5-star3" name="5-rating" value="3">
+                    <label class="full" for="5-star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="5-star2half" name="5-rating" value="2 and a half">
+                    <label class="half" for="5-star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="5-star2" name="5-rating" value="2">
+                    <label class="full" for="5-star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="5-star1half" name="5-rating" value="1 and a half">
+                    <label class="half" for="5-star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="5-star1" name="5-rating" value="1">
+                    <label class="full" for="5-star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="5-starhalf" name="5-rating" value="half">
+                    <label class="half" for="5-starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+            </div>
+            <div class="card-cost">
+                $99.99
+            </div>
+        </div>
+        <div class="card-description">
+            Американские жесткошерстные кошки очень похожи внешне и по многим
+            факторам на американских короткошерстных кошек, просто по той причине,
+            что произошли именно от них. По сути, породы отличают только по принципу
+            «проволочная шубка». Хотя на самом деле, это лишь визуальный эффект.
+        </div>
+    </article>
+    <article class="card">
+        <div class="card-image">
+            <img class="cat-image-sm" src="img/aegean_cat.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Эгейская кошка</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <fieldset class="rating">
+                    <input type="radio" id="6-star5" name="6-rating" value="5">
+                    <label class="full" for="6-star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="6-star4half" name="6-rating" value="4 and a half">
+                    <label class="half" for="6-star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="6-star4" name="6-rating" value="4">
+                    <label class="full" for="6-star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="6-star3half" name="6-rating" value="3 and a half">
+                    <label class="half" for="6-star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="6-star3" name="6-rating" value="3">
+                    <label class="full" for="6-star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="6-star2half" name="6-rating" value="2 and a half">
+                    <label class="half" for="6-star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="6-star2" name="6-rating" value="2">
+                    <label class="full" for="6-star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="6-star1half" name="6-rating" value="1 and a half">
+                    <label class="half" for="6-star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="6-star1" name="6-rating" value="1">
+                    <label class="full" for="6-star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="6-starhalf" name="6-rating" value="half">
+                    <label class="half" for="6-starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+            </div>
+            <div class="card-cost">
+                $98
+            </div>
+        </div>
+        <div class="card-description">
+            Эгейская кошка родом с острова Цикладис, который находится в Греции.
+            Греческие селекционеры начали работать над выводом этой породы
+            около двадцати лет назад. Так как эта порода обрела популярность не так давно,
+            и является представителем экспериментальных пород, то большинство людей считает,
+            что эгейская кошка – это представитель одного из редких видов.
+        </div>
+    </article>
+    <article class="card">
+        <div class="card-image">
+            <img class="cat-image-sm" src="img/urals_rex.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Уральский рекс</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <fieldset class="rating">
+                    <input type="radio" id="7-star5" name="7-rating" value="5">
+                    <label class="full" for="7-star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="7-star4half" name="7-rating" value="4 and a half">
+                    <label class="half" for="7-star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="7-star4" name="7-rating" value="4">
+                    <label class="full" for="7-star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="7-star3half" name="7-rating" value="3 and a half">
+                    <label class="half" for="7-star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="7-star3" name="7-rating" value="3">
+                    <label class="full" for="7-star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="7-star2half" name="7-rating" value="2 and a half">
+                    <label class="half" for="7-star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="7-star2" name="7-rating" value="2">
+                    <label class="full" for="7-star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="7-star1half" name="7-rating" value="1 and a half">
+                    <label class="half" for="7-star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="7-star1" name="7-rating" value="1">
+                    <label class="full" for="7-star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="7-starhalf" name="7-rating" value="half">
+                    <label class="half" for="7-starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+            </div>
+            <div class="card-cost">
+                $98
+            </div>
+        </div>
+        <div class="card-description">
+            Уральский рекс характеризуется как развитое и некрупное животное
+            с длинной волнистой шерстью. Тело отличается средними размерами,
+            мускулистостью, стройностью и элегантностью. Кошка уральский рекс имеет
+            ноги средней длины, стройные и сильные с овальными лапами. Хвост не длинный,
+            у основания не широкий, кончик слегка округлый. Голова в виде широкого
+            равностороннего треугольника.
+        </div>
+    </article>
+    <article class="card">
+        <div class="card-image">
+            <img class="cat-image-md" src="img/ojos_azules.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Охос азулес</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <fieldset class="rating">
+                    <input type="radio" id="8-star5" name="8-rating" value="5">
+                    <label class="full" for="8-star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="8-star4half" name="8-rating" value="4 and a half">
+                    <label class="half" for="8-star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="8-star4" name="8-rating" value="4">
+                    <label class="full" for="8-star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="8-star3half" name="8-rating" value="3 and a half">
+                    <label class="half" for="8-star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="8-star3" name="8-rating" value="3">
+                    <label class="full" for="8-star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="8-star2half" name="8-rating" value="2 and a half">
+                    <label class="half" for="8-star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="8-star2" name="8-rating" value="2">
+                    <label class="full" for="8-star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="8-star1half" name="8-rating" value="1 and a half">
+                    <label class="half" for="8-star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="8-star1" name="8-rating" value="1">
+                    <label class="full" for="8-star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="8-starhalf" name="8-rating" value="half">
+                    <label class="half" for="8-starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+            </div>
+            <div class="card-cost">
+                $160
+            </div>
+        </div>
+        <div class="card-description">
+            Порода охос азулес («голубоглазая»- исп.) выведена в США.
+            В 1984 году внимание американских селекционеров привлек факт наличия
+            у кошек, не имеющих сиамского окраса, голубого цвета глаз. Родоначальницей
+            новой породы охос азулес стала кошка с черепаховым окрасом и голубыми
+            глазами, ее звали Конфлауэ.
+        </div>
+    </article>
+    <article class="card">
+        <div class="card-image">
+            <img class="cat-image-md" src="img/havana.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Гавана</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <fieldset class="rating">
+                    <input type="radio" id="9-star5" name="9-rating" value="5">
+                    <label class="full" for="9-star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="9-star4half" name="9-rating" value="4 and a half">
+                    <label class="half" for="9-star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="9-star4" name="9-rating" value="4">
+                    <label class="full" for="9-star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="9-star3half" name="9-rating" value="3 and a half">
+                    <label class="half" for="9-star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="9-star3" name="9-rating" value="3">
+                    <label class="full" for="9-star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="9-star2half" name="9-rating" value="2 and a half">
+                    <label class="half" for="9-star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="9-star2" name="9-rating" value="2">
+                    <label class="full" for="9-star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="9-star1half" name="9-rating" value="1 and a half">
+                    <label class="half" for="9-star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="9-star1" name="9-rating" value="1">
+                    <label class="full" for="9-star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="9-starhalf" name="9-rating" value="half">
+                    <label class="half" for="9-starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+            </div>
+            <div class="card-cost">
+                $87
+            </div>
+        </div>
+        <div class="card-description">
+            Первая в мире разновидность ориентальной кошки была
+            зарегистрирована в 1959 году – это Гавана. Данной породе кошек
+            было присвоено такое название в честь кубинских сигар, так как их
+            окрас с шоколадно-коричневым оттенком очень похож на цвет сигар.
+            Кошка гавана своей внешностью схожа с сиамской кошкой. Но при этом она
+            обладает совершенным обаянием и неповторимостью.
+        </div>
+    </article>
+    <article class="card">
+        <div class="card-image">
+            <img class="cat-image-sm" src="img/karelian_bobtail.jpg">
+        </div>
+        <div class="about-wrapper">
+            <div class="card-header">
+                <a href="#">Карельский бобтейл</a>
+            </div>
+            <div class="card-category">
+                Категория котика
+            </div>
+            <div class="card-mark">
+                <fieldset class="rating">
+                    <input type="radio" id="10-star5" name="10-rating" value="5">
+                    <label class="full" for="10-star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="10-star4half" name="10-rating" value="4 and a half">
+                    <label class="half" for="10-star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="10-star4" name="10-rating" value="4">
+                    <label class="full" for="10-star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="10-star3half" name="10-rating" value="3 and a half">
+                    <label class="half" for="10-star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="10-star3" name="10-rating" value="3">
+                    <label class="full" for="10-star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="10-star2half" name="10-rating" value="2 and a half">
+                    <label class="half" for="10-star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="10-star2" name="10-rating" value="2">
+                    <label class="full" for="10-star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="10-star1half" name="10-rating" value="1 and a half">
+                    <label class="half" for="10-star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="10-star1" name="10-rating" value="1">
+                    <label class="full" for="10-star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="10-starhalf" name="10-rating" value="half">
+                    <label class="half" for="10-starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+            </div>
+            <div class="card-cost">
+                $55
+            </div>
+        </div>
+        <div class="card-description">
+            Карельский бобтейл – это довольно редкая и весьма немногочисленная
+            порода очаровательных кошек с укороченным хвостом.
+            Начало своей истории эта порода ведет с 1992 года. Она признана
+            в клубах WCF, с присвоением стандарта CFF. Предположительно, карельский
+            бобтейл является потомком норвежской дикой кошки. Он имеет крепкое
+            телосложение, средние размеры, шерсть полудлинная.
+        </div>
+    </article>
+</section>
+</body>
 </html>

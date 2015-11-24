@@ -1,1 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+section
+{
+    margin: 10px;
+}
+
+.shop-name-wrapper
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.shop-name
+{
+    font-size: 30px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.card
+{
+    vertical-align: top;
+    display: inline-block;
+    height: 500px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.card:hover
+{
+    background-color: rgba(1, 1, 1, .15);
+}
+
+.card-header
+{
+    font-size: 17px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card-header a:hover
+{
+    color: #da2d04;
+}
+
+.card-category
+{
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.card-category:hover
+{
+    color: #da2d04;
+}
+
+.card-cost
+{
+    font-weight: 800;
+    color: #da2d04;
+}
+
+.card-last-cost
+{
+    color: #000;
+    font-weight: 200;
+    text-decoration: line-through;
+    display: inline-block;
+}
+
+.card-description
+{
+    overflow: hidden;
+}
+
+.cat-image-sm
+{
+    width: 100px;
+    height: 100px;
+}
+
+.cat-image-md
+{
+    width: 120px;
+    height: 120px;
+}
+
+.cat-image-lg
+{
+    width: 140px;
+    height: 140px;
+}
+
+.cat-image:hover
+{
+    transform: rotateY(180deg);
+}
+
+a:link
+{
+    text-underline: blue;
+    color: blue;
+}
+
+#list:checked ~ section .card
+{
+    display: inline-block;
+}
+
+#list:checked ~ section .card .card-image,
+#list:checked ~ section .card .about-wrapper,
+#list:checked ~ section .card .card-description
+{
+    display: inline-block;
+}
+
+#list:checked ~ section .card
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#list:checked ~ section .card-mark
+{
+    display: table;
+    margin: 0 auto;
+    min-width: 50px;
+}
+
+#list:checked ~ section .card .about-wrapper
+{
+    width: 15%;
+}
+
+#list:checked ~ section .card .card-description
+{
+    width: 70%;
+    text-align: left;
+}
+
+#plitki:checked ~ section .card
+{
+    display: inline-block;
+}
+
+/** Stars **/
+.card-mark
+{
+    display: inline-block;
+}
+
+fieldset,
+label
+{
+    margin: 0;
+    padding: 0;
+}
+
+.rating
+{
+    border: none;
+    float: left;
+    min-width: 143px;
+}
+
+.rating > input
+{
+    display: none;
+}
+.rating > label:before
+{
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome, serif;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating > label
+{
+    color: #ddd;
+    float: right;
+}
+
+/** Highlight Stars on hover **/
+
+/* show gold star when clicked */
+/* hover current star */
+/* hover previous stars in list */
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label
+{
+    color: #ffd700;
+}
+
+/* hover current star when changing rating */
+/* lighten current selection */
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label
+{
+    color: #ffed85;
+}
