@@ -170,6 +170,7 @@ label
 {
     border: none;
     float: left;
+    min-width: 143px;
 }
 
 .rating > input
