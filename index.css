@@ -50,7 +50,7 @@ abbr
 
 #blocks:checked ~ .kittenCard .pictureBlock
 {
-    width: 300px;
+    width: 100%;
     line-height: 300px;
 }
 
@@ -78,6 +78,7 @@ abbr
     vertical-align: bottom;
     top: 15px;
     bottom: 0;
+    margin: auto;
 }
 
 .titleInfo
@@ -145,23 +146,19 @@ abbr
     right: auto;
     width: 200px;
     line-height: 32px;
+    transform: scaleX(-1);
+    word-spacing: 0;
 }
 
 .rating-input
 {
+    display: none;
     width: 32px;
     height: 32px;
     padding: 0;
     margin: 0 0 0 -32px;
     opacity: 0;
-}
 
-.rating-star
-{
-    display: block;
-    width: 32px;
-    height: 32px;
-    background: url('star.png') 0 -32px;
 }
 
 .rating-star:hover
@@ -171,7 +168,6 @@ abbr
 
 .rating-star
 {
-    float: right;
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -190,6 +186,3 @@ abbr
 {
     background-position: 0 0;
 }
-
-
-/**/
