@@ -50,13 +50,13 @@ abbr
 
 #blocks:checked ~ .kittenCard .pictureBlock
 {
-    width: 300px;
+    width: 100%;
     line-height: 300px;
 }
 
 #lines:checked ~ .kittenCard .pictureBlock
 {
-    width: 29%;
+    width: 30%;
     line-height: 300px;
 }
 
@@ -71,7 +71,6 @@ abbr
 #lines:checked ~ .kittenCard .pictureBlock .pictureSelf
 {
     vertical-align: middle;
-    margin: 0;
 }
 
 #blocks:checked ~ .kittenCard .pictureBlock .pictureSelf
@@ -79,48 +78,51 @@ abbr
     vertical-align: bottom;
     top: 15px;
     bottom: 0;
+    margin: auto;
 }
 
 .titleInfo
 {
     font-size: 30px;
-    /*white-space: nowrap;*/
+    white-space: nowrap;
     position: relative;
-
+    display: block;
 }
 
 .titleInfo p
 {
     overflow: hidden;
     text-overflow: ellipsis;
-    /*margin: 10px 0;*/
+    margin: 10px 0;
 }
 
 #lines:checked ~ .kittenCard .titleInfo
 {
-    width: 30%;
+    left: 30%;
+    width: 40%;
     height: 300px;
-    display: inline-block;
+    top: -300px;
 }
 
 #blocks:checked ~ .kittenCard .titleInfo
 {
     height: 150px;
-    display: block;
 }
 
 .description
 {
     font-size: 20px;
-    /*display: block;*/
+    display: block;
     position: relative;
 }
 
 #lines:checked ~ .kittenCard .description
 {
-    width: 40%;
+    left: 70%;
+    width: 30%;
     height: 300px;
-    display: inline-block;
+    top: -600px;
+
 }
 
 #blocks:checked ~ .kittenCard .description
@@ -134,7 +136,6 @@ abbr
     display: block;
 }
 
-
 /*RATING STARS*/
 
 .rating
@@ -145,23 +146,19 @@ abbr
     right: auto;
     width: 200px;
     line-height: 32px;
+    transform: scaleX(-1);
+    word-spacing: 0;
 }
 
 .rating-input
 {
+    display: none;
     width: 32px;
     height: 32px;
     padding: 0;
     margin: 0 0 0 -32px;
     opacity: 0;
-}
 
-.rating-star
-{
-    /*display: block;*/
-    width: 32px;
-    height: 32px;
-    background: url('star.png') 0 -32px;
 }
 
 .rating-star:hover
@@ -171,8 +168,7 @@ abbr
 
 .rating-star
 {
-    float: right;
-    display: block;
+    display: inline-block;
     width: 32px;
     height: 32px;
     background: url('star.png') 0 -32px;
