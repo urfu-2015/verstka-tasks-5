@@ -14,6 +14,24 @@ abbr
     font-weight: bold;
     font-size: .85em;
 }
+.old
+{
+    display: block;
+    color:#5a5a5a;
+    font-size: .7em;
+}
+
+section
+{
+    border-top: 1px outset black;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+#lines:checked section
+{
+    display: table;
+}
 
 .kittenCard
 {
@@ -27,13 +45,13 @@ abbr
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .75);
 }
 
-#lines:checked ~ .kittenCard
+#lines:checked ~ section  .kittenCard
 {
-    height: 300px;
-    display: block;
+    display: table-row;
+    padding: 10px;
 }
 
-#blocks:checked ~ .kittenCard
+#blocks:checked ~ section .kittenCard
 {
     margin: 20px;
     padding: 10px;
@@ -48,32 +66,34 @@ abbr
     text-align: center;
 }
 
-#blocks:checked ~ .kittenCard .pictureBlock
+#blocks:checked ~ section .kittenCard .pictureBlock
 {
     width: 100%;
     line-height: 300px;
 }
 
-#lines:checked ~ .kittenCard .pictureBlock
+#lines:checked ~ section .kittenCard .pictureBlock
 {
     width: 30%;
-    line-height: 300px;
+    height: 100%;
+    display: table-cell;
 }
 
 .pictureSelf
 {
     max-height: 300px;
     max-width: 300px;
-    display: inline-block;
     text-align: center;
 }
 
-#lines:checked ~ .kittenCard .pictureBlock .pictureSelf
+#lines:checked ~ section .kittenCard .pictureBlock .pictureSelf
 {
-    vertical-align: middle;
+    vertical-align: top;
+    margin: 10px;
+
 }
 
-#blocks:checked ~ .kittenCard .pictureBlock .pictureSelf
+#blocks:checked ~ section .kittenCard .pictureBlock .pictureSelf
 {
     vertical-align: bottom;
     top: 15px;
@@ -89,22 +109,27 @@ abbr
     display: block;
 }
 
-.titleInfo p
+.titleInfo h1
 {
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 10px 0;
+    font-size: 25px;
 }
 
-#lines:checked ~ .kittenCard .titleInfo
+.titleInfo h1 a:hover
 {
-    left: 30%;
-    width: 40%;
-    height: 300px;
-    top: -300px;
+    color: red;
 }
 
-#blocks:checked ~ .kittenCard .titleInfo
+#lines:checked ~ section .kittenCard .titleInfo
+{
+    width: 40%;
+    vertical-align: top;
+    display: table-cell;
+}
+
+#blocks:checked ~ section .kittenCard .titleInfo
 {
     height: 150px;
 }
@@ -116,21 +141,19 @@ abbr
     position: relative;
 }
 
-#lines:checked ~ .kittenCard .description
+#lines:checked ~ section .kittenCard .description
 {
-    left: 70%;
+    vertical-align: top;
     width: 30%;
-    height: 300px;
-    top: -600px;
-
+    display: table-cell;
 }
 
-#blocks:checked ~ .kittenCard .description
+#blocks:checked ~ section .kittenCard .description
 {
     display: block;
 }
 
-#blocks:checked ~ .kittenCard .description p:nth-child(2)
+#blocks:checked ~ section .kittenCard .description p:nth-child(2)
 {
     height: 300px;
     display: block;
