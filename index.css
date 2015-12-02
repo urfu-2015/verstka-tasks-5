@@ -1,1 +1,207 @@
+label
+{
+    font-size: 35px;
+}
 
+.price
+{
+    color: #a52a2a;
+    font-weight: bold;
+    font-size: .85em;
+}
+.old
+{
+    display: block;
+    color:#5a5a5a;
+    font-size: .7em;
+}
+
+section
+{
+    border-top: 1px outset black;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+#lines:checked section
+{
+    display: table;
+}
+
+.kittenCard
+{
+    border: 1px solid transparent;
+}
+
+.kittenCard:hover
+{
+    border: 1px solid black;
+    background-color: #f0ffff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .75);
+}
+
+#lines:checked ~ section  .kittenCard
+{
+    display: table-row;
+    padding: 10px;
+}
+
+#blocks:checked ~ section .kittenCard
+{
+    margin: 20px;
+    padding: 10px;
+    width: 320px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.pictureBlock
+{
+    display: inline-block;
+    text-align: center;
+}
+
+#blocks:checked ~ section .kittenCard .pictureBlock
+{
+    width: 100%;
+    line-height: 300px;
+}
+
+#lines:checked ~ section .kittenCard .pictureBlock
+{
+    width: 30%;
+    height: 100%;
+    display: table-cell;
+}
+
+.pictureSelf
+{
+    max-height: 300px;
+    max-width: 300px;
+    text-align: center;
+}
+
+#lines:checked ~ section .kittenCard .pictureBlock .pictureSelf
+{
+    vertical-align: top;
+    margin: 10px;
+
+}
+
+#blocks:checked ~ section .kittenCard .pictureBlock .pictureSelf
+{
+    vertical-align: bottom;
+    top: 15px;
+    bottom: 0;
+    margin: auto;
+}
+
+.titleInfo
+{
+    font-size: 30px;
+    white-space: nowrap;
+    position: relative;
+    display: block;
+}
+
+.titleInfo h1
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.titleInfo h1 a:hover
+{
+    color: red;
+}
+
+#lines:checked ~ section .kittenCard .titleInfo
+{
+    width: 40%;
+    vertical-align: top;
+    display: table-cell;
+}
+
+#blocks:checked ~ section .kittenCard .titleInfo
+{
+    /*height: 150px;*/
+}
+
+.description
+{
+    font-size: 20px;
+    display: block;
+    position: relative;
+}
+
+#lines:checked ~ section .kittenCard .description
+{
+    vertical-align: top;
+    width: 30%;
+    display: table-cell;
+}
+
+#blocks:checked ~ section .kittenCard .description
+{
+    display: block;
+    /*overflow-y: scroll;*/
+}
+
+#blocks:checked ~ section .kittenCard .description p:nth-child(2)
+{
+    min-height: 300px;
+    display: block;
+}
+
+/*RATING STARS*/
+
+.rating
+{
+    overflow: hidden;
+    display: inline-block;
+    left: 0;
+    right: auto;
+    width: 200px;
+    line-height: 32px;
+    transform: scaleX(-1);
+    word-spacing: 0;
+}
+
+.rating-input
+{
+    display: none;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0 0 0 -32px;
+    opacity: 0;
+
+}
+
+.rating-star:hover
+{
+    background-position: 0 0;
+}
+
+.rating-star
+{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url('star.png') 0 -32px;
+}
+
+.rating-star:hover,
+.rating-star:hover ~ .rating-star
+{
+    background-position: 0 0;
+}
+
+.rating-star:hover,
+.rating-star:hover ~ .rating-star,
+.rating-input:checked ~ .rating-star
+{
+    background-position: 0 0;
+}
