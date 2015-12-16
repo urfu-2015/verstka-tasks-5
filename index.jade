@@ -1,0 +1,49 @@
+extends ./layout
+
+mixin price(price)
+    .price.price-new #{price.new}
+    .price.price-old #{price.old}
+
+mixin description(description)
+    .description-title описание товара
+    p.description-text #{description}
+
+mixin category(args)
+    .category
+    - each val,i in args
+        a.category-item(href=val.url)= val.name
+        if (i != args.length - 1)
+            | -
+
+mixin rating(count, name)
+    .rating
+        - for (var x = count; x > 0; x--)
+            - var id = "star" + name + x
+            input(type="radio", name="star" + name, id=id)
+            label(for=id, class="star-" + x)
+
+mixin shop-item(item)
+    .column
+        div.image-box
+            if (src=item.img)
+                img(src=item.img, alt=item.name+'_фото')
+            .stub
+        .column-content
+            .column-info
+                h2.item-name
+                    a(href='#') #{item.name}
+                +category(item.category)
+                +rating(30, item.id)
+                +price({new: '100p.', old: '100000р.'})
+                p #{item.info}
+        .column-description
+            if (item.description)
+                +description(item.description)
+
+
+block content
+    .container
+        include data
+        each val in items
+            +shop-item(val)
+

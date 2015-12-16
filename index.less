@@ -1,0 +1,170 @@
+.container {
+    max-width: 1200px;
+    margin: 5px;
+
+    p {
+        margin: 0;
+    }
+}
+
+#list:checked ~ .container {
+    display: table;
+    .column {
+        display: table-row;
+        width: auto;
+
+        .column-info, .column-description {
+            float: none;
+        }
+
+        .image-box {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+        .item-name {
+            margin: 0;
+        }
+
+        .column-info {
+            min-width: 130px;
+        }
+
+        & > * {
+            padding: 5px;
+            margin: 0 10px;
+            vertical-align: top;
+            display: table-cell;
+        }
+    }
+}
+
+.column {
+    vertical-align: baseline;
+    margin: 5px;
+    display: inline-block;
+    width: 250px;
+
+    &:hover {
+        background: cyan;
+    }
+
+    .column-info, .column-description {
+        float: left;
+    }
+
+    .item-name {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        overflow: hidden;
+        font-size: 1em;
+        margin: 3px 0;
+
+        &:hover {
+            background: lightsalmon;
+        }
+
+    }
+    .category {
+        margin: 3px 0;
+    }
+    .category-item {
+        color: inherit;
+    }
+
+    .description-title {
+        font-weight: bold;
+        color: #313030;
+        margin: 5px 0;
+    }
+
+    .price {
+        display: inline-block;
+        &.price-new {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: red;
+        }
+        &.price-old {
+            text-decoration: line-through;
+        }
+    }
+    .image-box {
+        display: inline-block;
+        .stub:first-child {
+            display: table;
+            width: 100%;
+            height: 100%;
+            background: darkgrey;
+            position: relative;
+            &:after {
+                vertical-align: middle;
+                display: table-cell;
+                content: '∪･ω･∪ no image';
+                bottom: 0;
+                font-size: 2em;
+                background: #f6c49b;
+                color: #3c400c;
+                margin: 24%;
+                padding: 7px;
+                left: 0;
+            }
+        }
+        width: 100%;
+        img {
+            &:hover {
+                -webkit-filter: saturate(8);
+                filter: saturate(8);
+            }
+            max-height: 230px;
+            max-width: 100%;
+        }
+    }
+}
+
+@rating-sprite : 'http://i.stack.imgur.com/oZ9Id.png';
+@rating-sprite-offset : 20px;
+@rating-width: 105px;
+
+.generate-rating(30);
+
+.generate-rating(@n, @i: 1) when (@i =< @n) {
+    .star-@{i} {
+        width: (@rating-width / @n * @i);
+    }
+    .generate-rating(@n, (@i + 1));
+}
+
+.rating {
+    margin: 3px 0;
+    height: @rating-sprite-offset;
+    position: relative;
+    &:not(:hover) {
+        input[type='radio'] {
+            &:checked ~ label {
+                background: url(@rating-sprite) 0 @rating-sprite-offset;
+            }
+        }
+    }
+
+    input[type='radio'] {
+        display: none;
+    }
+    label {
+        &:hover {
+            & ~ label {
+                background: url(@rating-sprite) 0 @rating-sprite-offset;
+            }
+            background: url(@rating-sprite) 0 @rating-sprite-offset;
+
+        }
+        height: 20px;
+        display: block;
+        background: url(@rating-sprite);
+        position: absolute;
+    }
+
+}
+
+
