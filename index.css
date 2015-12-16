@@ -59,6 +59,11 @@
     width: 250px;
 }
 
+.column:hover
+{
+    background: cyan;
+}
+
 .column .column-info,
 .column .column-description
 {
@@ -73,6 +78,11 @@
     overflow: hidden;
     font-size: 1em;
     margin: 3px 0;
+}
+
+.column .item-name:hover
+{
+    background: lightsalmon;
 }
 
 .column .category
@@ -142,6 +152,12 @@
 {
     max-height: 230px;
     max-width: 100%;
+}
+
+.column .image-box img:hover
+{
+    -webkit-filter: saturate(8);
+    filter: saturate(8);
 }
 
 .star-1
