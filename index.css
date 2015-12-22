@@ -1,1 +1,143 @@
+body
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Segoe UI, Helvetica, Arial, sans-serif;
+}
 
+div
+{
+    overflow: hidden;
+}
+
+.price-old
+{
+    color: grey;
+    text-decoration:line-through;
+}
+
+.kindness-level ul 
+{
+    padding-left:5px;
+    display: inline-block;
+}
+
+.kindness-level ul li
+{
+    display: inline-block;
+    list-style:none;
+    height:30px;
+    width:30px;
+    background-repeat: no-repeat;
+    margin-bottom: -10px;
+    background:url('star-yellow.png');
+}
+
+.kindness-level ul li.mark ~ li
+{
+    background: url('star-grey.png');
+}
+
+div.cat-item 
+{
+    vertical-align: top;
+    display: inline-block;
+    min-width: 400px;
+    max-width: 400px;
+    border: 1px solid grey;
+    margin: 20px 5px 10px 5px;
+    padding:  15px 10px;
+}
+
+div.cat-desc
+{
+    display: block;
+}
+
+img
+{
+    display: block;
+    max-width: 350px;
+    margin: auto;
+}
+
+img:hover
+{
+    opacity:.5;
+    cursor: pointer;
+}
+
+.cat-item:hover
+{
+    background-color: #a4cfef;
+    cursor: pointer;
+}
+
+.category:hover
+{
+    color:darkslateblue;
+    cursor: pointer;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+.wrapper
+{
+    min-width: 1300px;
+}
+
+.cat-item div
+{
+    min-width: 300px;
+}
+
+.cat-info
+{
+    display: block;
+    padding-top: 10px;
+}
+
+.cat-info div
+{
+    line-height: 30px;
+}
+
+.name
+{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+a
+{
+    color: cornflowerblue;
+}
+
+.wrapper input
+{
+    display: block;
+}
+
+[value='tile']:checked ~ div
+{
+    height: 600px;
+}
+
+[value='list']:checked ~ div 
+{
+    display: block;
+    max-width: 100%;
+    min-height: 300px;
+}
+
+[value='list']:checked ~ div div
+{
+    vertical-align: top;
+    display: inline-block;
+    max-width: 30%;
+    padding: 0 20px 0 20px;
+}
