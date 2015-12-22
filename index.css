@@ -1,8 +1,8 @@
 body
 {
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     font-family: Segoe UI, Helvetica, Arial, sans-serif;
 }
 
@@ -31,13 +31,12 @@ div
     width:30px;
     background-repeat: no-repeat;
     margin-bottom: -10px;
-    background:url("star-yellow.png");
+    background:url('star-yellow.png');
 }
-
 
 .kindness-level ul li.mark ~ li
 {
-    background: url("star-grey.png");
+    background: url('star-grey.png');
 }
 
 div.cat-item 
@@ -50,7 +49,6 @@ div.cat-item
     margin: 20px 5px 10px 5px;
     padding:  15px 10px;
 }
-
 
 div.cat-desc
 {
@@ -66,7 +64,7 @@ img
 
 img:hover
 {
-    opacity:0.5;
+    opacity:.5;
     cursor: pointer;
 }
 
@@ -99,8 +97,8 @@ a:hover
 
 .cat-info
 {
-  display: block; 
-  padding-top: 10px;
+    display: block;
+    padding-top: 10px;
 }
 
 .cat-info div
@@ -111,7 +109,7 @@ a:hover
 .name
 {
     text-overflow: ellipsis;
-    white-space: nowrap;   
+    white-space: nowrap; 
 }
 
 a
@@ -124,19 +122,19 @@ a
     display: block;
 }
 
-[value="tile"]:checked ~ div
+[value='tile']:checked ~ div
 {
        height: 600px;
 }
 
-[value="list"]:checked ~ div 
+[value='list']:checked ~ div 
 {
     display: block;
     max-width: 100%;
     min-height: 300px;
 }
 
-[value="list"]:checked ~ div div
+[value='list']:checked ~ div div
 {
     vertical-align: top;
     display: inline-block;
