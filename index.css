@@ -109,7 +109,7 @@ a:hover
 .name
 {
     text-overflow: ellipsis;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 a
@@ -124,7 +124,7 @@ a
 
 [value='tile']:checked ~ div
 {
-       height: 600px;
+    height: 600px;
 }
 
 [value='list']:checked ~ div 
