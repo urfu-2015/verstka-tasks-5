@@ -1,11 +1,322 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="utf-8">
-        <title>Мяндекс.Муррркет</title>
-        <link rel="stylesheet" href="index.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="keywords" content="Яндекс, Яндекс.почта, измерение скорости загрузки почты, улучшение скорости загрузки почты">
+        <meta name="description" content="Если ваш сайт медленно грузится, вы рискуете тем, что люди не оценят ни то, какой он красивый, ни то, какой он удобный. Здесь вы можете узнать, как работники сервиса Яндекс.почта измерют и улучшают скорость загрузки">
+        <meta name="author" content="@doochik">
+        <title>Мяндекс.Муррркет </title>
+        <style>
+            img.photo:hover{
+                opacity: 0.6;
+            }
+            a {
+                color: #008000; 
+                text-decoration: none; 
+           }
+           a:visited {
+                color: #800080;
+           } 
+           a:hover {
+                color: #800000; /* Цвет ссылки при наведении на нее курсора мыши */  
+                text-decoration: underline;
+           }
+            span.red {
+                color: red;
+                font-size: larger;
+            }
+            .category {
+                color: gray;    
+            }
+            div.cat:hover {
+                background: #c7e9f2;
+            }
+            div.cat {
+                width: 250px;
+                display: inline-block;
+                padding: 5px;
+            }
+            
+            #typew:checked ~  div.cat .content-img {
+                display: inline-block;
+                width: 270px;
+            }
+
+            #typew:checked ~  div.cat .content-text {
+                display: inline-block;
+                width: 400px;
+                align: right;
+            }
+            #typew:checked ~ div.cat {
+                display: block;
+                width: 900px;
+            }
+            #typew:checked ~ div > div > img.photo {
+                align: left;
+                margin: 10px;
+            }
+            .dist {
+                color: gray;
+            }
+            div > strike {
+                color: gray;
+            }
+            .size {
+                white-space: nowrap; /* Отменяем перенос текста */
+                overflow: hidden; /* Обрезаем содержимое */
+                padding: 5px; /* Поля */
+           }
+           .photo {
+                width: 250px;
+           }
+           
+        </style>
     </head>
     <body>
-        <!-- Здесь прикладывать основное усилие -->
+        <header>
+            <h1><span class="red">М</span>яндекс.Муррркет</h1>
+        </header>
+        <hr>
+        
+            <input type="radio" id="typeq" checked="checked" name="q" value="tile"/>Плитка 
+            <input type="radio" id="typew" name="q" value="list"/> Список
+        
+        <hr>
+        <div class="cat">
+            <div class="content-img">
+                <img src="Basik.jpg" title="Basik" alt="Basik"  class="photo">
+            </div>
+            <div class="content-text">
+                <div class="size">
+                    <a href="">BasikBasikBasikBasikBasikBasikBasikBasikBasikBasik</a>
+                </div>
+                <div class="category"><a href="">Милота</a></div>
+                <img src="4_5.png" title="stars" alt="stars">
+                <div><span class="red">Это бабушкин любимый котик, он НЕ продается</span> <strike>$1000000</strike></div><br>
+                <div> 
+                    <span class="dist">ОКРАС</span>:<br> множество окрасов, самые популярные — сплошные (голубой, черный, лиловый, шоколадный), тэбби и серебристые тэбби, их разновидности: пятно, полоса и мрамор.
+                    <br><br>
+                    <span class="dist" >ШЕРСТЬ</span>:<br> короткая, плотная, тонкой текстуры, неприлегающая, с густым подшерстком.
+                    <br><br>
+                    <span class="dist">Достоинства</span><br>
+                    Не требует много внимания, может подолгу оставаться одна, отлично подойдет для людей, много времени проводящих на работе
+                    <br><br>
+                    <span class="dist">Сложности</span><br>
+                    Имеет собственное мнение по многим поводам - необходимо воспитывать с раннего детства
+                </div>
+            </div>
+        </div>
+        <div class="cat">
+            <div class="content-img">
+                <img src="Basik.jpg" title="Basik" alt="Basik"  class="photo">
+            </div>
+            <div class="content-text">
+                <div class="size">
+                    <a href="">BasikBasikBasikBasikBasikBasikBasikBasikBasikBasik</a>
+                </div>
+                <div class="category"><a href="">Милота</a></div>
+                <img src="4_5.png" title="stars" alt="stars">
+                <div><span class="red">Это бабушкин любимый котик, он НЕ продается</span> <strike>$1000000</strike></div><br>
+                <div> 
+                    <span class="dist">ОКРАС</span>:<br> множество окрасов, самые популярные — сплошные (голубой, черный, лиловый, шоколадный), тэбби и серебристые тэбби, их разновидности: пятно, полоса и мрамор.
+                    <br><br>
+                    <span class="dist" >ШЕРСТЬ</span>:<br> короткая, плотная, тонкой текстуры, неприлегающая, с густым подшерстком.
+                    <br><br>
+                    <span class="dist">Достоинства</span><br>
+                    Не требует много внимания, может подолгу оставаться одна, отлично подойдет для людей, много времени проводящих на работе
+                    <br><br>
+                    <span class="dist">Сложности</span><br>
+                    Имеет собственное мнение по многим поводам - необходимо воспитывать с раннего детства
+                </div>
+            </div>
+        </div><div class="cat">
+            <div class="content-img">
+                <img src="Basik.jpg" title="Basik" alt="Basik"  class="photo">
+            </div>
+            <div class="content-text">
+                <div class="size">
+                    <a href="">BasikBasikBasikBasikBasikBasikBasikBasikBasikBasik</a>
+                </div>
+                <div class="category"><a href="">Милота</a></div>
+                <img src="4_5.png" title="stars" alt="stars">
+                <div><span class="red">Это бабушкин любимый котик, он НЕ продается</span> <strike>$1000000</strike></div><br>
+                <div> 
+                    <span class="dist">ОКРАС</span>:<br> множество окрасов, самые популярные — сплошные (голубой, черный, лиловый, шоколадный), тэбби и серебристые тэбби, их разновидности: пятно, полоса и мрамор.
+                    <br><br>
+                    <span class="dist" >ШЕРСТЬ</span>:<br> короткая, плотная, тонкой текстуры, неприлегающая, с густым подшерстком.
+                    <br><br>
+                    <span class="dist">Достоинства</span><br>
+                    Не требует много внимания, может подолгу оставаться одна, отлично подойдет для людей, много времени проводящих на работе
+                    <br><br>
+                    <span class="dist">Сложности</span><br>
+                    Имеет собственное мнение по многим поводам - необходимо воспитывать с раннего детства
+                </div>
+            </div>
+        </div><div class="cat">
+            <div class="content-img">
+                <img src="Basik.jpg" title="Basik" alt="Basik"  class="photo">
+            </div>
+            <div class="content-text">
+                <div class="size">
+                    <a href="">BasikBasikBasikBasikBasikBasikBasikBasikBasikBasik</a>
+                </div>
+                <div class="category"><a href="">Милота</a></div>
+                <img src="4_5.png" title="stars" alt="stars">
+                <div><span class="red">Это бабушкин любимый котик, он НЕ продается</span> <strike>$1000000</strike></div><br>
+                <div> 
+                    <span class="dist">ОКРАС</span>:<br> множество окрасов, самые популярные — сплошные (голубой, черный, лиловый, шоколадный), тэбби и серебристые тэбби, их разновидности: пятно, полоса и мрамор.
+                    <br><br>
+                    <span class="dist" >ШЕРСТЬ</span>:<br> короткая, плотная, тонкой текстуры, неприлегающая, с густым подшерстком.
+                    <br><br>
+                    <span class="dist">Достоинства</span><br>
+                    Не требует много внимания, может подолгу оставаться одна, отлично подойдет для людей, много времени проводящих на работе
+                    <br><br>
+                    <span class="dist">Сложности</span><br>
+                    Имеет собственное мнение по многим поводам - необходимо воспитывать с раннего детства
+                </div>
+            </div>
+        </div><div class="cat">
+            <div class="content-img">
+                <img src="Basik.jpg" title="Basik" alt="Basik"  class="photo">
+            </div>
+            <div class="content-text">
+                <div class="size">
+                    <a href="">BasikBasikBasikBasikBasikBasikBasikBasikBasikBasik</a>
+                </div>
+                <div class="category"><a href="">Милота</a></div>
+                <img src="4_5.png" title="stars" alt="stars">
+                <div><span class="red">Это бабушкин любимый котик, он НЕ продается</span> <strike>$1000000</strike></div><br>
+                <div> 
+                    <span class="dist">ОКРАС</span>:<br> множество окрасов, самые популярные — сплошные (голубой, черный, лиловый, шоколадный), тэбби и серебристые тэбби, их разновидности: пятно, полоса и мрамор.
+                    <br><br>
+                    <span class="dist" >ШЕРСТЬ</span>:<br> короткая, плотная, тонкой текстуры, неприлегающая, с густым подшерстком.
+                    <br><br>
+                    <span class="dist">Достоинства</span><br>
+                    Не требует много внимания, может подолгу оставаться одна, отлично подойдет для людей, много времени проводящих на работе
+                    <br><br>
+                    <span class="dist">Сложности</span><br>
+                    Имеет собственное мнение по многим поводам - необходимо воспитывать с раннего детства
+                </div>
+            </div>
+        </div><div class="cat">
+            <div class="content-img">
+                <img src="Basik.jpg" title="Basik" alt="Basik"  class="photo">
+            </div>
+            <div class="content-text">
+                <div class="size">
+                    <a href="">BasikBasikBasikBasikBasikBasikBasikBasikBasikBasik</a>
+                </div>
+                <div class="category"><a href="">Милота</a></div>
+                <img src="4_5.png" title="stars" alt="stars">
+                <div><span class="red">Это бабушкин любимый котик, он НЕ продается</span> <strike>$1000000</strike></div><br>
+                <div> 
+                    <span class="dist">ОКРАС</span>:<br> множество окрасов, самые популярные — сплошные (голубой, черный, лиловый, шоколадный), тэбби и серебристые тэбби, их разновидности: пятно, полоса и мрамор.
+                    <br><br>
+                    <span class="dist" >ШЕРСТЬ</span>:<br> короткая, плотная, тонкой текстуры, неприлегающая, с густым подшерстком.
+                    <br><br>
+                    <span class="dist">Достоинства</span><br>
+                    Не требует много внимания, может подолгу оставаться одна, отлично подойдет для людей, много времени проводящих на работе
+                    <br><br>
+                    <span class="dist">Сложности</span><br>
+                    Имеет собственное мнение по многим поводам - необходимо воспитывать с раннего детства
+                </div>
+            </div>
+        </div><div class="cat">
+            <div class="content-img">
+                <img src="Basik.jpg" title="Basik" alt="Basik"  class="photo">
+            </div>
+            <div class="content-text">
+                <div class="size">
+                    <a href="">BasikBasikBasikBasikBasikBasikBasikBasikBasikBasik</a>
+                </div>
+                <div class="category"><a href="">Милота</a></div>
+                <img src="4_5.png" title="stars" alt="stars">
+                <div><span class="red">Это бабушкин любимый котик, он НЕ продается</span> <strike>$1000000</strike></div><br>
+                <div> 
+                    <span class="dist">ОКРАС</span>:<br> множество окрасов, самые популярные — сплошные (голубой, черный, лиловый, шоколадный), тэбби и серебристые тэбби, их разновидности: пятно, полоса и мрамор.
+                    <br><br>
+                    <span class="dist" >ШЕРСТЬ</span>:<br> короткая, плотная, тонкой текстуры, неприлегающая, с густым подшерстком.
+                    <br><br>
+                    <span class="dist">Достоинства</span><br>
+                    Не требует много внимания, может подолгу оставаться одна, отлично подойдет для людей, много времени проводящих на работе
+                    <br><br>
+                    <span class="dist">Сложности</span><br>
+                    Имеет собственное мнение по многим поводам - необходимо воспитывать с раннего детства
+                </div>
+            </div>
+        </div><div class="cat">
+            <div class="content-img">
+                <img src="Basik.jpg" title="Basik" alt="Basik"  class="photo">
+            </div>
+            <div class="content-text">
+                <div class="size">
+                    <a href="">BasikBasikBasikBasikBasikBasikBasikBasikBasikBasik</a>
+                </div>
+                <div class="category"><a href="">Милота</a></div>
+                <img src="4_5.png" title="stars" alt="stars">
+                <div><span class="red">Это бабушкин любимый котик, он НЕ продается</span> <strike>$1000000</strike></div><br>
+                <div> 
+                    <span class="dist">ОКРАС</span>:<br> множество окрасов, самые популярные — сплошные (голубой, черный, лиловый, шоколадный), тэбби и серебристые тэбби, их разновидности: пятно, полоса и мрамор.
+                    <br><br>
+                    <span class="dist" >ШЕРСТЬ</span>:<br> короткая, плотная, тонкой текстуры, неприлегающая, с густым подшерстком.
+                    <br><br>
+                    <span class="dist">Достоинства</span><br>
+                    Не требует много внимания, может подолгу оставаться одна, отлично подойдет для людей, много времени проводящих на работе
+                    <br><br>
+                    <span class="dist">Сложности</span><br>
+                    Имеет собственное мнение по многим поводам - необходимо воспитывать с раннего детства
+                </div>
+            </div>
+        </div><div class="cat">
+            <div class="content-img">
+                <img src="Basik.jpg" title="Basik" alt="Basik"  class="photo">
+            </div>
+            <div class="content-text">
+                <div class="size">
+                    <a href="">BasikBasikBasikBasikBasikBasikBasikBasikBasikBasik</a>
+                </div>
+                <div class="category"><a href="">Милота</a></div>
+                <img src="4_5.png" title="stars" alt="stars">
+                <div><span class="red">Это бабушкин любимый котик, он НЕ продается</span> <strike>$1000000</strike></div><br>
+                <div> 
+                    <span class="dist">ОКРАС</span>:<br> множество окрасов, самые популярные — сплошные (голубой, черный, лиловый, шоколадный), тэбби и серебристые тэбби, их разновидности: пятно, полоса и мрамор.
+                    <br><br>
+                    <span class="dist" >ШЕРСТЬ</span>:<br> короткая, плотная, тонкой текстуры, неприлегающая, с густым подшерстком.
+                    <br><br>
+                    <span class="dist">Достоинства</span><br>
+                    Не требует много внимания, может подолгу оставаться одна, отлично подойдет для людей, много времени проводящих на работе
+                    <br><br>
+                    <span class="dist">Сложности</span><br>
+                    Имеет собственное мнение по многим поводам - необходимо воспитывать с раннего детства
+                </div>
+            </div>
+        </div><div class="cat">
+            <div class="content-img">
+                <img src="Basik.jpg" title="Basik" alt="Basik"  class="photo">
+            </div>
+            <div class="content-text">
+                <div class="size">
+                    <a href="">BasikBasikBasikBasikBasikBasikBasikBasikBasikBasik</a>
+                </div>
+                <div class="category"><a href="">Милота</a></div>
+                <img src="4_5.png" title="stars" alt="stars">
+                <div><span class="red">Это бабушкин любимый котик, он НЕ продается</span> <strike>$1000000</strike></div><br>
+                <div> 
+                    <span class="dist">ОКРАС</span>:<br> множество окрасов, самые популярные — сплошные (голубой, черный, лиловый, шоколадный), тэбби и серебристые тэбби, их разновидности: пятно, полоса и мрамор.
+                    <br><br>
+                    <span class="dist" >ШЕРСТЬ</span>:<br> короткая, плотная, тонкой текстуры, неприлегающая, с густым подшерстком.
+                    <br><br>
+                    <span class="dist">Достоинства</span><br>
+                    Не требует много внимания, может подолгу оставаться одна, отлично подойдет для людей, много времени проводящих на работе
+                    <br><br>
+                    <span class="dist">Сложности</span><br>
+                    Имеет собственное мнение по многим поводам - необходимо воспитывать с раннего детства
+                </div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <p align="right"> <q>Басик <span class="red">М</span>яндекс не испортит</q> &copy;</p>
+        </footer>
     </body>
 </html>
