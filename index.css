@@ -1,1 +1,237 @@
 
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+} */
+
+body
+{
+    font: 14px Arial;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.content
+{
+    vertical-align: top;
+}
+
+.cat-list
+{
+    margin-right: 30px;
+}
+
+.hide
+{
+    display: none;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.view-toggle
+{
+    display: inline-block;
+    color: blue;
+    cursor: pointer;
+    margin: 15px 0 5px 15px;
+}
+
+#cat-view-change-table:checked + label,
+#cat-view-change-list:checked + label
+{
+    color: red;
+}
+
+#cat-view-change-list:checked ~ .cat-card
+{
+    width: 100%;
+    display: table;
+    float: none;
+    margin-bottom: 4%;
+}
+
+#cat-view-change-list:checked ~ .cat-card .cat-img-container,
+#cat-view-change-list:checked ~ .cat-card .cat-name-content,
+#cat-view-change-list:checked ~ .cat-card .cat-description-content
+{
+    display: table-cell;
+    vertical-align: top;
+}
+
+#cat-view-change-list:checked ~ .cat-card .cat-img-container
+{
+    width: 30%;
+    text-align: center;
+}
+
+#cat-view-change-list:checked ~ .cat-card .cat-img
+{
+    vertical-align: top;
+}
+
+#cat-view-change-list:checked ~ .cat-card .cat-name-content
+{
+    width: 35%;
+    padding: 0 15px;
+}
+
+#cat-view-change-list:checked ~ .cat-card .cat-name
+{
+    white-space: normal;
+}
+
+#cat-view-change-list:checked ~ .cat-card .cat-description-content
+{
+    width: 32.5%
+}
+
+.cat-card
+{
+    width: 20%;
+    float: left;
+    margin: 1%;
+    line-height: 1.5;
+}
+
+.cat-img-container
+{
+    height: 170px;
+    line-height: 170px;
+    overflow: hidden;
+    text-align: center;
+ }
+
+.cat-img
+{
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 1.25;
+}
+
+.cat-name
+{
+    display: block;
+    overflow: hidden;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cat-name a
+{
+    color: #2e3192;
+}
+
+.cat-category a
+{
+    color: #58585a;
+    font-size: 12px;
+}
+
+.cat-price
+{
+    float: left;
+}
+
+.cat-price-current
+{
+    color: #96070a;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cat-price-old
+{
+    font-size: 16px;
+    text-decoration: line-through
+}
+
+.cat-description
+{
+    line-height: 18px;
+}
+
+.cat-description-head
+{
+    font-weight: bold;
+}
+
+.rating label
+{
+    position: relative;
+    display: inline;
+    float: left;
+    z-index:1;
+    width:5px;
+    height:16px;
+}
+
+.rating input[type=radio]
+{
+    z-index: 2;
+    display:inline;
+    float: left;
+    width:13px;
+    height:13px;
+}
+
+.star
+{
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAwCAMAAADAQ2FbAAAAAXNSR0IArs4c6QAAALFQTFRF/////f7//1UA+Pv+/P3+9fj9xM/d/6UA8fb8y9Xi5eft/4cA5uz0/P7/6/P83OPr69PL197n8PP2/5YA7e3w/v//77OS/7UA+Pn7+vv+4sW8vMjX/msD/8AA9VEA7Itd94tC95pC693c36eQ9Z5j/3gA+Ycq+psl+3Ub3WYv/I4Q8LN95ZJt6XI64Lms8E8A7WIg8VkP9O/u431N35t9/ZYR+fHu77+l/aMQ/GYR+PX1nwS4LAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfbCAsIKx+mNyuoAAABpElEQVQoz2WS13qjMBCFkTSqiGo6GBdcEzs9297/wRYBIstmuOH7OaOZc5DjjIWQsyyklbckhDGyUCHBpE4XEqmUpPYzEEJ9qRPpU0IADSfUjEVxXDDZPxr6BhYFKomLsohVJEnfRQI5EhpH0TCwR0zpOP4TB9G0QUp7kU6ShNlpDjUnKa2ksMSvo4jVQcB8ZD3147UvpYwmb56sA4o8EtQMrIaS1CxPY/RPNt/zCUNYEjjs6DKf5GG1XxCScf4450OoEPrM819aCGqMwWa7Pbk8X6/5ebc7/ACnDJujuzJkzfnDTy91kBdeesLzPOef4RiHp04GcX7e239GM9dd9fX4lc/26Jra2XyQf2ma09Y9NnM+e/w7EyK7NLO3bJMUKCXJIbOashzegBRzPsbL238BQdct80np/UUsRBC2uCrntAA8f4PxuwAwl8UBsa+q7hXjtquqUEDqkOsznqu9vqUOmA5bd2XaPHGzYENhcvoxgnffm+4r/bASO1/czaEYX+2S4D/j1+7pBbfKeq/amyJE3dqniXhhRQf7YWWtjcv3bJj0F1myHFtkBXYZAAAAAElFTkSuQmCC) 0 -16px;
+    height:16px;
+    width:16px;
+    z-index:1;
+    position: absolute;
+    top: 0;
+    display:block;
+    cursor:pointer;
+    left: -16px;
+}
+
+.rating:hover .star
+{
+    background-position: 0 -32px;
+}
+
+.rating input:checked ~ label .star
+{
+    background-position: 0 0;
+}
+
+.rating input:checked + label .star
+{
+    background-position: 0 -16px;
+}
+
+.rating label:hover ~ label .star
+{
+    background-position: 0 0 !important;
+}
+
+@media screen and (max-width: 900px)
+{
+    .cat-card
+    {
+        width: 30.33%;
+    }
+}
