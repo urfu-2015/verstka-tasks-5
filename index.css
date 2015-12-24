@@ -1,11 +1,19 @@
 body
 {
-    background-color: #ffcc00;
+    background-color: #fc0;
 }
 
 header
 {
     padding-left: 50px;
+}
+
+footer
+{
+    clear:both;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 20px;
 }
 
 h1::first-letter
@@ -86,7 +94,6 @@ label.list:before
 {
     text-indent: 20px;
 }
-
 
 #tiles:checked ~ .row > .cat
 {
