@@ -8,13 +8,6 @@ header
     padding-left: 50px;
 }
 
-footer
-{
-    text-align: right;
-    padding-right: 20px;
-    font-weight: bold;
-}
-
 h1::first-letter
 {
     color: #f00;
@@ -34,11 +27,6 @@ h1::first-letter
     margin: 5px;
 }
 
-.old
-{
-    text-decoration: line-through;
-}
-
 .cat
 {
     border: 3px solid #410068;
@@ -56,7 +44,7 @@ h1::first-letter
     font-weight: bold;
 }
 
-.price > .old
+.price > del
 {
     font-size: 10px;
     font-weight: lighter;
@@ -74,10 +62,11 @@ input#tiles
     display: none;
 }
 
+label.tile:before,
 label.list:before
 {
     content: ' ';
-    background: url('img/list.png');
+    cursor:pointer;
     display: inline-block;
     height: 25px;
     width: 25px;
@@ -85,11 +74,12 @@ label.list:before
 
 label.tile:before
 {
-    content: ' ';
-    background: url('img/tile.png');
-    display: inline-block;
-    height: 25px;
-    width: 25px;
+    background: url(img/tile.png);
+}
+
+label.list:before
+{
+    background: url(img/list.png);
 }
 
 .description > p
@@ -104,11 +94,10 @@ label.tile:before
     height: 500px;
     display: block;
     position: relative;
-    left: 0;
-    right: auto;
     float: left;
-    margin: .4em;
-    padding: .2em;
+    margin: 4px;
+    padding: 2px;
+    overflow: auto;
 }
 
 #tiles:checked ~ .row .image
@@ -120,6 +109,7 @@ label.tile:before
     bottom: 0;
 }
 
+#list:checked ~ .row .cat-img,
 #tiles:checked ~ .row .cat-img
 {
     max-height: 98%;
@@ -132,12 +122,8 @@ label.tile:before
     margin: 0 auto;
 }
 
+#tiles:checked ~ .row .description,
 #tiles:checked ~ .row .character
-{
-    padding: 0 6px;
-}
-
-#tiles:checked ~ .row .description
 {
     padding: 0 6px;
 }
@@ -146,14 +132,9 @@ label.tile:before
 {
     width: 98%;
     height: 250px;
-    margin: .4em;
-    padding: .2em;
+    margin: 4px;
+    padding: 2px;
     display: block;
-    position: relative;
-
-    left: 0;
-    right: auto;
-    float: left;
 }
 
 #list:checked ~ .row .image
@@ -161,27 +142,13 @@ label.tile:before
     width: 19%;
     height: 100%;
     position: relative;
-    left: 0;
     float: left;
-}
-
-#list:checked ~ .row .cat-img
-{
-    max-height: 98%;
-    max-width: 98%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-    margin: auto;
 }
 
 #list:checked ~ .row .character
 {
     width: 53%;
     height: 100%;
-    left: 0;
     float: left;
     padding-left: 2%;
 }
@@ -190,7 +157,6 @@ label.tile:before
 {
     width: 26%;
     height: 100%;
-    left: 0;
     float: left;
 }
 
@@ -218,6 +184,8 @@ label.tile:before
     background-position: top;
 }
 
+.rating-star:nth-child(4n),
+.rating:hover .rating-star:nth-child(4n),
 .rating-star:nth-child(4n+2),
 .rating:hover .rating-star:nth-child(4n+2)
 {
@@ -226,18 +194,7 @@ label.tile:before
     display: block;
     height: 16px;
     width: 16px;
-    background: url('img/star.png') 0 -15px;
-}
-
-.rating-star:nth-child(4n),
-.rating:hover .rating-star:nth-child(4n)
-{
-    position: relative;
-    float: right;
-    display: block;
-    height: 16px;
-    width: 16px;
-    background: url('img/star.png') 0 -15px;
+    background: url(img/star.png) 0 -15px;
 }
 
 .rating:hover .rating-star:hover
